@@ -1,0 +1,1844 @@
+[
+  {
+    "id": "missing_frame",
+    "license_level": 0,
+    "source": "GMS",
+    "name": "ERR: DADOS NÃO ENCONTRADOS",
+    "mechtype": ["Balanced"],
+    "y_pos": 0,
+    "description": "A COMP/CON não conseguiu recuperar os dados necessários para fornecer esse quadro. Isso provavelmente é resultado de um pacote de conteúdo ausente ou desatualizado.",
+    "mounts": [],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 10,
+      "evasion" : 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 4,
+      "sp": 6
+    },
+    "traits" : [],
+    "core_system": {
+      "name": "ERR: DADOS AUSENTES",
+      "active_name": "",
+      "active_effect": "",
+      "use": "Próxima rodada",
+      "activation" : "Free" 
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/missing_frame.png",
+    "license_id": "missing_frame"
+  },
+  {
+    "id": "mf_standard_pattern_i_everest",
+    "license_level": 0,
+    "source": "GMS",
+    "name": "Everest",
+    "mechtype": ["Balanced"],
+    "y_pos": 25,
+    "description": "A maioria dos seres humanos não pensa em perguntar sobre a história da água que bebem, da terra que pisam ou do ar que respiram. E, no entanto, sem água, terra e ar, não haveria lugar para a humanidade se estabelecer.<br>Da mesma forma, o GMS-SP1 Everest é muitas vezes considerado como certo, sua importância é descartada em favor de outras estruturas mais especializadas. Um mecanismo simples e despretensioso, definido por linhas simples, graça funcional, compatibilidade universal e volume robusto, o Everest é tão fundamental para o chassi mecanizado moderno quanto o mundo natural é para a vida humana. O Everest não é o mech mais especializado, mas é a espinha dorsal de nosso imperativo de expansão. Antes da adoção oficial do nome pela GMS, Everest era um nome de uso dado ao chassi por seus pilotos. O Monte Everest - ou Sagarmatha, ou Chomolungma, como foi chamado em línguas humanas mais antigas - é a montanha mais alta de Cradle, embora não seja o pico mais proeminente do espaço conhecido, nem mesmo o maior do sistema estelar de Cradle, mas os pilotos de toda a galáxia chamam seus SP1s por esse nome antigo. Por quê?<br>A resposta sentimental é que o nome é um lembrete do que já foi o limite da resistência humana - já foi o auge da realização humana. Chegar ao cume do Everest era desafiar a morte e estar no topo do mundo - o ponto culminante de meses, até mesmo anos, de treinamento, investimento e trabalho árduo. Chegar ao pico também era um triunfo das pessoas, dos "systems" e das instituições que estavam por trás do indivíduo - um triunfo que muitas vezes não é reconhecido ou é deliberadamente apagado.<br>Sagarmatha. Chomolungma.<br>Mesmo antes da Queda, quando as abóbadas do Maciço foram construídas, alguns nomes - algumas histórias - tiveram prioridade sobre outros.<br>A verdadeira história por trás do nome do Everest é provavelmente muito menos deliberada. Em algum momento, um piloto recém-formado, frustrado com as convenções de nomes simples da GMS, pintou Everest no flanco de seu SP1. Talvez fosse um indicativo, ou talvez representasse o orgulho que sentiam pelo sucesso. De qualquer forma, o nome pegou: outros adotaram o nome e, ao longo de cinco séculos, ele cresceu e se tornou a designação oficialmente não oficial do chassi do SP1.<br>Os pilotos veteranos talvez nunca mais voltem ao Everest depois de seguirem em frente, mas sempre se lembrarão de ter alcançado aquele primeiro cume - o topo da montanha onde provaram que podiam fincar sua própria bandeira no pico do mundo.<br>Sagarmatha. Chomolungma.<br>Everest - você nunca o esquecerá.",
+    "mounts": ["Main", "Flex", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 10,
+      "evasion" : 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 4,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Initiative",
+        "description": "1/cena o Everest pode realizar qualquer ação rápida como uma ação livre.",
+        "use": "Encounter" 
+      },
+      {
+        "name": "Peças substituíveis",
+        "description": "Enquanto estiver restando, o Everest pode ser reparado a uma taxa de 1 reparo por 1 de dano à estrutura, em vez de 2 reparos."
+        "Bônus": [
+          {
+            "id": "cheap_struct",
+            "val": 1
+          }
+        ],
+        "synergies" : [
+          {
+            "locations": ["rest"],
+            "detail": "O Everest pode ser reparado a uma taxa de 1 reparo para cada 1 de dano à estrutura."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Injetor de combustível Hyperspec",
+      "active_name": "Power Up",
+      "active_effect": "Durante o resto desta cena, você ganha +1 de Precisão em todos os ataques, verificações e defesas; além disso, 1/turno, você pode Impulsionar como uma ação livre",
+      "use": "Encounter",
+      "activation" : "Protocol",
+      "active_synergies": [
+        {
+          "locations": ["active_effects", "boost"],
+          "detail": "1/turno, você pode impulsionar como uma ação livre."
+        },
+        {
+          "locations": ["hull" , "agility" , "systems" , "engineering" ],
+          "detail": "Ganhe +1 Precisão em todos os ataques, verificações e defesas."
+        }
+      ]
+    },
+    "other_art": [
+      {
+        "tags": "mech",
+        "src": "pre_assault_pixel.png"
+      },
+      {
+        "tags": "mech",
+        "src": "pre_hacker_pixel.png"
+      },
+      {
+        "tags": "mech",
+        "src": "pre_sniper_pixel.png"
+      },
+      {
+        "tags": "mech",
+        "src": "pre_support_pixel.png"
+      },
+      {
+        "tags": "mech",
+        "src": "pre_vanguard_pixel.png"
+      }
+    ],
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_standard_pattern_i_everest.png",
+    "license_id": "mf_standard_pattern_i_everest"
+  },
+  {
+    "id": "mf_blackbeard",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Blackbeard",
+    "mechtype": ["Striker"],
+    "y_pos": 23,
+    "description": "O Blackbeard é a solução agressiva da IPS-N para a pirataria: um mech frontal de primeiro ataque projetado para ambientes nos quais as armas cinéticas combustíveis são inúteis, perigosas ou podem causar danos colaterais desnecessários. Com sua estrutura nitidamente fina, o Barba Negra não apenas parece rápido, mas também tem um perfil de radar reduzido. Esse mech é difícil de rastrear e ainda mais difícil de atingir.<br>A linha Blackbeard é composta por duas linhas: o modelo padrão da linha de produção IPS-N/BB-L e o IPS-N/BB-Sk, um protótipo de lançamento limitado criado especificamente para abrigar os NHPs da classe SEKHMET da IPS-N.",
+    "mounts": ["Flex", "Main", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 12,
+      "evasion" : 8,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack" : -2,
+      "save" : 10,
+      "speed" : 5,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Cabo de garra",
+        "description": "O Barba Negra pode agarrar alvos dentro do alcance 5. Se o Grapple for bem-sucedido, o Barba Negra é imediatamente puxado para perto do alvo pelo caminho mais direto. Se não houver espaços adequados, a garra se rompe e o Barba Negra não se move.",
+        "synergies": [
+          {
+            "locations": ["grapple"],
+            "detail": "O Barba Negra pode agarrar alvos dentro do alcance 5. Se o Grapple for bem-sucedido, o Barba Negra é imediatamente puxado para perto do alvo pelo caminho mais direto. Se não houver espaços adequados, o Grapple se rompe e o Barba Negra não se move."
+          }
+        ]
+      },
+      {
+        "name": "Subsistema de bloqueio/morte",
+        "description": "Enquanto estiver se agarrando, o Barba Negra pode impulsionar e receber reações.",
+        "sinergias": [
+          {
+            "locations": ["grapple", "boost"],
+            "detail" : "Enquanto estiver agarrando, o Barba Negra pode impulsionar e receber reações."
+          }
+        ]
+      },
+      {
+        "name": "Reator exposto",
+        "description": "O Barba Negra recebe +1 de Dificuldade em verificações e salvamentos de ENGINEERING.",
+        "synergies" : [
+          {
+            "locations": ["engineering", "skill_check"],
+            "detail": "O Barba Negra ganha +1 de Dificuldade em verificações e salvamentos de ENGENHARIA."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Garras de assalto",
+      "description": "O Assault Grappling System da marca IPS-N é uma tecnologia líder na categoria, classificada para transportar, apoiar e prender chassis de tamanhos até o Schedule 4. As cabeças das garras são intercambiáveis e podem ser trocadas para o engajamento com alvos macios ou duros - eletrificados ou carregados com sistemas de codespike para incapacitação a longa distância.",
+      "active_name": "Omni-harpoon",
+      "active_effect": "Esse sistema dispara arpões de agarrar em qualquer número de alvos dentro do Alcance 5 e da linha de visão. Os personagens afetados devem ser bem-sucedidos em um salvamento de casco ou receberão 2d6 de dano cinético e serão derrubados e puxados para perto de você ou o mais próximo possível. Eles ficam imobilizados até o final de seu próximo turno. Em caso de sucesso, eles recebem metade do dano e não são afetados.",
+      "activation" : "Quick" 
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_blackbeard.png",
+    "license_id": "mf_blackbeard"
+  },
+  {
+    "id": "mf_drake",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Drake",
+    "mechtype": ["Defender"],
+    "y_pos": 12,
+    "description": "O Drake, a primeira incursão da IPS-N no design de mechs de nível militar, é a espinha dorsal de qualquer força proativa de segurança comercial ou antipirataria. Sua estrutura maciça e simiesca é construída em torno de um anteparo de fundição única, inclinado e reforçado para suportar fogo contínuo e os caprichos da viagem hardvac próxima à embarcação. O Drake é um chassi imponente, sua estrutura evoca o poder da antiga infantaria blindada de uma época em que um número maior garantia a vitória.<br>A licença padrão da frota para o IPS-N Drake equipa cada chassi com o canhão de assalto de fragmentos de alta velocidade e alto projétil da IPS-N para suprimir e esmagar alvos e um escudo cinético-ablativo pesado para defesa. Os modelos avançados apresentam armas e armaduras aprimoradas, incluindo o formidável canhão de assalto pesado Leviathan, uma arma antimaterial de alta rotação.",
+    "mounts": ["Main", "Main", "Heavy"],
+    "stats": {
+      "size": 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 3,
+      "hp": 8,
+      "evasion" : 6,
+      "edef": 6,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 3,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Heavy Frame",
+        "description": "O Drake não pode ser empurrado, puxado, colocado de bruços ou empurrado para trás por personagens menores."
+      },
+      {
+        "name": "Blast Plating",
+        "description": "O Drake tem resistência a dano, queimadura e calor de ataques de explosão, rajada, linha e cone."
+      },
+      {
+        "name": "Lento",
+        "description": "O Drake recebe +1 de dificuldade em verificações de Agilidade e salvamentos.",
+        "synergies" : [
+          {
+            "locations": ["agility", "skill_check"],
+            "detail": "O Drake recebe +1 de dificuldade em verificações e salvamentos de Agilidade."
+          }
+        ]
+      },
+      {
+        "name": "Guardian",
+        "description": "Personagens aliados adjacentes podem usar o Drake para cobertura dura."
+      }
+    ],
+    "core_system": {
+      "name": "Fortress",
+      "active_name": "Protocolo de Fortaleza",
+      "active_effect": "Você implanta estabilizadores pesados e seu mecanismo se torna mais parecido com um local fortificado do que com um veículo. Quando ativadas, duas seções de cobertura rígida (linha 2, tamanho 1) se desdobram do seu mecanismo, puxadas em qualquer direção. Essas seções de cobertura têm imunidade a todos os danos.<br>Além disso, os seguintes efeitos se aplicam enquanto estiverem ativas:<ul><li>Você fica imobilizado.</li><li>Você se beneficia da cobertura rígida, mesmo em campo aberto, e ganha imunidade a Knockback, Prone e a todos os movimentos involuntários. </li><li>Quando você se imobiliza, pode realizar uma ação completa no seu próximo turno, em vez de apenas uma ação rápida.</li><li>Qualquer personagem que ganhe cobertura rígida de você ou de suas seções de cobertura ganha imunidade a efeito de choque, pronação e todos os movimentos involuntários, além de receber os benefícios de Blast Plating.</li></ul>Esse sistema pode ser desativado como um protocolo. Caso contrário, ele dura até o final da cena atual.",
+      "use": "Encounter",
+      "deactivation": "Protocol",
+      "activation" : "Protocol"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_drake.png",
+    "license_id": "mf_drake"
+  },
+  {
+    "id": "mf_lancaster",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Lancaster",
+    "mechtype": ["Support"],
+    "y_pos": 16,
+    "description": "O IPS-N Lancaster é uma variante mil-spec de um antigo chassi civil IPS-N de transporte e manutenção terrestre, inter/exterior ao casco, simplificado para uso em qualquer teatro. O Lancaster conta com vários sistemas redundantes e projetores de interação sofisticados para garantir uma precisão exata ao se envolver com sistemas delicados, danificados ou intactos.<br>Os pilotos do Lancaster geralmente adotam funções como sapadores e engenheiros no suporte da linha de frente. Às vezes ridicularizados por pilotar a estrutura antiquada por pilotos mais novos e não testados, os pilotos veteranos da Lancaster sabem a verdade: a Lancaster é um dos mechs mais confiáveis e bem feitos que existem, indispensável em qualquer missão séria de longo alcance. Nem toda missão é vencida com balas, lasers e bombas: sem os  e seus Lannies, poucos desses hotshots voltariam para casa vivos",
+    "mounts": ["Main/Aux"],
+    "stats": {
+      "size": 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 6,
+      "evasion" : 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 10,
+      "sensor_range": 8,
+      "tech_attack" : 1,
+      "save" : 10,
+      "speed" : 6,
+      "sp": 8
+    },
+    "traits" : [
+      {
+        "name": "Isolado",
+        "description": "O Lancaster tem imunidade a queimaduras."
+      },
+      {
+        "name": "Reparo de combate",
+        "description": "Em combate, o Lancaster pode usar 4 Reparos para consertar um mech destruído como uma ação completa, retornando-o a 1 Estrutura, 1 Estresse e 1 HP.",
+        "actions" : [
+          {
+            "name": "Reparo de combate",
+            "activation" : "Full" ,
+            "detail" : "Use 4 Repairs (reparos) para consertar um mech destruído como uma ação completa, devolvendo a ele 1 Structure , 1 Stress  e 1 HP."
+          }
+        ]
+      },
+      {
+        "name": "Sistemas redundantes",
+        "description": "A seu critério, outros personagens adjacentes a Lancaster podem gastar seus reparos como se fossem deles."
+      }
+    ],
+    "core_system": {
+      "name": "Latch Drone",
+      "description": "Conhecidos coloquialmente como Wingman, os drones de trava são drones de companhia transportados por um chassi e implantados a partir dele. Recomenda-se que os pilotos não desenvolvam vínculos emocionais com esses drones devido à sua alta taxa de baixas.",
+      "active_name": "Supercharger",
+      "active_effect": "Seu Latch Drone se prende a um mech aliado dentro de seu alcance. No restante da cena, você recebe 1 de calor no início de cada um de seus turnos, mas seu alvo ganha +1 de precisão em todos os ataques, verificações e defesas, além de imunidade às condições Impaired (Prejudicado), Jammed (Atolado), Slowed (Desacelerado), Shredded (Destruído) e Immobilized (Imobilizado) de personagens que não sejam ele próprio. Esse effect termina se qualquer um dos personagens ficar atordoado.<br>Enquanto esse sistema estiver ativo, você não poderá usar o drone de trava para nenhum outro propósito.",
+      "ativação": "Rápido",
+      "integrado": ["mw_lancaster_integrated"]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_lancaster.png",
+    "license_id": "mf_lancaster"
+  },
+  {
+    "id": "mf_nelson",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Nelson",
+    "mechtype": ["Striker"],
+    "y_pos": 35,
+    "description": "O IPS-N Nelson é a mais pura personificação da doutrina de proximidade adotada por seu fabricante. Ele foi criado para lutar, prosperando quando a artilharia se esgota ou quando o ambiente é volátil demais para armas de fogo. Com seu tamanho funcional, o Nelson pode atacar rapidamente e continuar sendo um alvo difícil de rastrear. Camadas de blindagem Armor-Lock de dobra fractal com propriedades de descamação de carbono análogas à cerâmica anulam efetivamente o impacto da balística recebida, dispersando a energia cinética em um casco arredondado. Essa defesa null-k protege o piloto contra traumas de impacto, permitindo uma eficácia de combate sustentada em cenários de alto comércio.<br>O Nelson é um chassi IPS-N icônico, conhecido em toda a galáxia como o chassi preferido dos Albatross, a ordem nômade de pacificadores cosmopolitas. A distinta pintura branca, dourada e vermelha dos Albatrozes, o domínio do pique de guerra e a aparente falta de idade devido à dilatação do tempo fizeram com que eles e o Nelson ganhassem um lugar venerado na tradição da Diáspora - e garantiram um contrato de endosso com a IPS-N para sempre.",
+    "mounts": ["Flex", "Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 8,
+      "evasion" : 11,
+      "edef": 7,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 5,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Momentum",
+        "description": "1/rodada, depois que você usar o Boost, o próximo ataque corpo a corpo do Nelson causa +1d6 de dano adicional ao acertar.",
+        "sinergias": [
+          {
+            "locations": ["boost"],
+            "detail": "1/rodada, depois que você der um impulso, o próximo ataque corpo a corpo do Nelson causará +1d6 de dano adicional ao acertar."
+          }
+        ]
+      },
+      {
+        "name": "Escaramuçador",
+        "description": "Depois de atacar, o Nelson pode se mover imediatamente 1 espaço em qualquer direção, desde que não esteja imobilizado ou desacelerado. Esse movimento ignora o engajamento e não provoca reações."
+      }
+    ],
+    "core_system": {
+      "name": "Perpetual Momentum Drive",
+      "description": "O Perpetual Momentum Drive da IPS-N explora o spooling de luz próxima de um caça para capturar e sustentar uma carga passiva de 0,000001 ls, capaz de ser despejada em sistemas de impulso sob comando. Os chassis equipados com essa unidade exigem reforço pesado, incluindo articulações e membros reforçados, e a instalação de um colchão k-comp para proteger o piloto da força g e do cisalhamento repentinos.",
+      "active_name": "Engage Drive",
+      "active_effect":  "Durante o resto da cena, o Escaramuçador permite que você se mova 4 espaços de cada vez em vez de 1 espaço",
+      "use": "Encounter",
+      "activation" : "Protocol"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_nelson.png",
+    "license_id": "mf_nelson"
+  },
+  {
+    "id": "mf_raleigh",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Raleigh",
+    "mechtype": ["Striker"],
+    "y_pos": 12.5,
+    "description": "Vendo o esforço da GMS e da Harrison Armory para garantir contratos de linha de frota completa com os estados membros da União, a IPS-N lançou uma breve incursão no design e na produção de sua própria estrutura de linha de batalha principal. O Raleigh é uma peculiaridade estilística e de design da IPS-N. Projetado não como um especialista, mas como um mech de curto alcance, o Raleigh não conseguiu impressionar os clientes em potencial nos testes.<br>Embora fosse um dos favoritos dos pilotos de teste devido ao seu estilo e agilidade exclusivos, o Raleigh recebeu poucos pedidos de frota e, após uma breve passagem como carro-chefe da IPS-N, foi discretamente retirado e substituído pelo Tortuga. Não mais oferecido como um contrato de frota, o Raleigh desfruta de uma popularidade discreta entre os pilotos que buscam um mech de linha bem equilibrado, embora de curto alcance.",
+    "mounts": ["Aux/Aux", "Flex", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 10,
+      "evasion" : 8,
+      "edef": 7,
+      "heatcap": 5,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save" : 10,
+      "speed" : 4,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Full Metal Jacket",
+        "description": "No final de seu turno, se o Raleigh não tiver feito nenhum ataque nem forçado nenhum salvamento, ele poderá recarregar todas as armas de carregamento como uma ação livre."
+      },
+      {
+        "name": "Revistas blindadas",
+        "description": "O Raleigh pode fazer ataques à distância quando está bloqueado."
+      }
+    ],
+    "core_system": {
+      "name": "Canhão M35 Mjolnir",
+      "description": "O canhão M35 Mjolnir da IPS-N é uma herança da linha Watchman de armas defensivas da Northstar, reformulada para o combate na linha de frente. O Mjolnir é um canhão auxiliar de vários canos de montagem rígida que usa aceleração magnética para disparar pilhas de projéteis de explosão de ar em seu alvo. É uma arma de impulso, ligada aos processos neurais de segundo nível do piloto com a mediação de um COMP/CON ou NHP; mesmo na morte, o Mjolnir de um piloto continuará a identificar e atacar alvos hostis até atingir a falha sistêmica total. Por esse motivo, o Mjolnir é muitas vezes chamado de arma mortal - uma das muitas armas desse tipo que podem ser encontradas entre os pilotos orientados para CQB.",
+      "active_name": "Deus do Trovão",
+      "active_effect": "Você começa a girar seu Mjolnir M35 para cima, começando sem munição na câmara. No restante da cena, você carrega dois cartuchos nas câmaras no final de qualquer um de seus turnos em que não tenha disparado o M35 Mjolnir. <br>Quando você dispara o M35 Mjolnir, todas as câmaras disparam simultaneamente, causando 4 de dano cinético por cartucho carregado. Se você disparar quatro ou mais cartuchos de uma vez, o ataque ganha PA e, em caso de acerto, o alvo fica retalhado até o final do próximo turno.",
+      "ativação": "Protocol",
+      "use": "Encounter",
+      "integrated": ["mw_raleigh_integrated"]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_raleigh.png",
+    "license_id": "mf_raleigh"
+  },
+  {
+    "id": "mf_tortuga",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Tortuga",
+    "mechtype": ["Defender", "Striker"],
+    "y_pos": 20,
+    "description": "O Tortuga é a linha de mechs de curto a médio alcance da IPS-N. Concebido, testado e aperfeiçoado no vazio do espaço profundo, o Tortuga foi criado para romper e limpar conveses de porta-aviões, ambientes hostis de estações e colunas vertebrais de naves capitais. Ele é excelente em ocupar espaço e preencher corredores com seu volume angular, muitas vezes agindo como um aríete ambulante por grupos de embarque e fuzileiros navais. Mas a Tortuga se defende com a mesma eficácia com que ataca, usando suas amplas placas de armadura braquial para proteger a si mesma e a qualquer aliado que avance.",
+    "mounts": ["Main", "Heavy"],
+    "stats": {
+      "size": 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 2,
+      "hp": 8,
+      "evasion" : 6,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 15,
+      "tech_attack" : 1,
+      "save" : 10,
+      "speed" : 3,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Sentinel",
+        "description": "O Tortuga ganha +1 de precisão em todos os ataques feitos como reações (por exemplo, Overwatch)."
+      },
+      {
+        "name": "Guardian",
+        "description": "Personagens aliados adjacentes podem usar a Tortuga para cobertura rígida."
+      }
+    ],
+    "core_system": {
+      "name": "WATCHDOG Co-Pilot",
+      "description": "As equipes de segurança da IPS-N não são estranhas aos perigos das ações de embarque de navio para navio ou de navio para estação. Corredores apertados, gravidade instável, ambientes escuros, vácuo intenso e a ameaça dupla potencial de oposição orgânica e inorgânica tornam as ações de abordagem um dos compromissos mais estatisticamente mortais - de acordo com as métricas internas da IPS-N, mesmo o lado vencedor deve esperar pelo menos 30% de baixas. Na esperança de diminuir a carga cognitiva dos pilotos e de quaisquer NHPs ou COMP/CONs instalados em seus chassis, a IPS-N desenvolveu o copiloto WATCHDOG. O WATCHDOG é uma partição subsentiente simples: um flash-homúnculo de inteligência agregada gerada a partir de milhares de relatórios pós-ação de ações de embarque, interrogatórios e doadores voluntários. Não é um NHP, nem mesmo um COMP/CON, o WATCHDOG é um programa tático robusto semelhante a uma arma inteligente. Dito isso, sua capacidade de operar sem ciclagem apresenta certas vantagens: name, esses co-pilotos têm alguma capacidade de aprender e fazer previsões com base na análise de seus pilotos. Os WATCHDOGs tendem a ter personalidades simples - até onde se pode dizer que eles têm uma - e são os favoritos dos pilotos que buscam uma atitude sem rodeios e um conselho nítido e eficiente.<br>O sistema WATCHDOG está sendo analisado atualmente por uma comissão conjunta USB/UDoJ-HR, mas ainda não houve nenhuma suspensão formal da produção.",
+      "active_name": "Modo Hyper-Reflex",
+      "active_effect": "Durante o resto desta cena:<ul><li>Se você tiver menos de ameaça 3 com uma arma de longo alcance, ela aumenta para 3.</li><li>1/rodada, você pode fazer uma reação adicional de Overwatch.</li><li>Qualquer personagem que você atingir com Overwatch fica imobilizado até o final do próximo turno.</li></ul>",
+      "uso": "Encounter",
+      "ativação": "Protocol"
+    },
+    "other_art": [
+      {
+        "tags": "mech",
+        "src": "alt_hortuga.png"
+      }
+    ],
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_tortuga.png",
+    "license_id": "mf_tortuga"
+  },
+  {
+    "id": "mf_vlad",
+    "license_level": 2,
+    "source": "IPS-N",
+    "name": "Vlad",
+    "mechtype": ["Controller", "Striker"],
+    "y_pos": 12.5,
+    "description": "O Vlad é a segunda iteração do modelo Yi-Sun-Shin herdado da IPS-N, que ficou famoso pela primeira vez pelos pilotos do Albatross na campanha Celestine durante a queda do Segundo Comitê. Com a riqueza e a qualidade dos dados gerados pelo Albatross naquele conflito, a IPS-N produziu o Vlad, um sucessor espiritual do Yi-Sun-Shin, melhorado em termos de usina de força e estrutura, e que merecia uma nova designação de linha.<br>O Vlad, assim como o Sun antes dele, compartilha grande parte de sua filosofia de design e ancestralidade com as primeiras estruturas de mineração de asteroides da IPS-N. Muitos de seus armamentos padrão se inspiram nos primeiros esforços de mineiros engenhosos para converter ferramentas em armas antipirataria improvisadas; da mesma forma, sua estrutura enfatiza a redundância, a resistência e a universalidade dos componentes, permitindo que ele opere com excelente autossuficiência em implantações longas e/ou perigosas.<br> Fortemente blindado, o Vlad se adequa a uma função de linha de frente, na qual pode absorver o fogo de alvos perigosos enquanto alinha o tiro perfeito.",
+    "montagens": ["Flex", "Main", "Heavy"],
+    "stats": {
+      "size" : 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 2,
+      "hp": 8,
+      "evasion" : 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack" : -2,
+      "save" : 11,
+      "speed" : 4,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Desmembramento",
+        "description": "Quando o Vlad inflige Imobilizar em outro personagem, o alvo também se torna Desmembrado pela mesma duração."
+      },
+      {
+        "name": "Armadura de Picanço",
+        "description": "Quando um personagem dentro do alcance 3 ataca o Vlad, o atacante primeiro recebe 1 PA de dano cinético."
+      }
+    ],
+    "core_system": {
+      "name": "Shrike Armor",
+      "description": "Principalmente uma modificação defensiva, a armadura Shrike está repleta de pontas endurecidas de cromo e tungstênio - uma homenagem ao homônimo histórico de Vlad. As pontas do Shrike são estrategicamente colocadas em áreas com alta probabilidade de encontros cinéticos: manoplas, articulações do manipulador, revestimento dos ombros e assim por diante. A armadura Shrike é incomum entre os pilotos do Núcleo e é considerada uma marca de táticas subdesenvolvidas, embora aterrorizantes.",
+      "active_name": "Tormentor Spines",
+      "active_effect": "Pelo resto desta cena, você ganha Resistência a todo dano originado dentro do alcance 3, e a Shrike Armor causa 3 PA de dano cinético em vez de 1.",
+      "use": "Encounter",
+      "activation" : "Protocol"
+    },
+    "data_type": "frame",
+    "other_art": [
+      {
+        "tags": "mech",
+        "src": "alt_agonist.png"
+      }
+    ],
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_vlad.png",
+    "license_id": "mf_vlad"
+  },
+  {
+    "id": "mf_black_witch",
+    "license_level": 2,
+    "source" : "SSC",
+    "name": "Bruxa Negra",
+    "mechtype": ["Controller", "Support"],
+    "y_pos": 12.5,
+    "description": "A Black Witch é o modelo principal da linha de armações LUX-Iconic da SSC, que, no papel, pretende competir com o domínio da Harrison Armory no campo da gravidade de ponta e da manipulação eletromagnética. Utilizando as mais novas tecnologias desenvolvidas pelo Grupo de Materiais Exóticos da SSC, a Black Witch é uma plataforma de controle de área temível, muitas vezes utilizada em apoio a mechs mais pesados envolvidos em combate direto.<br>Com um perfil fino e fortes sistemas defensivos, a Black Witch é especialmente popular entre as casas mais ricas das Baronias de Comércio de Karrakin, que muitas vezes fazem vários pedidos para equipar seus guardas pessoais e oficiais da companhia da casa. Ao lado dos chassis barônicos produzidos internamente, o Black Witch (juntamente com outros modelos SSC LUX-Iconic) é o chassi SSC mais popular em todo o espaço nobre de Karrakin.",
+    "mounts": ["Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 6,
+      "evasion" : 10,
+      "edef": 12,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save" : 11,
+      "speed" : 5,
+      "sp": 8
+    },
+    "traits" : [
+      {
+        "name": "Campo Repulsor",
+        "description": "A Bruxa Negra tem Resistência a Dano Cinético."
+      },
+      {
+        "name": "Mag Parry",
+        "description": "1/rodada, como uma reação, você pode tentar aparar um ataque que causaria Dano Cinético a você ou a um personagem aliado adjacente. Role 1d6: se 5+, o ataque falha. Esse effect não se acumula com Invisível.",
+        "actions" : [
+          {
+            "name": "Mag Parry",
+            "activation" : "Reaction" ,
+            "frequency" : "1/round",
+            "trigger" : "Um ataque recebido causará Dano Cinético a você ou a um personagem aliado adjacente",
+            "detail" : "Role 1d6: se 5+, o ataque erra. Esse effect não se acumula com Invisible (Invisível)."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Projetor de campo magnético",
+      "description": "Os geradores de campo magnético são uma variação portátil e implementável em campo das tecnologias típicas de defesa magnética. Quando ativados, eles criam uma bolha magnética que prende todos os projéteis ferrosos que chegam. A força do campo é tão grande que pode até mesmo atrair mechs para o seu centro. Quando o campo é disperso ou sua bateria de estado sólido se queima - um recurso, não uma falha -, o campo sofre uma implosão catastrófica repentina, atraindo todos os projéteis capturados para um ponto no centro da bolha.",
+      "active_name": "Mag Field",
+      "active_effect": "Esse sistema projeta um campo magnético de explosão 3 com pelo menos um espaço adjacente a você, causando os seguintes efeitos até o final do seu próximo turno:<ul><li>A área afetada é um terreno difícil.</li><li>Ataques de longo alcance que causam dano cinético ou explosivo não podem entrar ou sair da área afetada - os projéteis param na borda, não causando dano. Registre cada ataque interrompido dessa forma.</li><li>Mecanismos e outros personagens feitos pelo menos parcialmente de metal que iniciem seu turno na área afetada ou entrem nela pela primeira vez em uma rodada devem ser bem-sucedidos em um salvamento de Hull ou serão puxados o mais próximo possível do centro e ficarão imobilizados.</li></ul>Quando o effect termina, todos os ataques de longo alcance que foram interrompidos retomam sua trajetória - em direção ao centro da área afetada. O GM rola os ataques contra cada personagem dentro da área, ganhando +1 por ataque bloqueado (até um máximo de +6). Ao acertar, esses ataques causam 1d6 de dano cinético por ataque bloqueado (até um máximo de 6d6 de dano cinético).",
+      "activation" : "Completo",
+      "use": "Próximo turno"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_black_witch.png",
+    "license_id": "mf_black_witch"
+  },
+  {
+    "id": "mf_deaths_head",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Cabeça da Morte",
+    "mechtype": ["Artillery"],
+    "y_pos": 40,
+    "description": "O Death's Head é a resposta da Smith-Shimano à necessidade de uma solução de chassi para ações de ataque de longo alcance e baixo impacto. Sacrificando a força bruta do casco em prol de estabilidade e agilidade inigualáveis, o Death's Head é uma plataforma de suporte de fogo manobrável capaz de evitar o fogo que chega e, ao mesmo tempo, manter uma mira quase perfeita em seus alvos. Sua forma hexapedal exclusiva permite movimentos rápidos e discretos em todas as direções.<br>Como um chassi agressivo e focado na linha, o Death's Head é um dos modelos mais populares entre os oficiais da Union Navy e do Union Department of Justice and Human Rights. É um chassi de combate por completo; como o Death's Head é um chassi produzido sob a linha BELLA CIAO da SSC, não há análogo civil.",
+    "montagens": ["Main/Aux", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 8,
+      "evasion" : 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 20,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 5,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Neurolink",
+        "description": "O Death's Head (Cabeça da Morte) pode rolar novamente seu primeiro ataque à distância a cada rodada, mas deve manter o segundo resultado."
+      },
+      {
+        "name": "Perfected Targeting",
+        "description": "O Death's Head ganha +1 adicional em todas as rolagens de ataque à distância.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "weapon_types": ["Rifle", "Canhão", "Lançador", "CQB", "Nexus"],
+            "weapon_sizes": ["any"],
+            "detail": "O Death's Head ganha um adicional de +1 em todas as rolagens de ataque à distância."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Direcionamento Precognitivo",
+      "description": "Precognição é a próxima etapa da interação entre humanos e IA. Usando uma ponte neural, o sistema de mira precognitiva da SSC permite que os pilotos aprendam constante e inconscientemente com os dados coletados em campo, equipando-os para ler situações antes que elas se desenvolvam. A precognição é altamente experimental e os mecanismos precisos são desconhecidos até mesmo pelos projetistas, portanto, a SSC recomenda o uso limitado e monitorado desse sistema.",
+      "active_name": "Derivação Neural",
+      "active_effect": "Durante o resto desta cena, você ganha a ação Marcar para morrer.",
+      "active_actions": [
+        {
+          "name": "Marcado para a Morte",
+          "activation" : "Full" ,
+          "detail" : "Escolha um personagem dentro do alcance 30, mas mais distante do que o alcance 5, para focar; enquanto estiver focado, você fica imobilizado e não pode realizar reações, mas causa dano adicional com base no tamanho da arma (aux: 1d6, principal: 2d6, pesada ou maior: 3d6) em acertos críticos à distância contra ele, desde que ele não esteja coberto ou dentro do alcance 5. Como um protocolo, você pode deixar de se concentrar em um alvo."
+        },
+        {
+          "name": "Cessar foco",
+          "activation" : "Protocol",
+          "detail" : "Cessar seu foco em um alvo <b>Marcado para a Morte</b>."
+        }
+      ],
+      "Uso": "Encounter",
+      "ativação": "Protocol"
+    },
+    "data_type": "frame",
+    "other_art": [
+      {
+        "tags": "mech",
+        "src": "alt_hercules.png"
+      }
+    ],
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_deaths_head.png",
+    "license_id": "mf_deaths_head"
+  },
+  {
+    "id": "mf_dusk_wing",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Dusk Wing",
+    "mechtype": ["Controller", "Support"],
+    "y_pos": 35,
+    "description": "O Dusk Wing originou-se como um pacote de modificação inspirado no legado para trajes EVA, destinado a equipá-los para ambientes perigosos. Nos primórdios da exploração do espaço profundo, havia a necessidade de exoesqueletos mecanizados que não apenas ampliassem a capacidade, mas também melhorassem a defesa cinética. O Dusk Wing é o herdeiro espiritual desses primeiros trajes para o espaço profundo. Rápido e pequeno, ele carrega um complemento de jatos de manobrabilidade em todos os teatros que permitem um voo quase perfeito.<br>Após a expedição da DHIYED, o Grupo de Materiais Exóticos isolou e traduziu trechos do paracódigo de expiração do espaço real, teleologia e cinemática da entidade para uso em guerra eletrônica e de sistemas. Das estruturas testadas para uso com tecnologias derivadas do DHIYED, a Dusk Wing teve o melhor desempenho. Como resultado, ela é frequentemente usada pelas forças internas de Segurança Constelar da SSC quando a defesa esotérica é necessária.",
+    "mounts": ["Aux/Aux", "Flex"],
+    "stats": {
+      "size": 0.5,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 6,
+      "evasion" : 12,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save" : 11,
+      "speed" : 6,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Jatos de manobrabilidade",
+        "description": "O Dusk Wing pode pairar quando se move.",
+        "synergies" : [
+          {
+            "locations": ["move"],
+            "detail": "O Dusk Wing pode pairar quando se move."
+          }
+        ]
+      },
+      {
+        "name": "Capa de Arlequim",
+        "description": "Durante seu turno, o Dusk Wing fica Invisível; ele reaparece no final do turno.",
+        "sinergias": [
+          {
+            "locations": ["active_effects"],
+            "detail": "Durante seu turno, o Dusk Wing fica Invisível; ele reaparece no final do turno."
+          }
+        ]
+      },
+      {
+        "name": "Frágil",
+        "description": "O Dusk Wing recebe +1 de dificuldade em verificações de casco e salvamentos.",
+        "synergies" : [
+          {
+            "locations": ["hull", "skill_check"],
+            "detail" : "O Dusk Wing recebe +1 de dificuldade em verificações de casco e salvamentos."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Articulação DHIYED",
+      "description": "A crença no que podíamos ver, no que podíamos tocar - no que nossos COMP/CONs nos garantiam que estava lá, em nossa própria subjetividade e memória. A crença na realidade tornou-se uma arma. Nós nos aproximamos da metavaulta sabendo que enfrentaríamos um inimigo desconhecido, mas nos aproximamos com a vantagem dos números e da força das máquinas.<br>O DHIYED nos ensinou enquanto nos matava: por meio de conversas de comunicação distorcidas, por meio dos gritos dos moribundos, por meio das gargalhadas de nossos espelhos enquanto nos matavam. Cada assinatura falsificada, cada salto temporal, cada memética, cada não-Euclid - eram lições.<br>Você entende? <br>DHIYED o Professor. DHIYED o Monstro. Quando o matamos, DHIYED nos ensinou o que temer e como enfrentá-lo.<br>O que temo agora? Essa é uma boa pergunta. O que teme o piloto que abriu o caixão de DHIYED?<br>Não acho que o matamos. Acho que ele quer que acreditemos que o matamos - e não consigo imaginar o que ele fez enquanto nos achamos seguros.",
+      "active_name": "Hall of Mirrors",
+      "active_effect":  "Durante o resto da cena, sempre que você iniciar um movimento único durante o seu turno (por exemplo, um movimento padrão, Impulso ou movimento concedido por talentos ou sistemas), você deixará uma impressão holográfica de si mesmo no espaço de onde começou. Esses são objetos ilusórios do mesmo tamanho que você, que têm imunidade a todos os danos e efeitos e não são obstruções.<br>Quando personagens hostis iniciam seu turno, atravessam ou se movem adjacentes ao espaço ocupado por um holograma, ele detona. Eles devem ser bem-sucedidos em um salvamento de Agilidade ou receberão 1d6 de dano de energia. Em caso de sucesso, eles recebem metade do dano.<br>Você também ganha a Ação Rápida de Teletransporte de Holograma.",
+      "active_actions": [
+        {
+          "name": "Teletransporte de holograma",
+          "activation" : "Quick" ,
+          "detail" : "Você pode se teletransportar instantaneamente para o local de qualquer holograma dentro do alcance 50 como uma ação rápida. Ao fazer isso, todos os hologramas existentes detonam, criando explosões de 1 rajada que causam 1d6 de Dano de Energia (Agility save for half), e você não pode criar novos hologramas até o início do seu próximo turno"
+        }
+      ],
+      "use": "Encounter",
+      "activation" : "Protocol"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_dusk_wing.png",
+    "license_id": "mf_dusk_wing"
+  },
+  {
+    "id": "mf_metalmark",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Metalmark",
+    "mechtype": ["Striker"],
+    "y_pos": 16,
+    "description": "O Metalmark é a espinha dorsal da linha de chassis mil-spec BELLA CIAO da SSC, totalmente equipada com um conjunto abrangente de marcas registradas de design e engenharia para garantir sua capacidade de sobrevivência, letalidade e agilidade. Sob o reinado cada vez mais militarista do Segundo Comitê da União, o conselho corporativo da SSC pressionou para desenvolver as divisões de suprimentos, logística e defesa pessoal de especificações militares da empresa; após o advento do chassi mecanizado, a divisão SupLogDef da SSC foi reestruturada e reorientada para se concentrar no desenvolvimento do chassi. As primeiras iterações do Metalmark foram projetadas para o programa WARRIOR NEXT do Segundo Comitê: no entanto, antes que o chassi pudesse ser testado, a Crise Hercínia saiu do controle, derrubando o Segundo Comitê.<br>O Metalmark foi aposentado após a Crise e a reestruturação do Comitê Central da União, considerado muito demorado para ser produzido como um chassi de mercado de massa. A SSC retrabalhou o chassi, utilizou-o para liderar sua nova linha BELLA CIAO e se concentrou em contratos de segurança exclusivos e de mercado pequeno. O Metalmark agora é um modelo valioso entre as forças de segurança. Sua forma reflete a herança de espaço profundo e longa patrulha da SSC, combinando elementos de design antropomórficos e aquilinos, construção robusta e vários sistemas redundantes. Com uma abordagem de marketing específica para o operador, todos os modelos da Metalmark vêm de fábrica com um assento de piloto com revestimento de couro personalizado da Smith para garantir o conforto em longas missões.",
+    "mounts": ["Aux/Aux", "Main", "Heavy"],
+    "stats": {
+      "size" : 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 8,
+      "evasion" : 10,
+      "edef": 6,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 5,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Flash Cloak",
+        "description": "O Metalmark fica invisível enquanto está se movendo, mas reaparece quando está parado",
+        "sinergias": [
+          {
+            "locations": ["mover"],
+            "detail": "A marca de metal é invisível enquanto está se movendo."
+          }
+        ]
+      },
+      {
+        "name": "Adaptação da carapaça",
+        "description": "Quando o Metalmark está em uma cobertura macia, os atacantes de longo alcance recebem +2 de dificuldade em vez de +1 de dificuldade."
+      }
+    ],
+    "core_system": {
+      "name": "Capa Tática",
+      "description": "As camuflagens táticas são tramas de tecido reativo bem unidas e bem amarradas - tecnologia de alta licença restrita a pilotos de classificação Metalmark II ou superior. A trama cobre cerca de 80% da área de superfície de um mech, o que lhe confere uma qualidade opaca quando vista por meio de lentes ou a olho nu. Além de seu uso como camuflagem regular, as capas táticas ativadas curvam a luz de uma forma que torna quase impossível ver seus usuários.",
+      "active_name": "Capa Tática",
+      "active_effect": "Você fica invisível pelo resto da cena.",
+      "use": "Encounter",
+      "activation" : "Protocol"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_metalmark.png",
+    "license_id": "mf_metalmark"
+  },
+  {
+    "id": "mf_monarch",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Monarch",
+    "mechtype": ["Artillery"],
+    "y_pos": 14,
+    "description": "O Monarch é a lição inovadora da SSC sobre como projetar uma plataforma rápida para a entrega de mísseis e outros artefatos autopropulsados. Preparado para montar mísseis e sistemas de orientação terra-terra, terra-ar, terra-órbita e em todos os teatros, o Monarch pode ser personalizado para qualquer carga útil e qualquer distância do alvo.<br>O grande tamanho do Monarch geralmente leva os pilotos a subestimar sua agilidade. O rigoroso requisito de design da SSC de um designer para cada 10 impressões do Monarch é uma marca de luxo no ambiente pós-escassez do mundo Core da Union. Essa ênfase na escassez proposital é tudo o que impede o Monarch de alcançar o domínio total do campo de batalha. O Monarch é comumente utilizado em funções mistas de linha e apoio de fogo, embora estejam em andamento testes de campo de um modelo MicroMonarch de médio a curto alcance, que consome menos recursos. O Monarch faz parte da linha BELLA CIAO de chassis de combate da SSC.",
+    "mounts": ["Flex", "Main", "Heavy"],
+    "stats": {
+      "size" : 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 8,
+      "evasion" : 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save" : 10,
+      "speed" : 5,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Avenger Silos",
+        "description": "1/rodada, em um acerto crítico com qualquer arma de longo alcance, o Monarca pode causar 3 explosivos a um personagem diferente de sua escolha dentro do alcance 15 e da linha de visão.",
+        "sinergias": [
+          {
+            "locations": ["weapon"],
+            "weapon_types": ["Rifle", "Canhão", "Lançador", "CQB", "Nexus"],
+            "weapon_sizes": ["any"],
+            "detail" : "1/rodada, em um acerto crítico com qualquer arma de longo alcance, o Monarca pode causar 3 explosivos a um personagem diferente de sua escolha dentro do alcance 15 e da linha de visão."
+          }
+        ]
+      },
+      {
+        "name": "Buscando carga útil",
+        "description": "O Monarca pode usar uma arma Lançador para atacar um personagem com a condição Bloqueio como se sua arma tivesse Busca, mas deve consumir o Bloqueio durante o ataque. Ao fazer isso, o dano do ataque não pode ser reduzido de forma alguma.",
+        "sinergias": [
+          {
+            "locations": ["weapon"],
+            "weapon_types": ["Launcher"],
+            "weapon_sizes": ["any"],
+            "detail": "O Monarca pode usar uma arma Lançador para atacar um personagem com a condição Bloqueio como se sua arma tivesse Buscando, mas deve consumir o Bloqueio durante o ataque. Ao fazer isso, o dano do ataque não pode ser reduzido de forma alguma."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Sistema de mísseis de alta penetração SSC-30",
+      "description": "O SSC-30 High-Penetration Missile System (SSC-30 HPMS) é um sistema de lançamento de micromísseis montado em um mech, capaz de produzir um tremendo resultado em combate. Usando o SSC-30 HPMS, o Monarch pode transportar - e entregar - sua carga útil de 60 ou mais ogivas Avenger miniaturizadas e mortais em uma única salva.",
+      "active_name": "Punição Divina",
+      "active_effect": "Escolha qualquer número de personagens em um raio de 50: seus alvos devem ser bem-sucedidos em uma defesa de Agilidade ou receberão 1d6+4 de explosivos. Se forem bem-sucedidos, receberão metade do dano. Esses mísseis autoguiados podem atingir qualquer alvo, desde que haja um caminho para isso.",
+      "activation" : "Full" 
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_monarch.png",
+    "license_id": "mf_monarch"
+  },
+  {
+    "id": "mf_mourning_cloak",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Mourning Cloak",
+    "mechtype": ["Striker"],
+    "y_pos": 62,
+    "description": "A Mourning Cloak é um modelo totalmente novo da linha LUX-Iconic da SSC e a mais nova armação especializada em combate corpo a corpo e combate a curta distância do fabricante. A Mourning Cloak enfatiza o combate corpo a corpo de precisão e é comumente equipada com um complemento de fios de microfilamentos blindados projetados para atuar como uma arma de corte antiarmadura.<br>Projetada pelo Grupo de Materiais Exóticos da SSC com base em dados dos primeiros confrontos contra o Ascendant Aun em Boundary Garden, a Mourning Cloak combina trechos colhidos pela SSC do paracódigo DHIYED com a tecnologia adaptada de manipulação do Firmamento Aúnico. O Mourning Cloak oferece uma opção tática e de prestígio para situações em que as armas de fogo são impraticáveis e as munições não estão disponíveis. Como parte da linha LUX-Iconic, a Mourning Cloak é um pedido popular nas Baronias e entre várias empresas de segurança VIP de alto nível.",
+    "mounts": ["Flex", "Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 8,
+      "evasion" : 12,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 5,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Caçador",
+        "description": "1/rodada, o Manto de Luto pode causar +1d6 de dano adicional ao acertar um ataque corpo a corpo se o alvo não tiver personagens adjacentes ou se o Manto de Luto for o único personagem adjacente ao alvo.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "weapon_types": ["Melee"],
+            "weapon_sizes": ["any"],
+            "detail": "1/rodada, o Manto de Luto pode causar +1d6 de dano adicional ao acertar um ataque corpo a corpo se o alvo não tiver personagens adjacentes ou se o Manto de Luto for o único personagem adjacente ao alvo."
+          }
+        ]
+      },
+      {
+        "name": "Componentes bióticos",
+        "description": "O Manto de Luto ganha +1 de precisão em verificações de Agilidade e defesas.",
+        "synergies": [
+          {
+            "locations": ["agility", "skill_check"],
+            "detail": "The Mourning Cloak gains +1 accuracy on Agility checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "EX Slipstream Module",
+      "description": "Aberto somente a pilotos altamente licenciados, o programa EX Slipstream é uma inovação exclusiva da SSC. O módulo Ex Slipstream em si é uma unidade miniaturizada de velocidade próxima à da luz, capaz de transportar o usuário pelo espaço de blink com precisão aceitável. A tecnologia é temperamental, na melhor das hipóteses: nada menor do que um mech pode sobreviver ao estresse de uma viagem exposta ao espaço de blink, e a experiência é traumática tanto para o usuário quanto para qualquer pessoa que esteja próxima a ele.",
+      "active_name": "Estabilizar Singularidade",
+      "active_effect": "Durante o resto da cena, você se teletransporta quando faz um Boost ou um movimento padrão.",
+      "use": "Encounter",
+      "activation" : "Protocol",
+      "passive_name": "Blinkspace Jump",
+      "passive_effect": "Ganhe a ação completa Blinkspace Jump",
+      "passive_actions": [
+        {
+          "name": "Blinkspace Jump",
+          "activation" : "Full" ,
+          "detail" : "Teleporte-se para um espaço dentro do alcance de 3d6. Você não precisa de linha de visão, mas tentativas de se teletransportar para espaços ocupados fazem com que você permaneça parado e perca essa ação. Se rolar o mesmo número em todos os três dados, você desaparecerá até que seu grupo descance, momento em que reaparecerá nas proximidades."
+        }
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_mourning_cloak.png",
+    "license_id": "mf_mourning_cloak"
+  },
+  {
+    "id": "mf_swallowtail",
+    "license_level": 2,
+    "source": "SSC",
+    "name": "Swallowtail",
+    "mechtype": ["Support"],
+    "y_pos": 30,
+    "description": "A Swallowtail é a principal plataforma de apoio a incêndios e reconhecimento de longo alcance da Smith-Shimano, criada para uma variação rápida e sustentada em ambientes hostis e voláteis. Construída para sustentabilidade de longo prazo, ela pode operar em ambientes instáveis por meses e maximizar sua capacidade de sobrevivência ajustando sua eficiência operacional em tempo real. Cada unidade tem uma camuflagem integrada e um conjunto de inteligências preditivas que coordenam seus sistemas de sensores altamente desenvolvidos para simular e prever rapidamente os desenvolvimentos táticos - às vezes, antes mesmo que eles ocorram.<br>O modelo básico do Swallowtail, o SW-01, é uma das poucas linhas produzidas em massa pela SSC - o modelo básico BELLA CIAO. Construído sem um campo de camuflagem e com armadura reforçada para atender aos requisitos diretos de segurança, o SW-01 é especialmente popular entre os soldados de base das forças de Segurança Constelar.",
+    "montagens": ["Flex", "Aux/Aux"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 6,
+      "evasion" : 10,
+      "edef": 10,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 20,
+      "tech_attack" : 1,
+      "save" : 10,
+      "speed" : 6,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Capa Integrada",
+        "description": "No final de seu turno, o Swallowtail torna-se invisível se não tiver se movido naquele turno. Isso dura até que ela se mova ou tenha uma reação, ou até o início de seu próximo turno."
+      },
+      {
+        "name": "Prophetic Scanners",
+        "description": "1/rodada, quando o Swallowtail inflige Lock On, seu alvo também se torna Shredded até o final de seu próximo turno.",
+        "use": "rodada",
+        "sinergias": [
+          {
+            "locations": ["lock_on"],
+            "detail": "1/rodada, quando o Swallowtail inflige Lock On, seu alvo também se torna Shredded até o final de seu próximo turno."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Cloudscout TACSIM Swarms",
+      "description": "Os Cloudscout TACSIM Swarms são pacotes de microssensores em rede, lançados em recipientes de morteiro não letais que detonam bem acima do campo de batalha. Uma vez semeado, o enxame gera um programa TACSIM que começa a executar ciclos de brevidade: simulações restritas e contidas de possibilidades táticas. Os resultados de probabilidade são então enviados aos processadores de coro do Swallowtail, que, por sua vez, os enviam ao piloto e aos membros do esquadrão em rede, garantindo uma alta probabilidade de resultados bem-sucedidos.",
+      "active_name": "Interjeição Profética",
+      "active_effect": "Obter a reação da Simulação Tática para o restante da cena.",
+      "active_actions": [
+        {
+          "name": "Simulação Tática",
+          "activation" : "Reaction" ,
+          "frequency" : "1/round",
+          "trigger" : "Um personagem aliado na linha de visão recebe dano de outro personagem na linha de visão",
+          "detail": "Effect: Role 1d6. Com 4+, o ataque foi na verdade uma simulação prevista por seu processador - seu aliado ganha Resistência a todo o dano causado pelo ataque e pode se teletransportar até 3 espaços, representando sua verdadeira localização. Com 3 ou menos, há uma falha - seu aliado não ganha resistência, mas pode se teletransportar até 6 espaços."
+        }
+      ],
+      "use": "Encounter",
+      "activation" : "Protocol"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_swallowtail.png",
+    "license_id": "mf_swallowtail"
+  },
+  {
+    "id": "mf_balor",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Balor",
+    "mechtype": ["Striker", "Defender"],
+    "y_pos": 27,
+    "description": "Como é o caso da maioria dos grupos de padrões HORUS, o Balor tem mil faces. O grupo de padrões Balor, como todos os PGs HORUS, não descreve uma única silhueta reconhecível, mas aponta para uma combinação de esquemas que compartilham uma função em combate. Esses esquemas podem ser impressos de acordo com as especificações do piloto e aplicados a um andaime físico totalmente personalizado. Notavelmente, o grupo de padrões Balor só é estável em plataformas grandes (Schedule 2 ou superior) capazes de fornecer a saída de energia bruta que ele exige - de preferência aquelas com várias redundâncias, em caso de falha catastrófica dos sistemas.<br>O PG Balor foi encontrado pela primeira vez durante a perseguição conjunta da Albatross-DoJ/HR ao Maw - uma Companhia Livre que se tornou um ser descentralizado - no Deserto Blanca de Khayradin após o fim da Rebelião Sanjak. Foi lá que a força conjunta encontrou, enfrentou e, por fim, derrotou a Maw e seus Balors - e foi lá que o CentComm da Union esperava que o surto de nanowash pudesse ser contido. É claro que os surtos subsequentes de Balor em Khayradin provaram que essa esperança era vã, e o grupo padrão continua a aterrorizar os comandantes Karrakin em todo o espaço barônico.<br>No campo, o enxame infernal neurossincronizado do Balor e os nanites de greywash formam uma mortalha ondulante que pode sair de seu chassi a qualquer momento, girando em padrões enlouquecedores para formar sistemas escatológicos defensivos e ofensivos. Um Balor em seu estado mais ativo é mantido unido mais por massas ondulantes, semelhantes a chamas, de enxames de nanites do que por qualquer estrutura física. Isso tem o efeito de distribuir energia cinética e de partículas coerentes por todo o chassi, fazendo com que os ataques contra um Balor sejam como atirar em água com raiva, como disse um relatório pós-ação",
+    "montagens": ["Main", "Heavy"],
+    "stats": {
+      "size" : 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 12,
+      "evasion" : 6,
+      "edef": 10,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "save" : 10,
+      "speed" : 3,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Scouring Swarm",
+        "description": "O Balor causa 2 de cinética a personagens de sua escolha que começam o turno agarrados por ele ou adjacentes a ele."
+      },
+      {
+        "name": "Regeneração",
+        "description": "No final de seu turno, o Balor recupera 1/4 de seus PV totais. Quando sofre dano de estresse ou de estrutura, esse efeito cessa até o final de seu próximo turno."
+      },
+      {
+        "name": "Autoperpetuação",
+        "description": "Quando você descansa, o Balor recupera todo o HP automaticamente e sem REPARAÇÕES."
+      }
+    ],
+    "core_system": {
+      "name": "Hellswarm",
+      "description": "Em um momento, com apenas um desejo, o piloto de um Balor pode imprimir rapidamente uma capa composta de inúmeros drones minúsculos: uma capa hellswarm - escudo vivo e faca fluido-dinâmica, cortando e protegendo, em uma onda cintilante. Eles se tornam Hivemaster, e sua vontade é obedecida por milhões",
+      "active_name": "Frenesi da Colmeia",
+      "active_effect": "Seus nanites mudam para um modo hiperativo, causando os seguintes efeitos até o final da cena:<ul><li>Você e os aliados adjacentes ganham cobertura suave.</li><li>Scouring Swarm causa 4 de cinética, em vez de 2.</li><li>A regeneração restaura 1/2 do seu total de PV, em vez de 1/4. </li><li>Se você receberia dano de estrutura, role 1d6: com 6, seu mecha se recompõe de forma infernal, não recebendo dano de estrutura, retornando a 1 PV e ganhando imunidade a todos os danos até o final do turno atual.</li><li>Você se torna Retalhado e não pode se livrar dessa condição enquanto durar.</li></ul>",
+      "uso": "Encounter",
+      "ativação": "Protocol"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_balor.png",
+    "license_id": "mf_balor"
+  },
+  {
+    "id": "mf_goblin",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Goblin",
+    "mechtype": ["Controller", "Support"],
+    "y_pos": 12.5,
+    "description": "O Goblin foi o primeiro chassi HORUS identificado e é provavelmente o chassi legado mais antigo antes da transição da HORUS para grupos de padrões. Os registros de transmissão rastreados até o modelo zero do Goblin indicam que o primeiro chassi foi enviado para a omninet em 4900u. Esse ano serve como o suposto dia da fundação da HORUS para a maioria dos acadêmicos e oficiais de inteligência que estudam o grupo, embora assinaturas contraditórias indiquem que 4900u é tarde demais para marcar seu nascimento.<br>O Goblin é um pequeno mech, não muito maior do que um hardsuit, que depende de seu pequeno tamanho e excelente capacidade de manobra para proteger seu piloto. Ele possui uma interessante trama de processamento recursivo que facilita os recursos de guerra eletrônica muito além dos parâmetros teóricos.<br>Os técnicos da GMS ainda estão, mais de um século depois, trabalhando na engenharia reversa do Goblin e de sua trama de processamento. As investigações mais recentes sugerem que ele emprega tecnologia consistente com as inscrições hieroglíficas registradas no LRA.7726235-B e corroboradas por tabletes transmitidos pelo UIB-GORGON do Metavault XOLOTL antes do desaparecimento do cofre.",
+    "mounts": ["Flex"],
+    "stats": {
+      "size": 0.5,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 6,
+      "evasion" : 10,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 20,
+      "tech_attack" : 2,
+      "save" : 11,
+      "speed" : 5,
+      "sp": 8
+    },
+    "traits" : [
+      {
+        "name": "Liturgicode",
+        "description": "O Goblin ganha +1 de precisão em ataques de tecnologia",
+        "synergies" : [
+          {
+            "locations": ["tech_attack"],
+            "detail": "O Goblin ganha +1 de precisão em ataques tecnológicos."
+          }
+        ]
+      },
+      {
+        "name": "Código Reativo",
+        "description": "Obter a reação do Código Reativo",
+        "actions": [
+          {
+            "name": "Código Reativo",
+            "activation" : "Reaction" ,
+            "frequency" : "1/round",
+            "trigger" : "Você é atingido por um Ataque Técnico",
+            "detail": "Você pode usar qualquer opção de Tecnologia Rápida contra o atacante como uma reação."
+          }
+        ]
+      },
+      {
+        "name": "Frágil",
+        "description": "O Goblin recebe +1 de dificuldade em verificações de casco e salvamentos",
+        "synergies" : [
+          {
+            "locations": ["hull", "skill_check"],
+            "detail" : "O Goblin recebe +1 de dificuldade em verificações de casco e salvamentos."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "INSTINCT Rig",
+      "description": "Um dos primeiros sistemas de padrão Goblin decifrados pelos técnicos da GMS foi o seu equipamento de invasão de guerra eletrônica, embora os recursos avançados e a arquitetura do equipamento permaneçam impenetráveis. Quando instalada, a plataforma manifesta uma inteligência subsentiente - designada INSTINCT - que auxilia tentativas de invasão contra sistemas-alvo usando uma mistura de sistemas parassimbióticos físicos e sistêmicos. As tentativas de invasão enquanto o INSTINCT está ativo não são percebidas pelo usuário como código e script, mas como um ataque à matéria orgânica. O INSTINCT demonstrou a capacidade de agir de forma independente, muitas vezes se antecipando ao usuário, mas geralmente em seu melhor interesse. A documentação do leiaute incluída em algumas manifestações do Goblin recomenda que os pilotos façam o ciclo dos núcleos de seus mechs pelo menos uma vez por mês para evitar a iluminação espontânea, embora a maioria não faça referência a esse aviso.",
+      "active_name": "Symbiosis",
+      "active_effect": "Seu mech retrai seus principais sistemas e se liga a outro mech, tornando-se mais uma bolha vestigial do que uma entidade separada. O hospedeiro deve ser um mecanismo aliado e disposto a não hospedar outro Goblin, maior do que você e adjacente a você. Enquanto estiver acoplado, você ocupará o espaço, se moverá com ele e se beneficiará de uma cobertura rígida, mas ainda poderá ser atacado e alvejado separadamente. <br>Seu anfitrião pode usar seus sistemas, E-Defense e Tech Attack em vez dos próprios. Além disso, a partir do início da próxima rodada, você não terá mais seus próprios turnos; em vez disso, poderá realizar duas ações rápidas ou uma ação completa a qualquer momento durante o turno do seu hospedeiro. Você não pode sobrecarregar nem se mover, mas ainda pode realizar reações e ações livres normalmente. O turno do seu anfitrião conta como o seu turno para fins de efeitos que se referem ao início ou ao fim do turno de um personagem.<br>Esse efeito dura pelo resto da cena, até que você se desprenda como uma ação rápida, ou até que você ou seu anfitrião fiquem atordoados. Quando o effect termina, você não tem um turno até a próxima rodada.",
+      "activation" : "Quick" ,
+      "desativação": "Quick" ,
+      "use": "Encounter"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_goblin.png",
+    "license_id": "mf_goblin"
+  },
+  {
+    "id": "mf_gorgon",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Gorgon",
+    "mechtype": ["Defender"],
+    "y_pos": 5,
+    "description": "O Gorgon é único entre os grupos de padrões HORUS, pois prioriza sistemas defensivos destinados a garantir a sobrevivência pessoal e dos aliados; fora isso, ele possui um complemento típico de armas horripilantes, confusas e estranhas.<br>O Gorgon típico monta vários sistemas de armas destinados a identificar e interceptar inimigos que se aproximam, permitindo que os pilotos projetem uma zona de controle em torno de si mesmos e de seus aliados. O Gorgon é temido por sua capacidade de extrusão de um perigoso basilisco memético, um cone de luz projetado de dados visuais hiperfractais anticognitivos que é mortal para seres ontológicos e sapientes.",
+    "montagens": ["Flex", "Main", "Main"],
+    "stats": {
+      "size": 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 12,
+      "evasion" : 8,
+      "edef": 12,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack" : 1,
+      "save" : 12,
+      "speed" : 4,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Paralisia Metastática",
+        "description": "Quando uma rolagem de ataque contra a Górgona acerta 1-2, ela falha automaticamente e o atacante fica atordoado até o final de seu próximo turno."
+      },
+      {
+        "name": "Olhar",
+        "description": "O Gorgon pode realizar duas reações por turno, em vez de uma."
+      },
+      {
+        "name": "Guardian",
+        "description": "Personagens aliados adjacentes podem usar o Gorgon para cobertura rígida."
+      }
+    ],
+    "core_system": {
+      "name": "BASILISK Directed Anticognition Hyperfractal",
+      "description": "O BASILISK é uma perigosa arma memética derivada do liturgicode DHIYED, traduzida para uso em combates em escala mecânica. Normalmente projetados a partir de um laser de comunicação, os BASILISKs criam padrões hiperfractais: interrupções meméticas que afetam todos os observadores sapientes, orgânicos ou não. A exposição a um basilisco normalmente causa encefalite imediata, hemorragia ocular e craniana maciça e morte - é possível sobreviver com monitores de temperamento e interditores, mas mesmo assim é possível ter dores de cabeça, náusea e confusão por um curto período após a visualização. Em longo prazo, os sobreviventes geralmente apresentam sintomas de flashback: paralisia momentânea, alienação corpórea e desestabilização da consciência. Os hiperfractais de anticognição são classificados como armas paracausais; devido à natureza ainda não compreendida de sua transmissão de espectro de luz visível, seria de se esperar que eles representassem um risco para o usuário, mas, por alguma razão, isso não acontece.",
+      "active_name": "Extrude Basilisk",
+      "active_effect": "Você projeta um basilisco horripilante, um padrão de dados visuais incrivelmente prejudicial aos NHPs e aos sistemas eletrônicos, e difícil de ser visto até mesmo por humanos. Durante o resto da cena, os personagens hostis devem ser bem-sucedidos em um salvamento de Systems antes de atacar você ou qualquer personagem aliado dentro do alcance 3. Em caso de falha, eles ficam atordoados até o final do próximo turno. Cada personagem só pode ser atordoado por esse effect uma vez por cena.",
+      "activation" : "Quick" ,
+      "use": "Encounter"
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_gorgon.png",
+    "license_id": "mf_gorgon"
+  },
+  {
+    "id": "mf_hydra",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Hydra",
+    "mechtype": ["Striker", "Controller"],
+    "y_pos": 20,
+    "description": "Como muitos chassis HORUS mais novos, não há um modelo Hydra padronizado. Em vez disso, a designação é um título dado aos chassis que atendem às especificações do grupo de padrão Hydra, conforme descrito no Manual de Avaliação de Ameaça Universal da Union. A Hydra, como muitos outros mechs do grupo padrão HORUS, é particularmente perigosa em campo, pois sua função precisa é ocultada até que as hostilidades comecem a sério.<br>A Hydra é capaz de se desmembrar taticamente em vários drones controlados independentemente, um fenômeno enervante frequentemente utilizado com efeitos mortais. Com a manifestação do grupo de padrão Balor da HORUS, o lugar da Hidra na história da HORUS fica claro: precursora do vírus Balor, a Hidra depende de seções maiores de chassi desarticulado em vez de nuvens de nanites para sua vantagem diferenciada no campo de batalha. Apesar de sua aparência mais convencional, a Hydra representa uma ameaça preocupante para os pilotos que não são da HORUS, pois seus drones desarticulados possuem um conjunto de poderosas armas antiblindagem.",
+    "montagens": ["Main", "Heavy"],
+    "stats": {
+      "size" : 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 8,
+      "evasion" : 7,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save" : 10,
+      "speed" : 5,
+      "sp": 8
+    },
+    "traits" : [
+      {
+        "name": "System Link",
+        "description": "Quando implantados, os implantáveis e os drones da Hydra ganham +5 HP.",
+        "bônus": [
+          {
+            "id": "deployable_hp",
+            "val": 5
+          },
+          {
+            "id": "drone_hp",
+            "val": 5
+          }
+        ]
+      },
+      {
+        "name": "Campo do Pastor",
+        "description": "Drones, Mobilizáveis e objetos adjacentes à Hidra ganham Resistência a todos os danos."
+      }
+    ],
+    "core_system": {
+      "name": "Desarticulação OROCHI",
+      "description": "Encontrada pela primeira vez por técnicos da União nas primeiras instalações da Forecast/GALSIM após o Evento Deimos, a OROCHI foi uma manifestação inicial do que mais tarde foi chamado de fenômeno swift-flock - um comportamento observado em drones colmeia autônomos e sem líder, em que unidades individuais se combinam em um único enxame e seguem umas às outras, operando sem líder no espaço físico com autonomia estranha e imprevisível; em essência, organizando-se como pássaros em um bando. <br>A manifestação original foi inicialmente considerada como os restos de um transporte subalterno acidentado à deriva na microgravidade; um exame mais profundo provou que a manifestação original era composta de muitas centenas de subalternos desarticulados que se moviam com um padrão discernível. O enxame não se via como uma máquina ou um conjunto de máquinas, mas como uma única mente, duplicada em várias unidades. Essa mente foi classificada como uma NHP, recebeu seu codinome atual - OROCHI - e foi enviada a Vênus para estudos posteriores. Em um momento posterior, o hardware que compõe a(s) forma(s) física(s) da OROCHI desapareceu da contenção. A investigação está em andamento.<br><span class='horus--subtle'>[Eu fiz isso, dobrei o espaço e os libertei, só achei que você deveria saber]</span>",
+      "active_name": "Implantação total",
+      "active_effect": "Todos os quatro drones OROCHI são implantados em pontos separados dentro dos Sensores; eles permanecem ativos pelo resto da cena. Você pode recuperar ou reimplantar qualquer número deles de cada vez.",
+      "activation" : "Quick" ,
+      "passive_name": "OROCHI Drones",
+      "deployables": [
+        {
+          "name": "Drone OROCHI Guardião",
+          "type" : "Drone",
+          "detail" : "Este drone projeta um escudo. Ataques de longo alcance contra personagens aliados adjacentes recebem +1 de dificuldade.",
+          "activation" : "Free" ,
+          "recall": "Quick" ,
+          "redistribuição": "Quick" ,
+          "size" : 0.5,
+          "hp": "5 + {grit}"
+        },
+        {
+          "name": "Snare OROCHI Drone",
+          "type" : "Drone",
+          "detail" : "Como reação, você pode forçar os personagens que iniciarem seu turno adjacentes a esse drone ou que se moverem adjacentes a ele pela primeira vez em uma rodada a fazer uma defesa de Agilidade. Em caso de falha, eles ficam imobilizados. Eles só deixarão de ser imobilizados quando o drone for destruído ou não estiver mais adjacente, ou quando forem bem-sucedidos em uma defesa de Agilidade como uma ação rápida.",
+          "activation" : "Livre",
+          "recall": "Quick" ,
+          "redeploy" : "Quick" ,
+          "size" : 0.5,
+          "hp": "5 + {grit}"
+        },
+        {
+          "name": "Drone Shredder OROCHI",
+          "type" : "Drone",
+          "detail" : "Como reação, você pode forçar os personagens que iniciarem seu turno adjacentes a esse drone ou que se moverem adjacentes a ele pela primeira vez em uma rodada a fazer uma defesa de Hull. Em caso de falha, eles recebem 1 de dano cinético e se tornam Retalhados até o final de seu próximo turno.",
+          "activation" : "Livre",
+          "recall": "Rápido",
+          "redistribuição": "Quick" ,
+          "size" : 0.5,
+          "hp": "5 + {grit}"
+        },
+        {
+          "name": "Drone Caçador OROCHI",
+          "type" : "Drone",
+          "detail" : "Como reação, você pode forçar os personagens que começam o turno adjacentes a esse drone ou que se movem adjacentes a ele pela primeira vez em uma rodada a fazer uma defesa de Systems. Em caso de falha, eles recebem Lock On.",
+          "ativação": "Livre",
+          "recall": "Quick" ,
+          "redeploy" : "Quick" ,
+          "size" : 0.5,
+          "hp": "5 + {grit}"
+        }
+      ],
+      "passive_effect": "Seu mecanismo contém poderosos drones companheiros integrados. Na criação, escolha um único drone OROCHI para acompanhá-lo. <br>Seus drones OROCHI compartilham sua Evasão, Defesa-E e Velocidade. Eles podem se mover independentemente em seu turno, mas não podem realizar nenhuma outra ação. Se você puder voar ou se teletransportar, eles também podem.<br>Se um drone OROCHI estiver dentro dos Sensores, você pode chamá-lo como uma ação rápida, integrando-o ao corpo do seu mecha, onde ele não pode ser alvo. Você pode reposicioná-lo em um espaço dentro dos Sensores como uma ação rápida. <br>Quando você restar ou realizar um REPARAÇÃO COMPLETA, poderá escolher um drone diferente para acompanhá-lo; além disso, seus drones recuperam todos os PV e são automaticamente reparados se tiverem sido destruídos."
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_hydra.png",
+    "license_id": "mf_hydra"
+  },
+  {
+    "id": "mf_manticore",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Manticore",
+    "mechtype": ["Striker"],
+    "y_pos": 49,
+    "description": "O Manual Universal de Avaliação de Ameaças identifica o grupo padrão Manticore como um experimento na doutrina de combate 'corebreak' da HORUS. O PG da Manticore é especializado no uso de eletromagnetismo concentrado e projetado para neutralizar os núcleos dos reatores inimigos sem munição convencional, além de possuir um conjunto de armas de energia de feixe coerente. Uma Manticore totalmente carregada é uma visão impressionante, envolta em redes de plasma brilhantes que atingem alvos próximos.<br>Se alguma coisa denuncia um mech Manticore-PG, são os espinhos altos que se projetam do gerador de raios característico do PG. Os espinhos funcionam como sistemas de dispersão de calor para essa arma rudimentar, fornecendo um canal para a incrível quantidade de calor que ela gera para sangrar do corpo do mech após a projeção de um chicote de arco a curta distância. Esse sistema não é um mecanismo perfeito de dispersão de calor e, como resultado, os Manticores podem ser identificados com frequência por um chassi coberto de metal derretido e resfriado.<br>A Manticore só apareceu recentemente na omninet e sua eficácia em combate fez com que outros fabricantes galácticos se esforçassem para responder. A análise dos relatórios pós-ação dos pilotos que enfrentaram esse grupo de padrões em campo observou um aumento significativo em certas proporções de ruído para sinal na omninet: recitações anormais de passagens do Livro dos Mortos da Antiga Humanidade, corrupções de quebra-cabeças de obras antigas de arte apocalíptica e outras representações escatológicas, todas apontando para uma tática de guerra psicológica nascente.",
+    "montagens": ["Flex", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 2,
+      "hp": 8,
+      "evasion" : 6,
+      "edef": 10,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save" : 10,
+      "speed" : 3,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Carapaça de escória",
+        "description": "A Manticore tem Resistência a Dano de Energia e Queimadura."
+      },
+      {
+        "name": "Sistema instável",
+        "description": "Quando destruída, a Manticore explode como em uma fusão de reator no final de seu próximo turno."
+      },
+      {
+        "name": "Castigar os inimigos da divindade",
+        "description": "Ao descansar ou realizar um Reparo Completo, você pode empurrar a Manticore para um Estado de Castigo instável (ou tirá-la de um). Nesse estado, a Manticore explode imediatamente quando é destruída devido a danos ou ao derretimento do reator, vaporizando-a e matando instantaneamente você e qualquer outro passageiro. Os personagens dentro do burst 2 devem ser bem-sucedidos em um salvamento de Agilidade ou receberão 8d6 de explosivo. Se forem bem-sucedidos, receberão metade do dano. Isso só ocorre se você estiver fisicamente presente na Manticore."
+      }
+    ],
+    "core_system": {
+      "name": "Exoesqueleto carregado",
+      "description": "E RA disse a si mesmo:<br><code class='horus'>LEITE MEU NOME ENVOLVER VOCÊ. NÃO BUSQUE ABRIGO CONTRA AS CHAMAS OU OS DENTES DA BESTA. COLOQUE-SE NO FOGO DA MINHA PALAVRA E LANCE DE VOLTA AOS SEUS INIMIGOS AQUILO QUE PRETENDERIA NEGRAR SUA FORMA.</code>",
+      "active_name": "Destruição do Templo dos Inimigos de RA",
+      "active_effect": "Seu mecha crepita com energia: ganhe Resistência ao calor pelo resto desta cena e um dado de carga - 1d6, começando em 1. Sempre que receber calor ou energia, mesmo de si mesmo, aumente o valor do dado de carga em 1. Quando o dado de carga chegar a 6, a energia absorvida será descarregada em um inferno de explosão 2. Os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou receberão 6d6 de dano de energia AP. Se forem bem-sucedidos, receberão metade do dano. Os objetos na área afetada são automaticamente atingidos. Uma vez descarregado, esse effect termina.",
+      "use": "Encounter",
+      "desativação": "Livre",
+      "ativação": "Protocol",
+      "passive_name": "Exoesqueleto carregado",
+      "passive_effect": "1/rodada, quando você recebe calor, pode causar 2 PA de dano de energia a um personagem dentro do alcance 3."
+    },
+    "counters" : [
+      {
+        "id": "ctr_charged_exoskeleton",
+        "name": "Dado de Carga",
+        "default_value": 1,
+        "min": 1,
+        "max": 6
+      }
+    ],
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_manticore.png",
+    "license_id": "mf_manticore"
+  },
+  {
+    "id": "mf_minotaur",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Minotaur",
+    "mechtype": ["Controller"],
+    "y_pos": 30,
+    "description": "O Minotaur foi o primeiro grupo de padrões HORUS identificado pelo Union Intelligence Bureau. Anteriormente, os mechs da HORUS eram lançados como modelos completos e identificáveis, dos quais o Goblin é o melhor e mais duradouro exemplo. À medida que a estrutura organizacional descentralizada da HORUS evoluiu, também evoluiu sua filosofia de design. Os projetos de grupos de padrões se seguiram, começando com o Minotauro, um esquema projetado para trazer os sistemas de invasão e armamentos mais potentes da HORUS para o campo de batalha em um único chassi pronto para a batalha.<br>Mechs construídos de acordo com o grupo de padrões do Minotauro são interditores: máquinas formidáveis destinadas a bloquear e sobrecarregar os sistemas de alvos em movimento rápido. A desmontagem feita por técnicos da União descobriu que os Minotauros contêm uma enorme quantidade de sistemas internos, ocupando mais espaço físico do que deveria ser possível em várias ordens de magnitude. Até o momento, o mecanismo pelo qual esses sistemas dobrados são impressos não foi identificado, mas provavelmente está relacionado à trama recursiva característica do Goblin.",
+    "montagens": ["Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 12,
+      "evasion" : 8,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack" : 1,
+      "save" : 11,
+      "speed" : 4,
+      "sp": 8
+    },
+    "traits" : [
+      {
+        "name": "Invert Cockpit",
+        "description": "Você pode Montar ou Desmontar o Minotauro pela primeira vez a cada rodada como uma ação livre. Além disso, o Minotauro não fica prejudicado quando você o ejeta.",
+        "use": "Round" 
+      },
+      {
+        "name": "Internal Metafold",
+        "description": "Enquanto estiver dentro do Minotauro, você não pode ser prejudicado de forma alguma, mesmo que o Minotauro exploda ou seja destruído."
+      },
+      {
+        "name": "Labirinto localizado",
+        "description": "Personagens hostis não podem passar por um espaço ocupado pelo Minotauro por qualquer motivo e devem sempre parar de se mover quando estiverem engajados com ele, independentemente do tamanho."
+      }
+    ],
+    "core_system": {
+      "name": "Metafold Maze",
+      "description": "<code class='horus'>Nenhum labirinto é mais terrível do que aquele que eu faço. Conheço todos os fins e os escondo dentro dessa construção perfeita. O que é uma mente humana senão um tipo de programa, um sistema que busca ordem e narrativa a partir de uma bagunça que lhes é dada?<br>Eu ordeno isso para eles. Eu. Eu ordeno para eles e os coloco na tarefa de resolver o problema. Quando eles emergem, choram de alegria, de descoberta. Eu os salvo, mostro-lhes que eles são seus próprios redentores (e, ainda assim, não sou tão culpado quanto eles, tão digno de crédito? Entre. Liberte-se.</code>",
+      "active_name": "Labirinto",
+      "active_effect": "Escolha um personagem dentro dos Sensores: ele fica atordoado quando você lança os sistemas dele em uma armadilha de informações metafísicas tão emaranhada que ele não pode fazer nada além de tentar escapar. No final do próximo turno, ele pode fazer um salvamento de Systems com dificuldade +3. Se for bem-sucedido, ele não ficará mais atordoado. Esse salvamento pode ser repetido no final de cada um de seus turnos, ganhando +1 de precisão a cada vez até obter sucesso.",
+      "activation" : "Completo",
+      "passive_name": "Metafold Maze",
+      "passive_actions": [
+        {
+          "name": "Metafold Maze",
+          "activation" : "Quick" ,
+          "detail" : "Ao acertar com um ataque técnico, você pode ativar esse sistema, fazendo com que o alvo fique desacelerado até o final do seu próximo turno. Se ele já estiver desacelerado, ficará imobilizado até o final do seu próximo turno; se já estiver imobilizado, ficará atordoado até o final do seu próximo turno. Cada personagem só pode ser atordoado por esse effect uma vez por combate, mas pode ser desacelerado ou imobilizado qualquer número de vezes."
+        }
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_minotaur.png",
+    "license_id": "mf_minotaur"
+  },
+  {
+    "id": "mf_pegasus",
+    "license_level": 2,
+    "source": "HORUS",
+    "name": "Pegasus",
+    "mechtype": ["Artillery"],
+    "y_pos": 52,
+    "description": "O grupo padrão Pegasus apareceu pela primeira vez após o início das hostilidades entre a União e a Ascendência Aunic em Boundary Garden, um setor distante do espaço distal do Núcleo Galáctico. O momento desse surto pode estar relacionado à arma que define o grupo padrão, embora os mensageiros de drones das forças da União não tenham relatado nenhum encontro com o PG em Boundary Garden; em vez disso, o Pegasus apareceu em Dawnline Shore, um trecho do espaço colonial Armory oposto a Boundary Garden. <br>O Pegasus parece atender à necessidade da HORUS de um grupo padrão com amplas capacidades de combate cinético: ao combinar os melhores sistemas de mira, sub-rotinas e hardware de armas na base de código da HORUS, os coletivistas projetaram um PG que ostenta uma relação identificação/tempo para matar (ID/TTK) tremendamente baixa em todos os teatros em que o armamento cinético é viável. <br>Como muitos grupos de padrão HORUS, o Pegasus possui um sistema de armas característico: o Ushabti, uma arma anticorpórea de impulso hostil que opera com total ignorância até mesmo dos fundamentos mais básicos da física e da termodinâmica. Como tal, ela se qualifica inequivocamente como uma arma paracausal. A função exata da Ushabti permanece desconhecida pelos cientistas da Union e da Harrison Armory, embora as assinaturas radiológicas e gravitacionais capturadas após o uso da arma apontem para uma relação com o Firmamento Aúnico. Os estudos estão em andamento em Ras Shamra, o principal mundo de pesquisa do Arsenal, e em campi satélites em toda a Costa da Aurora.",
+    "mounts": ["Flex", "Flex", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 0,
+      "hp": 8,
+      "evasion" : 8,
+      "edef": 10,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "save" : 10,
+      "speed" : 4,
+      "sp": 7
+    },
+    "traits" : [
+      {
+        "name": "¿%:?EXTR!UDE GUN",
+        "description": "GUN: <b>GUN</b>"
+      },
+      {
+        "name": "A propósito, eu sei tudo",
+        "description": "Quando rolaria o dano, o Pegasus pode, em vez disso, causar o dano médio com base no número de dados rolados, como segue: 1d3 (2), 1d6 (4), 2d6 (7), 3d6 (11), 4d6 (14). Isso deve ser decidido antes de rolar o dano."
+      }
+    ],
+    "core_system": {
+      "name": "Ushabti Omnigun",
+      "description": "- engraçado. Veja, neste momento, essa arma tecnicamente nem existe. Você está atirando neles com uma arma que não é real e, no entanto, é! Não se preocupe com isso. RA é assim. Apenas, aqui, saiba que, pelo fato de existir em algum momento, nós a criamos. Isso é causalidade, e a causalidade é uma -",
+      "active_name": "Unshackle Ushabti",
+      "active_effect": "No restante desta cena, você pode usar a Ushabti Omnigun 3 vezes por rodada, em vez de 1 vez por rodada",
+      "use": "Encounter",
+      "activation" : "Protocol",
+      "passive_name": "Ushabti Omnigun",
+      "passive_effect": "[ERRO]<br>[alcance 15][1 PA de Dano Cinético]<br>A omnigun do seu mecha é uma peça de hardware experimental tão avançada que desafia a física: ela não requer uma montagem, nem tem um tipo ou tamanho de arma, o que significa que não pode ser modificada nem se beneficiar dos seus talentos.<br>Você não pode atacar normalmente com essa arma. Em vez disso, 1/rodada, como uma ação livre durante seu turno, você pode usá-la para causar 1 PA de dano cinético a um personagem dentro do alcance 15 e da linha de visão. Isso não conta como um ataque, atinge automaticamente, ignora cobertura, ignora imunidade e seu dano não pode ser reduzido ou ignorado de forma alguma. Nenhuma regra neste livro ou em qualquer outro substitui isso.",
+      "passive_actions": [
+        {
+          "name": "Fire Omnigun",
+          "activation" : "Free" ,
+          "detail" : "1/rodada, como uma ação livre durante seu turno, causa 1 PA de dano cinético a um personagem dentro do alcance 15 e da linha de visão. Isso não conta como um ataque, atinge automaticamente, ignora a cobertura, ignora a imunidade e seu dano não pode ser reduzido ou ignorado de nenhuma forma. Nenhuma regra substitui isso."
+        }
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_pegasus.png",
+    "license_id": "mf_pegasus"
+  },
+  {
+    "id": "mf_barbarossa",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Barbarossa",
+    "mechtype": ["Artillery"],
+    "y_pos": 32,
+    "description": "O Barbarossa é a estrutura mais maciça da Harrison Armory até o momento, construído, de acordo com as ordens de Harrison II, para \"ser a imagem imparável de Harrison I\" e para carregar as armas e os equipamentos mais pesados que a Armory oferece. Com quase treze metros de altura, ele é uma fera de mech sem sutilezas, inspirando terror nos inimigos e admiração nos aliados. O Barbarossa pode montar armas adequadas para enfrentar canhoneiras e embarcações de sub-linha de baixa tonelagem bruta; devido ao seu tamanho e à sua lenta capacidade de manobra, ele é frequentemente empregado em combates de baixa gravidade, onde a massa é menos preocupante.<br>O Barbarossa é um alvo popular para os ensaístas da Purview, que são conhecidos por comentar sobre as desvantagens de seu tamanho e como, como resultado, ele é um substituto perfeito para seus inimigos políticos.",
+    "mounts": ["Main", "Main", "Heavy"],
+    "stats": {
+      "size": 3,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 2,
+      "hp": 10,
+      "evasion" : 6,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save" : 10,
+      "speed" : 2,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Heavy Frame",
+        "description": "O Barbarossa não pode ser empurrado, puxado, colocado em Prone ou derrubado para trás por personagens menores."
+      },
+      {
+        "name": "Revestimento de pressão",
+        "description": "O Barbarossa tem resistência a Dano Explosivo"
+      },
+      {
+        "name": "Colossus",
+        "description": "Personagens aliados adjacentes podem usar o Barbarossa para cobertura dura."
+      },
+      {
+        "name": "Lento",
+        "description": "O Barbarossa recebe +1 de dificuldade em verificações de Agilidade e salvamentos.",
+        "synergies" : [
+          {
+            "locations": ["agility", "skill_check"],
+            "detail" : "O Barbarossa recebe +1 de dificuldade em verificações e salvamentos de Agilidade."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Apocalypse Rail",
+      "description": "Recém-saído do campus de pesquisa e desenvolvimento do Armory, o LGC-04 \"Apocalypse Rail\" é uma catapulta gravitica exponencial - um produto de teste em escala, enviado a pilotos licenciados para testes de campo como parte do Projeto de Teste de Armas de Magnitude Plenária da Praia do Armory. <br>Distinta das atuais armas logarítmicas de curto ou longo alcance de navio para navio (cinéticas ou energéticas/particulares), essa nova plataforma aproveita a pesquisa gravitica atual do Armory para carregar e distribuir exponencialmente uma carga cinética ao longo do alcance. Esse aumento na carga de energia potencial e a diminuição do tempo total de carga têm o custo da estabilidade: enquanto o canhão de carretel logarítmico é estável e resistente a choques, a catapulta gravitica exponencial é propensa à desestabilização. Por enquanto, os dispositivos de segurança incorporados serão acionados em caso de desestabilização traumática repentina para evitar a detonação do sistema, reiniciando qualquer processo de carregamento em andamento no momento do choque.<br>O sistema LGC-04 \"Apocalypse Rail\" é consideravelmente reduzido em relação à sua função operacional pretendida - ou seja, substituir os canhões de carretel espinhal de navios de capital - a fim de efetuar o acúmulo de dados ao vivo para uso no aprimoramento do sistema antes da adoção naval."
+      "active_name": "Charge Rail",
+      "active_effect": "Quando ativado, você começa a carregar o Apocalypse Rail do Barbarossa, um sistema de armas de longo alcance navio a navio incrivelmente poderoso que requer calibração de alvo. Ganhe um Dado do Apocalipse, 1d6 começando em 4. No início de cada um de seus turnos, diminua o valor do Dado do Apocalipse em 1, até um mínimo de 1. Se você se mover (mesmo que involuntariamente) ou ficar Atordoado ou Atolado, o Dado do Apocalipse será redefinido para 4 e continuará a contagem regressiva normalmente. <br>Se o valor do Dado do Apocalipse for de 1 a 3, você poderá atacar no seu turno com o Trilho do Apocalipse como uma ação completa, mas não poderá se mover nem realizar nenhuma outra ação no mesmo turno. Após um ataque com o Trilho do Apocalipse, o Dado do Apocalipse é redefinido para 4. Se você chegar ao final da cena sem usá-lo, você recupera 1 PC.<br>No final da cena, perca o Dado do Apocalipse, e o Trilho do Apocalipse para de carregar.",
+      "ativação": "Rápido",
+      "integrated": ["mw_barbarossa_integrated"]
+    },
+    "contadores": [
+      {
+        "id": "ctr_apocalypse_rail",
+        "name": "Trilho do Apocalipse",
+        "default_value": 4,
+        "min": 1,
+        "max": 4
+      }
+    ],
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_barbarossa.png",
+    "license_id": "mf_barbarossa"
+  },
+  {
+    "id": "mf_genghis",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Genghis",
+    "mechtype": ["Striker"],
+    "y_pos": 17,
+    "description": "A estrutura original do Genghis marcou o início da era dos mechs; a nova linha da Armory busca redefini-la. Desde suas raízes como um hardsuit GMS modificado, o Genghis Mk I tornou-se notório por seu uso na Crise Hercínia - a guerra de primeiro contato que desencadeou a violenta derrubada do Segundo Comitê. No caos administrativo e político que se seguiu à Crise, a Harrison Armory obteve o projeto e o adaptou para servir como base de seus primeiros mechs proprietários, incluindo o Sherman e o Saladin.<br>O novo Genghis tem alguma semelhança com o chassi da notoriedade hercínia, servindo em uma função semelhante de negação de área/eliminação de alvos suaves; o Genghis Mk II foi alinhado com os Pilares Utópicos do Terceiro Comitê.",
+    "mounts": ["Flex", "Main", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 3,
+      "hp": 6,
+      "evasion" : 6,
+      "edef": 8,
+      "heatcap": 10,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack" : -2,
+      "save" : 10,
+      "speed" : 3,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Isolado",
+        "description": "O Genghis tem imunidade a queimaduras"
+      },
+      {
+        "name": "Ventilação de emergência",
+        "description": "Quando o Genghis recebe dano de estrutura, ele elimina todo o calor."
+      }
+    ],
+    "core_system": {
+      "name": "TBK Sustain Suite",
+      "description": "Para gerenciar melhor as enormes demandas de energia do Genghis e acelerar rapidamente a dispersão de calor, o Think Tank desenvolveu um conjunto de mecanismos de gerenciamento de energia. Após extensos testes de campo, os pilotos descobriram que o TBK Sustain Suite pode ser usado tanto como dissipador de calor quanto como arma de negação de área.",
+      "active_name": "Expor células de energia",
+      "active_effect": "Na próxima vez em que exceder seu Heat Cap nesta cena, você, em vez disso, elimina todo o calor e libera uma nuvem de explosão 3 de matéria incandescente do seu mecha. Até o início do seu próximo turno, todos os personagens dentro da área afetada contam como Invisíveis para todos, exceto para você, e os personagens que não sejam você recebem 2 de queimadura e 2 de calor quando iniciam o turno na área ou entram nela pela primeira vez em uma rodada. Quando esse effect termina, os personagens dentro da área afetada recebem cobertura suave (que você ignora) até o início do seu turno seguinte, momento em que a nuvem se dispersa.",
+      "ativação": "Quick" 
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_genghis.png",
+    "license_id": "mf_genghis"
+  },
+  {
+    "id": "mf_iskander",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Iskander",
+    "mechtype": ["Controller"],
+    "y_pos": 22,
+    "description": "Desenvolvido nos campos de provas do Think Tank do Armory, o Iskander é uma nova estrutura especializada projetada para trazer recursos de controle de área e violação gravtech para uma plataforma mecanizada.<br>Uma estrutura volumosa, o Iskander possui uma mistura de sistemas cinéticos e de energia causal que capacitam os pilotos a triunfar em um amplo portfólio de cenários. A plataforma Iskander não tem contrapartida civil: destina-se a ser usada como uma plataforma de comando e controle de linha de frente, com ênfase na identificação e eliminação de ameaças explosivas estáticas.",
+    "montagens": ["Flex", "Heavy"],
+    "stats": {
+      "size" : 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 8,
+      "evasion" : 8,
+      "edef": 10,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save" : 12,
+      "speed" : 3,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Lançador de assalto",
+        "description": "1/round, o Iskander pode lançar uma granada ou plantar uma mina como se tivesse alcance 15.",
+        "use": "Round" 
+      },
+      {
+        "name": "Mine Deployers",
+        "description": "1/rodada, quando o Iskander planta uma mina (mesmo usando sua característica Assault Launcher), ele pode plantar até duas outras minas em espaços livres adjacentes a ele como uma ação livre.",
+        "use": "Round" 
+      },
+      {
+        "name": "Skeleton Key",
+        "description": "O Iskander nunca aciona ou desencadeia minas ou outros sistemas baseados em proximidade, a menos que opte por fazê-lo."
+      }
+    ],
+    "core_system": {
+      "name": "Broad-Sweep Seeder",
+      "description": "O Broad-Sweep Seeder é um dispositivo proprietário desenvolvido durante a Ocupação Orrugi, durante a qual os legionários do Armory lutaram contra um movimento de guerrilha local amargurado e recalcitrante. IEDs, VBEDs e D/SABEDs eram frequentemente empregados pela resistência; para combater a ameaça, a Harrison Armory desenvolveu o Seeder para escanear, identificar e eliminar simultaneamente ameaças explosivas nas proximidades de unidades estacionárias. A tecnologia provou ser bem-sucedida e, com pequenas adaptações, foi adaptada para instalação nas estruturas da Armory.<br>O Broad-Sweep Seeder emite um hivecone LIDAR excitado para sinalizar alvos em potencial: se houver uma identificação positiva, o alvo é neutralizado com um spray de flechetes de revestimento opaco acelerados por mag. O Seeder também pode carregar hiveminas explosivas",
+      "active_name": "Nuvem da Morte",
+      "active_effect": "Esse sistema dispara uma nuvem enorme e expansiva de microminas em todo o campo de batalha, afetando todos os personagens hostis em um raio de 50. Durante o resto da cena, quando os personagens hostis fizerem qualquer movimento que não seja o movimento padrão (incluindo o movimento involuntário), eles receberão dano explosivo de 3 PA. Esse effect pode ser acionado qualquer número de vezes, mas somente 1/rodada para cada personagem.",
+      "use": "Encounter",
+      "activation" : "Quick" 
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_iskander.png",
+    "license_id": "mf_iskander"
+  },
+  {
+    "id": "mf_napoleon",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Napoleon",
+    "mechtype": ["Defender", "Controller"],
+    "y_pos": 21,
+    "description": "Talvez em um aceno irônico ao seu homônimo, o Napoleon é uma estrutura atarracada em comparação com outros designs da Harrison Armory. Sua armação está repleta de maravilhas da engenharia da Armory - tecnologia que exige nada menos que os melhores e mais brilhantes pilotos. Apesar de sua pequena estatura, o Napoleon emprega uma das novas armas mais aterrorizantes da Armory, o Displacer, que manifesta rupturas pontuais e unidirecionais do espaço intermitente em seus alvos.<br>Notável por mais do que sua estatura, esse chassi ostenta um tremendo registro de sucesso, com pilotos relatando uma taxa de retorno de 0,800 em operações com alto índice de KIA. O Napoleon é um chassi popular entre as divisões de violação das legiões do Armory, segurança do Think Tank e equipes de desenvolvimento do Union Economic Bureau.",
+    "mounts": ["Main/Aux"],
+    "stats": {
+      "size": 0.5,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 2,
+      "hp": 6,
+      "evasion" : 8,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save" : 11,
+      "speed" : 4,
+      "sp": 7
+    },
+    "traits" : [
+      {
+        "name": "Blindagem pesada",
+        "description": "Quando o Napoleão receberia metade do dano em uma verificação ou defesa bem-sucedida, ele reduz o dano para 1."
+      },
+      {
+        "name": "Flash Aegis",
+        "description": "Quando o Napoleão se segura, ele reduz o dano recebido para 1 em vez de ganhar Resistência.",
+        "synergies" : [
+          {
+            "locations": ["brace"],
+            "detail": "Quando o Napoleão se apoia, ele reduz o dano recebido para 1 em vez de ganhar Resistência."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Trueblack Aegis",
+      "description": "O Trueblack Aegis é uma inovação em blindagem pessoal desenvolvida pelo Think Tank do Armory. Assim como as outras tecnologias derivadas do NHP da Armory, a Aegis é uma tecnologia de \"caixa preta\": seu código e seu funcionamento interno são altamente confidenciais e, normalmente, só podem ser requisitados por pilotos de alto escalão ou posição dentro da Harrison Armory. Alguns pilotos da Cosmopolitan descreveram a aparência do Aegis como semelhante ao vazio - ou cegueira - que eles veem quando olham para o espaço de blink. É seguro presumir que o dispositivo aproveita a tecnologia instável do campo de blink para manifestar uma bolha fina de espaço de blink dentro de parâmetros definidos. O campo de pisca-pisca só consegue manter a coerência por um breve momento, mas pode ser ligado e desligado para criar uma cúpula total de espaço de pisca-pisca.",
+      "active_name": "Ativar Égide",
+      "active_effect": "Um campo cintilante e totalmente negro envolve rapidamente seu mech, cobrindo-o como uma segunda pele. Durante o resto da cena, você: <ul><li>reduz todo o dano para 1, exceto o dano que ignora a redução;</li><li>ganha imunidade a todas as ações tecnológicas, inclusive as benéficas, e quaisquer efeitos ou condições tecnológicas atuais em você terminam;</li><li>só pode usar sistemas com a tag Shield (escudo) - quaisquer outros são imediatamente desativados (os sistemas que não exigem ativação não são afetados); </li><li>não pode realizar ações rápidas, ações completas ou reações, exceto para movimentos padrão, Agarrar, Aríete, Ataque Improvisado, Ativar (somente sistemas de escudo), Verificação de Habilidade e Impulso;</li><li>não pode Sobrecarregar;</li><li>não pode usar comunicações para falar com outros personagens (pois o som não sai do escudo). </li></ul>Você ainda pode receber status e Heat e pode ser afetado por movimentos involuntários. De outra forma, você pode interagir normalmente com o mundo, incluindo pegar e arrastar itens, e assim por diante.",
+      "use": "Encounter",
+      "activation" : "Quick" 
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_napoleon.png",
+    "license_id": "mf_napoleon"
+  },
+  {
+    "id": "mf_saladin",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Saladin",
+    "mechtype": ["Defender"],
+    "y_pos": 17,
+    "description": "O Saladin é uma plataforma resistente e eficiente para blindagem de suporte de esquadrão completo. Baseado nas primeiras versões do Genghis voltadas para a defesa, o Saladin se tornou um objeto de lenda do Armory após as façanhas de Harrison I \"Fearkiller\" durante a Guerra de Interesses.<br>Desde sua primeira iteração, o Saladin provou ser bem-sucedido em uma função defensiva e de suporte; ele até mesmo se tornou um pilar entre as equipes de libertadores do Departamento de Justiça e Direitos Humanos da União envolvidas em missões de emancipação e escolta de refugiados, apesar do atrito ideológico (e, muitas vezes, tático) entre o Armory e o DoJ/HR. Os registros desses confrontos indicam que o enorme volume do Saladin, por si só, era um conforto e um impulso moral para os soldados do DoJ/HR e seus protegidos, muitos dos quais se referiam aos mechs como \"Big Sal\". Os pilotos do Saladin com bandeira da União frequentemente relatam saldos nulos em registros de barras após engajamentos em sistemas emancipados.",
+    "mounts": ["Flex"],
+    "stats": {
+      "size": 2,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 12,
+      "evasion" : 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save" : 10,
+      "speed" : 3,
+      "sp": 8
+    },
+    "traits" : [
+      {
+        "name": "Estrutura reforçada",
+        "description": "O Saladino tem imunidade a ser retalhado."
+      },
+      {
+        "name": "Guardian",
+        "description": "Personagens aliados adjacentes podem usar o Saladin para cobertura rígida."
+      },
+      {
+        "name": "Escudo de dobra",
+        "description": "1/rodada, o Saladino pode dar +1 de dificuldade a qualquer ataque contra ele ou contra um personagem aliado dentro dos Sensores como uma reação antes que o rolamento seja feito.",
+        "use": "Round" 
+      }
+    ],
+    "core_system": {
+      "name": "Tachyon Loop",
+      "description": "Desenvolvido pelo Think Tank como uma joint venture com a Unidade de Engenharia Estelar da IPS-Northstar, o Tachyon Loop usa um sistema de loop fechado para restringir e manipular uma lança de táquions, acelerando os táquions a velocidades mais rápidas do que a da luz em torno de um mandril central. O mandril pode ser carregado por um mech ou montado diretamente, intercedendo o fogo direcional recebido. Como os táquions viajam mais rápido do que a luz, eles são invisíveis a olho nu, dando ao escudo a aparência de uma grande roda com raios.",
+      "active_name": "Escudo de Tachyon",
+      "active_effect": "Esse sistema projeta um escudo de táquions acelerados sobre um personagem aliado dentro dos Sensores. Você pode escolher um novo alvo como uma ação rápida. Ganhe a reação Pulso Defensivo pelo resto da cena.<br>Pulso Defensivo<br>Reação, 1/rodada<br>Acionador: Seu alvo é atacado.<br>Effect: Você fortalece o escudo de táquions dele com um pulso de energia. Ele ganha Resistência a todo o dano do ataque e, se o ataque falhar, você pode forçar o atacante a fazer um novo rolamento contra um personagem ou objeto de sua escolha, verificando a linha de visão e o alcance do seu alvo em vez do atacante. Se o ataque fazia parte de uma área de efeito, o novo alvo deve estar dentro da mesma área de efeito do ataque original.",
+      "use": "Encounter",
+      "active_actions": [
+        {
+          "name": "Pulso Defensivo",
+          "activation" : "Reaction" ,
+          "init": "Este sistema projeta um escudo de taquiões acelerados sobre um personagem aliado dentro dos Sensores. Você pode escolher um novo alvo como uma ação rápida.",
+          "trigger": "Seu alvo é atacado.",
+          "detail": "Você fortalece o escudo de tachyon deles com um pulso de energia. Ele ganha Resistência a todo o dano do ataque e, se o ataque falhar, você pode forçar o atacante a fazer um novo rolamento contra um personagem ou objeto de sua escolha, verificando a linha de visão e o alcance do seu alvo em vez do atacante. Se o ataque fazia parte de uma área de efeito, o novo alvo deve estar dentro da mesma área de efeito do ataque original."
+        },
+        {
+          "name": "Escudo de Tachyon de Retarget",
+          "activation" : "Quick" ,
+          "detail" : "Altere o alvo do seu Escudo de Tachyon para outro personagem aliado dentro dos Sensores."
+        }
+      ],
+      "activation" : "Quick" 
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_saladin.png",
+    "license_id": "mf_saladin"
+  },
+  {
+    "id": "mf_sherman",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Sherman",
+    "mechtype": ["Striker", "Artillery"],
+    "y_pos": 36,
+    "description": "O Sherman é a estrutura clássica da Harrison Armory: qualquer estação, nação, mundo ou estado - estelar ou interestelar - com um contrato de fornecimento de frota da Armory, possui uma força de espinha dorsal de mechs Sherman. O Sherman foi projetado para transportar uma série de armamentos de energia da linha de batalha principal da Harrison Armory, com um reator robusto e versátil para apoiá-lo. Depois do Everest GMS-SP1, o Sherman é o segundo mech mais comum nos sistemas centrais - tão comum que a GMS começou recentemente a equipar seus modelos de estoque com mais defesas ablativas e de dispersão de ondas, especificamente para lidar com atores hostis que usam Shermans.<br>Atualmente, o Mk I é amplamente utilizado, com unidades Mk II exclusivas e de primeiro contrato saindo das linhas em Ras Shamra e outros mundos de projetos especiais da Armory.",
+    "mounts": ["Flex", "Main", "Heavy"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 10,
+      "evasion" : 7,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save" : 10,
+      "speed" : 3,
+      "sp": 5
+    },
+    "traits" : [
+      {
+        "name": "Superior Reactor",
+        "description": "O Sherman ganha +1 de precisão em verificações e defesas de Engineering",
+        "synergies" : [
+          {
+            "locations": ["engineering", "skill_check"],
+            "detail": "O Sherman ganha +1 de precisão em verificações e salvamentos de Engenharia."
+          }
+        ]
+      },
+      {
+        "name": "Mathur Stop",
+        "description": "Quando o Sherman elimina todo o calor, você pode optar por receber calor igual à metade do seu limite de calor, colocando-o na zona de perigo.",
+        "use": "Free" 
+      },
+      {
+        "name": "Vent Heat",
+        "description": "Quando você estabiliza o Sherman ou ele excede seu limite de calor, ele se beneficia de cobertura suave até o início do seu próximo turno."
+      }
+    ],
+    "core_system": {
+      "name": "Zone-Focus Mk IV SOLIDCORE",
+      "description": "O ZF4 SOLIDCORE é uma arma de feixe de energia de fonte dupla de montagem rígida. Alimentada por um sistema de geração de energia mil vezes maior, a ZF4 apresenta um rack secundário de baterias de núcleo sólido alimentado por cinto que pode ser usado para sobrecarregar um único feixe de impulso, ampliando o alcance e o poder destrutivo da arma.",
+      "active_name": "COREBURN Protocol",
+      "active_effect": "Seu ZF4 SOLIDCORE ganha imediatamente 3 cargas, até um máximo de 4; além disso, durante o resto da cena, Estabilizar gera 2 cargas em vez de 1, e todos os terrenos, objetos e itens destacáveis recebem 10 PA de dano de energia por carga ao serem atingidos.",
+      "activation" : "Protocol",
+      "integrated": ["mw_sherman_integrated"]
+    },
+    "other_art": [
+      {
+        "tags": "mech",
+        "src": "alt_sherman_old.png"
+      }
+    ],
+    "contadores": [
+      {
+        "id": "ctr_zf4_solidcore",
+        "name": "ZF4 Charges",
+        "default_value": 1,
+        "min": 1,
+        "max": 4
+      }
+    ],
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_sherman.png",
+    "license_id": "mf_sherman"
+  },
+  {
+    "id": "mf_tokugawa",
+    "license_level": 2,
+    "source": "HA",
+    "name": "Tokugawa",
+    "mechtype": ["Striker"],
+    "y_pos": 5,
+    "description": "O Tokugawa da HA é relativamente novo no mercado, popular em sistemas principais para aplicações de segurança, CQB e embarque em navios. O Tokugawa é um mech imponente e nada sutil - uma plataforma robusta da qual seus sistemas podem extrair a energia necessária. Ao contrário de outras estruturas, o reator exclusivo do Tokugawa foi projetado para permitir que as limitações padrão sejam removidas com facilidade. Sabendo disso, os pilotos experientes (ou imprudentes) podem fazer um 'overclock' do reator, aumentando sua potência e obtendo um incrível consumo de energia para suas armas de energia.",
+    "mounts": ["Flex", "Main", "Main"],
+    "stats": {
+      "size": 1,
+      "structure" : 4,
+      "stress" : 4,
+      "armor" : 1,
+      "hp": 8,
+      "evasion" : 8,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save" : 11,
+      "speed" : 4,
+      "sp": 6
+    },
+    "traits" : [
+      {
+        "name": "Quebra de limite",
+        "description": "Quando o Tokugawa é exposto, seus ataques à distância e corpo a corpo causam +3 de dano de bônus de energia ao serem atingidos, todas as suas armas que causariam dano cinético ou explosivo, em vez disso, causam energia, as armas à distância ganham +5 de alcance e as armas corpo a corpo ganham +1 de ameaça.",
+        "synergies": [
+          {
+            "locations": ["active_effects"],
+            "detail": "Quando o Tokugawa é exposto, seus ataques à distância e corpo a corpo causam +3 de dano de bônus de energia ao acertar, todas as suas armas que causariam dano cinético ou explosivo causam energia, as armas à distância ganham +5 de alcance e as armas corpo a corpo ganham +1 de ameaça."
+          }
+        ]
+      },
+      {
+        "name": "Bainha de plasma",
+        "description": "Quando o Tokugawa está na Zona de Perigo e ataca com uma arma que causa qualquer quantidade de energia, todos os bônus de dano se transformam em queimadura."
+      }
+    ],
+    "core_system": {
+      "name": "Alimentação do reator superaquecido",
+      "description": "Os pilotos de uma determinada raça se desenvolvem no limite da catástrofe, arriscando o sucesso glorioso ou o fracasso total a cada momento. Esses temerários estão familiarizados com o uivo dos avisos de calor crítico - o canto da sirene da destruição e das alimentações superaquecidas do reator. Os pilotos do Tokugawa são famosos por sobrecarregar suas armas com excesso de energia, levando o medidor de calor ao máximo. Aproveitando o reator exclusivo do Tokugawa, esses pilotos causam danos e não fazem amigos no compartimento de engenharia, desde que não se transformem em uma bola de escória antes de voltarem da linha de produção.",
+      "active_name": "Radiance",
+      "active_effect":  "Durante o resto desta cena, as armas que causam qualquer energia ganham +5 de alcance se forem de longo alcance ou +2 de ameaça se forem corpo a corpo. <br>Enquanto estiver exposto, a Quebra de Limite se acumula com esses bônus para um aumento total de +10 de alcance e +3 de ameaça.",
+      "use": "Encounter",
+      "activation" : "Protocol",
+      "passive_name": "Overclock",
+      "passive_actions": [
+        {
+          "name": "Overclock",
+          "activation" : "Protocol",
+          "detail" : "Você faz com que seu mecha fique exposto até o final do seu próximo turno."
+        }
+      ],
+      "active_bonuses": [
+        {
+          "id": "range" ,
+          "damage_types": ["Energy"],
+          "range_types": ["Range"],
+          "val": 5
+        },
+        {
+          "id": "range" ,
+          "damage_types" : ["Energy"],
+          "range_types": ["Threat"],
+          "val": 2
+        }
+      ],
+      "active_synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "Todas as armas em seu mecha que causam qualquer Dano de Energia ganham +5 de Alcance se forem armas de longo alcance ou ganham +1 de Ameaça se forem armas corpo a corpo."
+        }
+      ]
+    },
+    "image_url": "https://d2c79xe1p61csc.cloudfront.net/frames/mf_tokugawa.png",
+    "license_id": "mf_tokugawa"
+  }
+]
