@@ -482,19 +482,19 @@
 {
 "name": "PT - Protótipo",
 "description": "Quando você realiza um Reparo Completo, você pode, com um pouco de tentativa e erro, instalar um sistema de arma protótipo em seu mech. Você pode escolher características para sua arma protótipo com base no seguinte perfil cada vez que realizar um Reparo Completo, rerrolando 1d6+2 para determinar Limitado cada vez:<br>Arma Protótipo<br>Principal [Corpo a corpo, CQB, Rifle, Canhão, Lançador, Nexus], Limitado [1d6+2], Exagerado<br>Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de dano, e ameaça 1 (corpo a corpo) ou alcance 10 (todos os outros tipos). Além disso, cada vez que você realiza um Reparo Completo, rerrola 1d6+2 para determinar os usos Limitados desta arma.<br>Dano: 1d6+2 Cinético, Explosivo ou de energia.<br>Esta arma conta como uma montagem integrada e não requer uma montagem.",
-"integrated": ["mw_prototype_1"],
+"integrated": ["ptbr_weapons_pt_-_protótipo_de_arma_i"],
 "exclusive": true
 },
 {
 "name": "PT - Revisão",
 "description": "Você pode ajustar os componentes essenciais de sua arma protótipo para aumentar sua eficácia. Quando você realiza um Reparo Completo, escolha dois:<ul><li><b>Ótica Ajustada:</b> Sua arma protótipo sempre ganha +1 de Precisão em ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você ataca com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li><b>Arma de longo alcance:</b> Cone 3, Linha 5, ou [Explosão 1, Alcance 10].</li><li><b>Arma de corpo a corpo:</b> Explosão 1.</li></ul></li></ul>",
-"integrated": ["mw_prototype_2"],
+"integrated": ["ptbr_weapons_pt_-_protótipo_de_arma_ii"],
 "exclusive": true
 },
 {
 "name": "PT - Versão Final",
 "description": "Sua arma protótipo agora é Limitada [2d6] e causa 1D6+4 de dano.",
-"integrated": ["mw_prototype_3"],
+"integrated": ["ptbr_weapons_pt_-_protótipo_de_arma_iii"],
 "exclusive": true
 }
 ]
@@ -999,7 +999,7 @@
     {
       "name": "PT - Aqui, Pegue!",
       "description": "Você modificou seu mech para lançar suas varetas de combustível superaquecidas nos inimigos. Ganhe a arma integrada Vareta de Combustível.",
-      "integrated": ["mw_fuel_rod_gun"],
+      "integrated": ["ptbr_weapons_pt_-_fuel_rod_gun"],
       "exclusive": false
     }
   ]

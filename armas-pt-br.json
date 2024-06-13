@@ -1,0 +1,2979 @@
+[
+  {
+    "id": "mw_anti_materiel_rifle",
+    "name": "PT - Anti-Materiel Rifle",
+    "mount" : "Heavy",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_assault_rifle",
+    "name": "PT - Rifle de assalto",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ],
+    "source" : "GMS",
+    "license" : "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-I (T-1) é definida por armas de longo alcance e corpo a corpo cinéticas poderosas, confiáveis e convencionais, incluindo o fuzil de assalto GMS, a metralhadora pesada, a espingarda, a pistola e várias lâminas leves e pesadas. Padrão galáctico confiável, a linha GMS T-1 é a linha de armamento em escala mecânica mais usada em toda a galáxia. Ecoando as notas de design do Everest, as armas T-1 são projetadas de forma simples, com poucas (ou nenhuma) partes móveis, destinadas a serem usadas ou adaptáveis a qualquer ambiente.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_charged_blade",
+    "name": "PT - Lâmina carregada",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+3"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas atualmente em produção.<br>A linha Type-II (T-2) exibe as armas brancas \"carregadas\" e as armas de energia proprietárias da GMS. As armas corpo a corpo carregadas T-2 são estruturalmente semelhantes às armas corpo a corpo T-1 da GMS, embora sejam construídas com materiais diferentes para tolerar o calor intenso gerado por suas bainhas de plasma projetadas. Essas bainhas podem ser ativadas ou desativadas, dependendo das necessidades do piloto. As armas de energia T-2 da GMS, assim como as cinéticas T-1, são ferramentas robustas com escala de potência previsível, dispersão mínima de partículas e faixas de desempenho consistentes. Elas apresentam portas universais que lhes permitem aceitar uma variedade de fontes de energia, desde cabos de linha rígida até pacotes de energia no estilo \"magazine\".",
+    "license_id": ""
+  },
+  {
+    "id": "mw_cyclone_pulse_rifle",
+    "name": "PT - Cyclone Pulse Rifle",
+    "mount" : "Superheavy" ,
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "3d6+3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 5
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_heavy_charged_blade",
+    "name": "PT - Lâmina carregada pesada",
+    "mount" : "Heavy",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6+3"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas atualmente em produção.<br>A linha Type-II (T-2) exibe as armas brancas \"carregadas\" e as armas de energia proprietárias da GMS. As armas corpo a corpo carregadas T-2 são estruturalmente semelhantes às armas corpo a corpo T-1 da GMS, embora sejam construídas com materiais diferentes para tolerar o calor intenso gerado por suas bainhas de plasma projetadas. Essas bainhas podem ser ativadas ou desativadas, dependendo das necessidades do piloto. As armas de energia T-2 da GMS, assim como as cinéticas T-1, são ferramentas robustas com escala de potência previsível, dispersão mínima de partículas e faixas de desempenho consistentes. Elas apresentam portas universais que lhes permitem aceitar uma variedade de fontes de energia, desde cabos de linha rígida até pacotes de energia no estilo \"magazine\"",
+    "license_id": ""
+  },
+  {
+    "id": "mw_heavy_machine_gun",
+    "name": "PT - Metralhadora pesada",
+    "mount" : "Heavy",
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "2d6+4"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-I (T-1) é definida por armas de longo alcance e corpo a corpo cinéticas poderosas, confiáveis e convencionais, incluindo o fuzil de assalto GMS, a metralhadora pesada, a espingarda, a pistola e várias lâminas leves e pesadas. Padrão galáctico confiável, a linha GMS T-1 é a linha de armamento em escala mecânica mais usada em toda a galáxia. Ecoando as notas de design do Everest, as armas T-1 são projetadas de forma simples, com poucas (ou nenhuma) partes móveis, destinadas a serem usadas ou adaptáveis a qualquer ambiente.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_heavy_melee_weapon",
+    "name": "PT - Arma corpo a corpo pesada",
+    "mount" : "Heavy",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "2d6+1"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-I (T-1) é definida por armas de longo alcance e corpo a corpo cinéticas poderosas, confiáveis e convencionais, incluindo o fuzil de assalto GMS, a metralhadora pesada, a espingarda, a pistola e várias lâminas leves e pesadas. Padrão galáctico confiável, a linha GMS T-1 é a linha de armamento em escala mecânica mais usada em toda a galáxia. Ecoando as notas de design do Everest, as armas T-1 são projetadas de forma simples, com poucas (ou nenhuma) partes móveis, destinadas a serem usadas ou adaptáveis a qualquer ambiente.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_howitzer",
+    "name": "PT - Howitzer",
+    "mount" : "Heavy",
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Explosive" ,
+        "val": "2d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 20
+      },
+      {
+        "type" : "Blast" ,
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_missile_rack",
+    "name": "PT - Rack de mísseis",
+    "mount" : "Auxiliary" ,
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "1d3+1"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      },
+      {
+        "type" : "Blast" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_mortar",
+    "name": "PT - Mortar",
+    "mount" : "Main",
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Explosive" ,
+        "val": "1d6+1"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      },
+      {
+        "type" : "Blast" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_nexus_hunter_killer",
+    "name": "PT - Nexus (Hunter-Killer)",
+    "mount" : "Main",
+    "type" : "Nexus",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_nexus_light",
+    "name": "PT - Nexus (Light)",
+    "mount" : "Auxiliary" ,
+    "type" : "Nexus",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_pistol",
+    "name": "PT - Pistol",
+    "mount" : "Auxiliary" ,
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 1
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-I (T-1) é definida por armas de longo alcance e corpo a corpo cinéticas poderosas, confiáveis e convencionais, incluindo o fuzil de assalto GMS, a metralhadora pesada, a espingarda, a pistola e várias lâminas leves e pesadas. Padrão galáctico confiável, a linha GMS T-1 é a linha de armamento em escala mecânica mais usada em toda a galáxia. Ecoando as notas de design do Everest, as armas T-1 são projetadas de forma simples, com poucas (ou nenhuma) partes móveis, destinadas a serem usadas ou adaptáveis a qualquer ambiente.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_segment_knife",
+    "name": "PT - Faca de segmento",
+    "mount" : "Auxiliary" ,
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+1"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_overkill"
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_rocket_propelled_grenade",
+    "name": "PT - Granada propelida por foguete",
+    "mount" : "Main",
+    "type": "Launcher" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "1d6+1"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      },
+      {
+        "type" : "Blast" ,
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-III (T-3) é composta por armas pesadas, artilharia e outras armas exóticas, especializadas ou maciças. Uma classificação ampla, a linha T-3 inclui rifles antimateriais cinéticos convencionais, rifles de pulso de ciclagem super-rápida, racks de mísseis, canhões e nexos de drones - lançadores no estilo \"colmeia\" que servem como fábrica em miniatura, hangar e sistemas de implantação para drones portáteis. A classificação também inclui a temível \"faca de segmento\", um sistema que usa impressão em flash para produzir armas de borda descartáveis nas proximidades do usuário.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_shotgun",
+    "name": "PT - Shotgun",
+    "mount" : "Main",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-I (T-1) é definida por armas de longo alcance e corpo a corpo cinéticas poderosas, confiáveis e convencionais, incluindo o fuzil de assalto GMS, a metralhadora pesada, a espingarda, a pistola e várias lâminas leves e pesadas. Padrão galáctico confiável, a linha GMS T-1 é a linha de armamento em escala mecânica mais usada em toda a galáxia. Ecoando as notas de design do Everest, as armas T-1 são projetadas de forma simples, com poucas (ou nenhuma) partes móveis, destinadas a serem usadas ou adaptáveis a qualquer ambiente.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_tactical_knife",
+    "name": "PT - Faca tática",
+    "mount" : "Auxiliary" ,
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "val": 3
+      }
+    ],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-I (T-1) é definida por armas de longo alcance e corpo a corpo cinéticas poderosas, confiáveis e convencionais, incluindo o fuzil de assalto GMS, a metralhadora pesada, a espingarda, a pistola e várias lâminas leves e pesadas. Padrão galáctico confiável, a linha GMS T-1 é a linha de armamento em escala mecânica mais usada em toda a galáxia. Ecoando as notas de design do Everest, as armas T-1 são projetadas de forma simples, com poucas (ou nenhuma) partes móveis, destinadas a serem usadas ou adaptáveis a qualquer ambiente.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_tactical_melee_weapon",
+    "name": "PT - Arma Tática Corpo a Corpo",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas em produção no momento.<br>A linha Type-I (T-1) é definida por armas de longo alcance e corpo a corpo cinéticas poderosas, confiáveis e convencionais, incluindo o fuzil de assalto GMS, a metralhadora pesada, a espingarda, a pistola e várias lâminas leves e pesadas. Padrão galáctico confiável, a linha GMS T-1 é a linha de armamento em escala mecânica mais usada em toda a galáxia. Ecoando as notas de design do Everest, as armas T-1 são projetadas de forma simples, com poucas (ou nenhuma) partes móveis, destinadas a serem usadas ou adaptáveis a qualquer ambiente.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_thermal_lance",
+    "name": "PT - Lança térmica",
+    "mount" : "Heavy",
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6+3"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Line" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "GMS",
+    "license" : "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas atualmente em produção.<br>A linha Type-II (T-2) exibe as armas corpo a corpo \"carregadas\" e as armas de energia proprietárias da GMS.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_thermal_pistol",
+    "name": "PT - Pistola térmica",
+    "mount" : "Auxiliary" ,
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": 2
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Line" ,
+        "val": 5
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas atualmente em produção.<br>A linha Type-II (T-2) exibe as armas corpo a corpo \"carregadas\" e as armas de energia proprietárias da GMS.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_thermal_rifle",
+    "name": "PT - Thermal Rifle",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+2"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "source" : "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "description": "Assim como os mechs da GMS, as armas da GMS são padrões galácticos confiáveis, feitas com peças intercambiáveis e construídas para resistir a quase todas as condições. Há três linhas atualmente em produção.<br>A linha Type-II (T-2) exibe as armas corpo a corpo \"carregadas\" e as armas de energia proprietárias da GMS.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_chain_axe",
+    "name": "PT - Machado de corrente",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Blackbeard",
+    "license_level": 1,
+    "on_crit": "Seu alvo se torna Retalhado até o final do turno atual.",
+    "description": "Uma versão simples em escala tática de uma ferramenta de registro, o machado de corrente da IPS-N é uma lâmina de corrente serrilhada que funciona com a energia do núcleo. Os dentes do machado têm pontas de tungstênio, endurecidas para mastigar alvos duros e macios. Os machados de corrente são armas eficazes e ferramentas utilitárias que são frequentemente usadas por equipes de embarque para romper anteparos reforçados.",
+    "license_id": "mf_blackbeard"
+  },
+  {
+    "id": "mw_bristlecrown_flechette_launcher",
+    "name": "PT - Bristlecrown Flechette Launcher",
+    "mount" : "Auxiliary" ,
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": 1
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Burst",
+        "val": 1
+      }
+    ],
+    "source" : "IPS-N",
+    "license": "Blackbeard",
+    "license_level": 2,
+    "effect": "Essa arma ignora as penalidades de longo alcance de engajamento e causa 3 de dano cinético a alvos agarrados ou biológicos, em vez de 1",
+    "description": "O IPS-N Bristlecrown Flechette Launcher usa um mecanismo análogo ao de uma colmeia para projetar uma zona de morte total de alvos suaves em uma cúpula ao redor do usuário, negando proativamente ações hostis de nível de infantaria.",
+    "license_id": "mf_blackbeard"
+  },
+  {
+    "id": "mw_nanocarbon_sword",
+    "name": "PT - Espada de nanocarbono",
+    "mount" : "Heavy",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 3
+      }
+    ],
+    "source" : "IPS-N",
+    "license": "Blackbeard",
+    "license_level": 2,
+    "description": "A espada de nanocarbono da IPS-N é uma nova versão de um antigo clássico. Os nanosensores incorporados ao longo da lâmina capturam um espectro completo de dados e os transferem para bancos de armazenamento omninet para análise após a ação. Enquanto isso, o software integrado interpreta o feedback ao vivo e ajusta a composição molecular da borda da lâmina em tempo real.",
+    "license_id": "mf_blackbeard"
+  },
+  {
+    "id": "mw_assault_cannon",
+    "name": "PT - Canhão de assalto",
+    "mount" : "Main",
+    "type" : "Cannon" ,
+    "source" : "IPS-N",
+    "license": "Drake",
+    "license_level": 1,
+    "profiles": [
+      {
+        "name": "PT - Padrão",
+        "damage" : [
+          {
+            "type" : "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range" : [
+          {
+            "type": "Range" ,
+            "val": 8
+          }
+        ],
+        "effect": "Você pode girar os canos dessa arma como uma ação rápida",
+        "actions": [
+          {
+            "name": "PT - Girar Canhão de assalto",
+            "activation" : "Quick" ,
+            "detail" : "Gire os barris do Assault Cannon, desacelerando seu mech e permitindo o uso de seu perfil \"Modo de rotação\"."
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_overkill"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 1
+          }
+        ]
+      },
+      {
+        "name": "PT - Modo de rotação",
+        "damage" : [
+          {
+            "type" : "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range" : [
+          {
+            "type": "Range" ,
+            "val": 8
+          }
+        ],
+        "effect": "Enquanto estiver girando, essa arma ganha Confiabilidade 3, mas você fica Desacelerado.<br>Você pode encerrar esse efeito como um protocolo.",
+        "actions": [
+          {
+            "name": "PT - Cessar Spin-Up",
+            "activation" : "Protocol",
+            "detail" : "Encerre o \"Modo de rotação\" do Assault Cannon, encerrando a condição de desaceleração e permitindo que o Assault Cannon seja usado com seu perfil \"Standard\""
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_overkill"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 1
+          },
+          {
+            "id": "tg_reliable",
+            "val": 3
+          }
+        ]
+      }
+    ],
+    "description": "O canhão de assalto preferido da IPS-N é um autocanhão de refrigeração profunda, que pode ser usado como arma montada ou plataforma operada por manipulador. O canhão, simples em sua funcionalidade, pode ser alimentado por um carregador de caixa ou por um cinto e é uma inclusão padrão em quase todos os pedidos de frota da IPS-N. Em ambientes de microgravidade e gravidade zero, os pilotos da Drake geralmente empregam o canhão de assalto como um sistema de propulsão adicional.",
+    "license_id": "mf_drake"
+  },
+  {
+    "id": "mw_concussion_missiles",
+    "name": "PT - Mísseis de concussão",
+    "mount" : "Main",
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "1d3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 2
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Drake",
+    "license_level": 2,
+    "on_hit": "O alvo deve ser bem-sucedido em um salvamento de casco ou ficará incapacitado até o final de seu próximo turno",
+    "description": "Os mísseis de concussão são equipados com cargas geradoras de sobrepressão com baixa fragmentação e baixa incandescência - eles têm o objetivo de atordoar, deter, afastar e desorientar, geralmente em conjunto com um ataque maior e mais letal.",
+    "license_id": "mf_drake"
+  },
+  {
+    "id": "mw_leviathan_heavy_assault_cannon",
+    "name": "PT - Canhão de assalto pesado do Leviatã",
+    "mount" : "Superheavy" ,
+    "type" : "Cannon" ,
+    "source" : "IPS-N",
+    "license": "Drake",
+    "license_level": 3,
+    "profiles": [
+      {
+        "name": "PT - Standard" ,
+        "skirmish": true,
+        "damage" : [
+          {
+            "type" : "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range" : [
+          {
+            "type": "Range" ,
+            "val": 8
+          }
+        ],
+        "effect": "Diferentemente de outras armas superpesadas, a Leviatã pode ser usada com Escaramuça. Você pode girar os barris dessa arma como uma ação rápida.",
+        "actions": [
+          {
+            "name": "PT - Spin Up Leviathan",
+            "activation" : "Quick" ,
+            "detail" : "Gire os barris do canhão de assalto pesado Leviathan, desacelerando seu mech e permitindo o uso de seu perfil \"Modo de rotação\"."
+          }
+        ]
+      },
+      {
+        "name": "PT - Modo de rotação",
+        "damage" : [
+          {
+            "type" : "Kinetic",
+            "val": "4d6+4"
+          }
+        ],
+        "range" : [
+          {
+            "type": "Range" ,
+            "val": 8
+          }
+        ],
+        "effect": "Enquanto estiver girando, você fica desacelerado e não pode mais usar o Leviatã com Escaramuça.<br>Você pode cessar esse efeito como um protocolo.",
+        "actions" : [
+          {
+            "name": "PT - Cessar Spin-Up",
+            "activation" : "Protocol",
+            "detail" : "Encerre o \"Modo de rotação\" do canhão de assalto pesado Leviathan, encerrando a condição de desaceleração e permitindo que o Leviathan seja usado com seu perfil \"Standard\"."
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 5
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 2
+          }
+        ]
+      }
+    ],
+    "description": "O Leviathan Heavy Assault Cannon (HAC) é um canhão rotativo maciço, com vários canos, alimentado por um reservatório externo, geralmente montado dorsalmente no chassi que o transporta. Sem modificações, o Leviatã só deve ser disparado dentro das especificações recomendadas de tempo de explosão para evitar traumas percussivos nas articulações e nos pilotos.<br>Em parceria com o Think Tank da Harrison Armory, a IPS-N está atualmente investigando soluções remotas para as demandas de consumo de munição do canhão.",
+    "license_id": "mf_drake"
+  },
+  {
+    "id": "mw_cutter_mkii_plasma_torch",
+    "name": "PT - Tocha de plasma Cutter MkII",
+    "mount" : "Auxiliary" ,
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": 1
+      },
+      {
+        "type" : "Heat" ,
+        "val": 1
+      },
+      {
+        "type" : "Burn",
+        "val": 1
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Lancaster",
+    "license_level": 3,
+    "effect": "Esta arma causa 10 PA de energia a objetos, cobertura, terreno e ambiente.",
+    "description": "Os cortadores de plasma eram primeiramente ferramentas: lâminas simples criadas para alternar e sustentar uma bainha de plasma, facilitando o corte de metal. O uso ad hoc repetido de cortadores como armas de defesa pessoal contra grupos de embarque de piratas convenceu a IPS-N da necessidade de uma variante de especificação militar da ferramenta civil - o Cutter, agora em sua segunda geração. O Cutter MkII é alimentado diretamente pelo núcleo de energia do mech, com uma porta para conectar pacotes de energia em caso de rompimento do cabo. Embora o fio de corte possa ser encurtado para o comprimento de uma faca, sua configuração mais popular é a \"cutelo\", uma opção de comprimento médio perfeita para equilibrar o alcance e a capacidade de manobra em locais próximos.",
+    "license_id": "mf_lancaster"
+  },
+  {
+    "id": "mw_war_pike",
+    "name": "PT - War Pike",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 1
+      },
+      {
+        "id": "tg_thrown",
+        "val": 5
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Nelson",
+    "license_level": 1,
+    "description": "Um pique de guerra é uma arma simples: uma haste longa, encimada por uma ponta densa e fina, destinada a perfurar a armadura. Os primeiros projetos eram derivados de pilões de mineração, mas o pique de guerra moderno é uma arma robusta, equilibrada e confiável, perfeita para uma investida.",
+    "license_id": "mf_nelson"
+  },
+  {
+    "id": "mw_power_knuckles",
+    "name": "PT - Power Knuckles",
+    "mount" : "Auxiliary" ,
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "1d3+1"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Nelson",
+    "license_level": 3,
+    "on_crit": "Seu alvo deve ser bem-sucedido em um salvamento de casco ou será nocauteado para Prone",
+    "description": "A linha de soqueiras elétricas da IPS-N é outra compra popular para pilotos que preferem lutar de perto. Assumindo a forma de qualquer coisa, desde tachas moldadas a articulações hiperdensas ou uma série de micro-ramas acelerados magneticamente, as articulações poderosas amplificam o já incrível poder de ataque de um mech.",
+    "license_id": "mf_nelson"
+  },
+  {
+    "id": "mw_hand_cannon",
+    "name": "PT - Canhão de mão",
+    "mount" : "Auxiliary" ,
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 1
+      }
+    ],
+    "source" : "IPS-N",
+    "license": "Raleigh",
+    "license_level": 1,
+    "description": "O canhão de mão IPS-N é uma versão licenciada da pistola Type-I da GMS, adaptada para um calibre muito mais pesado. Essa modificação exige que o sistema de alimentação por cinto da construção GMS seja trocado por um sistema baseado em cilindro ou revista, dependendo do modelo específico do canhão de mão.",
+    "license_id": "mf_raleigh"
+  },
+  {
+    "id": "mw_bolt_thrower",
+    "name": "PT - Bolt Thrower",
+    "mount" : "Heavy",
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "2d6"
+      },
+      {
+        "type" : "Explosive" ,
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 2
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Raleigh",
+    "license_level": 2,
+    "description": "Como acontece com muitas das armas clássicas da IPS-N, o lançador de parafusos é descendente de uma ferramenta de mineração civil. Ele dispara parafusos explosivos autopropelidos, perfeitos para uso em microgravidade e gravidade nula, bem como na atmosfera.",
+    "license_id": "mf_raleigh"
+  },
+  {
+    "id": "mw_kinetic_hammer",
+    "name": "PT - Martelo cinético",
+    "mount" : "Heavy",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "2d6+2"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 4
+      }
+    ],
+    "source" : "IPS-N",
+    "license": "Raleigh",
+    "license_level": 3,
+    "description": "Um martelo cinético é uma ferramenta simples, mas brutal. Composto por uma cabeça supermassiva fundida a uma haste longa, o martelo carrega força suficiente para criar ondas de pressão massivamente traumáticas ao receber um golpe bem-sucedido.",
+    "license_id": "mf_raleigh"
+  },
+  {
+    "id": "mw_deck_sweeper_automatic_shotgun",
+    "name": "PT - Deck-Sweeper Automatic Shotgun",
+    "mount" : "Main",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 3
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Tortuga",
+    "license_level": 1,
+    "description": "A Deck-Sweeper Automatic Shotgun é uma espingarda de dispersão alimentada por cinto, a favorita dos pilotos marítimos a bordo de estações e naves capitais. Sua metodologia é simples: carregar, apontar e disparar. Uma constrição de cano único permite a absorção pneumática - amortecendo o efeito de seu incrível recuo - e seu alimentador de cinto é compatível com muitos tipos de munição de tiro e projétil.",
+    "license_id": "mf_tortuga"
+  },
+  {
+    "id": "mw_daisy_cutter",
+    "name": "PT - Cortador de margaridas",
+    "mount" : "Heavy",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "3d6"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Cone",
+        "val": 7
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Tortuga",
+    "license_level": 2,
+    "on_attack": "Cria uma nuvem de fumaça e detritos no cone de ataque, fornecendo cobertura suave na área afetada que dura até o final do seu próximo turno",
+    "description": "O Daisy Cutter é uma arma eficaz - embora ultrapassada - que ainda é preferida por muitos pilotos da marinha. Essencialmente, é uma espingarda maciça; o piloto carrega uma carga na culatra da arma, solta um sabot embalado no cano, mira e dispara uma nuvem infernal de dardos flechette, rolamentos e tiras de magnésio inflamadas, que garantem a limpeza de qualquer convés em que tenha sido disparada.",
+    "license_id": "mf_tortuga"
+  },
+  {
+    "id": "mw_catalytic_hammer",
+    "name": "PT - Martelo catalítico",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "1d3+5"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Tortuga",
+    "license_level": 2,
+    "on_crit": "Seu alvo deve ser bem-sucedido em uma defesa de casco ou ficará atordoado até o final do próximo turno",
+    "description": "Modificado originalmente a partir de equipamentos de mineração a jato, o martelo catalítico (coloquialmente, o \"pilebunker\") foi refinado em uma formidável arma corpo a corpo. Quando disparado, uma carga impulsiona o martelo - um cilindro sólido com um espigão em uma extremidade - por um cano curto, impactando com enorme força cinética. As cabeças de martelo padrão são lisas para permitir a fácil extração dos alvos, mas podem ser destacadas e substituídas se a recuperação for impossível. Qualquer instalação de um martelo catalítico exige o reforço da superestrutura para permitir a dispersão suficiente da energia.",
+    "license_id": "mf_tortuga"
+  },
+  {
+    "id": "mw_impact_lance",
+    "name": "PT - Lança de impacto",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Vlad",
+    "license_level": 1,
+    "on_attack": "Você também ataca todos os personagens em uma linha entre você e o alvo. Você recebe 1 calor para cada alvo além do primeiro.",
+    "description": "A lança de impacto é uma variante de especificação militar de uma ferramenta de mineração comum: o laser de pesquisa química de uso único. A variante militar da IPS-N monta uma série de lanças de impacto nas carruagens braquiais ou torácicas de um mecha, deixando seus manipuladores livres para usar outras armas e sistemas. Ele pode ser conectado diretamente ao núcleo de um chassi ou carregado com baterias químicas descartáveis.<br>O conjunto de lanças dispara por um microssegundo, queimando sua carga armazenada para produzir uma intensa explosão de luz que se espalha em um feixe pulsante e apertado, capaz de atravessar metros de anteparo reforçado.",
+    "license_id": "mf_vlad"
+  },
+  {
+    "id": "mw_impaler_nailgun",
+    "name": "PT - Impaler Nailgun",
+    "mount" : "Main",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Vlad",
+    "license_level": 2,
+    "on_hit": "Os alvos devem ser bem-sucedidos em uma defesa de casco ou ficarão imobilizados até o final do próximo turno.",
+    "description": "As macroflechas de dois estágios do Impaler, não combustíveis e revestidas com sabot, podem perfurar até mesmo a armadura mais pesada. Uma vez catapultado de seu lançador, o sabot se desengata ao se aproximar do alvo e aciona um segundo estágio - a propulsão interna impulsiona a macroflecha para frente com uma velocidade incrível. A penetração excessiva é certa contra alvos macios; a IPS-N aconselha o disparo dessa arma somente quando a área atrás do alvo estiver livre de aliados ou não combatentes.",
+    "license_id": "mf_vlad"
+  },
+  {
+    "id": "mw_combat_drill",
+    "name": "PT - Exercício de combate",
+    "mount" : "Superheavy",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "3d6"
+      },
+      {
+        "type" : "Energy" ,
+        "val": "1d6"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_overkill"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Vlad",
+    "license_level": 3,
+    "effect": "Ao atacar um personagem que esteja Prone, Immobilized ou Stunned, a tag Overkill dessa arma causa um bônus de dano extra de +1d6 cada vez que é ativada. Isso pode ser ativado indefinidamente se o resultado do novo dado de bônus for 1, ativando Overkill novamente.",
+    "description": "A broca de combate é uma arma brutal de combate corpo a corpo, alimentada por um enorme pacote de catalisador externo. A broca é equipada com projetores microplasmáticos projetados para pré-tratar o alvo e garantir a penetração da broca.",
+    "license_id": "mf_vlad"
+  },
+  {
+    "id": "mw_magnetic_cannon",
+    "name": "PT - Canhão magnético",
+    "mount" : "Main",
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+1"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Line" ,
+        "val": 8
+      }
+    ],
+    "source" : "SSC",
+    "license": "Bruxa Negra",
+    "license_level": 1,
+    "on_hit": "Todos os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Hull ou serão puxados 1d3+1 espaços em sua direção, ou o mais próximo possível.",
+    "description": "O canhão magnético da SSC é uma novidade do Grupo de Materiais Exóticos: um feixe de projeção eletromagnética focado na abertura que usa pulsos intensos de energia magnética para interromper e danificar o hardware. Os alvos pegos no feixe de um canhão magnético sofrem danos adicionais ao software, pois o estresse sistêmico maciço é infligido a componentes sensíveis.",
+    "license_id": "mf_black_witch"
+  },
+  {
+    "id": "mw_vulture_dmr",
+    "name": "PT - Vulture DMR",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source" : "SSC",
+    "license": "Cabeça da Morte",
+    "license_level": 2,
+    "description": "O Vulture Designated Marksman Rifle (DMR) é o principal rifle de batalha da SSC. Confiável, disponível em dezenas de configurações e calibres, e alimentado por caixa, tambor ou cinto, o Vulture é um armamento popular em uma ampla gama de mechs.",
+    "license_id": "mf_deaths_head"
+  },
+  {
+    "id": "mw_railgun",
+    "name": "PT - Railgun",
+    "mount" : "Heavy",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6+4"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Line" ,
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "SSC",
+    "license": "Cabeça da Morte",
+    "license_level": 3,
+    "description": "Os canhões ferroviários são armas simples e elegantes. Com projéteis acelerados magneticamente e sem partes móveis, elas são eficazes em qualquer teatro e totalmente autônomas em unidades descartáveis. Essa eficácia tem um custo: os canhões ferroviários consomem muita energia, tornando necessário que os portadores carreguem pacotes de tradução de energia auxiliares carregados no núcleo.",
+    "license_id": "mf_deaths_head"
+  },
+  {
+    "id": "mw_veil_rifle",
+    "name": "PT - Veil Rifle",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+1"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Line" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "source": "SSC",
+    "license": "Dusk Wing",
+    "license_level": 1,
+    "effect": "Essa arma não ataca os personagens aliados pegos em sua área de efeito; em vez disso, ela os envolve em um campo de energia coruscante que desequilibra os sistemas de mira, dando-lhes cobertura suave até o final do próximo turno.",
+    "description": "\"Fizemos o primeiro contato talvez uma hora depois de romper o cofre. Não me lembro de nada disso. Disseram-me que a maior parte do meu esquadrão foi morta imediatamente; tudo o que me lembro é da luz - brilhante - e de uma leveza em meu próprio ser.<br>\"Acredito que morri naquele momento e, no entanto, estou aqui e não consigo conciliar essas duas realidades. Alguma coisa deu errado, alguma coisa deu errado, alguma coisa se foi...\"",
+    "license_id": "mf_dusk_wing"
+  },
+  {
+    "id": "mw_burst_launcher",
+    "name": "PT - Burst Launcher",
+    "mount" : "Main",
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "1d3"
+      },
+      {
+        "type" : "Heat" ,
+        "val": 1
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Dusk Wing",
+    "license_level": 2,
+    "on_crit": "O alvo fica incapacitado até o final de seu próximo turno",
+    "description": "\"Sim, eles poderiam morrer. Nós matamos muitos deles - os explodimos com lançadores de rajadas e canhões. Acho que eles não se importavam com isso. Não como insetos; não assim... ainda há uma utilidade para os insetos: como alimento, como componentes necessários em um ecossistema. A morte deles nos atrasou, mas não os comandou para nos atrasar. Mesmo quando entramos na última câmara e a vimos, acho que ela nem reconheceu que estávamos lá.\"",
+    "license_id": "mf_dusk_wing"
+  },
+  {
+    "id": "mw_rail_rifle",
+    "name": "PT - Rifle de trilho",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Line" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source" : "SSC",
+    "license": "Metalmark",
+    "license_level": 2,
+    "description": "Os rifles de trilho são armas populares para uso em todos os teatros, mas são a única opção para pilotos que operam em atmosferas compostas de gases altamente combustíveis. Eles usam uma linha de eletroímãs em cascata para acelerar pequenos projéteis a velocidades tremendas, disparando sem a necessidade de combustão.<br>Como outras armas ferroviárias, os rifles ferroviários são silenciosos em comparação com suas contrapartes tradicionais, embora os requisitos de energia maciça dificultem a ocultação de suas assinaturas de energia.",
+    "license_id": "mf_metalmark"
+  },
+  {
+    "id": "mw_shock_knife",
+    "name": "PT - Faca de choque",
+    "mount" : "Auxiliary" ,
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": 1
+      },
+      {
+        "type" : "Burn",
+        "val": 2
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "val": 5
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source" : "SSC",
+    "license": "Metalmark",
+    "license_level": 2,
+    "description": "As facas Shock são lâminas curtas e motorizadas projetadas para integração com as Shock Wreaths, uma modificação popular pós-fab. As facas são esculpidas de forma personalizada pelo enclave de artesãos Terashima da SSC, cada uma com o carimbo de hash exclusivo de seu designer. Parte da linha LUX-Iconic da SSC - uma faixa acessível a civis da linha BELLA CIAO - cada código de impressão de faca de choque permite apenas um único uso. Se perdido, os pilotos devem enviar um pedido de desculpas e uma solicitação por escrito explicando as circunstâncias da perda para receber outro código.",
+    "license_id": "mf_metalmark"
+  },
+  {
+    "id": "mw_sharanga_missiles",
+    "name": "PT - Mísseis Sharanga",
+    "mount" : "Main",
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": 3
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Monarch",
+    "license_level": 1,
+    "effect": "Essa arma pode atacar dois alvos ao mesmo tempo",
+    "description": "\"Foi um duelo. É por isso que eles foram feitos: para duelar e, nesse combate, abalar os pilares do universo.\" - \"Notas para o jovem John\", Ministrações do Professor Mestre",
+    "license_id": "mf_monarch"
+  },
+  {
+    "id": "mw_gandiva_missiles",
+    "name": "PT - Mísseis Gandiva",
+    "mount" : "Heavy",
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6+3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "SSC",
+    "license": "Monarch",
+    "license_level": 2,
+    "description": "Os mísseis Gandiva são um pilar confiável da linha BELLA CIAO da Smith-Shimano. Assim como o Pinaka, mais pesado, o Gandiva é equipado com sistemas de reposicionamento no meio do voo assistidos por jato, aprimorando a navegação do alvo em ambientes de campo de batalha que mudam rapidamente. A plataforma de entrega do Gandiva é administrada por uma inteligência artificial de drones COMP/CON, dando-lhe a capacidade de aprender com cada experiência de lançamento.",
+    "sp": 1,
+    "license_id": "mf_monarch"
+  },
+  {
+    "id": "mw_pinaka_missiles",
+    "name": "PT - Mísseis Pinaka",
+    "mount" : "Superheavy" ,
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "2d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 20
+      },
+      {
+        "type" : "Blast" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "SSC",
+    "license": "Monarch",
+    "license_level": 3,
+    "effect": "Os ataques com essa arma criam até duas áreas de explosão 1, que não podem se sobrepor.<br>Você também pode retardar o impacto dos ataques feitos com essa arma. Escolha a(s) área(s) alvo, que se tornam visíveis para todos os personagens: os mísseis aterrissam no final da próxima rodada, depois que todos os personagens tiverem agido, e causam 3d6 de dano explosivo em vez de 2d6, mas você fica desacelerado até o final do seu próximo turno.",
+    "description": "Os mísseis Pinaka são mísseis maciços de dois estágios, normalmente montados ao longo da coluna vertebral de um mech ou transportados, desmontados, para serem lançados de uma montagem braquial. O Pinaka foi originalmente adaptado de mísseis de navio para navio; como tal, seu segundo estágio usa reposicionamento assistido por jato para orientação no meio do voo",
+    "license_id": "mf_monarch"
+  },
+  {
+    "id": "mw_fold_knife",
+    "name": "PT - Faca dobrável",
+    "mount" : "Auxiliary" ,
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "source": "SSC",
+    "license": "Mourning Cloak",
+    "license_level": 1,
+    "on_crit": "Você pode se teletransportar 2 espaços em qualquer direção depois que o ataque for resolvido",
+    "description": ">//[Estou sozinho aqui?]<br>>//[[Não. Há apenas uma ausência de você. Está muito movimentado aqui, mas você não pode ver isso]]<br>- DHIYED fragment tablet 1.3",
+    "license_id": "mf_mourning_cloak"
+  },
+  {
+    "id": "mw_vijaya_rockets",
+    "name": "PT - Vijaya Rockets",
+    "mount" : "Auxiliary" ,
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "1d3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "source": "SSC",
+    "license": "Mourning Cloak",
+    "license_level": 1,
+    "description": "Destinados a serem usados como multiplicadores de força em combates a curta distância, os foguetes Vijaya são foguetes miniaturizados lançados de um lançador alimentado por tambor. Na detonação, as cargas moldadas dos foguetes projetam a explosão para a frente, longe do usuário.",
+    "license_id": "mf_mourning_cloak"
+  },
+  {
+    "id": "mw_variable_sword",
+    "name": "PT - Espada variável",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      }
+    ],
+    "source": "SSC",
+    "license": "Mourning Cloak",
+    "license_level": 3,
+    "on_crit": "Causa +1d6 de dano bônus",
+    "description": "A espada variável é uma marca registrada da Smith-Shimano: uma extensão de fio molecular afiado como navalha presa a um cabo e travada no lugar por um campo magnético, as espadas variáveis são invisíveis a olho nu até que cortem seu alvo. Projetadas nos primórdios das viagens interestelares, as espadas variáveis foram projetadas para permitir a coleta precisa de amostras e, ao mesmo tempo, reduzir a carga geral sobre o núcleo de um mecanismo.",
+    "license_id": "mf_mourning_cloak"
+  },
+  {
+    "id": "mw_oracle_lmg_i",
+    "name": "PT - Oracle LMG-I",
+    "mount" : "Auxiliary" ,
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Swallowtail",
+    "license_level": 2,
+    "description": "A metralhadora leve indireta Oracle (designada O/LMG-I) reúne um sistema de cano quádruplo estático DOWNPOUR subsentido e de alto volume em um único cilindro, normalmente instalado no painel dorsal de um chassi. Emparelhado com um sistema de disparo, o Oracle é capaz de direcionar fogo cinético persistente e ignorante contra alvos.",
+    "sp": 1,
+    "license_id": "mf_swallowtail"
+  },
+  {
+    "id": "mw_nanobot_whip",
+    "name": "PT - Chicote de nanorobôs",
+    "mount" : "Heavy",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Balor",
+    "license_level": 3,
+    "on_crit": "Puxe seu alvo para um espaço livre adjacente a você, ou o mais próximo possível.",
+    "description": "Usando a codificação de enxame e as diretrizes da legião, os coletivistas da HORUS criaram uma estrutura para organizar um enxame de nanites em uma arma semelhante a um chicote. Os chicotes de nanobots podem se retrair em sua bolha de base para serem guardados, destacar-se em combate corpo a corpo para conter inimigos próximos e retornar à sua unidade de base quando convocados.",
+    "sp": 2,
+    "license_id": "mf_balor"
+  },
+  {
+    "id": "mw_swarm_hive_nanites",
+    "name": "PT - Nanites do enxame/colmeia",
+    "mount" : "Main",
+    "type" : "Nexus",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": 2
+      },
+      {
+        "type" : "Burn" ,
+        "val": 2
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Balor",
+    "license_level": 3,
+    "description": "Os nanites SWARM/HIVE estão entre as armas mais insidiosas produzidas pela HORUS: despachados em maniples - unidades únicas de \"enxame\" que carregam nanites suficientes para preencher um metro quadrado - os nanites SWARM/HIVE combinam as propriedades de invasão sistêmica do código BOOST/HIVE com o consumo agressivo de um manipulador CONSUME/HIVE. Lançados a partir de bolhas montadas, os maniples de nanites SWARM/HIVE caem sobre seus alvos como grandes nuvens de dentes, infiltrando-se em compartimentos e módulos sensíveis antes de consumir qualquer material orgânico e inorgânico que tocarem.",
+    "license_id": "mf_balor"
+  },
+  {
+    "id": "mw_autopod",
+    "name": "PT - Autopod",
+    "mount" : "Main",
+    "type" : "Launcher",
+    "no_attack": true,
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": 3
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Goblin",
+    "license_level": 1,
+    "effect": "Em vez de usar qualquer tipo de mecanismo de gatilho, essa arma procura automaticamente por bloqueios de alvos, disparando discos giratórios e afiados quando bem-sucedidos. Obtenha a reação Autonomous Assault (Ataque Autônomo), que é a única maneira de atacar com a Autopod.",
+    "actions": [
+      {
+        "name": "PT - Assalto Autônomo",
+        "activation" : "Reaction" ,
+        "frequency" : "1/round",
+        "trigger" : "Outro personagem ataca um alvo a uma distância de 15 de você e consome Lock On",
+        "detail" : "Você pode atingir automaticamente o alvo dele com o Autopod."
+      }
+    ],
+    "description": "O autopod é uma pequena arma antipessoal aparentemente criada pelos comunicadores da HORUS para continuar a ação ofensiva em caso de morte de seu operador. Cada unidade é, em teoria, governada por um estímulo da protomente do INSTINCT. Nenhum modelo novo foi encontrado desde DHIYED, e todas as versões existentes do Autopod devem ser consideradas extremamente perigosas, pois é provável que o código INSTINCT que alimenta seus protominds a bordo tenha se corrompido ainda mais desde sua criação.",
+    "sp": 1,
+    "license_id": "mf_goblin"
+  },
+  {
+    "id": "mw_vorpal_gun",
+    "name": "PT - Pistola Vorpal",
+    "mount" : "Main",
+    "type" : "Cannon" ,
+    "no_attack": true,
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      }
+    ],
+    "source": "HORUS",
+    "license": "Gorgon",
+    "license_level": 3,
+    "effect": "Obtenha a reação Snicker-Snack, que é a única maneira de atacar com essa arma",
+    "actions": [
+      {
+        "name": "PT - Snicker-Snack",
+        "activation": "Reaction" ,
+        "frequency" : "1/round",
+        "trigger" : "Um personagem hostil dentro do alcance da Vorpal Gun e da linha de visão causa dano a um personagem aliado",
+        "detail" : "Você pode fazer um ataque contra o personagem hostil com a Vorpal Gun."
+      }
+    ],
+    "description": "NÃO OLHE DIRETAMENTE PARA A ABERTURA.",
+    "license_id": "mf_gorgon"
+  },
+  {
+    "id": "mw_ghoul_nexus",
+    "name": "PT - Ghoul Nexus",
+    "mount" : "Main",
+    "type" : "Nexus",
+    "damage" : [
+      {
+        "type" : "Variable" ,
+        "val": "1d3+2"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_set_damage_type"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Hydra",
+    "license_level": 1,
+    "on_attack": "Escolha o tipo de dano dessa arma",
+    "description": "Os nexos Ghoul comandam alguns dos maiores drones viáveis no combate moderno. Esses drones são um pouco menores do que um cilindro de metal humano comum, repleto de pontos rígidos adequados para a maioria das armas antimecânicas de nível de infantaria. Impulsionados por sistemas a jato com capacidade VTOL/hover, os drones Ghoul são unidades autônomas temíveis em todo o teatro, difíceis de rastrear e derrubar.",
+    "license_id": "mf_hydra"
+  },
+  {
+    "id": "mw_ghast_nexus",
+    "name": "PT - Ghast Nexus",
+    "mount" : "Heavy",
+    "type" : "Nexus",
+    "damage" : [
+      {
+        "type": "Explosive" ,
+        "val": "1d6+3"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Hydra",
+    "license_level": 2,
+    "effect": "Esta arma pode ser usada para atacar normalmente ou implantada como um Drone",
+    "deployables": [
+      {
+        "name": "PT - Ghast Drone",
+        "type" : "Drone",
+        "activation" : "Free",
+        "recall": "Quick" ,
+        "redeploy" : "Quick" ,
+        "size" : 0.5,
+        "hp": 5,
+        "armor" : 2,
+        "edef": 10,
+        "evasion" 	: 10,
+        "detail" : "Esse nexus Ghast pode ser implantado em um espaço livre dentro dos Sensores e da linha de visão como uma ação livre, onde se torna um drone estacionário e flutuante. Uma vez posicionado, você ainda pode usá-lo para ataques de Escaramuça e Barragem como se ele ainda fosse uma arma, mas com linha de visão e alcance traçados a partir de sua localização.<br>Você pode recuperar ou reposicionar o nexus Ghast como uma ação rápida. Até que seja chamado de volta ou destruído, ele permanece posicionado até o final da cena. Se for destruído, ele seguirá as regras para Drones destruídos e não poderá ser usado até ser consertado."
+      }
+    ],
+    "description": "O Ghast é uma versão mais blindada e mais armada do drone Ghoul menor; os drones Ghast possuem um sistema de voo aprimorado capaz de empunhar armas de nível mech dentro dos parâmetros ideais e podem operar independentemente do chassi hospedeiro ou como uma arma integrada. Nas Hydras, os drones Ghast geralmente atuam como segmentos torácicos, fornecendo blindagem para os sistemas principais: usina de força, cockpit, caixões NHP etc.",
+    "license_id": "mf_hydra"
+  },
+  {
+    "id": "mw_annihilation_nexus",
+    "name": "PT - Annihilation Nexus",
+    "mount" : "Superheavy" ,
+    "type" : "Nexus",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6+3"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Burst",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Hydra",
+    "license_level": 3,
+    "on_attack": "Você pode fazer um segundo ataque com essa arma no início do seu próximo turno como um protocolo. Esse ataque secundário não pode causar dano adicional e não aciona ataques secundários adicionais. Você pode centralizar o ataque dessa arma em si mesmo ou em qualquer um dos seus Drones dentro dos Sensores.",
+    "actions" : [
+      {
+        "name": "PT - Ataque secundário do Nexus de Aniquilação",
+        "activation": "Protocol",
+        "detail" : "Se você fez um ataque com o Nexo de Aniquilação no seu último turno, pode fazer um segundo ataque com essa arma. Esse ataque secundário não pode causar dano adicional e não aciona ataques secundários adicionais. Você pode centralizar o ataque dessa arma em si mesmo ou em qualquer um dos seus Drones dentro dos Sensores."
+      }
+    ],
+    "description": "\"Uma tempestade de morte com lâminas\" - nanites organizados em manípulos, liberados dos nexus integrados de um chassi ou de tubos de disparo de uso único em uma explosão de anéis de filamentos tão afiados que cortam seus alvos em nível molecular. O effect visual de um maniple sendo lançado é frequentemente comparado a um enfeite de Natal sendo disparado através da atmosfera.",
+    "license_id": "mf_hydra"
+  },
+  {
+    "id": "mw_catalyst_pistol",
+    "name": "PT - Catalyst Pistol",
+    "mount" : "Auxiliary" ,
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Cone",
+        "val": 3
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "HORUS",
+    "license": "Manticore",
+    "license_level": 1,
+    "description": "\"Queime, demônio, diante do fogo do Olho de RA!\"",
+    "license_id": "mf_manticore"
+  },
+  {
+    "id": "mw_arc_projector",
+    "name": "PT - Projetor de arco",
+    "mount" : "Heavy",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6+1"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "HORUS",
+    "license": "Manticore",
+    "license_level": 2,
+    "on_hit": "Você também pode fazer um ataque secundário contra um personagem diferente dentro do alcance 3 do primeiro alvo. Você pode continuar a fazer ataques secundários quando for atingido, desde que haja novos alvos válidos dentro do alcance; entretanto, cada ataque gera 1 calor, e os ataques secundários não podem causar dano adicional. Os personagens não podem ser atingidos mais de uma vez com o mesmo disparo dessa arma.",
+    "description": "\"Que o fogo caia sobre você, APEP! Sua carne foi arrancada de seus ossos; o Senhor do Duat jamais permitirá que sua sombra se erga novamente!\"",
+    "license_id": "mf_manticore"
+  },
+  {
+    "id": "mw_smartgun",
+    "name": "PT - Smartgun",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": 4
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Pegasus",
+    "license_level": 1,
+    "description": "\"Arma inteligente\" é um termo amplo que descreve toda e qualquer arma capaz de interagir com sistemas de bordo para aumentar sua eficácia em combate. Smartguns são armas que vêm pré-carregadas com software complementar e o hardware necessário para interagir com sistemas de mira e NHPs hospedeiros. Uma adição popular a muitos mechs HORUS, as armas inteligentes são sistemas de entrega cinética confiáveis.",
+    "sp": 2,
+    "license_id": "mf_pegasus"
+  },
+  {
+    "id": "mw_mimic_gun",
+    "name": "PT - Mimic Gun",
+    "mount" : "Heavy",
+    "type" : "???",
+    "no_mods": true,
+    "no_core_bonus": true,
+    "damage" : [
+      {
+        "override": true,
+        "type" : "Kinetic",
+        "val": "???"
+      }
+    ],
+    "range" : [
+      {
+        "override": true,
+        "type": "Range" ,
+        "val": "???"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Pegasus",
+    "license_level": 2,
+    "effect": "Essa arma horripilante não tem forma básica; ela se contorce constantemente em diferentes formas, imitando as armas de outros combatentes. Ela conta como todos os tipos de armas de longo alcance simultaneamente (por exemplo, CQB, Rifle etc.), mas não pode receber Mods nem se beneficiar dos bônus principais, embora ainda se beneficie dos talentos normalmente.<br>No início do combate, role 3d20 e anote os resultados na ordem: X, Y e Z. X é seu alcance básico inicial (antes das modificações dos talentos). No início de cada um de seus turnos após o primeiro, a arma mímica passa para o próximo resultado, tomando-o como seu alcance básico. Depois de Z, ela volta para X.<br>A arma mímica causa cinética igual a 1 + metade de seu alcance básico atual.<br>Você pode provocar a arma mímica como uma ação completa, rolando um novo conjunto de 3d20.",
+    "actions" : [
+      {
+        "name": "PT - Provocar arma mímica",
+        "activation" : "Full" ,
+        "detail" : "Role um novo conjunto de 3d20 para definir os valores da Mimic Gun."
+      }
+    ],
+    "description": "Esta não é uma arma",
+    "license_id": "mf_pegasus"
+  },
+  {
+    "id": "mw_autogun",
+    "name": "PT - Autogun",
+    "mount" : "Main",
+    "type" : "Cannon" ,
+    "no_attack": true,
+    "no_synergies": true,
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": 3
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "source": "HORUS",
+    "license": "Pegasus",
+    "license_level": 3,
+    "actions" : [
+      {
+        "name": "PT - Fire Autogun",
+        "activation" : "Free" ,
+        "detail" : "Essa arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma ação livre no final do seu turno. Ela não se beneficia de seus talentos nem os aciona."
+      }
+    ],
+    "effect": "Essa arma não pode fazer ataques normais. Em vez disso, você pode atacar com ela como uma ação livre no final do seu turno. Ela não se beneficia de seus talentos nem os aciona.",
+    "description": "Como o nome indica, as autoguns são armas automatizadas. Semelhantes aos sistemas de defesa de ponto, as pistolas automáticas têm câmara para fornecer fogo eficaz contra alvos blindados. Normalmente montada em um braço secundário estabilizado, uma pistola automática ajustada de forma confiável pode ser usada para rastrear e eliminar unidades inimigas designadas enquanto o piloto se concentra em armas ou processos mais especializados. Baratas, com bases de código maleáveis, as pistolas automáticas são comuns entre as células HORUS ativas e armadas.",
+    "sp": 1,
+    "license_id": "mf_pegasus"
+  },
+  {
+    "id": "mw_siege_cannon",
+    "name": "PT - Canhão de cerco",
+    "mount" : "Superheavy" ,
+    "type" : "Cannon" ,
+    "source" : "HA",
+    "license": "Barbarossa",
+    "license_level": 3,
+    "profiles" : [
+      {
+        "name": "PT - Modo de cerco",
+        "range" : [
+          {
+            "type": "Range" ,
+            "val": 30
+          },
+          {
+            "type" : "Blast" ,
+            "val": 2
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Explosive" ,
+            "val": "3d6"
+          }
+        ],
+        "on_attack": "Escolha disparar no modo de cerco ou no modo de fogo direto",
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_ordnance"
+          },
+          {
+            "id": "tg_loading"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 4
+          }
+        ]
+      },
+      {
+        "name": "PT - Modo de fogo direto",
+        "range" : [
+          {
+            "type": "Range" ,
+            "val": 20
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Explosive" ,
+            "val": "3d6"
+          }
+        ],
+        "on_attack": "Escolha disparar no modo de cerco ou no modo de fogo direto",
+        "tags": [
+          {
+            "id": "tg_knockback",
+            "val": 2
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 2
+          }
+        ]
+      }
+    ],
+    "description": "O canhão de cerco é a peça de artilharia por excelência do Armory: um canhão de obus alimentado por um sistema de carregamento automatizado. Normalmente montados em mechs de longo alcance implantados em funções de artilharia ou de apoio a esquadrões, os canhões de cerco são capazes de disparar tanto indiretamente quanto diretamente, conforme a situação exigir, com opções variáveis de munição.",
+    "license_id": "mf_barbarossa"
+  },
+  {
+    "id": "mw_krakatoa_thermobaric_flamethrower",
+    "name": "PT - Lança-chamas termobárico Krakatoa",
+    "mount" : "Heavy",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": 1
+      },
+      {
+        "type" : "Burn",
+        "val": 4
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Cone",
+        "val": 5
+      }
+    ],
+    "source": "HA",
+    "license": "Genghis",
+    "license_level": 1,
+    "description": "Entre o ambiente arbóreo denso de Hercynia, as táticas de enxame dos egregorianos e o desempenho ineficaz da munição de projétil, a necessidade de armas de efeito amplo era evidente. A GMS desenvolveu rapidamente o Krakatoa - um lança-chamas termobárico - e o disseminou entre os afiliados. O Krakatoa foi rapidamente adotado pelas Forças Expedicionárias Marítimas da União, sendo muito utilizado nas profundezas das selvas continentais hercínias graças à sua estabilidade, confiabilidade e poder de parada.<br>Mais tarde retrabalhado e adotado pelo Armory após a resolução da Crise Hercínia, o Krakatoa se tornou uma ferramenta popular para a criação de corta-fogos em áreas de negação.",
+    "license_id": "mf_genghis"
+  },
+  {
+    "id": "mw_plasma_thrower",
+    "name": "PT - Plasma Thrower",
+    "mount" : "Superheavy" ,
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6+2"
+      },
+      {
+        "type" : "Burn" ,
+        "val": 6
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Cone",
+        "val": 7
+      },
+      {
+        "type" : "Line" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 4
+      }
+    ],
+    "source" : "HA",
+    "license": "Genghis",
+    "license_level": 3,
+    "effect": "Pode ser disparado como Cone 7 <i>ou</i> Linha 10",
+    "on_attack": "Chamas incandescentes continuam a queimar em 3 espaços livres de sua escolha dentro da área afetada, com duração pelo resto da cena. Quando os personagens iniciam seu turno em um desses espaços ou entram em um deles pela primeira vez em uma rodada, eles recebem 1d6 de dano de energia.",
+    "description": "O lançador de plasma surgiu tarde demais na Crise Hercínia para ser amplamente utilizado em campo. Os escassos dados coletados dos esquadrões da MEF que o utilizaram sugerem que os lançadores de plasma teriam tido um tremendo impacto nos resultados de várias batalhas importantes que ocorreram durante a fase mais sangrenta da Crise.",
+    "license_id": "mf_genghis"
+  },
+  {
+    "id": "mw_stub_cannon",
+    "name": "PT - Stub Cannon",
+    "mount" : "Auxiliary" ,
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Explosive" ,
+        "val": 3
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_knockback",
+        "val": 1
+      }
+    ],
+    "source" : "HA",
+    "license": "Iskander",
+    "license_level": 1,
+    "description": "O canhão stub é um canhão rotativo supercompacto - de curto alcance, mas adequado para integração em hardpoints e manipuladores.",
+    "license_id": "mf_iskander"
+  },
+  {
+    "id": "mw_gravity_gun",
+    "name": "PT - Arma de gravidade",
+    "no_mods": true,
+    "no_core_bonus": true,
+    "mount" : "Heavy",
+    "type" : "Rifle",
+    "damage" : [],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 8
+      },
+      {
+        "type" : "Blast" ,
+        "val": 3
+      }
+    ],
+    "source" : "HA",
+    "license": "Iskander",
+    "license_level": 2,
+    "on_attack": "Os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Hull ou receberão 1d6 de dano de energia e serão puxados o mais próximo possível do centro da explosão. Essa arma não pode ser modificada ou se beneficiar de bônus de núcleo.",
+    "description": "\"As complexas negociações da gravidade e do tempo, rompidas em um instante por uma máquina que pode tocar ondas como um músico toca as cordas de um violão.<br>Temos como arma a força que mantém todas as coisas em seu abraço. O que poderia dar errado?\"",
+    "license_id": "mf_iskander"
+  },
+  {
+    "id": "mw_displacer",
+    "name": "PT - Displacer",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": 10
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 10
+      },
+      {
+        "type" : "Blast" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 10
+      }
+    ],
+    "source" : "HA",
+    "license": "Napoleon",
+    "license_level": 3,
+    "description": "O Displacer é o resultado de testes contínuos de exposição ao espaço de blink e do refinamento dos métodos padrão de viagem interestelar. Em termos de aparência, o Displacer poderia ser confundido com um rifle de energia convencional, mas requer um reator secundário maciço montado na parte dorsal: quando disparado, o Displacer identifica uma bolha do espaço local (tamanho e localização determinados ad hoc pelo usuário) e a encaixa no espaço de blink. O destino da bolha é desconhecido, mas o efeito é dramático: tudo o que estiver dentro dela simplesmente deixa de existir nessa dimensão, sendo transportado para algum lugar no vazio do espaço de blink. O Displacer não emite nenhum som quando disparado, mas a súbita e necessária ventilação de sua fonte de alimentação é tremenda; da mesma forma, a onda de calor de sua ventilação de explosão traseira é mortal para qualquer pessoa não blindada exposta a ela.",
+    "license_id": "mf_napoleon"
+  },
+  {
+    "id": "mw_shatterhead_colony_missiles",
+    "name": "PT - Mísseis da colônia Shatterhead",
+    "mount" : "Main",
+    "type" : "Launcher" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+1"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_arcing"
+      }
+    ],
+    "source" : "HA",
+    "license": "Saladin",
+    "license_level": 1,
+    "effect": "A rolagem de ataque final dessa arma nunca pode ser afetada pela dificuldade.",
+    "description": "Desenvolvidos após os custosos confrontos de embarque urbano e naval na Guerra de Interesses, os mísseis Shatterhead Colony Missiles agora fazem parte do arsenal padrão das equipes de interdição da Armory. Quando atingem uma distância ideal, os Shatterheads se abrem em uma explosão de combustível de alto catalisador para revelar um conjunto de pequenas pastilhas termobáricas que se espalham e se inflamam, sufocando a área afetada com chamas. O effect sobrecarrega a blindagem de energia e satura a cobertura, embora apenas uma pequena porcentagem dos projéteis realmente atinja o alvo.",
+    "sp": 1,
+    "license_id": "mf_saladin"
+  },
+  {
+    "id": "mw_sol_pattern_laser_rifle",
+    "name": "PT - SOL-Pattern Laser Rifle",
+    "mount" : "Main",
+    "type" : "Rifle",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6"
+      },
+      {
+        "type" : "Burn" ,
+        "val": 1
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source" : "HA",
+    "license": "Sherman",
+    "license_level": 1,
+    "description": "Os rifles a laser contêm uma série de aberturas e lentes que amplificam e focalizam a luz em feixes estreitos, às vezes visíveis, que aquecem a zona de impacto por tempo suficiente para transformá-la em plasma. O fuzil a laser de padrão SOL produz consistentemente 3,5 petawatts, de forma pulsada, mas também pode projetar um feixe constante em níveis de potência mais baixos. O SOL é totalmente autônomo, mas pode ser conectado ao núcleo do reator de um mecanismo para recarga de emergência.<br>Embora alguns rifles a laser funcionem como dispositivos de comunicação e transferência de dados, o SOL é estritamente adequado para aplicações de combate.",
+    "license_id": "mf_sherman"
+  },
+  {
+    "id": "mw_andromeda_pattern_heavy_laser_rifle",
+    "name": "PT - ANDROMEDA-Pattern Heavy Laser Rifle",
+    "mount" : "Heavy",
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "2d6"
+      },
+      {
+        "type" : "Burn" ,
+        "val": 3
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 12
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "source" : "HA",
+    "license": "Sherman",
+    "license_level": 2,
+    "description": "O Harrison Armory ANDROMEDA-Pattern Heavy Laser Rifle aumenta o SOL pela metade, adicionando um segundo projetor que pode disparar de forma independente, sincronizada ou em padrões e comprimentos de onda alternados com o projetor principal. O effect supera a maioria dos escudos, mas o consumo de energia necessário torna essa arma impraticável em plataformas sem a redução e a dispersão de calor necessárias para gerenciar o custo incrível.",
+    "license_id": "mf_sherman"
+  },
+  {
+    "id": "mw_tachyon_lance",
+    "name": "PT - Lança de Tachyon",
+    "montagem": "Superheavy" ,
+    "type" : "Cannon" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "2d6"
+      },
+      {
+        "type" : "Burn" ,
+        "val": 8
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 20
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 4
+      }
+    ],
+    "source" : "HA",
+    "license": "Sherman",
+    "license_level": 3,
+    "on_attack": "Se você estiver na Zona de Perigo, crie uma explosão de plasma incandescente de cone 3 na direção oposta ao ataque. Os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de engenharia ou sofrerão 4 de queimadura e 2 de calor. Até o início de seu próximo turno, a área afetada fornece cobertura suave.",
+    "description": "As lanças de táquion são os resultados armados de experimentos conjuntos do IPS-N e da Harrison Armory em viagens mais rápidas que a luz. Tornados obsoletos por desenvolvimentos subsequentes em viagens no espaço intermitente (e pela dificuldade de garantir a sobrevivência de passageiros corpóreos), os aceleradores de táquions da Armory foram desativados até que os engenheiros do Think Tank perceberam seu potencial de aplicação como armas. As lanças de táquions projetam partículas de táquions - essencialmente objetos subatômicos localizados - mais rápido que a luz em direção aos seus alvos. Essas partículas são impossíveis de serem percebidas opticamente e, como viajam mais rápido que a luz, não podem ser vistas ou evitadas. Embora as partículas sejam minúsculas, elas viajam com velocidade e energia colossais. O dano que uma lança de táquions causa ao seu alvo - caso acerte - é incomparável.",
+    "license_id": "mf_sherman"
+  },
+  {
+    "id": "mw_annihilator",
+    "name": "PT - Annihilator",
+    "mount" : "Main",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+2"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 5
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "HA",
+    "license": "Tokugawa",
+    "license_level": 1,
+    "on_hit": "Faça um ataque secundário contra todos os personagens em um raio de 1 do alvo. Esses ataques não podem causar dano adicional e não acionam o custo de calor ou os ataques secundários do Aniquilador.",
+    "description": "A Harrison Armory é conhecida por empregar métodos de desenvolvimento pouco convencionais: as soluções táticas são teorizadas e projetadas em campo com a mesma frequência com que são projetadas em laboratório, sendo que as primeiras geralmente superam as segundas. O nome Annihilator vem da gíria dos pilotos para uma arma improvisada pela primeira vez na Rebelião de Bradbury, quando os pilotos desesperados da resistência encontraram uma maneira de desviar o incrível calor residual de seus reatores para uma explosão direcionada.",
+    "license_id": "mf_tokugawa"
+  },
+  {
+    "id": "mw_torch",
+    "name": "PT - Tocha",
+    "mount" : "Main",
+    "type" : "Melee" ,
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d6"
+      },
+      {
+        "type" : "Burn" ,
+        "val": 3
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "HA",
+    "license": "Tokugawa",
+    "license_level": 2,
+    "description": "A Torch é uma arma potente: um cortador de plasma pesado com lâminas crescentes, alimentado diretamente pelo reator de um chassi. As tochas geralmente são projetadas como eixos, embora suas lâminas possam ser alteradas para uma série de outros formatos. Uma arma comum em teatros CQB, a tocha tornou-se recentemente um símbolo de status entre os oficiais, sendo carregada por muitos ao lado de uma arma auxiliar menor.",
+    "license_id": "mf_tokugawa"
+  },
+  {
+    "id": "mw_fuel_rod_gun",
+    "name": "PT - Fuel Rod Gun",
+    "mount" : "Main",
+    "type" : "CQB",
+    "damage" : [
+      {
+        "type" : "Energy" ,
+        "val": "1d3+2"
+      }
+    ],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 3
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "ptbr_talents_pt_-_cavaleiro_nuclear",
+    "talent_rank": 3,
+    "on_attack": "Clear 4 heat",
+    "description": "Obtido com o \"Cavaleiro Nuclear\" Talento de nível 3",
+    "license_id": ""
+  },
+  {
+    "id": "mw_prototype_1",
+    "name": "PT - Protótipo de arma I",
+    "mount" : "Main",
+    "type" : "Special" ,
+    "damage" : [
+      {
+        "type" : "Variable" ,
+        "val": "1d6+2"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      },
+      {
+        "type" : "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": "1d6+2"
+      },
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_set_max_uses"
+      },
+      {
+        "id": "tg_set_damage_type"
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "ptbr_talents_pt_-_engenheiro",
+    "talent_rank": 1,
+    "effect": "Essa arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos. <br>Ao instalá-la ou durante um Reparo Total, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1  ou Alcance 10 (todos os outros tipos). Além disso, toda vez que você realizar um Reparo Completo, role novamente 1d6+2 para determinar os usos limitados dessa arma.",
+    "description": "Obtido com o <i>\"Engineer\" Rank I</i> Talento",
+    "license_id": ""
+  },
+  {
+    "id": "mw_prototype_2",
+    "name": "PT - Protótipo de arma II",
+    "mount" : "Main",
+    "type" : "Special" ,
+    "damage" : [
+      {
+        "type" : "Variable" ,
+        "val": "1d6+2"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      },
+      {
+        "type" : "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": "1d6+2"
+      },
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_set_max_uses"
+      },
+      {
+        "id": "tg_set_damage_type"
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "ptbr_talents_pt_-_engenheiro",
+    "talent_rank": 2,
+    "effect": "Essa arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos. <br>Ao instalá-la ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1  ou Alcance 10 (todos os outros tipos). Além disso, toda vez que realizar um Reparo Completo, role novamente 1d6+2 para determinar os usos limitados dessa arma e escolha dois: <ul><li><b>Ótica Ajustada:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente. </li><li><b>Escudo do reator cortado:</b> Toda vez que atacar com sua arma protótipo, você pode escolher - ao custo de 2 de Calor - atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li><b>Arma de longo alcance:</b> Cone 3, Linha 5 ou [Explosão 1, Alcance 10].</li><li><b>Arma de combate:</b> Explosão 1.</li></li></ul></ul>",
+    "description": "Obtido com o <i>\"Engineer\" Rank II</i> Talento",
+    "license_id": ""
+  },
+  {
+    "id": "mw_prototype_3",
+    "name": "PT - Protótipo de arma III",
+    "mount" : "Main",
+    "type" : "Special" ,
+    "damage" : [
+      {
+        "type" : "Variable" ,
+        "val": "1d6+4"
+      }
+    ],
+    "range" : [
+      {
+        "type" : "Threat" ,
+        "val": 1
+      },
+      {
+        "type" : "Range" ,
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": "2d6"
+      },
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_set_max_uses"
+      },
+      {
+        "id": "tg_set_damage_type"
+      }
+    ],
+    "source": "",
+    "license": "GMS",
+    "license_level": 0,
+    "talent_item": true,
+    "talent_id": "ptbr_talents_pt_-_engenheiro",
+    "talent_rank": 3,
+    "effect": "Essa arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos. <br>Ao instalá-la ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de dano e Ameaça 1  ou Alcance 10 (todos os outros tipos). Além disso, toda vez que você realizar um Reparo Completo, role novamente 2d6 para determinar os usos limitados dessa arma e escolha dois: <ul><li><b>Ótica Ajustada:</b> Sua arma protótipo sempre ganha +1 de Precisão nos ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente. </li><li><b>Escudo do reator cortado:</b> Toda vez que atacar com sua arma protótipo, você pode escolher - ao custo de 2 de Calor - atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li><b>Arma de longo alcance:</b> Cone 3, Linha 5 ou [Explosão 1, Alcance 10].</li><li><b>Arma de combate:</b> Explosão 1.</li></li></ul></ul>",
+    "description": "Obtido com o <i>\"Engineer\" Rank III</i> Talento",
+    "license_id": ""
+  },
+  {
+    "id": "mw_lancaster_integrated",
+    "name": "PT - Latch Drone",
+    "mount" : "Main",
+    "type" : "Launcher" ,
+    "damage" : [],
+    "range" : [
+      {
+        "type": "Range" ,
+        "val": 8
+      }
+    ],
+    "effect": "Essa arma não pode fazer ataques normais. Em vez disso, escolha um mech aliado dentro do alcance e da linha de visão e faça um ataque à distância contra Evasion 8. Em caso de acerto, você ou o alvo podem gastar 1 Repair para restaurar metade do HP do alvo.",
+    "license_id": ""
+  },
+  {
+    "id": "mw_raleigh_integrated",
+    "name": "PT - M35 Mjolnir",
+    "mount" : "Main",
+    "type" : "CQB",
+    "range" : [
+      {
+        "type" : "Range" ,
+        "val": 5
+      },
+      {
+        "type" : "Threat" ,
+        "val": 3
+      }
+    ],
+    "damage" : [
+      {
+        "type" : "Kinetic",
+        "val": 4
+      }
+    ],
+    "effect": "1/rodada, quando você recarrega qualquer arma, essa arma pode ser disparada como uma ação livre",
+    "license_id": ""
+  },
+  {
+    "id": "mw_barbarossa_integrated",
+    "name": "PT - Apocalypse Rail",
+    "mount" : "Ship-class" ,
+    "type" : "Spool Weapon" ,
+    "skirmish": false,
+    "barrage": false,
+    "effect": "O trilho do Apocalypse deve ser carregado antes de ser disparado, usando o poder básico do trilho de carga. Essa arma tem perfis diferentes determinados pelo valor atual da DIE do APOCALYPSE quando você a dispara. Cada perfil substitui o que o precede. O Apocalypse Rail não pode ser disparado contra alvos dentro do alcance 5.<br> Após um ataque com o Apocalypse Rail, o Apocalypse Die é redefinido para 4.",
+    "actions": [
+      {
+        "name": "PT - Fire Apocalypse Rail",
+        "activation" : "Full" ,
+        "detail" : "Se o valor do Dado do Apocalipse for de 1 a 3, você poderá atacar no seu turno com o Trilho do Apocalipse como uma ação completa, mas não poderá se mover nem realizar nenhuma outra ação no mesmo turno."
+      }
+    ],
+    "profiles" : [
+      {
+        "name": "PT - Charge Rail: 4",
+        "damage" : [
+          {
+            "override": true,
+            "val": "N/A"
+          }
+        ],
+        "range" : [
+          {
+            "override": true,
+            "type": "Range" ,
+            "val": "N/A"
+          }
+        ],
+        "effect": "Não pode ser disparado"
+      },
+      {
+        "name": "PT - Trilho de carga: 3",
+        "range" : [
+          {
+            "type": "Range",
+            "val": 20
+          },
+          {
+            "type" : "Blast" ,
+            "val": 2
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Explosive" ,
+            "val": "2d6"
+          }
+        ],
+        "effect": "Os objetos dentro da área afetada recebem automaticamente 20 de dano explosivo AP. Após o ataque, a nuvem de explosão permanece, fornecendo cobertura suave aos personagens dentro da área afetada até o final do seu próximo turno."
+      },
+      {
+        "name": "PT - Charge Rail: 2",
+        "range" : [
+          {
+            "type": "Range",
+            "val": 25
+          },
+          {
+            "type" : "Blast" ,
+            "val": 2
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Explosive" ,
+            "val": "3d6"
+          }
+        ],
+        "effect": "Os objetos e o terreno na área recebem automaticamente 40 de dano explosivo de PA e, ao serem atingidos, os personagens ficam despedaçados e debilitados até o final de seu próximo turno. A nuvem de explosão é uma tempestade ardente: até o final do seu próximo turno, os personagens dentro da área afetada recebem cobertura suave, e os personagens que começarem o turno dentro da área ou se moverem para lá pela primeira vez em uma rodada sofrem 4 de queimadura."
+      },
+      {
+        "name": "PT - Charge Rail: 1",
+        "range" : [
+          {
+            "type": "Range" ,
+            "val": 30
+          },
+          {
+            "type" : "Blast" ,
+            "val": 2
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Explosive" ,
+            "val": "4d6"
+          }
+        ],
+        "effect": "Os objetos e o terreno na área recebem automaticamente 100 AP de dano explosivo, e os personagens ficam despedaçados e atordoados até o final de seu próximo turno ao serem atingidos. O solo na área afetada é vaporizado com o impacto: para o resto da cena, é um terreno difícil, os personagens dentro da área afetada recebem cobertura suave e os personagens que iniciam seu turno na área ou se movem para lá pela primeira vez em uma rodada sofrem 4 queimaduras."
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "mw_sherman_integrated",
+    "name": "PT - ZF4 SOLIDCORE",
+    "mount" : "Main",
+    "type" : "Cannon",
+    "profiles": [
+      {
+        "name": "PT - 1 Charge",
+        "range" : [
+          {
+            "type" : "Line" ,
+            "val": 4
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Energy" ,
+            "val": "1d6"
+          }
+        ],
+        "effect": "O perfil dessa arma é determinado pelo número de cargas que ela carrega. Ela começa com 1 carga, causando 1d6 de energia com a linha 4. Cada vez que você se estabiliza, ganha 1 carga adicional, até um máximo de 4. A ZF4 ganha uma linha adicional de +4 e +1d6 de dano de energia para cada carga, e volta a 1 carga após cada ataque. As cargas persistem entre as cenas, mas são perdidas durante um reparo completo."
+      },
+      {
+        "name": "PT - 2 cargas",
+        "range": [
+          {
+            "type": "Line" ,
+            "val": 8
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Energy" ,
+            "val": "2d6"
+          }
+        ],
+        "effect": "O perfil dessa arma é determinado pelo número de cargas que ela carrega. Ela começa com 1 carga, causando 1d6 de energia com a linha 4. Cada vez que você se estabiliza, ganha 1 carga adicional, até um máximo de 4. A ZF4 ganha uma linha adicional de +4 e +1d6 de dano de energia para cada carga, e volta a 1 carga após cada ataque. As cargas persistem entre as cenas, mas são perdidas durante um reparo completo."
+      },
+      {
+        "name": "PT - 3 cargas",
+        "range": [
+          {
+            "type": "Line" ,
+            "val": 12
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Energy" ,
+            "val": "3d6"
+          }
+        ],
+        "effect": "O perfil dessa arma é determinado pelo número de cargas que ela carrega. Ela começa com 1 carga, causando 1d6 de energia com a linha 4. Cada vez que você se estabiliza, ganha 1 carga adicional, até um máximo de 4. A ZF4 ganha uma linha adicional de +4 e +1d6 de dano de energia para cada carga, e volta a 1 carga após cada ataque. As cargas persistem entre as cenas, mas são perdidas durante um reparo completo."
+      },
+      {
+        "name": "PT - 4 cargas",
+        "range": [
+          {
+            "type": "Line" ,
+            "val": 16
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Energy" ,
+            "val": "4d6"
+          }
+        ],
+        "effect": "O perfil dessa arma é determinado pelo número de cargas que ela carrega. Ela começa com 1 carga, causando 1d6 de energia com a linha 4. Cada vez que você se estabiliza, ganha 1 carga adicional, até um máximo de 4. A ZF4 ganha uma linha adicional de +4 e +1d6 de dano de energia para cada carga, e volta a 1 carga após cada ataque. As cargas persistem entre as cenas, mas são perdidas durante um reparo completo."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "license_id": ""
+  }
+]

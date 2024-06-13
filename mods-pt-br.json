@@ -1,0 +1,179 @@
+[
+  {
+    "id": "missing_weaponmod",
+    "name": "ERR: DADOS NÃO ENCONTRADOS",
+    "sp": 1,
+    "allowed_types": ["Melee"],
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 1,
+    "effect": "A COMP/CON não consegue recuperar os dados necessários para fornecer este sistema. Isso provavelmente é resultado de um pacote de conteúdo ausente ou desatualizado.",
+    "description": "A COMP/CON não está conseguindo recuperar os dados necessários para fornecer esse sistema. Isso provavelmente é o resultado de um pacote de conteúdo ausente ou desatualizado.",
+    "tags": [],
+    "license_id": ""
+  },
+  {
+    "id": "wm_thermal_charge",
+    "name": "Carga térmica",
+    "sp": 2,
+    "allowed_types": ["Melee"],
+    "source": "IPS-N",
+    "license": "Nelson",
+    "license_level": 2,
+    "effect": "Em um acerto com a arma à qual esse mod é aplicado, gaste uma carga como uma ação livre para ativar o detonador e causar +1d6 de dano explosivo adicional",
+    "description": "Uma modificação popular do pique de guerra clássico envolve a substituição da cabeça longa e perfurante do pique por uma carga explosiva descartável acionada por impacto. Na penetração, a cabeça do pique é separada da haste - momentos depois, a cabeça do pique embutida detona em uma explosão cônica da ponta para frente. As cargas térmicas sobressalentes são estáveis e transportadas em carregadores de tubos externos.<br>A IPS-N também fabrica cargas térmicas compatíveis com a linha de lâminas, martelos e picaretas da GMS.",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "added_damage": [
+      {
+        "type": "Explosive" ,
+        "val": "1d6"
+      }
+    ],
+    "license_id": "mf_nelson"
+  },
+  {
+    "id": "wm_uncle_class_comp_con",
+    "name": "UNCLE-Class Comp/Con",
+    "sp": 3,
+    "allowed_types": ["Melee", "CQB", "Rifle", "Launcher", "Cannon", "Nexus"],
+    "source": "IPS-N",
+    "license": "Raleigh",
+    "license_level": 3,
+    "effect": "Seu COMP/CON da classe UNCLE tem o controle da arma à qual esse mod é aplicado e de seus sistemas associados.<br>1/turno, você pode atacar com dificuldade +2 com a arma do UNCLE como uma ação livre. O UNCLE não pode usar armas que já tenham sido usadas neste turno, e qualquer arma com a qual o UNCLE ataque não pode ser usada novamente até o início do seu próximo turno.<br>O UNCLE não é um NHP completo, portanto não pode entrar em cascata.",
+    "description": "O sistema UNCLE COMP/CON da IPS-N é o resultado do programa DARKSTAR-2, um projeto temporário que buscava desenvolver armas inteligentes mais avançadas. Os primeiros protótipos foram prejudicados por uma combinação de alto consumo de energia, condicionamento instável e orientação frustrante para uma única tarefa, o que acabou levando ao encerramento do projeto.<br>Embora a IPS-N não esteja mais desenvolvendo novas iterações do UNCLE, ela ainda tem um estoque de sistemas legados aprovados pela QA, acessíveis a pilotos qualificados.<br>Os pilotos que tiveram a sorte de testar modelos em campo juram pela eficiência da tarefa e pelo raciocínio de pista paralela do UNCLE, embora os COMP/CONs desatualizados sejam conhecidos por suas personalidades um tanto instáveis.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_no_cascade"
+      }
+    ],
+    "restricted_sizes": ["Superheavy"],
+    "license_id": "mf_raleigh"
+  },
+  {
+    "id": "wm_throughbolt_rounds",
+    "name": "Throughbolt Rounds",
+    "sp": 2,
+    "allowed_types": ["CQB", "Cannon", "Rifle"],
+    "source": "IPS-N",
+    "license": "Tortuga",
+    "license_level": 3,
+    "effect": "Quando você ataca com a arma à qual esse mod é aplicado, você pode disparar uma rodada de raio em vez de atacar normalmente. Desenhe um caminho de linha 3 a partir de você, passando por terreno ou outros obstáculos - quaisquer personagens ou objetos no caminho recebem 2 PA de dano cinético quando o projétil os atravessa e sai pelo outro lado. O alcance, a cobertura e a linha de visão do ataque são medidos a partir do final desse caminho, continuando na mesma direção.",
+    "description": "As munições Throughbolt são uma invenção proprietária da IPS-N contra armaduras. Quando disparados, os projéteis se inflamam e projetam um cone superaquecido de plasma diante deles, criando um efeito semelhante ao de uma lança em miniatura que penetra facilmente em vários alvos, mesmo através de superfícies duras.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "license_id": "mf_tortuga"
+  },
+  {
+    "id": "wm_shock_wreath",
+    "name": "Coroa de Choque",
+    "sp": 2,
+    "allowed_types": ["Melee"],
+    "source": "SSC",
+    "license": "Metalmark",
+    "license_level": 3,
+    "effect": "Além do dano normal, você pode ativar a coroa de flores 1 vez por rodada como uma ação rápida ao atingir um personagem com a arma à qual esse mod é aplicado para causar 1d6 de queimadura. Se já estiver sofrendo queimadura, ele também só poderá traçar uma linha de visão para espaços adjacentes até o final do seu próximo turno.",
+    "actions": [
+      {
+        "name": "Ativar Grinalda de Choque",
+        "activation" : "Quick" ,
+        "detail" : "1/rodada, você pode ativar sua Grinalda de Choque equipada como uma ação rápida ao atingir um personagem com a arma à qual ela está aplicada para fazer com que ele sofra 1d6 de queimadura. Se já estiver sofrendo queimadura, ele também só poderá traçar uma linha de visão para espaços adjacentes até o final do seu próximo turno."
+      }
+    ],
+    "description": "Uma modificação pós-fabricação popular entre os especialistas em combate corpo a corpo, as coroas de choque integram um feixe de filamentos condutores na lâmina, ponta, extremidade ou superfície de uma arma de combate corpo a corpo. Combinadas com uma source de energia - normalmente no punho ou na metade inferior da arma, mas às vezes externa - as coroas de choque dão às armas cinéticas uma vantagem térmica e um marcador visual distinto: linhas finas de luz branca quente como filigrana, envolvendo a arma modificada em um calor cintilante.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "license_id": "mf_metalmark"
+  },
+  {
+    "id": "wm_stabilizer_mod",
+    "name": "Stabilizer Mod",
+    "sp": 2,
+    "allowed_types": ["Launcher", "Cannon"],
+    "source": "SSC",
+    "license": "Monarch",
+    "license_level": 2,
+    "effect": "a arma à qual esse mod é aplicado ganha +5 de alcance e a tag Ordnance",
+    "description": "Os mods estabilizadores aprimoram as montagens físicas e o software de mira, garantindo que as armas permaneçam niveladas, estáveis e em um ângulo apropriado, independentemente do terreno ou das manobras do piloto.",
+    "added_range": [
+      {
+        "type" : "Range" ,
+        "val": 5
+      }
+    ],
+    "added_tags": [
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "license_id": "mf_monarch"
+  },
+  {
+    "id": "wm_nanocomposite_adaptation",
+    "name": "Adaptação de nanocompósito",
+    "sp": 2,
+    "allowed_types": ["Melee", "CQB", "Rifle", "Launcher", "Cannon", "Nexus"],
+    "source": "HORUS",
+    "license": "Balor",
+    "license_level": 2,
+    "effect": "a arma à qual esse mod é aplicado ganha Inteligência e Busca",
+    "description": "As armas de nanocompósito pegam enxames de drones agressivos e os condensam em projéteis individuais, um feixe coerente ou a borda de uma lâmina.<br>As armas de projétil adaptadas disparam projéteis CONSUME/HIVE moldados que se estilhaçam com o impacto, liberando sua carga útil de maniples de nanite autônomos. Uma vez liberados, os maniples começam a corroer o tecido ou a superestrutura ao redor. Eles prosseguem até o esgotamento ou o consumo total do alvo, o que ocorrer primeiro. Em voo, os maniples são capazes de se conectar em colmeia e fazer pequenos ajustes na trajetória de sua rodada, garantindo um impacto positivo.<br>As armas de feixe coerente transportam maniples diretamente, enquanto as armas brancas convencionais são substituídas por análogos compostos inteiramente de nanobots.",
+    "added_tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "license_id": "mf_balor"
+  },
+  {
+    "id": "wm_phase_ready_mod",
+    "name": "Phase-Ready Mod",
+    "sp": 2,
+    "allowed_types": ["Melee", "CQB", "Rifle", "Launcher", "Cannon", "Nexus"],
+    "source": "HA",
+    "license": "Napoleon",
+    "license_level": 2,
+    "effect": "Desde que você saiba a localização aproximada do seu alvo, a arma à qual esse mod é aplicado pode atacar através de paredes sólidas e obstruções, não requer linha de visão e ignora toda a cobertura, mas os alvos atacados dessa forma contam como invisíveis",
+    "description": "Como foi nomeada após seu primeiro uso durante as hostilidades civis em Luna de Oro, a munição pronta para fase é a \"bala do diabo\". Cada cartucho contém um conjunto de nanoprocessadores conectados em rede com sua arma de origem que calcula e traduz a natureza específica da relação de superposição desse cartucho com um doppelgänger futuro projetado que se manifesta no espaço imediatamente antes do alvo pretendido. Para simplificar, os projéteis prontos para a fase, quando disparados, existem em dois lugares ao mesmo tempo: saindo do cano da arma da qual foram disparados e diretamente na frente do alvo, antes do impacto. O projétil principal pode nunca atingir o alvo, mas como ele já existe no momento do impacto, o projétil doppelgänger atingirá seu alvo de forma confiável.",
+    "license_id": "mf_napoleon"
+  },
+  {
+    "id": "wm_paracausal_mod",
+    "name": "Paracausal Mod",
+    "sp": 4,
+    "allowed_types": ["Melee", "CQB", "Rifle", "Launcher", "Cannon", "Nexus"],
+    "source": "HA",
+    "license": "Saladin",
+    "license_level": 3,
+    "effect": "Essa arma ganha Overkill, e seu dano não pode ser reduzido de forma alguma, inclusive por outros efeitos e sistemas (como Resistência, Armadura etc.)",
+    "description": "As armas paracausais são uma dor de cabeça para os planejadores militares; sua função precisa de A a Z é frequentemente obscurecida, embora elas produzam consistentemente o mesmo resultado \"Z\" por entrada \"A\".<br>Os primeiros relatos de armas paracausais não regulamentadas ocorreram durante os confrontos civis em Tian Shen. As forças locais do sistema receberam carregadores selados com instruções para serem carregados e disparados normalmente, embora a inspeção do conteúdo dos carregadores tenha sido proibida com o argumento de que isso \"danificaria a carga útil\". As filmagens de capacetes e câmeras de armas não revelam os efeitos anômalos dessa munição, embora os relatórios pós-ação tenham revelado um fato aparentemente menor, embora incrivelmente estranho: cada soldado equipado com essa munição paracausal obteve uma taxa de impacto 100% positiva.<br>O Union agendou todas as armas e munições paracausais não regulamentadas para recuperação, e o departamento está atualmente investigando a Harrison Armory por seu papel no desenvolvimento da tecnologia. Apesar disso, a munição paracausal ainda está em uso, pois as remessas e os códigos continuam a vazar para as partes interessadas.",
+    "added_tags": [
+      {
+        "id": "tg_overkill"
+      }
+    ],
+    "license_id": "mf_saladin"
+  }
+]

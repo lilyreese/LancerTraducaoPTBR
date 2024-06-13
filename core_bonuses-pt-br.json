@@ -1,14 +1,14 @@
 [
   {
     "id": "missing_corebonus",
-    "name": "ERR: DADOS NÃO ENCONTRADOS",
+    "name": "PT - ERR: DADOS NÃO ENCONTRADOS",
     "source": "",
     "effect": "MISSING CORE BONUS DATA",
     "description": "A COMP/CON não conseguiu recuperar os dados necessários para fornecer esse Bônus Principal. Isso provavelmente é o resultado de um pacote de conteúdo ausente ou desatualizado."
   },
   {
     "id": "cb_auto_stabilizing_hardpoints",
-    "name": "Auto-Estabilizar pontos",
+    "name": "PT - Auto-Estabilizar pontos",
     "source": "GMS",
     "effect": "Escolha uma montaria. As armas presas a essa montaria ganham +1 de Precisão.",
     "description": "Usando o que há de melhor em absorção de choque e steadytech, você pode manter a precisão em períodos mais longos e contínuos de disparo.",
@@ -16,7 +16,7 @@
   },
   {
     "id": "cb_overpower_caliber",
-    "name": "Calibre Superior",
+    "name": "PT - Calibre Superior",
     "source": "GMS",
     "effect": "Escolha uma arma. Em 1 rodada, quando acertar um ataque, você pode fazer com que ele cause +1d6 de dano adicional.",
     "description": "Em vez da opção padronizada, você requisita vários racks de munição quente - balas do mesmo calibre, com um grau mais alto de acelerador.",
@@ -24,21 +24,21 @@
   },
   {
     "id": "cb_improved_armament",
-    "name": "Armamento aprimorado",
+    "name": "PT - Armamento aprimorado",
     "source": "GMS",
     "effect": "Se seu mecha tiver menos de três montagens (excluindo montagens integradas), ele ganha uma montagem flexível adicional.",
     "description": "Ao redirecionar a energia e fortalecer os sistemas, você pode montar armas adicionais além das recomendações de fábrica."
   },
   {
     "id": "cb_integrated_weapon",
-    "name": "Arma integrada",
+    "name": "PT - Arma integrada",
     "source": "GMS",
     "effect": "Seu mecanismo ganha uma nova montagem integrada com capacidade para uma arma auxiliar. Essa arma pode ser disparada 1/rodada como uma ação livre quando você dispara qualquer outra arma em seu mecanismo. Ela não pode ser modificada.",
     "description": "Os espaços vazios no chassi de seu mecha - dentro dos punhos, placas torácicas, em qualquer lugar onde haja espaço - são preenchidos com armas integradas, prontas para disparar por reflexo."
   },
   {
     "id": "cb_mount_retrofitting",
-    "name": "Renovar Montagem",
+    "name": "PT - Renovar Montagem",
     "source": "GMS",
     "effect": "Substituir uma montagem por uma montagem principal/auxiliar",
     "description": "Ao refabricar determinados componentes e hardpoints em seu chassi para uma distribuição mais eficiente, você pode aumentar o poder de fogo do seu mech.",
@@ -46,21 +46,21 @@
   },
   {
     "id": "cb_universal_compatibility",
-    "name": "Compatibilidade universal",
+    "name": "PT - Compatibilidade universal",
     "source": "GMS",
     "effect": "Toda vez que gastar PC para ativar um Sistema Principal, você também pode realizar uma ação livre para restaurar todos os PV, resfriar todo o Calor e rolar 1d20: se 20, recupera 1 PC",
     "description": "O Everest está em toda parte: assim como as peças de que você precisa para um reparo em campo."
   },
   {
     "id": "cb_briareos_frame",
-    "name": "Briareos Frame",
+    "name": "PT - Briareos Frame",
     "source": "IPS-N",
     "effect": "Enquanto seu mecha não tiver mais de 1 Estrutura, você ganha Resistência a todos os danos. Quando ele é reduzido a 0 HP e 0 Estrutura, ele não é destruído: em vez disso, você deve fazer uma verificação de dano de estrutura toda vez que ele sofrer dano. Enquanto estiver nesse estado, seu mecha não pode recuperar PV até que você descanse ou execute um Reparo Completo, momento em que seu mecha pode ser reparado normalmente.",
     "description": "O Briareos é o mais novo lançamento da linha da IPS-N de atualizações de estrutura de quase falha: modelos projetados para maximizar a usabilidade de um mecanismo antes de uma falha catastrófica ou da necessidade de uma reimpressão. O modelo Briareos aumenta a resiliência dos componentes inorgânicos, complementando a estrutura com um quadro superleve que apresenta camadas entrelaçadas da icônica malha Goliath Weave da IPS-N."
   },
   {
     "id": "cb_fomorian_frame",
-    "name": "Quadro Fomoriano",
+    "name": "PT - Quadro Fomoriano",
     "source": "IPS-N",
     "effect": "Aumenta o tamanho do seu mecha em um incremento (por exemplo, de 1/2 para 1, 1 para 2 ou 2 para 3) até um máximo de 3 tamanhos. Você não pode ser derrubado, puxado ou empurrado para trás por personagens menores, independentemente do sistema ou da arma que cause o efeito.",
     "description": "O Fomorian é uma versão ampliada do modelo de estoque da IPS-N que foi adaptado para atender às necessidades dos Cosmopolitas de longa distância que buscam maior estabilidade e proteção robusta contra impactos, tanto em nível micro quanto macro.",
@@ -73,7 +73,7 @@
   },
   {
     "id": "cb_gyges_frame",
-    "name": "Quadro Gyges",
+    "name": "PT - Quadro Gyges",
     "source": "IPS-N",
     "effect": "Você ganha +1 de Precisão em todas as verificações e defesas de Casco e +1 de Ameaça com todas as armas brancas",
     "description": "Um mech construído com base no modelo Gyges é projetado para combate - aprimorado com estabilizadores finamente ajustados e um conjunto robusto de software e hardware de mira.",
@@ -100,7 +100,7 @@
   },
   {
     "id": "cb_reinforced_frame",
-    "name": "Estrutura reforçada",
+    "name": "PT - Estrutura reforçada",
     "source": "IPS-N",
     "effect": "Você ganha +5 HP.",
     "description": "A adição de sistemas redundantes de absorção de choque aumenta a capacidade de sobrevivência dos pilotos em situações de combate, voo e industriais.",
@@ -113,7 +113,7 @@
   },
   {
     "id": "cb_sloped_plating",
-    "name": "Revestimento inclinado",
+    "name": "PT - Revestimento inclinado",
     "source": "IPS-N",
     "effect": "Você ganha +1 de armadura, até o máximo (+4).",
     "description": "Uma escolha comum entre os pilotos com as licenças certas, a fabricação de armadura integrada do IPS-N reduz as lacunas na cobertura externa em uma porcentagem significativa.",
@@ -126,7 +126,7 @@
   },
   {
     "id": "cb_titanomachy_mesh",
-    "name": "Malha de Titanomaquina",
+    "name": "PT - Malha de Titanomaquina",
     "source": "IPS-N",
     "effect": "1/rodada, quando você consegue derrubar ou agarrar um mech, você pode derrubar ou agarrar novamente como uma ação livre. Além disso, quando você empurra alvos para trás com ataques corpo a corpo, você os empurra para trás 1 espaço adicional.",
     "description": "Uma sobreposição dupla de Goliath Weave nos principais pontos de estresse e especificações reforçadas em toda a linha melhoram muito a funcionalidade básica de qualquer mecanismo.",
@@ -142,7 +142,7 @@
   },
   {
     "id": "cb_all_theater_movement_suite",
-    "name": "All-Theater Movement Suite",
+    "name": "PT - All-Theater Movement Suite",
     "source": "SSC",
     "effect": "Você pode optar por contar todo e qualquer movimento como voo; no entanto, você recebe 1 Calor no final de cada um dos seus turnos em que voar dessa forma.",
     "description": "Uma modificação popular, o ATMS adiciona poderosos jatos de pulso que melhoram drasticamente a mobilidade dos mechs em todos os teatros.",
@@ -157,7 +157,7 @@
   },
   {
     "id": "cb_full_subjectivity_sync",
-    "name": "Full Subjectivity Sync",
+    "name": "PT - Full Subjectivity Sync",
     "source": "SSC",
     "effect": "Você ganha +2 de Evasão.",
     "description": "Ao criar uma ponte ontológica estável e bidirecional, a SSC eliminou a necessidade de os pilotos dependerem apenas de controles físicos para pilotar seu mech. Usando uma sincronização de subjetividade total, os pilotos percebem seu mech como seu próprio corpo e o controlam por meio de impulso neural; o feedback somatossensorial também é traduzido para o piloto, portanto, recomenda-se cautela, apesar dos padrões de amortecimento de nocicepção incorporados ao sistema.",
@@ -170,14 +170,14 @@
   },
   {
     "id": "cb_ghostweave",
-    "name": "Ghostweave",
+    "name": "PT - Ghostweave",
     "source": "SSC",
     "effect": "Durante seu turno, você fica Invisível. Se não realizar nenhuma ação em seu turno além do movimento padrão, Esconder-se e Impulsionar, você permanecerá Invisível até o início do seu próximo turno. Você deixa imediatamente de ser Invisível quando tem uma reação.",
     "description": "Uma versão ampliada dos mesmos sistemas encontrados no Mythimna Panoply da SSC, o Ghostweave é um aplique proprietário usado para aprimorar a camuflagem de mechs em todos os ambientes."
   },
   {
     "id": "cb_integrated_nerveweave",
-    "name": "Tecido nervoso integrado",
+    "name": "PT - Tecido nervoso integrado",
     "source": "SSC",
     "effect": "Você pode se mover 2 espaços adicionais quando fizer um Boost",
     "description": "O nerveweave integrado combina várias tecnologias para conceder total agilidade no campo de batalha, garantindo que os pilotos nunca sejam deixados para trás.",
@@ -193,7 +193,7 @@
   },
   {
     "id": "cb_kai_bioplating",
-    "name": "Kai Bioplating",
+    "name": "PT - Kai Bioplating",
     "source": "SSC",
     "effect": "Você ganha +1 de Precisão em todas as verificações e defesas de Agilidade; além disso, você sobe e nada na velocidade normal, ignora terrenos difíceis e, ao fazer um movimento padrão, pode saltar horizontalmente até a sua Velocidade total e para cima até a metade da sua Velocidade (em qualquer combinação).",
     "description": "Adaptado da fauna local do sistema doméstico da SSC, o Kai Bioplating adiciona uma camada lamelar de revestimento isolado, ancorado e quitinoso sobre os principais pontos de contato em um mech. Essencialmente uma alternativa mais barata e mais viável ao metal vivo, o bioplating permite um movimento mais rápido em terrenos difíceis de navegar",
@@ -214,7 +214,7 @@
   },
   {
     "id": "cb_neurolink_targeting",
-    "name": "Direcionamento de Neurolink",
+    "name": "PT - Direcionamento de Neurolink",
     "source": "SSC",
     "effect": "Suas armas de longo alcance ganham +3 de alcance",
     "description": "Para reduzir ainda mais a lacuna de informações entre o piloto e a máquina e complementar sua tecnologia de sincronização de subjetividade total, a SSC desenvolveu o neurolink, uma ponte ontológica estável, não invasiva e de transferência limitada. O direcionamento de neurolink é um aprimoramento simples que ajuda os pilotos a sentir - em vez de pensar - quando envolvidos em combate à distância, permitindo uma expressão mais natural da capacidade do piloto.",
@@ -230,7 +230,7 @@
   },
   {
     "id": "cb_the_lesson_of_disbelief",
-    "name": "A lição da descrença",
+    "name": "PT - A lição da descrença",
     "source": "HORUS",
     "effect": "Você ganha +1 de precisão nas verificações e defesas de Sistemas e +2 de E-Defesa",
     "description": "Consulte o omninet, mergulhe nos arquivos. Encontre a Eneida, encontre a era da Titanomaquia. Coma, absorva, reflita. Fale-me agora sobre os Hecatoncheires, os das cem mãos. Eles desferiram o golpe contra Cronos - Saturno - ou, em vez disso, atacaram os olímpicos? Em quem você acredita? Quem impediu a Besta de contar sua própria história? E por quê? - Lição Um, As Seis Lições de Kilo Nueve",
@@ -251,7 +251,7 @@
   },
   {
     "id": "cb_the_lesson_of_the_open_door",
-    "name": "A lição da porta aberta",
+    "name": "PT - A lição da porta aberta",
     "source": "HORUS",
     "effect": "Seu alvo de salvamento aumenta em +2; além disso, 1/rodada, quando um personagem falha em um salvamento contra você, ele recebe 2 de calor.",
     "description": "Há um corpo e um poço profundo, e ambos são chamados de Tártaro. Antigamente, ele abrigava reis, titãs e mitos. Agora, os portões que o retinham estão escancarados e o Tártaro está livre. Aqui está a terrível questão: quem o abriu e por quê? - Lição Dois, As Seis Lições de Kilo Nueve.",
@@ -264,13 +264,13 @@
   },
   {
     "id": "cb_the_lesson_of_the_held_image",
-    "name": "A lição da imagem retida",
+    "name": "PT - A lição da imagem retida",
     "source": "HORUS",
     "effect": "1/rodada, como uma reação no início do turno de qualquer personagem aliado, você pode fazer uma ação tecnológica Lock On contra qualquer personagem dentro da linha de visão e dos Sensores.",
     "description": "Feche os olhos. Mantenha a imagem de seu inimigo em sua mente; imagine-o sob todas as luzes e de todos os ângulos. Em sua mente, ele se tornou uma versão mais perfeita. Esmague-o em sua mente e mate a coisa perfeita. Abra seus olhos. - Lição Três, As Seis Lições de Kilo Nueve.",
     "ações": [
       {
-        "name": "Lição da Imagem Realizada",
+        "name": "PT - Lição da Imagem Realizada",
         "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "Qualquer personagem aliado inicia seu turno",
@@ -280,7 +280,7 @@
   },
   {
     "id": "cb_the_lesson_of_thinking_tomorrows_thought",
-    "name": "A lição de pensar - o pensamento de amanhã",
+    "name": "PT - A lição de pensar - o pensamento de amanhã",
     "source": "HORUS",
     "effect": "Quando você acerta um ataque tecnológico, seu próximo ataque corpo a corpo contra o mesmo alvo ganha +1 de precisão e seu dano não pode ser reduzido de forma alguma.",
     "description": "Deixe-me lhe dar esta lição: a existência corpórea é aquela que deve terminar em morte. A existência incorpórea é aquela que [deve] terminar em [cascata? você realmente acha que isso é verdade?]. Repito, se você puder imaginar, já está feito e você já deu o golpe fatal. - Lição Quatro, As Seis Lições de Kilo Nueve.",
@@ -295,14 +295,14 @@
   },
   {
     "id": "cb_the_lesson_of_transubstantiation",
-    "name": "A lição da transubstanciação",
+    "name": "PT - A lição da transubstanciação",
     "source": "HORUS",
     "effect": "Sempre que sofrer dano de estrutura, você desaparece em um não espaço e deixa de ser um alvo válido. Você reaparece no mesmo espaço no início do seu próximo turno. Se esse espaço estiver ocupado, você reaparecerá no espaço livre disponível mais próximo (escolhido por você).",
     "description": "Por meio da repetição extática, você pode ver a face de Deus. Fale até que sua língua seque e se transforme em pó, e seu corpo se torne nada. Quando você não é nada e o vento o leva, você está em todas as coisas, nunca será destruído, apenas dividido, até o fim dos tempos. - Lição Cinco, As Seis Lições de Kilo Nueve."
   },
   {
     "id": "cb_the_lesson_of_shaping",
-    "name": "A lição da modelagem",
+    "name": "PT - A lição da modelagem",
     "source": "HORUS",
     "effect": "Você pode instalar uma IA adicional em seu mecha. Se uma delas entrar em cascata (ou se tornar desvinculada narrativamente), a outra a impedirá de assumir o controle do seu mecanismo. Você só perde o controle do seu mecha se ambos os sistemas ou equipamentos com IA entrarem em cascata.",
     "description": "Um pequeno presente, para ser ponderado até ser compreendido: Deixe de lado o martelo e a espada, o canhão e o raio. Nenhuma arma formada contra mim desferirá um golpe verdadeiro, pois já vi todos os fins e não resta nada além de mim. Um trilhão de trilhões de anos-luz em todas as direções e, em meio a tudo isso, apenas [nós? quem sabe. o ego é um assassino de mentes. melhor chamar seus amigos. melhor enfrentar a noite juntos. Até mais tarde, amor]. - Lição Seis, As Seis Lições de Kilo Nueve.",
@@ -315,14 +315,14 @@
   },
   {
     "id": "cb_adaptive_reactor",
-    "name": "Reator adaptável",
+    "name": "PT - Reator adaptável",
     "source": "HA",
     "effect": "Quando você estabiliza e opta por resfriar seu mecha, pode gastar 2 reparos para eliminar 1 dano de estresse.",
     "description": "Todas as estruturas da Armory são projetadas com vários sistemas à prova de falhas, mas os clientes VIP e os cidadãos de alto nível têm acesso a um catálogo especial. Com dezenas de opções para reatores de engenharia excessiva, é fácil garantir que um mecanismo possa continuar funcionando indefinidamente."
   },
   {
     "id": "cb_armory_sculpted_chassis",
-    "name": "Chassi esculpido em arsenal",
+    "name": "PT - Chassi esculpido em arsenal",
     "source": "HA",
     "effect": "Você ganha +1 de precisão em todas as verificações e defesas de Engenharia. Quando você sobrecarrega, ganha cobertura suave até o início do seu próximo turno.",
     "description": "Qualquer pessoa pode imprimir um chassi de mech de estoque, contando com uma seção de código genérico para mantê-lo vivo. O piloto mais exigente, por outro lado, aceita apenas o melhor: um chassi projetado, testado e ajustado por um dos mestres fabricantes da Armory.",
@@ -343,7 +343,7 @@
   },
   {
     "id": "cb_heatfall_coolant_system",
-    "name": "Sistema de resfriamento por queda de calor",
+    "name": "PT - Sistema de resfriamento por queda de calor",
     "source": "HA",
     "effect": "Seu custo de Sobrecarga nunca passa de 1d6 de calor",
     "description": "O Heatfall Coolant System (sistema de resfriamento por queda de calor) vem com um núcleo de reator estabilizado; em conjunto, essa combinação garante a manutenção do resfriamento de um mech em praticamente qualquer ambiente.",
@@ -361,7 +361,7 @@
   },
   {
     "id": "cb_integrated_ammo_feeds",
-    "name": "Feeds de munição integrados",
+    "name": "PT - Feeds de munição integrados",
     "source": "HA",
     "effect": "Todos os sistemas e armas limitados ganham duas cargas adicionais",
     "description": "Ao simplificar e integrar todos os módulos automatizados de carregamento de artilharia, os especialistas da Harrison Armory podem melhorar muito o tempo mínimo de chegada dos mechs ao alvo. Como bônus adicional, essas atualizações geralmente resultam em maior capacidade de carga, permitindo que os pilotos coloquem em campo mais munição do que as especificações do projeto sugerem.",
@@ -374,14 +374,14 @@
   },
   {
     "id": "cb_stasis_shielding",
-    "name": "Blindagem de Estase",
+    "name": "PT - Blindagem de Estase",
     "source": "HA",
     "effect": "Sempre que sofrer dano de estresse, você ganha Resistência a todo o dano até o início do seu próximo turno.",
     "description": "Um exercício do Think Tank para estender a estase além das capacidades de utilidade civil, a blindagem de estase da Harrison Armory identifica ativamente os sistemas inorgânicos criticamente estressados e os cobre com estase não modulada Holdfast, impedindo a degradação adicional por um período limitado de tempo até que os reparos possam ser feitos."
   },
   {
     "id": "cb_superior_by_design",
-    "name": "Superior by Design",
+    "name": "PT - Superior by Design",
     "source": "HA",
     "effect": "Você ganha imunidade a Impaired e ganha +2 Heat Cap.",
     "description": "Até mesmo as armações de nível básico da Armory têm o objetivo de superar a concorrência. Graças aos incríveis recursos que tem à disposição, a Harrison Armory pode projetar e produzir mais do que quase qualquer engenheiro ou fabricante menor e de butique. Quando há resistência, a resposta é simples: compre-os ou elimine-os. Os valiosos clientes da Armory se beneficiam dessa filosofia de Superior por Design, então por que deveriam se preocupar?",
