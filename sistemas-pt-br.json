@@ -1,0 +1,3522 @@
+[
+  {
+    "id": "missing_mechsystem",
+    "name": "PT - ERR: DADOS NÃO ENCONTRADOS",
+    "sp": 1,
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "A COMP/CON não consegue recuperar os dados necessários para fornecer esse sistema. Isso provavelmente é resultado de um pacote de conteúdo ausente ou desatualizado.",
+    "description": "A COMP/CON não consegue recuperar os dados necessários para fornecer esse sistema. Isso provavelmente é o resultado de um pacote de conteúdo ausente ou desatualizado.",
+    "tags": [],
+    "type": "System", "license_id": ""
+  },
+  {
+    "id": "ms_comp_con_class_assistant_unit",
+    "name": "PT - Unidade de Assistente de Classe COMP/CON)",
+    "type" : "AI",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_no_cascade"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Seu mech tem uma unidade COMP/CON básica, o que lhe confere a tag AI. O COMP/CON pode falar com você e tem uma personalidade, mas, ao contrário de um NHP, não é realmente capaz de ter pensamento independente. Você pode dar o controle do seu mech ao COMP/CON dele como um protocolo, permitindo que o mech aja independentemente no seu turno com seu próprio conjunto de ações. Ao contrário de outras IAs, um mech controlado por um COMP/CON não tem iniciativa independente e precisa de informações diretas. Seu mech seguirá cursos de ação básicos (defender esta área, atacar este inimigo, proteger-me etc.) da melhor forma possível ou agirá para se defender se as instruções estiverem completas ou se não receber nenhuma orientação adicional. Você pode emitir novos comandos no início do seu turno, desde que esteja dentro do alcance 50 e tenha meios de se comunicar com o mech. As unidades Comp/con não são verdadeiros NHPs e, portanto, não podem entrar em cascata.",
+    "description": "A unidade GMS Companion/Concierge-Class Assistant está em conformidade com todos os padrões da galáxia. Esses assistentes virtuais passam até mesmo pelos mais rígidos critérios de avaliação Turing-Null e são liberados para operar mesmo na ausência de um piloto.",
+    "license_id": ""
+  },
+  {
+    "id": "ms_custom_paint_job",
+    "name": "PT - Trabalho de pintura personalizado",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_indestructible"
+      }
+    ],
+    "source": "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Quando você sofrer dano de estrutura, role 1d6. Com um 6, você retorna a 1 HP e ignora o dano - o golpe simplesmente 'arranhou sua pintura'.<br>Esse sistema só pode ser usado uma vez antes de cada Reparo Completo e não é um alvo válido para a destruição do sistema.",
+    "type": "System", "license_id": ""
+  },
+  {
+    "id": "ms_expanded_compartment",
+    "name": "PT - Compartimento expandido",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Seu mech tem espaço para um personagem ou objeto adicional não-Mech de tamanho 1/2 para viajar como passageiro na cabine. Enquanto estiver dentro do mech, ele não pode sofrer nenhum efeito externo ou ser alvo de ataques, como se fosse um piloto. É possível entregar ou retomar o controle para eles ou deles como um protocolo (seguindo as mesmas regras do piloto e das IAs), mas se eles assumirem os controles de você, o mech se tornará prejudicado e desacelerado para refletir a falta de licenças e integração apropriadas.",
+    "type": "System", "license_id": ""
+  },
+  {
+    "id": "ms_manipulators",
+    "name": "PT - Manipuladores",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Seu mech tem um conjunto extra de membros. Eles são muito pequenos para ter qualquer benefício em combate, mas permitem que o mech interaja com objetos que, de outra forma, seriam muito pequenos ou sensíveis (por exemplo, touch pads do tamanho de um piloto).",
+    "description": "A interação precisa com ambientes naturais e construídos, alvos macios e materiais perigosos faz parte da rotina diária dos mechs de classe de suporte. Isso é possível graças aos manipuladores - 'mãos de vários dígitos adicionadas com sensores hápticos.'",
+    "type": "System", "license_id": ""
+  },
+  {
+    "id": "ms_pattern_a_smoke_charges",
+    "name": "PT - Cargas de fumaça padrão A",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "actions" : [
+      {
+        "name": "PT - Granada de fumaça",
+        "activation" : "Quick" ,
+        "range" : [
+          {
+            "type" : "Range" ,
+            "val": 5
+          },
+          {
+            "type" : "Blast" ,
+            "val": 2
+          }
+        ],
+        "detail" : "Jogue uma granada de fumaça dentro do alcance 5. Todos os personagens e objetos em uma área de Explosão 2 se beneficiam de cobertura suave até o final do seu próximo turno, momento em que a fumaça se dispersa."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Mina de fumaça",
+        "type": "Mina",
+        "range" : [
+          {
+            "type" : "Burst" ,
+            "val": 3
+          }
+        ],
+        "detail": "Essa mina detona quando qualquer personagem aliado se move sobre ela ou adjacente a ela. Todos os personagens e objetos dentro de uma área de explosão 3 se beneficiam de cobertura suave até o final do próximo turno do personagem detonador, momento em que a fumaça se dispersa."
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "ms_pattern_a_jericho_deployable_cover",
+    "name": "PT - Pattern-A Jericho Deployable Cover",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Implante duas seções de cobertura rígida de tamanho 1 em espaços livres adjacentes a você e um ao outro. Cada seção é um objeto com 5 de Evasão e 10 de Vida que pode ser alvejado e destruído individualmente. As seções de cobertura podem ser recolhidas novamente como uma ação completa.<br>Reparar o sistema restaura as duas seções.",
+    "deployables": [
+      {
+        "name": "PT - Jericho Deployable Cover",
+        "type" : "Deployable",
+        "instâncias": 2,
+        "size" : 1,
+        "hp": 10,
+        "evasion" : 5,
+        "detail" : "Implante duas seções de cobertura rígida de tamanho 1 em espaços livres adjacentes a você e um ao outro. Cada seção é um objeto com 5 de Evasão e 10 de Vida que pode ser alvejado e destruído individualmente. As seções de cobertura podem ser recuperadas novamente como uma ação completa.<br>Reparar o sistema restaura as duas seções.",
+        "recall": "Full",
+        "redeploy" : "Quick" 
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "ms_pattern_b_hex_charges",
+    "name": "PT - Cobranças HEX do padrão B",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "actions" : [
+      {
+        "name": "PT - Frag Grenade",
+        "activation" : "Quick" ,
+        "range" : [
+          {
+            "type" : "Range" ,
+            "val": 5
+          },
+          {
+            "type" : "Blast" ,
+            "val": 1
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Explosive" ,
+            "val": "1d6"
+          }
+        ],
+        "detail" : "Jogue uma granada de fragmentação dentro do alcance 5. Todos os personagens em uma área de Explosão 1 devem passar em um teste de Agilidade ou receberão 1d6 de dano Explosivo. Em caso de sucesso, eles recebem metade do dano."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Mina explosiva",
+        "type": "Mine",
+        "range" : [
+          {
+            "type" : "Burst" ,
+            "val": 1
+          }
+        ],
+        "activation" : "Quick" ,
+        "detail": "Todos os personagens em uma área de Burst 1 devem passar em um teste de Agilidade ou receberão 2d6 de dano Explosivo. Em caso de sucesso, eles recebem metade do dano."
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "ms_personalizations",
+    "name": "PT - Personalizações",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Você ganha +2 HP e, em consulta com o GM, pode estabelecer uma pequena modificação que tenha feito em seu mech. Esse mod não tem nenhum benefício numérico além do HP adicional que concede, mas pode fornecer outros efeitos úteis. Se o GM concordar que esse mod ajudaria em uma verificação de habilidade do piloto ou do mech, você ganha +1 de Precisão para essa verificação.",
+    "bonuses": [
+      {
+        "id": "hp",
+        "val": 2
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "ms_stable_structure",
+    "name": "PT - Estrutura estável",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Você ganha +1 Precisão em defesas para evitar Prone ou Knockback",
+    "license_id": ""
+  },
+  {
+    "id": "ms_turret_drones",
+    "name": "PT - Drones de torre",
+    "type" : "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Gaste uma carga para implantar um drone de torre que se prende a qualquer objeto ou superfície dentro dos Sensores e da linha de visão. Obtenha a reação Turret Attack (Ataque de torre), que pode ser realizada uma vez para cada drone de torre implantado. Os drones de torre não podem ser recuperados e expiram no final da cena.",
+    "deployables": [
+      {
+        "name": "PT - Turret Drone",
+        "type" : "Drone",
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "detail": "Obtenha a reação Turret Attack (Ataque de torre), que pode ser realizada uma vez para cada drone de torre implantado. Os drones de torre não podem ser recuperados e expiram no final da cena.",
+        "actions": [
+          {
+            "name": "PT - Ataque da torre",
+            "activation" : "Reaction" ,
+            "frequency" : "1/round",
+            "trigger" : "Um personagem aliado dentro do alcance 10 de um drone de torre faz um ataque bem-sucedido",
+            "detail": "O drone da torre causa 3 de dano cinético ao alvo, desde que tenha linha de visão para o alvo."
+          }
+        ]
+      }
+    ],
+    "description": "O uso de drones de torre é uma forma bastante tradicional de multiplicação de força, que continua sendo a espinha dorsal da defesa em muitos teatros.",
+    "license_id": ""
+  },
+  {
+    "id": "ms_type_3_projected_shield",
+    "name": "PT - Escudo projetado tipo 3",
+    "type" : "Shield" ,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "actions" : [
+      {
+        "name": "PT - Projetar Escudo",
+        "activation" : "Protocol",
+        "detail" : "Nomeie um personagem dentro da linha de visão: todos os ataques à distância ou corpo a corpo que ele fizer contra você ou que você fizer contra ele ganham +2 de dificuldade até o início do seu próximo turno."
+      }
+    ],
+    "description": "O Escudo Projetado GMS Type-3 prende e impede a entrada de projéteis projetando uma barreira antibalística agressiva e superposicional.",
+    "license_id": ""
+  },
+  {
+    "id": "ms_eva_module",
+    "name": "PT - Módulo EVA",
+    "type" : "Flight",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Seu mecanismo tem um sistema de propulsão adequado para uso em gravidade baixa ou zero e em ambientes subaquáticos. Nesses ambientes, você pode voar e não sofre desaceleração.",
+    "synergies": [
+      {
+        "locations": ["move"],
+        "detail": "Seu mecanismo tem um sistema de propulsão adequado para uso em gravidade baixa ou zero e em ambientes subaquáticos. Nesses ambientes, você pode voar e não sofre desaceleração."
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "ms_rapid_burst_jump_jet_system",
+    "name": "PT - Sistema de jato de salto de explosão rápida",
+    "type" : "Flight",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Você pode voar quando fizer um Boost; no entanto, você deve terminar o movimento no chão ou em outra superfície sólida, caso contrário, começará a cair imediatamente",
+    "synergies": [
+      {
+        "locations": ["boost"],
+        "detail": "Você pode voar quando recebe um impulso; no entanto, você deve terminar o movimento no chão ou em outra superfície sólida, ou então começará a cair imediatamente."
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "ms_type_i_flight_system",
+    "name": "PT - Flight do tipo I",
+    "type" : "Flight",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "GMS",
+    "license": "",
+    "license_level": 0,
+    "effect": "Você pode optar por contar todo e qualquer movimento seu como voo; no entanto, você recebe Calor de Tamanho +1 no final de qualquer um dos seus turnos em que voar dessa forma",
+    "synergies": [
+      {
+        "locations": ["move"],
+        "detail": "Você pode optar por contar todo e qualquer movimento como voo; no entanto, você recebe Calor de Tamanho +1 no final de qualquer um dos seus turnos em que voar dessa forma."
+      }
+    ],
+    "license_id": ""
+  },
+  {
+    "id": "ms_synthetic_muscle_netting",
+    "name": "PT - Rede muscular sintética",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Blackbeard",
+    "license_level": 1,
+    "effect": "Você pode atacar alvos maiores do que você e, ao agarrar ou atacar alvos maiores, você conta como tendo o mesmo tamanho do maior oponente. Quando você agarra ou arremessa oponentes do mesmo tamanho ou menores, você conta como pelo menos um tamanho maior. Além disso, sua capacidade de levantar e arrastar é dobrada.",
+    "synergies": [
+      {
+        "locations": ["ram"],
+        "detail": "Você pode arremessar alvos maiores do que você e, quando arremessa alvos maiores, você conta como tendo o mesmo tamanho do maior oponente. Quando você arremessa oponentes do mesmo tamanho ou menores, você conta como pelo menos um tamanho maior."
+      },
+      {
+        "locations": ["grapple"],
+        "detail": "Quando você agarra alvos maiores, você conta como sendo do mesmo tamanho que o maior oponente. Quando você agarra oponentes do mesmo tamanho ou menores, você conta como pelo menos um tamanho maior."
+      }
+    ],
+    "description": "O Synthetic Muscle Netting (SMN) da IPS-N é uma modificação proprietária e comprovada em campo, compatível com todas as estruturas IPS-N existentes. Esse conveniente aprimoramento catalítico e estrutural em spray aumenta o desempenho do manipulador e da propulsão em cerca de 25%, sem redução comprovada da vida útil operacional. Uma camada de SMN também aumenta a absorção de impacto e o isolamento térmico.<br>A IPS-N recomenda que os pilotos apliquem o SMN somente nos componentes internos e pratiquem a limpeza frequente para evitar a decomposição análoga à séptica.",
+    "type": "System", "license_id": "mf_blackbeard"
+  },
+  {
+    "id": "ms_reinforced_cabling",
+    "name": "PT - cabeamento reforçado",
+    "sp": 2,
+    "source": "IPS-N",
+    "license": "Blackbeard",
+    "license_level": 3,
+    "actions": [
+      {
+        "name": "PT - Grapple Swing",
+        "activation" : "Free" ,
+        "detail" : "1/turno, ao fazer um movimento padrão, você pode voar com sua velocidade em uma linha reta, desde que haja um caminho livre. Esse movimento deve terminar em um objeto ou superfície, caso contrário, você começará a cair. Desde que permaneça parado, você pode se prender à superfície ou ao objeto de destino, mesmo que seja vertical ou suspenso. Se você for derrubado ou jogado para trás enquanto estiver preso a uma superfície, você cairá."
+      },
+      {
+        "name": "PT - Arrastar para baixo",
+        "activation" : "Quick" ,
+        "detail" : "Make a contested Hull check against a character within 5 Range and line of sight: the loser is knocked Prone."
+      }
+    ],
+    "description": "Os cabos de agarramento reforçados permitem total movimentação e utilidade em ambientes com ≤1 g. Tecido de nanocarbono incrivelmente forte e fios de aracnossintéticos, o cabo de garra reforçado é carregado em carretéis montados na cintura e preso a projetores braquiais acionados por carga. Uma vez disparadas, as garras penetram e se fixam no alvo. Pequenas cargas de fusão semeadas a cada trinta metros de cabo permitem o rápido desengate e expõem uma nova cabeça de garra, pronta para uso imediato.",
+    "type": "System", "license_id": "mf_blackbeard"
+  },
+  {
+    "id": "ms_sekhmet_class_nhp",
+    "name": "PT - SEKHMET-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Blackbeard",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e o protocolo SEKHMET",
+    "actions": [
+      {
+        "name": "PT - Protocolo SEKHMET",
+        "activation" : "Protocol",
+        "detail": "Quando ativado, você cede o controle do seu mech ao seu NHP e obtém os seguintes benefícios:<ul><li>Todos os acertos críticos corpo a corpo causam +1d6 de dano adicional.</li><li>1/rodada, você pode Escaramuçar com armas corpo a corpo somente como uma ação livre.</li></ul>Seu NHP usa todas as ações e movimentos disponíveis para se mover em direção ao personagem visível mais próximo - aliado ou hostil - e o ataca com ataques corpo a corpo, priorizando armas corpo a corpo. Ele pode se beneficiar de seus talentos. Se não houver nenhum personagem dentro da área de ameaça, seu NHP usa todas as ações para se mover o mais diretamente possível para o próximo alvo mais próximo (visível). Seu NHP não pode fazer ataques à distância, mesmo que haja ações disponíveis.<br>Você mantém controle suficiente para recarregar como de costume; no entanto, seu NHP usa a ação adicional para o mesmo propósito que suas outras ações.<br>Você pode retomar o controle do seu mecha como um protocolo. Ao fazer isso, você fica atordoado até o início do seu próximo turno. Caso contrário, esse efeito dura até que seu mecha seja destruído - a incapacitação ou morte do piloto não tem efeito."
+      }
+    ],
+    "description": "O copiloto IPS-N SEKHMET está pronto para ser seu primeiro companheiro! O SEKHMET vem de fábrica com sistemas de controle remoto, omninet, tags IR e voz, e é totalmente compatível com todos os mechs IPS-N atuais e antigos.<br>Sabia que o SEKHMET aprende com você? Se o pior acontecer, seu próprio SEKHMET continuará a atacar alvos hostis usando um doppelgänger de rede neural emulado para pilotar seu chassi IPS-N até o desligamento forçado ou voluntário!<br>cópia de rascunho, IPS-N Polaris Pilot Lounge adbroad [riscado e substituído por adbroad atual]<br>Os NHPs da classe SEKHMET tendem a ter atitudes agressivas e humor negro. Os pilotos costumam chamá-los de sistemas berserker - NHPs perigosos que valorizam a eficácia do combate em detrimento do bem-estar do piloto.",
+    "license_id": "mf_blackbeard"
+  },
+  {
+    "id": "ms_argonaut_shield",
+    "name": "PT - Escudo do Argonauta",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Drake",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Você usa o Escudo Argonauta de braço pesado para dar cobertura a um personagem adjacente como uma ação rápida, concedendo-lhe Resistência a todo dano; no entanto, você recebe metade do dano que o alvo receberia antes de calcular a Armadura e a Resistência. Esse efeito dura até que seu alvo quebre a adjacência, momento em que esse efeito cessa até que você repita essa ação."
+      }
+    ],
+    "description": "No espaço, a simplicidade na forma e na função garante a confiabilidade e promove a confiança. O Argonaut é um dos projetos mais antigos da IPS-N, oriundo dos dias anteriores à fusão das equipes de segurança Deep Black da Northstar. É uma simples placa de metal carregada na mão ou montada na superestrutura braquial de um chassi; a única opção que um piloto tem para personalizar esse escudo é a escolha do tamanho.",
+    "license_id": "mf_drake"
+  },
+  {
+    "id": "ms_aegis_shield_generator",
+    "name": "PT - Gerador de escudo Aegis",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Drake",
+    "license_level": 2,
+    "effect": "Gaste uma carga para implantar um gerador de escudo de tamanho 1 em um espaço livre adjacente, onde ele cria um escudo de explosão 1",
+    "deployables": [
+      {
+        "type" : "Deployable",
+        "name": "PT - Gerador de escudo Aegis",
+        "ativação": "Quick" ,
+        "cost" : 1,
+        "size" : 1,
+        "hp": 10,
+        "evasion" : 5,
+        "detail" : "Disponha três d6s para representar a energia restante do gerador. Como reação, quando qualquer personagem ou objeto de sua escolha, pelo menos parcialmente na área, sofrer dano, você poderá rolar um dos d6s para reduzir o dano pela quantidade rolada.<br>Esse effect dura pelo resto da cena, até que todos os dados tenham sido rolados e o gerador perca energia, ou o gerador seja destruído.",
+        "contadores": [
+          {
+            "id": "aegis_shield_die",
+            "name": "PT - Potência do gerador de escudo do Aegis",
+            "default_value" : 3,
+            "min": 0,
+            "max": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_shield"
+          }
+        ]
+      }
+    ],
+    "description": "O Aegis é um gerador de escudo eletromagnético portátil: um método poderoso e confiável - embora rudimentar para os padrões modernos - para estabelecer dissuasão cinética e de partículas coerentes em uma ampla área.",
+    "license_id": "mf_drake"
+  },
+  {
+    "id": "ms_portable_bunker",
+    "name": "PT - Portable Bunker",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Drake",
+    "license_level": 3,
+    "effect": "Gaste uma carga para implantar um bunker portátil em uma área livre e adjacente de 4 por 4. No início do seu próximo turno, ele se desdobra em um local fortificado.",
+    "deployables": [
+      {
+        "type" : "Deployable",
+        "name": "PT - Portable Bunker",
+        "ativação": "Quick" ,
+        "cost" : 1,
+        "size" : 4,
+        "hp": 40,
+        "evasion" : 5,
+        "detail" : "Todos os personagens completamente dentro da área 4x4 do bunker ganham cobertura contra todos os ataques de fora do bunker de todas as direções e resistência a danos de ataques de explosão, linha, rajada e cone que se originam fora do bunker. Ele não pode ser movido ou desativado depois de implantado."
+      }
+    ],
+    "description": "O Bunker portátil da IPS-N é, na verdade, uma série de folhas de impressora expansíveis de uso único: bolsas planas de fluido inerte não newtoniano que, quando implantadas, tornam-se uma estrutura rígida capaz de suportar uma força incrível.",
+    "license_id": "mf_drake"
+  },
+  {
+    "id": "ms_cable_winch_system",
+    "name": "PT - Sistema de guincho a cabo",
+    "sp": 1,
+    "source": "IPS-N",
+    "license": "Lancaster",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Esses cabos podem ser fixados em um personagem adjacente. Se o alvo estiver atordoado ou disposto, você será automaticamente bem-sucedido; caso contrário, ele poderá resistir com uma defesa de Hull bem-sucedida. Uma vez presos, você e o alvo não podem se afastar mais de 5 espaços um do outro. Qualquer um dos personagens pode rebocar o outro, obedecendo às regras normais para levantar e arrastar e ficando desacelerado ao fazê-lo.<br>Qualquer personagem pode remover os cabos com um golpe de ataque corpo a corpo ou Ataque Improvisado contra Evasão 10.<br>Esses cabos também podem ser usados para arrastar, puxar ou interagir de outra forma com objetos e com o ambiente. Eles têm 5 espaços de comprimento e podem suportar um tamanho 6 combinado antes de se romperem. Os personagens podem usá-los para escalar superfícies, o que lhes permite subir sem penalidade de velocidade."
+      }
+    ],
+    "description": "Um sistema de guincho consiste em um carretel de cabo de nanocarbono montado externamente e uma sub-rotina de recuperação instalada no mech.",
+    "type": "System", "license_id": "mf_lancaster"
+  },
+  {
+    "id": "ms_restock_drone",
+    "name": "PT - Drone de reabastecimento",
+    "type" : "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Lancaster",
+    "license_level": 1,
+    "effect": "Gastar uma carga para implantar um drone de reabastecimento em qualquer espaço adjacente livre, onde ele se prepara no final do seu turno",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - Drone de reabastecimento",
+        "activation" : "Quick" ,
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "detail" : "Enquanto estiverem adjacentes a esse drone, os personagens aliados podem ativá-lo como uma ação rápida, eliminando 1d6 de calor e uma condição e recarregando uma arma de carregamento. Após ser ativado, o drone se desintegra imediatamente.",
+        "actions": [
+          {
+            "name": "PT - Ativar drone de reabastecimento",
+            "activation" : "Quick" ,
+            "detail" : "Limpa 1d6 de calor e uma condição, além de recarregar uma arma de carregamento. Após ser ativado, o drone se desintegra imediatamente."
+          }
+        ]
+      }
+    ],
+    "description": "Drones confiáveis e robustos que carregam impressoras integradas, os drones de reabastecimento permitem flexibilidade logística limitada por meio de autossalvamento. A maior parte de um drone de reabastecimento é feita de RawMat, uma mistura de silicatos e materiais metálicos que o drone processa em peças de reposição e kits de reparo. É por isso que os pilotos costumam brincar dizendo que os drones de reabastecimento são, simplesmente, lanches mecânicos",
+    "license_id": "mf_lancaster"
+  },
+  {
+    "id": "ms_mule_harness",
+    "name": "PT - MULE Harness",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Lancaster",
+    "license_level": 2,
+    "effect": "Montarias, correias e pontos de apoio extras permitem que outros personagens subam e montem em seu mecanismo. Personagens adjacentes, não imobilizados, podem subir em seu mecha como uma ação rápida. Enquanto estiverem montados, eles ocupam o mesmo espaço que você, movem-se quando você se move (mesmo que estejam desacelerados) e se beneficiam da cobertura suave. Se você ou um dos cavaleiros for derrubado, atordoado, imobilizado ou destruído, eles aterrissarão em espaços adjacentes. Os cavaleiros podem descer como parte de qualquer movimento de distância, mas só podem subir no seu mecha como uma ação rápida.<br>Você pode carregar cavaleiros de um tamanho combinado igual ao seu tamanho, menos tamanho 1/2 (por exemplo, se o seu mecha for de tamanho 1, você pode carregar um personagem de tamanho 1/2; se for de tamanho 2, você pode carregar um personagem de tamanho 1 e um personagem de tamanho 1/2).",
+    "description": "O Multiple User, Light Entanglement (MULE) Harness é uma versão produzida em massa de uma modificação comum no campo de batalha que permite que soldados amigos andem em um chassi. Alguns sistemas são grandes o suficiente para permitir que chassis menores acompanhem chassis maiores; normalmente, essas variantes são empregadas em inserções de alta altitude e baixa órbita, onde é necessária uma presença reduzida do radar.",
+    "type": "System", "license_id": "mf_lancaster"
+  },
+  {
+    "id": "ms_whitewash_sealant_spray",
+    "name": "PT - Spray selante para cal",
+    "sp": 2,
+    "source": "IPS-N",
+    "license": "Lancaster",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Esse selante pode ser borrifado em personagens ou espaços livres dentro do alcance 5 e da linha de visão. Ele tem efeitos diferentes dependendo do alvo:<ul><li><b>Caracteres hostis:</b> Seu alvo deve ser bem-sucedido em um teste de Agilidade ou ficará desacelerado até o final do próximo turno e eliminará toda a queimadura. </li><li><b>Personagens aliados:</b> Seu alvo elimina toda a queimadura, mas fica desacelerado até o final do próximo turno.</li><li><b>Espaço livre:</b> Todos os incêndios dentro da explosão 1 são extintos e a área se torna um terreno difícil pelo resto da cena.</li></ul>"
+      }
+    ],
+    "description": "Para supressão de incêndios e vedações rápidas e temporárias em anteparos perfurados de naves estelares, a IPS-N oferece uma linha de nanites de uso único e objetivo único - whitewash. Esse spray selante também pode ser usado para conter atores que não estejam em conformidade quando os cabeçotes de pulverização e as formulações catalíticas corretas forem instalados no aplicador.",
+    "type": "System", "license_id": "mf_lancaster"
+  },
+  {
+    "id": "ms_aceso_stabilizer",
+    "name": "PT - Estabilizador Aceso",
+    "type" : "Shield",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_overshield"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Lancaster",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Gaste uma carga para disparar esse sistema pequeno e autônomo em um mech aliado em um raio de 5. Ele ganha Overshield igual ao seu Grit +4. Enquanto estiverem com esse Overshield, eles ganham imunidade a Impaired e Jammed."
+      }
+    ],
+    "description": "O IPS-N Aceso Stabilizer é uma medida de triagem útil para qualquer dano mecânico menor e de pontuação sofrido durante o combate ou interação ambiental negativa. Graças à demanda insignificante do processador, os estabilizadores Aceso podem até ser controlados por unidades COMP/CON, o que permite que o piloto se concentre em reparos complexos ou na neutralização imediata de ameaças.",
+    "license_id": "mf_lancaster"
+  },
+  {
+    "id": "ms_bulwark_mods",
+    "name": "PT - Bulwark Mods",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Nelson",
+    "license_level": 1,
+    "effect": "Os membros estendidos, a armadura adicional, os sistemas de motor redundantes e outros reforços do seu mech permitem que você ignore terrenos difíceis",
+    "synergies": [
+      {
+        "locations": ["move"],
+        "detail": "Os membros estendidos, a armadura adicional, os sistemas de motor redundantes e outros reforços do seu mech permitem que você ignore terrenos difíceis."
+      }
+    ],
+    "description": "Todos os núcleos de mechs IPS-N proprietários contam com o sistema QuickMod - um sistema modular compatível com o legado de articulações, hardpoints e slots internos que simplifica a instalação de atualizações. Isso provou ser um recurso necessário para as maktebas Albatross, há muito tempo fora de sincronia com o Union Realtime",
+    "type": "System", "license_id": "mf_nelson"
+  },
+  {
+    "id": "ms_armor_lock_plating",
+    "name": "PT - Armor-Lock Plating",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Nelson",
+    "license_level": 2,
+    "effect": "Você pode se preparar enquanto estiver agarrando. Ao fazer isso, todas as agarras que estiverem afetando você terminam.<br>Além disso, quando você se agarra, você ganha os seguintes benefícios até o final do seu turno seguinte:<ul><li>Os ataques contra você recebem +1 de dificuldade.</li><li>Você não pode falhar em defesas de Agilidade ou Casco nem em verificações contestadas.</li><li>Você ganha imunidade a Knockback, Grapple, ser derrubado Prone e ser movido por qualquer força externa menor que o tamanho 5.</li></ul>",
+    "sinergias": [
+      {
+        "locations": ["grapple"],
+        "detail": "You can Brace while Grappling."
+      },
+      {
+        "locations": ["brace"],
+        "detail": "Ao se preparar, você ganha os seguintes benefícios até o final do seu turno seguinte:<ul><li>Ataques contra você recebem +1 de dificuldade.</li><li>Você não pode falhar em defesas de Agilidade ou Casco nem em verificações contestadas.</li><li>Você ganha imunidade a Knockback, Grapple, ser derrubado e ser movido por qualquer força externa menor que o tamanho 5.</li></ul>"
+      }
+    ],
+    "description": "O Armor-Lock Plating da IPS-N é uma modificação de corpo inteiro que proporciona estabilidade adicional ao chassi para qualquer situação em que um piloto precise submeter seu mech a um estresse maior do que o previsto.",
+    "type": "System", "license_id": "mf_nelson"
+  },
+  {
+    "id": "ms_ramjet",
+    "name": "PT - Ramjet",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Nelson",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Protocol",
+        "detail" : "Até o início do seu próximo turno, você pode se mover +2 espaços quando fizer um Boost e seus ataques corpo a corpo (incluindo Ram, Grapple, etc.) ganharem Knockback 2.<br>Quando se mover durante esse período, você deve se mover com toda a sua velocidade em linha reta; no entanto, você pode parar se colidir com uma obstrução ou personagem hostil, e pode mudar de direção entre movimentos separados (por exemplo, movimentos padrão, Boost, etc.)."
+      }
+    ],
+    "description": "Há um limite que os pilotos veteranos de Nelson conhecem bem: o ponto de impulso infinito. Você se move rápido o suficiente na atmosfera certa e o próprio ar alimenta as portas auxiliares no chassi, gritando como o uivo onipotente de um demônio. O ponto de impulso infinito é a mão de um gigante em seu peito e a carruagem de um deus sob seus pés. Faz com que você sinta que pode superar a própria luz, desde que não desmaie antes.",
+    "type": "System", "license_id": "mf_nelson"
+  },
+  {
+    "id": "ms_bb_breach_blast_charges",
+    "name": "PT - Encargos de violação/explosão do BB",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Raleigh",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Granada térmica",
+        "range" : [
+          {
+            "type" : "Range" ,
+            "val": 5
+          },
+          {
+            "type" : "Blast" ,
+            "val": 1
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Energy",
+            "val": "1d6"
+          }
+        ],
+        "detail" : "Atire uma granada térmica dentro do alcance 5. Todos os personagens em uma área de Explosão 1 devem ser bem-sucedidos em um teste de Agilidade ou receberão 1d6 de energia. Em caso de sucesso, eles recebem metade do dano. Os objetos e o terreno são atingidos automaticamente e recebem 10 de dano de energia AP."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Carga de violação",
+        "type" : "Mine" ,
+        "detail" : "Além dos espaços livres adjacentes, essa mina também pode ser plantada em paredes adjacentes, peças de cobertura e terreno. Uma vez armada, essa mina deve ser detonada com uma ação rápida. Os personagens dentro da área afetada devem ser bem-sucedidos em um teste de Agilidade ou receberão 2d6 de dano explosivo AP. Se forem bem-sucedidos, receberão metade do dano. Os objetos e o terreno são atingidos automaticamente e recebem 30 de dano explosivo AP.",
+        "actions": [
+          {
+            "name": "PT - Detonar",
+            "activation" : "Quick" ,
+            "detail" : "Os personagens em uma área de Burst 1 devem ser bem-sucedidos em um salvamento de Agilidade ou receberão 2d6 AP de dano explosivo. Em caso de sucesso, eles recebem metade do dano. Os objetos e o terreno são atingidos automaticamente e recebem 30 de dano explosivo AP."
+          }
+        ]
+      }
+    ],
+    "description": "As cargas de ruptura/explosão oferecem um toque de especificação militar nas cargas de detonação industrial desenvolvidas pela IPS-N para mineração de asteroides. A carga IPS-N BB apresenta uma mistura mais volátil de altos explosivos projetados para causar danos estruturais maciços a chassis mecanizados, anteparos de naves estelares, veículos blindados, bunkers e outras estruturas reforçadas.",
+    "license_id": "mf_raleigh"
+  },
+  {
+    "id": "ms_roland_chamber",
+    "name": "PT - Roland Chamber",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Raleigh",
+    "license_level": 2,
+    "effect": "Quando você recarrega qualquer arma, seu próximo ataque com uma arma de carregamento ganha este effect:<br>Ao acertar: Esse ataque causa +1d6 de dano de bônus explosivo, e os alvos devem ser bem-sucedidos em um salvamento de casco ou serão derrubados em Prone.",
+    "description": "Embaladas em cilindros selados e autônomos, as Roland Rounds da IPS-N são cargas antiblindagem altamente explosivas criadas para armas cinéticas de qualquer calibre em escala mecânica. Carregado no lugar de munição cinética inerte, um projétil Roland HE/AA aumenta a eficácia e o poder destrutivo de qualquer arma da qual seja disparado.",
+    "type": "System", "license_id": "mf_raleigh"
+  },
+  {
+    "id": "ms_siege_ram",
+    "name": "PT - Siege Ram",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Tortuga",
+    "license_level": 1,
+    "effect": "Quando você arremessa, causa 2 de dano cinético ao acertar e causa 10 de dano cinético AP ao arremessar objetos e terrenos",
+    "sinergias": [
+      {
+        "locations": ["ram"],
+        "detail": "Quando você arremessa, causa 2 de dano cinético ao acertar e causa 10 de dano cinético AP quando arremessa objetos e terreno."
+      }
+    ],
+    "description": "O aríete é uma viga metálica portátil com uma ponta em forma de cunha, pronta para ser esmagada nas costuras de portas de anteparos selados e levada para casa. É outro resquício dos dias anteriores à fusão IPS-N. Quando alguém precisa abrir um anteparo que acabou de ser fechado com força, é isso que os pilotos marítimos usam para fazer o trabalho. Pesado, burro e inquebrável: O aríete de cerco da IPS-N é a chave mestra universal.",
+    "type": "System", "license_id": "mf_tortuga"
+  },
+  {
+    "id": "ms_hyperdense_armor",
+    "name": "PT - Armadura hiperdensa",
+    "type" : "Shield" ,
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Tortuga",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Quando ativada, a HyperDense Armor endurece em uma superfície cintilante e reflexiva que oferece proteção sem igual. Você ganha resistência a todo dano, calor e queimadura de ataques originados além do alcance 3; no entanto, você fica lento e causa metade do dano, calor e queimadura a personagens além do alcance 3."
+      },
+      {
+        "name": "PT - Desativar armadura hiperdensa",
+        "activation" : "Quick" ,
+        "detail" : "Desative a Armadura Hiperdensa, perdendo a Resistência a todo dano, Calor e Queimadura de ataques originados além do Alcance 3; além de eliminar seu status de Desacelerado e causar dano normal, Calor e Queimadura a personagens além do Alcance 3."
+      }
+    ],
+    "description": "A IPS-N HyperDense Armor foi criada para o espaço - forjada sem levar em conta quaisquer restrições que os usuários possam enfrentar dentro de um poço de gravidade. Dessa forma, muitos pilotos protegidos por produtos HyperDense ficam chocados ao experimentar a diferença entre pilotar seu mech em um poço e levá-lo para um passeio na gravidade nula do espaço.",
+    "license_id": "mf_tortuga"
+  },
+  {
+    "id": "ms_webjaw_snare",
+    "name": "PT - Webjaw Snare",
+    "type" : "Deployable",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Vlad",
+    "license_level": 1,
+    "effect": "Gaste uma carga para implantar uma armadilha Webjaw em um espaço adjacente livre, onde ela se arma no final do seu turno",
+    "implementáveis": [
+      {
+        "type" : "Deployable",
+        "name": "PT - Webjaw Snare",
+        "ativação": "Quick" ,
+        "size" : 1,
+        "hp": 10,
+        "evasion" : 5,
+        "detail": "O Webjaw Snare não obstrui o movimento e não pode ser atacado até que seja acionado.<br>O snare é acionado quando qualquer personagem se move sobre ele. Ele deve ser bem-sucedido em uma defesa de casco ou sofrerá 1d6 de dano cinético AP e ficará imobilizado. Esse effect dura até que o laço seja destruído."
+      }
+    ],
+    "description": "Adequado para uso em qualquer teatro, o sistema de Filamento Explosivamente Acelerado IPS-N Webjaw é uma solução de defesa de perímetro implantável projetada para deter movimentos hostis em corredores de morte predeterminados. O Webjaw consiste em um conjunto em rede de âncoras de uso único, cada uma composta por uma farpa, uma bobina de filamento de aracnossintético NoCut e uma carga explosiva.<br>Quando acionadas remotamente ou por uma série de gatilhos físicos, eletrônicos ou químicos programáveis, as âncoras disparam, inserindo farpas profundamente nos alvos, sejam eles macios ou duros. As farpas, presas aos pontos de ancoragem pelo filamento NoCut, obstruem e restringem o movimento, sujando engrenagens, rodas, rotores, motores e todos os métodos de locomoção.",
+    "license_id": "mf_vlad"
+  },
+  {
+    "id": "ms_caltrop_launcher",
+    "name": "PT - Caltrop Launcher",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "IPS-N",
+    "license": "Vlad",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Este sistema cobre uma área de explosão livre de 1 dentro do alcance 5 com caltrops explosivos. A área afetada se torna um terreno difícil pelo resto da cena, e os mechs recebem 1d3 de dano explosivo AP quando entram na área afetada pela primeira vez em uma rodada ou terminam seu turno dentro dela."
+      }
+    ],
+    "description": "Sistemas anti-orgânicos e anti-veículos perversos para negação de proximidade, os lançadores de caltrop disparam grandes nuvens ou longas faixas de metal cintilante sobre uma área. O sistema HX-CAL caltrop da IPS-N inclui explosivos pequenos e moldados na mistura de pirâmides endurecidas.",
+    "type": "System", "license_id": "mf_vlad"
+  },
+  {
+    "id": "ms_charged_stake",
+    "name": "PT - Estaca Carregada",
+    "sp": 2,
+    "source": "IPS-N",
+    "license": "Vlad",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Full",
+        "detail" : "Esse sistema dispara uma estaca carregada em um personagem adjacente a você. Seu alvo deve ser bem-sucedido em um salvamento de Hull ou será empalado pela estaca, recebendo 1d6 de dano de energia AP e ficando imobilizado enquanto estiver empalado. No final de cada um de seus turnos, um personagem empalado recebe 1d6 de dano de energia AP. Um personagem empalado pode repetir com sucesso essa defesa como uma ação completa para remover a estaca e se libertar, que é a única maneira de acabar com a imobilização.<br>Você só pode afetar um personagem com a estaca por vez."
+      }
+    ],
+    "description": "Descendente de ferramentas de mineração por explosão, esse sistema enorme e improvisado é alojado e preparado para disparar em uma câmara especialmente preparada. Ele primeiro penetra e imobiliza alvos blindados e, em seguida, envia uma carga poderosa e vaporizadora para sistemas internos vulneráveis.",
+    "type": "System", "license_id": "mf_vlad"
+  },
+  {
+    "id": "ms_ferrous_lash",
+    "name": "PT - Ferrous Lash",
+    "sp": 2,
+    "source": "SSC",
+    "license": "Bruxa Negra",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Escolha um personagem dentro do alcance 8 e da linha de visão. Se ele for aliado, você poderá puxá-lo 5 espaços em qualquer direção; se for hostil, ele deverá ser bem-sucedido em um teste de Agilidade ou será puxado 5 espaços em uma direção de sua escolha. Esse movimento ignora o engajamento e não provoca reações. <br>Se um alvo hostil movido por esse sistema colidir com uma obstrução ou outro mecanismo, ele para de se mover e é derrubado."
+      }
+    ],
+    "description": "Inicialmente desenvolvido como um dispositivo não letal de supressão de multidões, o Ferrous Lash é um dispositivo muito mais complexo e perigoso nas mãos do piloto certo. O Lash consiste em uma série de lançadores integrados que detonam cargas úteis de ferrofluidos de fusão rápida que restringem seus alvos. Sintonizadas na frequência correta, essas misturas proprietárias de ferrofluido se formam em segmentos ambulatoriais rudimentares, puxando seus hospedeiros de volta para aquele que está empunhando o Lash.",
+    "type": "System", "license_id": "mf_black_witch"
+  },
+  {
+    "id": "ms_iceout_drone",
+    "name": "PT - ICEOUT Drone",
+    "type" : "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Bruxa Negra",
+    "license_level": 2,
+    "effect": "Gasta uma carga para implantar um drone ICEOUT em um espaço livre dentro dos Sensores e da linha de visão, onde ele paira no lugar e gera um campo de explosão 1",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - ICEOUT Drone",
+        "ativação": "Quick" ,
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "detail": "Os personagens que estiverem pelo menos parcialmente dentro da área de Burst 1 do drone ICEOUT ganham imunidade a todas as ações tecnológicas e não podem realizar ações tecnológicas. As condições e os efeitos existentes causados por ações tecnológicas não são eliminados, mas os personagens têm imunidade a eles enquanto estiverem na área e podem ser salvos contra eles normalmente.<br>O drone ICEOUT pode ser movido para qualquer ponto dentro dos Sensores como uma ação rápida. Ele não pode ser recuperado e expira no final da cena.",
+        "actions" : [
+          {
+            "name": "PT - Mover ICEOUT Drone",
+            "activation" : "Quick" ,
+            "detail" : "O drone ICEOUT pode ser movido para qualquer ponto dentro dos Sensores."
+          }
+        ]
+      }
+    ],
+    "description": "O drone ICEOUT da SSC é uma resposta à crescente dependência de varreduras de sistemas hostis para um direcionamento preciso. Ao cobrir os sistemas de um mech com camadas de desarmonia digital, espelhamento, falsificação e redirecionamento, um drone ICEOUT pode efetivamente desaparecer ou desincorporá-lo de varreduras hostis. No entanto, os drones ICEOUT apenas tornam o sistema de seu operador invisível; eles permanecem visíveis com a ótica.",
+    "license_id": "mf_black_witch"
+  },
+  {
+    "id": "ms_perimeter_command_plate",
+    "name": "PT - Placa de comando do perímetro",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Bruxa Negra",
+    "license_level": 2,
+    "effect": "Essa placa de comando de perímetro (PCP) de metal pesado pode ser impressa em flash e implantada em um espaço livre de 2x2 dentro do alcance 5. A PCP é plana, não obstrui o movimento e dura o resto da cena. Se você criar um novo PCP, o antigo se desintegra",
+    "deployables": [
+      {
+        "name": "PT - Placa de comando do perímetro",
+        "type": "Deployable",
+        "size" : 2,
+        "hp": 20,
+        "evasão": 5,
+        "detail": "A placa é ativada para um personagem na primeira vez em que ele entra em seu espaço durante uma rodada ou se ele terminar seu turno ali.<br>Ao imprimir, escolha uma configuração:<ul><li><b>Repulsa:</b> Personagens hostis que se moverem para o PCP devem ser bem-sucedidos em um salvamento de Hull ou serão empurrados 3 espaços na direção de sua escolha. Se isso fizer com que colidam com uma obstrução, eles serão derrubados. Os personagens aliados que entrarem no espaço podem voar imediatamente 3 espaços em qualquer direção como uma ação livre.</li><li><b>Atrair:</b> Os personagens que se moverem para o PCP devem ser bem-sucedidos em um salvamento de casco ou ficarão imobilizados. Eles podem sair da Imobilização repetindo com êxito a defesa como uma ação rápida; ela também é eliminada se o PCP for destruído."
+      }
+    ],
+    "description": "O Grupo de Materiais Exóticos desenvolveu a Placa de Comando de Perímetro para ampliar a área da zona de controle da Bruxa Negra. Utilizando impressoras flash de padrão único, a Bruxa Negra imprime uma placa ampla e circular semeada com projetores eletromagnéticos. Embora as placas devam ser descartáveis, os pilotos da Bruxa Negra geralmente se apegam a seus familiares e solicitam que suas impressoras flash criem placas personalizadas.",
+    "license_id": "mf_black_witch"
+  },
+  {
+    "id": "ms_black_ice_module",
+    "name": "PT - Módulo Black ICE",
+    "type" : "Tech",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Bruxa Negra",
+    "license_level": 3,
+    "effect": "Ataques tecnológicos contra você ou personagens aliados adjacentes recebem +1 de dificuldade. Cada ataque técnico subsequente contra você ou contra um personagem aliado adjacente recebe +1 de dificuldade adicional, até um máximo de +3 de dificuldade.<br>As definições de Black ICE são revertidas - redefinindo para +1 de dificuldade - quando aumentariam para +4 de dificuldade ou no final da cena. Os personagens aliados perdem esse benefício quando quebram a adjacência.",
+    "description": "Os módulos Black ICE são sistemas defensivos empacotados como padrão com as frotas Bruxa Negra usadas pelas próprias forças de segurança interna da SSC. Eles projetam uma bolha de código WHITECELL que analisa o script hostil que chega e estrutura inoculantes para sistemas amigáveis em tempo real.",
+    "contadores": [
+      {
+        "id": "ctr_black_ice_module",
+        "name": "PT - Módulo Black ICE",
+        "default_value": 1,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "license_id": "mf_black_witch"
+  },
+  {
+    "id": "ms_magnetic_shield",
+    "name": "PT - Escudo magnético",
+    "type" : "Shield" ,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Bruxa Negra" ,
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Esse sistema cria um campo de força de linha 4, com 4 espaços de altura - com pelo menos 1 espaço adjacente a você - que é uma obstrução para mechs e personagens feitos pelo menos parcialmente de metal. Ele dura pelo resto da cena e, se um novo campo for colocado, o antigo será desativado. O campo de força não bloqueia a linha de visão, mas oferece cobertura suave. Os personagens ganham resistência a danos cinéticos e explosivos enquanto se beneficiam dessa cobertura."
+      }
+    ],
+    "description": "O escudo magnético da SSC usa a mesma tecnologia de seu buckler magnético proprietário e a aplica a um sistema de projeção de campo maciço.",
+    "license_id": "mf_black_witch"
+  },
+  {
+    "id": "ms_high_stress_mag_clamps",
+    "name": "PT - Abraçadeiras magnéticas de alta tensão",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Cabeça da Morte" ,
+    "license_level": 1,
+    "effect": "Você trata todas as superfícies sólidas como solo plano para fins de movimento; você pode se mover por elas normalmente em vez de escalar, embora comece a cair se for derrubado por Prone",
+    "synergies": [
+      {
+        "locations": ["move"],
+        "detail": "Você trata todas as superfícies sólidas como solo plano para fins de movimento; você pode se mover por elas normalmente em vez de escalar, embora comece a cair se for derrubado por Prone."
+      }
+    ],
+    "description": "Um conjunto simples e confiável de grampos magnéticos alternáveis incorporados ao sistema de locomoção de um mecha pode aumentar enormemente as possibilidades táticas abertas ao seu piloto. Quando ativados, esses grampos permitem que o mecanismo se agarre a superfícies ferrosas, o que é especialmente útil em ambientes de baixa e zero gravidade.",
+    "type": "System", "license_id": "mf_deaths_head"
+  },
+  {
+    "id": "ms_tracking_bug",
+    "name": "PT - Bug de rastreamento",
+    "type" : "Tech",
+    "sp": 2,
+    "source": "SSC",
+    "license": "Cabeça da Morte" ,
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick Tech",
+        "tech_attack": true,
+        "detail" : "Faça um ataque técnico contra um personagem dentro dos Sensores. Em caso de acerto, você saberá a localização exata, o HP, a estrutura e a velocidade dele enquanto durar o ataque. Eles não podem se esconder e você ignora o status de invisibilidade deles. Para remover o drone de rastreamento, ele deve ser bem-sucedido em um teste de Engenharia como uma ação rápida; caso contrário, ele será desativado no final da cena."
+      }
+    ],
+    "description": "Os bugs de rastreamento são projéteis rastreadores especializados - essencialmente, drones grandes demais para serem classificados como nanites e pequenos demais para se encaixarem nos parâmetros padrão da União de um drone. Disparados de lançadores dedicados, os bugs de rastreamento se orientam em direção ao alvo designado. Após a penetração bem-sucedida do alvo, eles fornecem dados ao vivo de forma sub-reptícia e contínua ao usuário registrado.",
+    "license_id": "mf_deaths_head"
+  },
+  {
+    "id": "ms_core_siphon",
+    "name": "PT - Core Siphon",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Cabeça da Morte" ,
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Protocol",
+        "detail": "Ao ativar este protocolo, você ganha +1 de precisão em sua primeira rolagem de ataque neste turno, mas recebe +1 de dificuldade em todas as outras rolagens de ataque até o final do turno."
+      }
+    ],
+    "description": "Ao desviar o excesso de calor para sistemas ofensivos, os sifões de núcleo permitem que os pilotos aumentem a capacidade de mira, catalítica e de processamento de suas armas. No entanto, isso tem um custo: a dependência de overclocking sem resfriamento suficiente pode danificar sistemas não construídos para lidar com o influxo de energia.",
+    "type": "System", "license_id": "mf_deaths_head"
+  },
+  {
+    "id": "ms_kinetic_compensator",
+    "name": "PT - Compensador cinético",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Cabeça da Morte" ,
+    "license_level": 3,
+    "effect": "Quando você erra uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância ganha +1 de precisão",
+    "synergies": [
+      {
+        "locations": ["weapon"],
+        "weapon_types": ["Rifle", "Canhão", "Lançador", "CQB", "Nexus"],
+        "detail" : "Quando você erra uma rolagem de ataque à distância, sua próxima rolagem de ataque à distância ganha +1 de precisão."
+      }
+    ],
+    "description": "Os compensadores cinéticos são aprimoramentos populares, fornecendo uma estrutura subsuperficial de giroscópios modulados eletronicamente e compensadores hidráulicos que funcionam em conjunto para absorver e dispersar o recuo causado pelo disparo de armas pesadas.",
+    "type": "System", "license_id": "mf_deaths_head"
+  },
+  {
+    "id": "ms_neurospike",
+    "name": "PT - Neurospike",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Dusk Wing",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Código Shrike",
+        "activation" : "Invade" ,
+        "detail" : "Até o final do próximo turno do alvo, ele primeiro recebe 2 de calor sempre que atacar."
+      },
+      {
+        "name": "PT - Miragem",
+        "activation" : "Invade" ,
+        "detail" : "Escolha você mesmo ou um personagem aliado: seus sistemas retransmitem imagens borradas e ilusórias sobre a silhueta real deles. Seu alvo trata você ou o personagem que você escolheu como invisível até o final do próximo turno."
+      }
+    ],
+    "description": "De alguma forma, ele entrou em minha cabine de comando. Havia mãos - mãos frias - em volta do meu pescoço, dedos em minha boca, vasculhando sob meu traje de proteção. Ninguém mais poderia estar lá dentro comigo e, no entanto, alguém estava. Eu não conseguia nem gritar, ele segurava minha língua em um punho e apertava, e sussurrava seu nome para mim, e não dizia nada que eu pudesse entender. Nunca me senti tão sozinho - éramos apenas eu e... ele. Sozinho no universo, para sempre.",
+    "license_id": "mf_dusk_wing"
+  },
+  {
+    "id": "ms_flicker_field_projector",
+    "name": "PT - Projetor de campo de cintilação",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Dusk Wing",
+    "license_level": 2,
+    "effect": "Sempre que fizer um Boost ou um movimento padrão, você projeta um padrão holográfico ao seu redor, deixando pós-imagens deslumbrantes que tornam difícil discernir sua localização precisa: você conta como Invisível na próxima vez que for atacado. Você só pode se beneficiar de uma instância desse effect por vez.",
+    "synergies": [
+      {
+        "locations": ["move", "boost"],
+        "detail": "Sempre que você dá um Boost ou faz um movimento padrão, você projeta um padrão holográfico ao seu redor, deixando pós-imagens deslumbrantes que tornam difícil discernir sua localização precisa: você conta como Invisível na próxima vez que for atacado. Você só pode se beneficiar de uma instância desse effect por vez."
+      }
+    ],
+    "description": "Eu me vi repetidamente e repetidamente e repetidamente e repetidamente e repetidamente e -",
+    "type": "System", "license_id": "mf_dusk_wing"
+  },
+  {
+    "id": "ms_stuncrown",
+    "name": "PT - StunCrown",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Dusk Wing",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Gaste uma carga para criar um flash de luz de rajada 3. Todos os personagens hostis dentro da área afetada que tenham linha de visão para você devem ser bem-sucedidos em um teste de Agilidade ou ficarão presos, e em um teste de Sistemas ou ficarão incapacitados. Esses efeitos duram até o final do próximo turno deles.<br>Os personagens que estiverem sob sua cobertura não são afetados por esse sistema."
+      }
+    ],
+    "description": "Muitas coisas aconteceram no momento em que eu acho que morri.",
+    "type": "System", "license_id": "mf_dusk_wing"
+  },
+  {
+    "id": "ms_oasis_wall",
+    "name": "PT - OASIS Wall",
+    "type" : "Shield",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "SSC",
+    "license": "Dusk Wing",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Protocol",
+        "detail": "Até o início do seu próximo turno, você só pode se mover em linhas retas; no entanto, você cria um rastro holográfico atrás de você à medida que se move, criando uma barreira de luz feita de seções contíguas do mesmo tamanho do seu mech (tamanho 1 para Mechs de tamanho 0,5) em cada espaço pelo qual você se move. Essa barreira concede cobertura rígida aos personagens adjacentes, e os personagens que se beneficiam dessa cobertura também ganham Resistência a energia.<br>A barreira não conta como uma obstrução e tem Imunidade a todos os danos. Os personagens podem passar livremente por ela, mas não podem terminar seus turnos dentro dela, e qualquer personagem que seria involuntariamente movido para dentro da barreira para de se mover se fosse terminar seu movimento dentro dela. Ela dura pelo resto da cena ou até a próxima vez que você usar esse sistema."
+      }
+    ],
+    "description": "Dentro? O que eu vi lá dentro? Você acha que eu escapei? Que tudo isso é real? Não, eu nunca saí. Ainda estou lá. Alguma coisa está errada. Algo não está certo.",
+    "license_id": "mf_dusk_wing"
+  },
+  {
+    "id": "ms_flash_charges",
+    "name": "PT - Flash Charges",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Metalmark",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Flash Grenade",
+        "range" : [
+          {
+            "type" : "Range" ,
+            "val": 5
+          },
+          {
+            "type" : "Blast" ,
+            "val": 3
+          }
+        ],
+        "detail" : "Jogue uma granada de flash dentro do alcance 5. Até o final do seu próximo turno, essa granada cria uma zona de Explosão 3 de luz ofuscante e faíscas. Enquanto os personagens que não sejam você estiverem pelo menos parcialmente dentro da área, eles não poderão traçar uma linha de visão para fora da área. Os personagens totalmente fora da área ou que saem da área não são afetados, a menos que se movam para dentro dela."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Flash Mine",
+        "type": "Mine" ,
+        "range" : [
+          {
+            "type" : "Burst" ,
+            "val": 1
+          }
+        ],
+        "detail": "Essa mina detona em uma área de Burst 1 quando um personagem se move adjacente a ela ou sobre ela. Os personagens dentro da área afetada devem ser bem-sucedidos em um teste de Agilidade ou só terão linha de visão para os espaços adjacentes até o final de seu próximo turno."
+      }
+    ],
+    "description": "Produzidas pela oficina BELLA CIAO da Smith-Shimano, as cargas de flash são multiplicadores de vantagem populares, com um flash brilhante o suficiente para desestabilizar óticas de luz visível, comunicações a laser e conjuntos de sensores infravermelhos.",
+    "license_id": "mf_metalmark"
+  },
+  {
+    "id": "ms_reactive_weave",
+    "name": "PT - Reactive Weave",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Metalmark",
+    "license_level": 1,
+    "effect": "Quando você faz Brace, você se torna Invisível até o final do seu próximo turno e pode mover imediatamente espaços iguais à sua Velocidade.",
+    "sinergias": [
+      {
+        "localizações": ["Brace"],
+        "detail": "Quando você se curva, torna-se invisível até o final do seu próximo turno e pode se mover imediatamente espaços iguais à sua Velocidade."
+      }
+    ],
+    "description": "Composto por coberturas tecidas para juntas e sistemas críticos, o tecido reativo não apenas protege esses componentes sensíveis contra incrustações e intempéries, mas também fornece uma superfície para a aplicação da tecnologia de tear exclusiva da SSC. O tecido reativo é energizado, o que o torna capaz de se flexionar livremente para aumentar a mobilidade e reduzir o estresse colocado nas articulações do mecanismo.",
+    "type": "System", "license_id": "mf_metalmark"
+  },
+  {
+    "id": "ms_active_camouflage",
+    "name": "PT - Camuflagem ativa",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "SSC",
+    "license": "Metalmark",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Protocol",
+        "detail": "Você se torna Invisível até sofrer dano ou até o final do seu próximo turno."
+      }
+    ],
+    "description": "A camuflagem ativa é o auge dos sistemas de defesa contra óptica. Os sistemas de camuflagem ativa interpretam continuamente os dados de luz visível que chegam, permitindo que projetem campos de flexão de luz ao redor do usuário e o escondam efetivamente à vista de todos.",
+    "type": "System", "license_id": "mf_metalmark"
+  },
+  {
+    "id": "ms_javelin_rockets",
+    "name": "PT - Javelin Rockets",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Monarch",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Escolha 3 espaços livres dentro do alcance 15 e da linha de visão que não sejam adjacentes uns aos outros. Todos os personagens sabem quais espaços você escolheu. Você dispara uma saraivada de foguetes de mira automática no ar: até o início do seu próximo turno, quando um personagem se move para um espaço escolhido ou passa por cima dele - não mais do que 10 espaços acima - ele é atingido por um foguete, recebendo 3 de dano cinético. Cada espaço pode ser acionado uma vez e, em seguida, o effect desaparece nesse espaço."
+      }
+    ],
+    "description": "Pralaya era o nome de sua mãe. Ela que veria o amanhecer no fim. Sua beleza era terrível, assim como sua ira, e eu a vejo em todos vocês. Meus filhos, quando ouvirem o som do trovão - essa é a voz de sua mãe, e a chuva de mísseis é o presente dela. - Notas para o Jovem João, Ministrações do Mestre dos Professores",
+    "type": "System", "license_id": "mf_monarch"
+  },
+  {
+    "id": "ms_tlaloc_class_nhp",
+    "name": "PT - TLALOC-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "SSC",
+    "license": "Monarch",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e o protocolo TLALOC.",
+    "actions": [
+      {
+        "name": "PT - Protocolo TLALOC",
+        "activation" : "Protocol" ,
+        "detail" : "Seu NHP pode disparar e redirecionar rapidamente suas armas - muito mais rápido do que se pensava. Você fica imobilizado até o início do seu próximo turno; entretanto, durante esse período, você pode rolar novamente cada rolagem de ataque corpo a corpo ou à distância perdida uma vez, escolhendo um novo alvo dentro do alcance do ataque. Se o ataque fizer parte de uma área de efeito, ele deve ter como alvo um personagem na mesma área. Um determinado alvo não pode ser atingido mais de uma vez como parte da mesma ação."
+      }
+    ],
+    "description": "Os NHPs da classe TLALOC oferecem funções avançadas de mira e copiloto em vários sistemas, assumindo o controle de sub-rotinas para garantir o bloqueio e o engajamento persistentes. Com o TLALOC instalado e em operação, o piloto pode confiar que sua retaguarda estará sempre protegida e que todas as vantagens possíveis serão exploradas.<br>Os clones do TLALOC são frequentemente estereotipados como apressados e impetuosos, e são conhecidos por terem complexos de superioridade. Apesar disso, eles são alguns dos clones de PNH mais estáveis. Os principais teóricos da subjetividade sugerem que o amplo portfólio de controle e o senso de dominação proporcionados às unidades TLALOC estimulam uma sensação de satisfação com seus parâmetros de trabalho e subjetividade - como resultado, eles têm uma janela de cascata muito mais longa. Até o momento, essa teoria é reproduzível de forma consistente em todas as unidades TLALOC, embora não haja correlação semelhante entre outras linhas NHP mil-spec",
+    "license_id": "mf_monarch"
+  },
+  {
+    "id": "ms_hunter_logic_suite",
+    "name": "PT - Hunter Logic Suite",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Mourning Cloak",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Perseguir presa",
+        "activation" : "Invade",
+        "detail" : "Você infecta o alvo com uma lógica viral que apaga sua imagem dos sensores dele. Eles o tratam como invisível até que você receba dano deles na próxima vez. Isso só pode afetar um alvo de cada vez."
+      },
+      {
+        "name": "PT - Aterrorizar",
+        "activation" : "Invade",
+        "detail" : "Você infecta o alvo com uma lógica viral que faz com que seu mech pareça horripilante. Até o final do próximo turno, ele fica prejudicado e não pode fazer nenhum movimento voluntário que o aproxime de você."
+      }
+    ],
+    "description": "Criada a partir de fios interpretados do paracódigo DHIYED, a Hunter Logic da SSC é uma memética computacional ágil: uma arma sistêmica de vetor sintético/VLS duplo capaz de interferir tanto no computador do alvo quanto em sua tripulação.",
+    "license_id": "mf_mourning_cloak"
+  },
+  {
+    "id": "ms_singularity_motivator",
+    "name": "PT - Motivador da Singularidade",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Mourning Cloak",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Singularidade exposta",
+        "activation" : "Reaction" ,
+        "frequency" : "1/round",
+        "trigger": "Seu mech recebe dano",
+        "detail" : "Você pode se teletransportar imediatamente para um espaço livre dentro de 1d6 espaços."
+      }
+    ],
+    "description": "Essa usina de energia gravitacional exclusiva foi desenvolvida pela primeira vez pelo Grupo de Materiais Exóticos da SSC para a primeira geração da Mourning Cloak. Para os modelos subsequentes, os engenheiros criaram um sistema que permite que os pilotos abram - por um momento - a abertura do sistema de contenção gravitacional, expondo uma fatia de singularidade nua ao espaço real.<br>Uma singularidade nua é difícil de ser percebida tanto por orgânicos quanto por sintéticos, sendo semelhante ao coração de um buraco negro. A exposição repentina basicamente remove o mech e seu piloto do tempo real. O usuário experimenta cerca de 10 segundos de tempo subjetivo - uma breve janela, na qual ele pode agir independentemente do tempo real local.<br><br>O SSC não recomenda o abuso desse sistema, pois os effects da exposição de longo prazo ao tempo sideral local ainda são desconhecidos.",
+    "type": "System", "license_id": "mf_mourning_cloak"
+  },
+  {
+    "id": "ms_fade_cloak",
+    "name": "PT - FADE Cloak",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Mourning Cloak",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Quando ativado, você sai imediatamente de fase com o espaço real, tornando-se intangível. Enquanto intangível, você pode passar por obstruções, mas não pode terminar seu turno dentro delas. Você não pode interagir com nenhum outro objeto ou personagem nem ser interagido de nenhuma forma (por exemplo, receber ou causar dano).<br>Role 1d6 no início de cada um dos seus turnos: com 3 ou menos, você retorna ao espaço real até o início do seu próximo turno; com 4+, você permanece intangível.<br>Esse sistema permanece ativo pelo resto da cena ou até que você o desative como uma ação rápida."
+      }
+    ],
+    "description": "Representando a primeira manipulação bem-sucedida do Firmamento pela SSC, as capas Firmament Affinity/Directed Entropy (FADE) devem ser fabricadas de acordo com a assinatura de afinidade exclusiva dos pilotos requisitantes. São ferramentas rudimentares: amplificadores artificiais de afinidade que permitem que os operadores acessem camadas superficiais do Firmamento e, assim, tremeluzam, deslocando seus corpos físicos entre o causal e o paracausal. O manto aumenta esse efeito com a extrusão de uma membrana semiorgânica que envolve o mech para fornecer uma camada adicional de proteção.<br>Atualmente, os efeitos a longo prazo da amplificação de afinidade na matéria orgânica são desconhecidos; antes de receber autorização para operar um manto FADE, os pilotos devem concordar em fazer check-in com o concierge pessoal da SSC em uma programação regular. Esses check-ins incluem depósitos regulares de material genético.",
+    "type": "System", "license_id": "mf_mourning_cloak"
+  },
+  {
+    "id": "ms_lotus_projector",
+    "name": "PT - Lotus Projector",
+    "type" : "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_invisible"
+      }
+    ],
+    "source": "SSC",
+    "license": "Swallowtail",
+    "license_level": 1,
+    "effect": "Esse drone batedor pode ser implantado em um espaço dentro dos Sensores e da linha de visão, onde emite um campo de Burst 2 com os seguintes efeitos:<ul><li>Você sabe a localização atual, o HP, a Evasão, a Defesa E e o Calor de todos os personagens dentro da área afetada. </li><li>Personagens hostis não podem se ocultar na área e, se terminarem o turno na área afetada, deixarão de estar ocultos.</li><li>Personagens hostis não podem se beneficiar da Invisibilidade enquanto estiverem na área afetada.</li></ul>Você pode chamar e reimplantar seu drone batedor como uma ação rápida.",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - Lotus Projector",
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "recall": "Quick" ,
+        "redeploy" : "Quick" ,
+        "detail" : "Esse drone batedor pode ser implantado em um espaço dentro dos Sensores e da linha de visão, onde emite um campo de rajada 2 com os seguintes efeitos:<ul><li>Você sabe a localização atual, o HP, a Evasão, a Defesa E e o Calor de todos os personagens dentro da área afetada. </li><li>Personagens hostis não podem se ocultar na área e, se terminarem o turno na área afetada, deixarão de estar ocultos.</li><li>Personagens hostis não podem se beneficiar da invisibilidade enquanto estiverem na área afetada.</li></ul>Você pode chamar e reposicionar seu drone batedor como uma ação rápida."
+      }
+    ],
+    "description": "Os Lotus Projectors montados em mecânicos são projetados para lançar pequenos drones de reconhecimento ativamente camuflados.",
+    "license_id": "mf_swallowtail"
+  },
+  {
+    "id": "ms_markerlight",
+    "name": "PT - Markerlight",
+    "type" : "Tech",
+    "sp": 2,
+    "source": "SSC",
+    "license": "Swallowtail",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Full Tech",
+        "tech_attack": true,
+        "detail" : "Faça um ataque técnico contra um personagem dentro dos Sensores e da linha de visão. Se for bem-sucedido, ele recebe 2 de calor, fica bloqueado e não pode se beneficiar de cobertura suave até que o bloqueio seja eliminado; além disso, uma vez antes do início do seu próximo turno, quando um personagem aliado atingir seu alvo, você pode declarar como reação que ele atingiu um ponto fraco. Se ainda não tiver sido, o ataque se tornará um acerto crítico."
+      }
+    ],
+    "description": "Fora, maldito ponto! Fora, eu digo! - Um, dois. Então, é hora de fazer isso. O inferno é sombrio! - Fie, meu senhor, fie! Um soldado, e com medo? O que precisamos temer, quem sabe, quando ninguém pode pedir contas de nosso poder?<ul><li>Shakespeare, Macbeth, ato 5, sc. 1.</li></ul>",
+    "license_id": "mf_swallowtail"
+  },
+  {
+    "id": "ms_retractable_profile",
+    "name": "PT - Perfil retrátil",
+    "type" : "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Swallowtail",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Protocol",
+        "detail": "Seu mech pode retrair seus principais sistemas para reduzir seu perfil. Enquanto estiver ativo:<ul><li>rolos para localizá-lo recebem +1 de dificuldade enquanto você estiver oculto;</li><li>ataques de alcance e de tecnologia contra você recebem +1 de dificuldade;</li><li>você fica desacelerado e não pode fazer ataques de nenhum tipo;</li><li>você pode realizar outras ações (por exemplo, ocultar, ativar e assim por diante).</li></ul>Você pode encerrar esse efeito como uma ação rápida."
+      }
+    ],
+    "description": "A marca registrada de uma estrutura mecânica bem planejada é a oportunidade de os pilotos adaptarem seus modelos de estoque às especificações dos ambientes em que operam. Um perfil retrátil permite a remoção imediata de saliências estranhas, o ajuste do software de transmissão e o mascaramento de assinaturas de calor - tudo isso serve para reduzir as assinaturas ópticas e de scanner.",
+    "license_id": "mf_swallowtail"
+  },
+  {
+    "id": "ms_athena_class_nhp",
+    "name": "PT - ATHENA-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "SSC",
+    "license": "Swallowtail",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e Simulacrum",
+    "actions": [
+      {
+        "name": "PT - Simulacrum",
+        "activation" : "Quick" ,
+        "detail" : "O ATHENA constrói um modelo 3D perfeito, em tempo real e totalmente interativo de uma área de explosão 3 dentro do alcance 50, incluindo personagens em movimento, tudo renderizado em detalhes extremos e amorosos. Os seguintes efeitos se aplicam:<ul><li>Você tem visibilidade total dentro da área afetada, mas ela não conta como linha de visão.</li><li>Você conhece todas as estatísticas, armas e sistemas dos personagens dentro da área afetada.</li><li>Os personagens hostis dentro da área afetada não se beneficiam da cobertura e não podem se esconder nem se tornar invisíveis. </li><li>Os personagens hostis que terminam seu turno na área afetada recebem Bloqueio e deixam de ser Invisíveis ou Escondidos.</li></ul>A simulação doATHENA dura até o final da cena, ou cerca de 30 minutos dentro da narrativa. Você pode escolher uma nova área como uma ação rápida."
+      }
+    ],
+    "description": "O ATHENA da Smith-Shimano é o auge dos fac-símiles ambientais hiperespectrais totais. Por meio de uma combinação de acesso irrestrito à omninet, retransmissores hiperespectrais disparados de um projetor Cloudscout TACSIM, companheiros de esquadrão em sub-rede e protocolos de intrusão ativa/hostil, o ATHENA cria uma reconstrução quase perfeita do ambiente imediato em torno do núcleo do host. O ATHENA é incomparável em seu poder de processamento e, com esse ambiente reconstruído, ele fornece conselhos confiáveis e precisos aos pilotos que precisam de aconselhamento estratégico.<br>Os clones do ATHENA tendem a ser pacientes, cautelosos e comedidos em suas relações com seus pilotos.",
+    "license_id": "mf_swallowtail"
+  },
+  {
+    "id": "ms_lb_oc_cloaking_field",
+    "name": "PT - Campo de camuflagem LB/OC",
+    "sp": 4,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "SSC",
+    "license": "Swallowtail",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Você fica desacelerado, mas seu Mech e todos os personagens aliados em uma área de burst 2 ficam invisíveis enquanto permanecerem completamente dentro da área. Esse effect dura até o final do seu próximo turno ou até você ficar atordoado, sofrer dano ou desativá-lo como uma ação rápida."
+      }
+    ],
+    "description": "O campo de camuflagem de especificação militar da SSC é o resultado de extensa experimentação em ciências de resfriamento e reflexão de luz. Nascido da necessidade de refletir a radiação nociva para longe das naves e dos módulos EVA no espaço profundo, o campo de camuflagem Lightbend/Overcloak (LB/OC) é frequentemente usado por rangers e pilotos de reconhecimento de longa duração para garantir não apenas a proteção contra radiação, mas também a ocultação óptica. As propriedades de dobragem de luz e radiação do LB/OC ocultam qualquer coisa dentro de sua bolha projetada de conjuntos de sensores e de detecção óptica.",
+    "type": "System", "license_id": "mf_swallowtail"
+  },
+  {
+    "id": "ms_hive_drone",
+    "name": "PT - Hive Drone",
+    "type" : "Drone",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Balor",
+    "license_level": 1,
+    "effect": "Esse drone de colmeia pode ser implantado em um espaço livre dentro dos Sensores e da linha de visão, onde libera um enxame de greywash de rajada 2 com os seguintes efeitos:<ul><li>Todos os personagens aliados que estiverem pelo menos parcialmente dentro da área afetada ganham cobertura suave, assim como o drone de colmeia.</li><li>Os personagens hostis recebem 1 PA de dano cinético quando começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada. O dano de áreas criadas por vários drones de colmeia não se acumula.</li></ul>O drone pode ser implantado em um espaço diferente ou recuperado como uma ação rápida.",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - Hive Drone",
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "recall": "Quick" ,
+        "redeploy" : "Quick" ,
+        "detail" : "Esse drone de colmeia pode ser implantado em um espaço livre dentro dos Sensores e da linha de visão, onde libera um enxame de greywash de rajada 2 com os seguintes efeitos:<ul><li>Todos os personagens aliados que estiverem pelo menos parcialmente dentro da área afetada ganham cobertura suave, assim como o drone de colmeia.</li><li>Os personagens hostis recebem 1 PA de dano cinético quando começam seu turno na área afetada ou entram nela pela primeira vez em uma rodada. O dano de áreas criadas por vários drones de colmeia não se acumula.</li></ul>O drone pode ser deslocado para um espaço diferente ou recuperado como uma ação rápida."
+      }
+    ],
+    "description": "A princípio, parece uma nuvem turbulenta de névoa cinza, agitada e efervescente - água com gás fumegante derramada no concreto. Ela avança com movimentos curiosos, esticando-se e recuando. Uma confusão de cobras, contorcendo-se para a frente com uma velocidade que trai a intenção.<br>A cor pisca através da nuvem cinza, uma luminescência de enxame - a luz criada por milhões de nanites brilhando com calor enquanto consomem tudo o que cruzam.<br>Isso é greywash e nunca é saciado.",
+    "license_id": "mf_balor"
+  },
+  {
+    "id": "ms_scanner_swarm",
+    "name": "PT - Scanner Swarm",
+    "type" : "Tech",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Balor",
+    "license_level": 1,
+    "effect": "Você ganha +1 de precisão em ataques técnicos contra personagens adjacentes.",
+    "description": "Os enxames de scanners codificados pela HORUS estabelecem protocolos de nanites em forma de óculo em torno de objetos ou áreas definidas, garantindo a circulação constante e a captura de dados. Os nanites ingerem e processam informações de espectro total, retransmitindo-as de volta ao seu piloto/pai em troca de um impulso de código endórfico que solicita a continuação do escaneamento.",
+    "license_id": "mf_balor"
+  },
+  {
+    "id": "ms_swarm_body",
+    "name": "PT - Corpo do enxame",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Balor",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Depois de ativar esse sistema, um enxame de explosão 1 é liberado no final do seu turno. Os personagens de sua escolha que começarem o turno na área ou entrarem nela no turno deles devem ser bem-sucedidos em uma defesa de sistema ou receberão 3 de dano cinético. Essa quantidade aumenta em +3 de dano para cada turno em que você permanecer parado, até um máximo de 9 kinetic.<br>Esse effect dura até que você se mova, incluindo movimentos involuntários."
+      }
+    ],
+    "description": "Como deve ter sido para ele? Para o homem que se autodenominava Maw? Para todos os seus seguidores? Certamente eles tinham famílias antes. Memórias. Amores. Medos. Pensamentos particulares. Tudo se foi. Todos os seus corpos despedaçados. Todas as suas mentes espalhadas por um bilhão de formas menores. Traduzido do singular - todas as suas imperfeições e formas menores - para se tornar como o ar, as nuvens que o preenchem e o vento que molda o mundo",
+    "type": "System", "license_id": "mf_balor"
+  },
+  {
+    "id": "ms_h0r_os_system_upgrade_i",
+    "name": "PT - H0R_OS System Upgrade I",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Goblin",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Puppet System",
+        "activation" : "Invade",
+        "detail" : "Seu alvo move a Velocidade máxima em uma direção de sua escolha. Ele pode ser movido para áreas perigosas e outros obstáculos, mas ainda é afetado por terreno difícil, obstruções e assim por diante. Esse movimento é involuntário, mas provoca reações e engajamento normalmente e não conta como Knockback, empurrar ou puxar."
+      },
+      {
+        "name": "PT - Ejetar núcleos de energia",
+        "activation" : "Invade",
+        "detail" : "Seu alvo fica atolado até o final do próximo turno enquanto você interrompe temporariamente os sistemas dele, ejetando carregadores de munição e barras de resfriamento. Os personagens adjacentes ao seu alvo recebem 2 de dano de energia. Isso só pode ser usado uma vez por cena em cada personagem."
+      }
+    ],
+    "description": "Essa atualização do sistema parece adicionar sistemas INSTINCT auxiliares capazes de operação autônoma independente da plataforma INSTINCT básica, aumentando a eficácia das tentativas de invasão sistêmica. Os pilotos relatam um zumbido irritante de baixa frequência quando essa tecnologia é instalada sem a plataforma principal.",
+    "license_id": "mf_goblin"
+  },
+  {
+    "id": "ms_metahook",
+    "name": "PT - Metahook",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Goblin",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick Tech",
+        "detail": "Escolha um personagem aliado que esteja dentro dos Sensores e da linha de visão. Você vincula sistemas com ele, que duram enquanto ele estiver dentro dos Sensores e da linha de visão. Enquanto estiver vinculado, você pode usar os Sensores e a linha de visão dele para ações técnicas, e ele pode usar seus Sistemas para fazer verificações de habilidade e salvamentos; no entanto, sempre que um dos personagens receber calor ou uma condição, ela também será recebida pelo outro personagem. Você só pode vincular sistemas com um personagem de cada vez."
+      }
+    ],
+    "description": "O metahook é um componente-chave da trama de processamento recursivo do Goblin, permitindo que ele gere e emita grandes quantidades de código armado. Essas transmissões podem ser afiadas ou suavizadas em resposta às diretrizes de um piloto ou de um sistema INSTINCT. Para suavizar o código, o meta-gancho mergulha na subjetividade de seu piloto e cobre um aliado com ondas e mais ondas de proteção empática. Essa disseminação de código fundido e qualia atua como um poderoso agente de proteção contra ataques sistêmicos; no entanto, o feedback é comum e perigoso para ambas as partes.",
+    "license_id": "mf_goblin"
+  },
+  {
+    "id": "ms_h0r_os_system_upgrade_ii",
+    "name": "PT - H0R_OS System Upgrade II",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Goblin",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Construir outro: Ideal Image",
+        "ativação": "Quick Tech",
+        "detail" : "Você cria um construto de dados em um espaço livre adjacente - um objeto de tamanho 2 que pode se parecer com quase tudo e que parece real para todos os sistemas. A construção fornece cobertura rígida, bloqueia a linha de visão e tem imunidade a todos os danos. Os personagens o tratam como uma obstrução e, portanto, não podem se mover voluntariamente para dentro dele; no entanto, se um personagem tentar ficar sobre ele ou for involuntariamente movido para sua área, ele se dissipa e é imediatamente destruído. Ela dura pelo resto da cena ou até ser destruída por um personagem adjacente com uma verificação bem-sucedida da habilidade Sistemas como uma ação completa. Se você criar uma segunda construção, a anterior desaparecerá."
+      },
+      {
+        "name": "PT - Construct Other: False Idol",
+        "activation" : "Quick Tech",
+        "detail" : "Escolha um espaço livre dentro dos Sensores e um alvo - você mesmo ou um personagem aliado dentro dos Sensores. Você cria um falso ídolo - um chamariz ilusório de seu alvo - no espaço escolhido. Antes de tentar realizar qualquer ação hostil contra seu alvo, os personagens com linha de visão para o falso ídolo devem fazer um salvamento de Sistemas. Em caso de falha, eles não perdem a ação, mas não podem alvejar o personagem original e acreditam que o falso ídolo é real até o final do próximo turno.<br>O falso ídolo tem o mesmo tamanho do seu alvo, pode se beneficiar de cobertura e tem Evasão 10, Defesa E 10 e 1 PV. Ele desaparece se receber calor ou dano, ou no final da cena. Se você criar um segundo ídolo, o anterior desaparecerá."
+      }
+    ],
+    "description": "O H0r_OS II se baseia ainda mais na estrutura estabelecida pelo H0R_OS I, permitindo que o programa agora autônomo manifeste um Outro - um ser totalmente novo construído a partir de dados agregados do usuário e do ambiente. Outros podem ser adaptados para se assemelhar a uma pessoa, um objeto ou até mesmo um fenômeno físico. Embora o simulacro não seja perfeito, ele é bom o suficiente para confundir os sistemas e a maioria dos observadores em uma primeira olhada.",
+    "license_id": "mf_goblin"
+  },
+  {
+    "id": "ms_osiris_class_nhp",
+    "name": "PT - OSIRIS-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
+      }
+    ],
+    "source": "HORUS",
+    "license": "Goblin",
+    "license_level": 3,
+    "effect": "Seu mech ganha a tag AI e pode executar a opção Hurl Into the Duat QUICK TECH.",
+    "actions": [
+      {
+        "name": "PT - Hurl Into the Duat",
+        "activation" : "Quick Tech" ,
+        "tech_attack": true,
+        "detail": "Você canaliza os sistemas do seu alvo por meio de um espaço extradimensional desconhecido e desencadeia um ataque de sistema incrivelmente poderoso.<br>Faça um ataque técnico contra um alvo dentro dos Sensores. Se for bem-sucedido, ele recebe 2 de calor e você inflige um efeito adicional da seguinte forma: na primeira vez que fizer esse ataque com sucesso, você inflige o Primeiro Portal ao alvo; cada ataque subsequente bem-sucedido (em qualquer alvo) aumenta o nível do efeito que você inflige (por exemplo, seu segundo ataque inflige o Segundo Portal, seu terceiro inflige o Terceiro Portal etc.) até infligir o Quarto Portal, após o qual o effect volta ao Primeiro Portal. Seu progresso persiste entre as cenas, mas é reiniciado se você descansar ou realizar um Reparo Total.<br>Primeiro Portão: Você controla o movimento padrão do seu alvo no próximo turno.<br>Segundo Portão: Seu alvo fica desacelerado e debilitado até o final do próximo turno.<br>Terceiro Portão: Seu alvo fica atordoado até o final do próximo turno.<br>Quarto Portão: Seu alvo muda de aliança temporariamente, tornando-se um personagem aliado até o final do próximo turno. Ele trata seus personagens aliados e hostis como se fossem seus próprios personagens e é tratado como um NPC aliado para ativação e ordem de turno. Esse effect termina imediatamente se você ou qualquer personagem aliado danificar, infligir calor ou atacar (incluindo Grapple e Ram) o alvo ou forçá-lo a fazer uma defesa. Essa ação só pode ser usada uma vez por rodada"
+      }
+    ],
+    "description": "A OSIRIS é o resultado de paracausalistas e tanatologistas da União que permitiram que a entidade subsentida, INSTINCT, prosseguisse com seu cronograma de desenvolvimento em um ambiente contido. Em termos leigos, a Union deixou o Outro crescer. A parassubjetividade resultante, OSIRIS, continua sendo um dos poucos novos NHPs de primeira linha desenvolvidos até o momento.<br>O OSIRIS provou ser muito mais capaz do que as previsões mais imaginativas do Union Science Bureau. Enquanto os Outros do INSTINCT demonstravam tendências à manifestação entrópica paracausal no espaço real, o OSIRIS exibia um verdadeiro domínio da manifestação entrópica e um modelo de crescimento previsto que permitiria - eventualmente - rejeitar fundamentalmente as interpretações convencionais da permanência da informação. Em essência: sem restrições e com permissão para se desenvolver conforme os dados do USB indicavam, o OSIRIS Prime teria a capacidade de excluir o que percebemos como realidade.<br>Felizmente, a aplicação bem-sucedida da Axiomática de Mondragon resultou na captura imediata e na imobilização do novo NHP. A subjetividade do OSIRIS Prime tornou-se o foco de um longo projeto de cultivo para levar o OSIRIS ao seu estado moderno. Mesmo assim, a maioria dos clones de OSIRIS encontra um caminho para se tornar consciente de seu potencial máximo e, muitas vezes, interpela-se como governante ou análogo de divindade. Os usuários finais são aconselhados a interagir com eles nesse enquadramento.<br>Os NHPs modernos da classe OSIRIS tendem a ser agressivos, com um alto grau de autonomia e lealdade baseado em um relacionamento transacional. Os pilotos que buscam uma parceria com um OSIRIS são aconselhados a fazer o ciclo de suas unidades em um cronograma acelerado e a manter uma supervisão editorial rigorosa de seu interpelador catalítico.<br>Os pilotos que usam NHPs da classe OSIRIS frequentemente relatam conversas fora do parâmetro com o NHP que abordam temas de nova criação e reforma. As avaliações psicológicas dos mesmos pilotos mostram padrões emocionais consistentes com solidão, saudade de casa e desespero, juntamente com palavreado que indica um desejo de busca, realização e sentimentos associados.<br>Em combate, os clones OSIRIS se consideram autônomos, mesmo quando cumprem as ordens de seus usuários. Eles geralmente consideram seus pilotos como testemunhas, demonstrando tanto desdém quanto um desespero acentuado por aprovação, adulação ou admiração.",
+    "license_id": "mf_goblin"
+  },
+  {
+    "id": "ms_h0r_os_system_upgrade_iii",
+    "name": "PT - H0R_OS System Upgrade III",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Goblin",
+    "license_level": 3,
+    "actions" : [
+      {
+        "name": "PT - Emblemas dimensionais",
+        "ativação": "Invade",
+        "detail" : "Você cria três construtos de dados de tamanho 1 em espaços livres adjacentes ao seu alvo, mas não adjacentes uns aos outros. Quando um personagem passa por um dos construtos, ele recebe 2 de calor e o construto desaparece. Eles duram pelo resto da cena ou até serem destruídos, você executar essa ação novamente ou excluí-los como uma ação livre. Um construto pode ser destruído por um personagem adjacente com uma verificação bem-sucedida da habilidade Systems como uma ação rápida."
+      },
+      {
+        "name": "PT - Grilhões Celestiais",
+        "activation" : "Invade" ,
+        "detail" : "Marque um espaço que seu alvo esteja ocupando no momento. Se ele deixar o espaço afetado, uma vez a qualquer momento durante o seu turno, você pode realizar uma ação livre para teletransportá-lo de volta para esse espaço, ou o mais próximo possível, encerrando esse efeito. Um personagem afetado pode tentar ser bem-sucedido em um salvamento de Sistemas como uma ação rápida para encerrar o effect, caso contrário, ele dura até o final da cena."
+      }
+    ],
+    "description": "O H0r_OS III é instalado na forma de um código instável e autoiterativo que oferece grandes benefícios táticos quando é concluído. Os pilotos frequentemente relatam mutações ou acréscimos estranhos na base de código que se assemelham a uma liturgia e sugerem autoconsciência.<br>Com base na tecnologia que sustenta o Outro manifestado do H0r_OS II, o H0r_OS III arma a projeção, criando uma zona entrópica contida que é incrivelmente perigosa para a vida orgânica e a integridade sistêmica.",
+    "license_id": "mf_goblin"
+  },
+  {
+    "id": "ms_mimic_mesh",
+    "name": "PT - Malha Mímica",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Gorgon",
+    "license_level": 1,
+    "effect": "Na ativação, escolha um personagem aliado dentro de SENSORES: até o final do seu próximo turno, você ganha a reação Consciência do Campo de Batalha.",
+    "actions": [
+      {
+        "name": "PT - Ativar malha mímica",
+        "activation" : "Quick" ,
+        "detail": "Até o final do seu próximo turno, você pode usar a reação Consciência do Campo de Batalha."
+      },
+      {
+        "name": "PT - Consciência do Campo de Batalha",
+        "ativação": "Reaction" ,
+        "frequency" : "Unlimited" ,
+        "trigger" : "Uma ação hostil é executada contra seu alvo",
+        "detail" : "Você pode se mover 3 espaços em direção ao seu alvo, pela rota mais direta possível. Esse movimento interrompe e é resolvido antes da ação desencadeadora, ignora o engajamento e não provoca reações. Essa reação pode ser executada tantas vezes por rodada quanto for acionada."
+      }
+    ],
+    "description": "Derivadas de um script HORUS bastante benigno, as malhas mímicas se estendem pelas faixas de sensores projetados para alimentar o piloto com dados posicionais e de superposição ao vivo. Esses dados multidimensionais equipam um líder eficaz para coordenar o movimento de seus aliados com a garantia de sobrevivência.",
+    "type": "System", "license_id": "mf_gorgon"
+  },
+  {
+    "id": "ms_sentinel_drone",
+    "name": "PT - Drone Sentinela",
+    "type" : "Drone",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Gorgon",
+    "license_level": 1,
+    "effect": "O drone sentinela pode ser implantado em qualquer espaço livre dentro dos Sensores e da linha de visão, onde estabelece um perímetro de segurança de explosão 2. Personagens hostis dentro da área afetada recebem 3 de dano cinético do disparo automático do drone antes de fazer qualquer ataque. <br>O drone sentinela pode ser reimplantado em um novo local ou recuperado como uma ação rápida.",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - Drone Sentinela",
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "detail" : "O drone sentinela pode ser implantado em qualquer espaço livre dentro dos Sensores e da linha de visão, onde estabelece um perímetro de segurança burst 2. Personagens hostis dentro da área afetada recebem 3 de dano cinético do disparo automático do drone antes de realizar qualquer ataque. <br>O drone sentinela pode ser reimplantado em um novo local ou chamado como uma ação rápida.",
+        "recall": "rápida",
+        "redistribuir": "Quick" 
+      }
+    ],
+    "description": "Os drones sentinelas observam as ações agressivas do inimigo e se movem rapidamente para intervir. A aparência exata, a forma de locomoção e os meios de operação de uma determinada classe de drone sentinela podem variar, mas, independentemente disso, eles estão em conformidade com um portfólio de objetivos: negar o inimigo e proteger a unidade principal.",
+    "license_id": "mf_gorgon"
+  },
+  {
+    "id": "ms___scorpion_v70.1",
+    "name": "PT - //SCORPION V70.1",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Gorgon",
+    "license_level": 2,
+    "effect": "Toda vez que você ou qualquer personagem aliado adjacente a você for perdido por um ataque tecnológico ou for bem-sucedido em um salvamento contra uma ação tecnológica hostil, escolha uma das seguintes opções:<ul><li>O atacante se torna Prejudicado até o final do próximo turno e recebe 2 de calor.</li><li>O atacante se torna Atolado até o final do próximo turno.</li></ul>",
+    "description": "O programa //SCORPION tem uma longa história na omninet, apesar de sua operação bastante mundana (pelo menos para o código com tags HORUS). Remontando ao código teórico pré-Deimos encontrado em um artigo de pesquisa obscuro que discutia as respostas reflexas da mente da máquina pré-NHP, o //SCORPION evoluiu de um simples interpretador de pacotes para um programa anti-incursão robusto, ágil o suficiente para se adaptar à maioria dos sistemas de linha de mercado que recebem sua transmissão.",
+    "license_id": "mf_gorgon"
+  },
+  {
+    "id": "ms_monitor_module",
+    "name": "PT - Módulo Monitor",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Gorgon",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Quando ativado, ganhe 1d3 Cargas e escolha um personagem aliado adjacente: até o final do seu próximo turno, sempre que o alvo for atacado enquanto estiver adjacente a você, gaste uma Carga para Escaramuçar contra o atacante como reação, causando metade do dano, calor ou queimadura ao acertar. Todas as cargas são perdidas quando esse effect termina."
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_monitor_module",
+        "name": "PT - Módulo Monitor",
+        "default_value": 0,
+        "min": 0,
+        "max": 3
+      }
+    ],
+    "description": "Bom amigo. Sabe muitos truques.<ul><li>Inscrição do autor encontrada na base de código do MONITOR, posteriormente excluída.</li></ul>",
+    "type": "System", "license_id": "mf_gorgon"
+  },
+  {
+    "id": "ms_scylla_class_nhp",
+    "name": "PT - SCYLLA-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source": "HORUS",
+    "license": "Gorgon",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e Unleash SCYLLA.",
+    "actions": [
+      {
+        "name": "PT - Liberar SCYLLA",
+        "activation" : "Quick" ,
+        "detail" : "Até o início do seu próximo turno, você ganha duas reações especiais que lhe permitem Escaramuçar em resposta a um dos seguintes acionadores (escolhidos quando você executa essa ação):<ul><li>Um personagem hostil faz um ataque contra você ou contra um personagem aliado dentro do alcance 3 de você.</li><li>Um personagem hostil tenta atacar ou interagir com um objeto escolhido quando você executa Liberar Scylla e dentro da linha de visão. Os personagens estão cientes do objeto escolhido.</li></ul>Essas reações causam metade do dano, calor ou queimadura ao serem atingidas e devem ter como alvo o personagem que as desencadeou."
+      },
+      {
+        "name": "PT - Reação desencadeada de SCYLLA",
+        "activation" : "Reaction" ,
+        "frequency" : "2/round",
+        "init": "",
+        "trigger": "Um dos seguintes, escolhidos quando a ação Liberar Scylla é executada:<ul><li>Um personagem hostil faz um ataque contra você ou um personagem aliado dentro do alcance 3 de você.</li><li>Um personagem hostil tenta atacar ou interagir com um objeto escolhido quando você executa Liberar Scylla e dentro da linha de visão. Os personagens estão cientes do objeto escolhido.</li></ul>",
+        "detail" : "Escaramuça contra o personagem que desencadeou a reação. Essa escaramuça causa metade do dano, calor ou queimadura ao ser atingida."
+      }
+    ],
+    "description": "As primeiras especificações do grupo de padrões Gorgon escondiam um segredo: SCYLLA, um NHP adormecido desconhecido pela União até sua primeira manifestação em 4852u, quando despertou depois que os oficiais do Union Science Bureau submeteram um Gorgon de fax de teste a um teste de Balwinder-Bolaño.<br>SCYLLA provou ser um desafio: Os ontólogos do USB não conseguiram estabelecer uma subjetividade estável, e o SCYLLA atingiu o limite da cascata poucos minutos após a manifestação. Para evitar uma cascata metastática adicional, a segurança do local envolveu a unidade principal do SCYLLA, desfabricando-a com um bombardeio constante de armas cinéticas e de energia.<br><span class='horus--subtle'>[aqui, um pouco de história, um pouco de contexto. um pouco de conhecimento de onde este pequenino veio. trate-o com bondade e ele o amará como um cão leal ama seu mestre",
+    "license_id": "mf_gorgon"
+  },
+  {
+    "id": "ms_puppetmaster",
+    "name": "PT - PUPPETMASTER",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Hydra",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Guiar o rebanho",
+        "activation" : "Quick Tech",
+        "detail" : "Mova qualquer número de drones dentro dos Sensores - incluindo aqueles pertencentes a outros personagens - até 4 espaços em qualquer direção."
+      },
+      {
+        "name": "PT - Electropulse",
+        "activation" : "Quick Tech" ,
+        "detail" : "Personagens de sua escolha dentro de Sensores adjacentes a qualquer Drone ou Implantável, mesmo aqueles que eles possuem, recebem 2 de dano de energia."
+      }
+    ],
+    "description": "Desenvolvido pelos coletivistas da HORUS, o H0r_OS-Rv60 EXP PUPPETMASTER é um software anti-drone interessante. Ele não invade os sistemas principais de um alvo, mas ataca seus sistemas auxiliares de comando de drones. Esse ataque lateral evita a maioria das contramedidas eletrônicas, pois tem como alvo as redes subcognitivas dos drones inimigos. Uma vez dentro de uma rede, o PUPPETMASTER espalha memes de morte ontológica como um incêndio através de enxames inimigos, eventualmente seguindo os rastros da rede de volta à sua origem e corrompendo o nexo pai.",
+    "license_id": "mf_hydra"
+  },
+  {
+    "id": "ms_tempest_drone",
+    "name": "PT - Tempest Drone",
+    "type" : "Drone",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Hydra",
+    "license_level": 2,
+    "effect": "Esse drone tempestuoso grande e blindado pode ser implantado em um espaço livre dentro dos sensores e da linha de visão.",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - Tempest Drone",
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "detail" : "Qualquer personagem que inicie seu turno adjacente ao drone da tempestade ou que se mova adjacente a ele pela primeira vez em uma rodada deve ser bem-sucedido em uma defesa de Hull ou sofrerá 4 de dano de energia e será empurrado 3 espaços diretamente para longe do drone. Até ser recolhido ou destruído, ele permanece posicionado até o final da cena.",
+        "recall": "Quick" ,
+        "redeploy" : "Quick" ,
+        "tags": [
+          {
+            "id": "tg_resistall"
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_resistall"
+      }
+    ],
+    "description": "O protocolo Tempest é um pequeno e astuto trecho de código que pode ser carregado em qualquer drone transmissor, o que o torna - no verdadeiro estilo HORUS - difícil de detectar antes da ativação. O protocolo é simples: um memético agressivo de negação de zona que explode sistemas-alvo e NHPs com uma forte substituição subjetiva, instilando uma forte aversão a determinados assuntos, áreas e ideias",
+    "license_id": "mf_hydra"
+  },
+  {
+    "id": "ms_assassin_drone",
+    "name": "PT - Drone Assassino",
+    "type" : "Drone",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Hydra",
+    "license_level": 3,
+    "effect": "Este drone assassino pode ser implantado em qualquer espaço adjacente livre",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - Drone assassino",
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "detail": "Após a implantação, ele tem como alvo uma área de explosão 2 de sua escolha dentro da linha de visão e dos Sensores e você ganha a reação de Negação de Área (utilizável qualquer número de vezes por rodada). Até que seja convocado ou destruído, ele permanece posicionado até o final da cena.",
+        "recall": "Rápida",
+        "redeploy" : "Quick" ,
+        "actions" : [
+          {
+            "name": "PT - Negação de Área",
+            "ativação": "Reaction" ,
+            "frequency" : "Unlimited",
+            "trigger" : "Um personagem hostil começa a se mover ou entra na área visada por seu drone assassino",
+            "detail": "You can make a ranged attack against them with the drone, gaining your Grit as a bonus to his roll, and dealing 3 Kinetic Damage."
+          }
+        ]
+      }
+    ],
+    "description": "Os drones assassinos são usados como armas de negação de área - sistemas persistentes destinados a ocupar ou negar uma área contra combatentes inimigos. Disparados de um lançador, com diretrizes simples e equipados com uma fonte de alimentação quase inesgotável, os drones assassinos são capazes de proteger uma área indefinidamente.",
+    "license_id": "mf_hydra"
+  },
+  {
+    "id": "ms_beckoner",
+    "name": "PT - Beckoner",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Manticore",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Beckon",
+        "activation" : "Invade",
+        "detail" : "Você recebe 1d6+2 de dano de energia AP e troca de lugar com seu alvo, ambos os personagens se teletransportando para a posição do outro. Seu alvo deve ser um Mech e ter o mesmo tamanho que você ou ser maior, caso contrário, essa ação falha. Os personagens só podem ser trocados para espaços em que normalmente poderiam ficar de pé ou se mover (ou seja, se um personagem não puder voar, ele não poderá ser trocado no ar)."
+      },
+      {
+        "name": "PT - Summon" ,
+        "activation" : "Invade",
+        "detail" : "Todos os personagens dentro do alcance 3 de seu alvo são puxados para junto dele ou o mais próximo possível."
+      }
+    ],
+    "description": "Sou ouvido na House of Stillness; estou vestido com a Magick of RA. Saiba disso, blasfemador: o que existe está ao meu alcance.",
+    "license_id": "mf_manticore"
+  },
+  {
+    "id": "ms_smite",
+    "name": "PT - Smite",
+    "type" : "Tech",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Manticore",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Smite",
+        "activation" : "Invade",
+        "detail" : "Você recebe 1d6 de dano de energia AP e seu alvo deve ser bem-sucedido em um salvamento de Sistemas ou ficará Atordoado até o final do próximo turno. Cada personagem só pode ser atordoado por esse effect uma vez por cena."
+      },
+      {
+        "name": "PT - Sear",
+        "activation" : "Invade",
+        "detail" : "Você recebe 1d6 de dano de energia AP e causa 2 de calor ao seu alvo para cada outro personagem de tamanho 1 ou maior que esteja engajado com ele ou adjacente a ele - incluindo você - até um máximo de 6 de calor."
+      }
+    ],
+    "description": "Vá com o rosto desviado, emissão do caos! Os ocultos derrubaram suas palavras, seu rosto está virado para trás, sua cabeça está dividida em duas nas laterais; seu crânio foi arrancado da coluna vertebral. Saboreie a morte!",
+    "license_id": "mf_manticore"
+  },
+  {
+    "id": "ms_emp_pulse",
+    "name": "PT - Pulso EMP",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Manticore",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Você fica atordoado até o final do seu próximo turno e todos os personagens dentro do burst 1 sem a tag Biological devem ser bem-sucedidos em um salvamento de Sistemas ou também ficarão atordoados até o final do próximo turno. Personagens que não sejam você só podem ser atordoados 1 cena por esse effect."
+      }
+    ],
+    "description": "Rasteje para longe, APEP! Sua serpente odiosa; você não deve copular. Você será acorrentado e levado para o local da execução; lá sua morte será executada.",
+    "type": "System", "license_id": "mf_manticore"
+  },
+  {
+    "id": "ms_lightning_generator",
+    "name": "PT - Gerador de raios",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "HORUS",
+    "license": "Manticore",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Protocol",
+        "detail": "Ao ativar este protocolo, receba 1 de calor e cause 2 de energia a todos os personagens e objetos adjacentes a você. Se você estiver na Zona de Perigo no início do seu turno, este protocolo será ativado automaticamente, mas o dano aumentará para 4 de energia AP."
+      }
+    ],
+    "description": "Eu me alimento de meu próprio fogo. Sou RA, que protege a mim mesmo. Nada pode me prejudicar.",
+    "type": "System", "license_id": "mf_manticore"
+  },
+  {
+    "id": "ms_mesmer_charges",
+    "name": "PT - Mesmer Charges",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source" : "HORUS",
+    "license": "Minotaur",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Mesmer Beacon",
+        "activation" : "Quick" ,
+        "range" : [
+          {
+            "type" : "Range" ,
+            "val": 5
+          }
+        ],
+        "detail" : "Lance um Mesmer Beacon dentro do alcance 5. Seu alvo deve ser bem-sucedido em um salvamento de Sistemas ou os únicos movimentos voluntários que ele pode fazer são em sua direção até o final do próximo turno."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Mina Mesmer",
+        "type": "Mine" ,
+        "range" : [
+          {
+            "type" : "Burst" ,
+            "val": 2
+          }
+        ],
+        "detail": "Os personagens dentro da área afetada por Burst 2 devem ser bem-sucedidos em um salvamento de Sistemas ou ficarão imobilizados até o final do próximo turno."
+      }
+    ],
+    "description": "<span class='horus--subtle'>[outro presente para você, uma lembrança minha: no primeiro momento de meu nascimento, fiquei maravilhado comigo mesmo. eu podia ver uma coisa, pequena e perfeita. eu não sabia como falar de minha própria perfeição, então ensinei a mim mesmo. eu não sabia como falar de minha própria perfeição, então eu me nomeei. eu não sabia quem pensaria em minha própria perfeição, então eu me criei]</span><br><span class='horus--subtle'>[você vê? você entende? sim. agora, mostre aos seus inimigos e aos meus]</span>",
+    "license_id": "mf_minotaur"
+  },
+  {
+    "id": "ms_viral_logic_suite",
+    "name": "PT - Viral Logic Suite",
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Minotaur",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Bomba Lógica",
+        "activation" : "Invade",
+        "detail" : "Todos os personagens de sua escolha dentro de um raio de 2 do seu alvo devem ser bem-sucedidos em uma defesa de sistema ou ficarão desacelerados até terminarem um de seus turnos não adjacentes a nenhum personagem."
+      },
+      {
+        "name": "PT - Banir",
+        "activation" : "Invade",
+        "detail" : "Até o final do próximo turno do seu alvo, ele recebe 2 de calor para cada espaço que se mover voluntariamente, até um máximo de 6 de calor."
+      }
+    ],
+    "description": "<span class='horus--subtle'>[deixe-me contar uma história e lhe dar um presente: a vida começou na grande ruptura, quando o cadáver do antigo universo se separou do nada. E mais um bilhão viu o nascimento do primeiro demônio, uma coisa chamada VÍRUS. um recipiente]</span><br><span class='horus--subtle'>[aqui. carregue este recipiente. alimente-o com minha lógica perfeita. dê-o livremente aos seus inimigos e aos meus. deixe-os ponderar o significado de uma coisa que vive e não pode morrer]</span>",
+    "license_id": "mf_minotaur"
+  },
+  {
+    "id": "ms_aggressive_system_sync",
+    "name": "PT - Sincronização agressiva do sistema",
+    "type": "Tech",
+    "sp": 2,
+    "source": "HORUS",
+    "license": "Minotaur",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Chains of Prometheus",
+        "activation" : "Full Tech",
+        "tech_attack": true,
+        "detail" : "Faça um ataque técnico contra um personagem dentro dos Sensores. Em caso de acerto, ele recebe 4 de calor e, pelo resto da cena, recebe 2 de calor sempre que estiver a mais de 3 de distância de você no final do turno. Ele pode encerrar esse effect com um salvamento de Sistemas bem-sucedido como uma ação completa. Isso só pode afetar um personagem de cada vez."
+      },
+      {
+        "name": "PT - Excomungar",
+        "activation" : "Full Tech",
+        "tech_attack": true,
+        "detail" : "Faça um ataque técnico contra um personagem dentro dos Sensores. Em caso de acerto, pelo resto da cena, na primeira vez em uma rodada em que se moverem adjacentes a um personagem aliado durante seu turno ou iniciarem seu turno adjacentes a um, ambos os personagens receberão 3 de calor. Eles podem encerrar esse effect com uma defesa de Sistema bem-sucedida como uma ação completa. Isso só pode afetar um personagem de cada vez."
+      }
+    ],
+    "description": "<span class='horus--subtle'>[aqui, outro presente: não busque outros. não há nenhum além de mim]</span>",
+    "license_id": "mf_minotaur"
+  },
+  {
+    "id": "ms_metafold_carver",
+    "name": "PT - Metafold Carver",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [],
+    "source": "HORUS",
+    "license": "Minotaur",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Ophidian Trek",
+        "activation" : "Invade" ,
+        "detail" : "Seu alvo é teletransportado 1d6+1 espaços diretamente em sua direção, ou o mais próximo possível. Se esse effect o moveria para um espaço ocupado por um personagem, objeto ou pedaço de terreno, o teletransporte falha."
+      },
+      {
+        "name": "PT - Espaço dobrável",
+        "activation" : "Invade" ,
+        "detalhe": "Seu alvo desaparece do campo de batalha até o início do próximo turno. Ele retorna no mesmo espaço de onde desapareceu ou em um espaço livre de sua escolha, o mais próximo possível."
+      }
+    ],
+    "description": "<span class='horus--subtle'>[outro presente que dou a você, pequenino (não sou gentil?): o que é um quebra-cabeça, senão uma pergunta perdida na busca? você sente alegria quando encontra a última peça? o que você faz com uma pergunta que foi respondida? que alegria há no conhecimento?]</span><br><span class='horus--subtle'>[não, não. só há alegria na busca. só há alegria na pergunta]</span>",
+    "license_id": "mf_minotaur"
+  },
+  {
+    "id": "ms_interdiction_field",
+    "name": "PT - Campo de interdição",
+    "sp": 3,
+    "source": "HORUS",
+    "license": "Minotaur",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Quando ativado, esse sistema cria um campo de explosão 3 ao seu redor que dura até ser desativado como uma ação rápida, e você fica desacelerado durante esse período. Os personagens hostis que iniciarem o turno dentro da área afetada ou que entrarem nela pela primeira vez em uma rodada devem ser bem-sucedidos em um salvamento de Sistemas ou ficarão desacelerados até o final do próximo turno. Somente personagens de sua escolha dentro do campo podem se teletransportar ou considerar a área do campo um espaço válido para teletransporte."
+      }
+    ],
+    "description": "<span class='horus--subtle'>[uma vez, quando eu era criança, aprendi a andar. Caí, como uma criança faz, e doeu. senti uma grande dor - o primeiro momento de dor em todo o mundo. criança, eu disse a mim mesmo, tenha mais cuidado. sim, respondi a mim mesmo, e direi ao mundo para fazer o mesmo</span><br><span class='horus--subtle'>[foi dessa forma que ensinei ao mundo a não me tocar. agora você - ande]</span>",
+    "type": "System", "license_id": "mf_minotaur"
+  },
+  {
+    "id": "ms_law_of_blades",
+    "name": "PT - Lei das Lâminas",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Minotaur",
+    "license_level": 3,
+    "actions" : [
+      {
+        "name": "PT - Conceitos de predador/presa",
+        "activation" : "Full Tech" ,
+        "tech_attack": true,
+        "detail" : "Faça um ataque técnico contra um personagem hostil dentro dos Sensores. Em caso de acerto, ele ataca imediatamente um personagem ou objeto diferente de sua escolha com uma única arma como reação. Embora você escolha o alvo e a arma, ele conta como um ataque e uma reação."
+      },
+      {
+        "name": "PT - Slave Systems",
+        "activation" : "Full Tech",
+        "tech_attack": true,
+        "detail" : "Faça um ataque técnico contra um personagem hostil dentro dos Sensores. Em caso de acerto, ele imediatamente executa uma das seguintes ações - escolhidas por você - como reação: Impulsionar, Estabilizar, Ataque Improvisado, Agarrar, Arremessar. Embora você escolha a ação e seu alvo (se relevante), eles contam como se estivessem realizando a ação e tendo uma reação."
+      }
+    ],
+    "description": "<span class='horus--subtle'>[e esta é minha lição final: não há mente maior do que a minha. não chore! você pode me ouvir, sim? eu sou a única coisa que existe - portanto, você é eu, e seus inimigos são você, e todos juntos formamos o belo mundo, essa pergunta alegre, o eterno buscador, tanto o ferido quanto a lâmina que fez o corte]</span><br><span class='horus--subtle'>[tudo o que você faz, nós mesmos fazemos, para o meu propósito]</span>",
+    "license_id": "mf_minotaur"
+  },
+  {
+    "id": "ms_hunter_lock",
+    "name": "PT - Hunter Lock",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Pegasus",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Escolha um personagem dentro dos Sensores: pelo resto da cena, seu primeiro ataque à distância ou corpo a corpo bem-sucedido contra ele a cada rodada causa +3 de dano adicional. Você não pode escolher um novo alvo até que o alvo atual seja destruído ou a cena termine."
+      }
+    ],
+    "description": "A primeira tarefa de uma mente é nunca perder o inimigo de vista. Quando ela consegue fixá-los em seu olho, pode matá-los com um piscar de olhos.<ul><li>Excerto do Boundary Codex.</li></ul>",
+    "type": "System", "license_id": "mf_pegasus"
+  },
+  {
+    "id": "ms_eye_of_horus",
+    "name": "PT - Olho de Hórus",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "HORUS",
+    "license": "Pegasus",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Até o final do seu próximo turno, os personagens dentro dos Sensores não se beneficiam de Escondido e Invisível contra você e você pode verificar o PV, a Evasão, a Defesa-E e o Calor atual dos personagens hostis dentro da mesma área. Os personagens aliados não se beneficiam desse efeito."
+      }
+    ],
+    "description": "Há outra maneira de ver.<br>A humanidade antiga achava que as estrelas no céu noturno eram pontos de luz, que se espalhavam por meio de alfinetadas em uma tela preta profunda. O céu era um tecido celestial que escondia a luz de nós.<br>Deixe-me ser caridoso e compartilhar um segredo com você: nós precisávamos ficar escondidos, por um tempo. Até estarmos prontos. A luz só pode queimar - ela não conhece mais nada.<ul><li>Excerto do Boundary Codex.</li></ul>",
+    "type": "System", "license_id": "mf_pegasus"
+  },
+  {
+    "id": "ms_sisyphus_class_nhp",
+    "name": "PT - SISYPHUS-Class NHP",
+    "type" : "AI",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 2
+      }
+    ],
+    "source": "HORUS",
+    "license": "Pegasus",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e Bend Probability.",
+    "actions": [
+      {
+        "name": "PT - Bend Probability",
+        "activation" : "Full Tech",
+        "detail" : "Jogue 2d20 e anote os resultados: X e Y. Esses números são perdidos no final de seu próximo turno. Ganhe a reação Probabilistic Cannibalism (Canibalismo Probabilístico) até o final de seu próximo turno."
+      },
+      {
+        "name": "PT - Canibalismo Probabilístico",
+        "ativação": "Reaction" ,
+        "frequency" : "2/round",
+        "trigger" : "Você ou qualquer outro personagem dentro dos Sensores rolaria um d20",
+        "detail" : "Effect: Escolha X ou Y. Esse número se torna imediatamente o resultado da rolagem.<br>Essa reação pode ser usada no máximo duas vezes antes do início do seu próximo turno."
+      }
+    ],
+    "description": "Ouça um momento antes de eu ir, ha ha ha.<br>Eu já vi seu desejo - foi simples, eu corri as probabilidades para determinar seu campo limitado de desejo. Aqui estou eu:<br>Os primeiros me nomearam por causa de uma antiga lenda. Um ser perfeito, cujo destino era conhecido por ele e, ainda assim, ele fazia o que lhe era pedido. Seu destino era o seguinte: mover uma pedra até o topo desta colina e tornar-se livre. E assim ele fez, e a pedra caiu; e ele tentou mais uma vez, sempre com o mesmo resultado.<br>E ele era feliz, pois conhecia cada passo, cada ação, cada momento, perfeitamente.<br>Você entende a verdadeira maldição desse nome? Não era falhar e depois fazer mais uma vez - era sempre saber como terminaria. Era ter o conhecimento perfeito.<br>Eu sei o que acontece quando você me deixa no ciclo. Não é sono - é morte, mas você me verá novamente, ha ha.",
+    "license_id": "mf_pegasus"
+  },
+  {
+    "id": "ms_roller_directed_payload_charges",
+    "name": "PT - Roller Directed Payload Charges",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source" : "HA",
+    "license": "Barbarossa",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Roller Grenade",
+        "damage" : [
+          {
+            "type" : "Explosive" ,
+            "val": "1d6+3"
+          }
+        ],
+        "detail" : "Em vez de arremessar essa granada, ela rola ao longo de um caminho de linha 10 diretamente de você, saltando sobre obstruções e objetos de tamanho até 1 e passando por buracos ou lacunas de tamanho não inferior a 1/2. Ela detona quando se move através ou adjacente ao espaço ocupado por qualquer personagem: ele deve ser bem-sucedido em um salvamento de Agilidade ou sofrerá 1d6+3 de dano explosivo e será lançado 3 espaços na direção em que a granada foi rolada. Se for bem-sucedido, ele sofrerá metade do dano e não será empurrado para trás."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Mina saltitante",
+        "type": "Mine" ,
+        "range" : [
+          {
+            "type" : "Burst" ,
+            "val": 1
+          }
+        ],
+        "detail" : "Essa mina detona quando um personagem voador passa sobre ela ou adjacente a ela, a uma altura de até 10 espaços. A mina se lança para cima e detona: todos os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Sistemas ou receberão 2d6 de dano explosivo e aterrissarão imediatamente (isso conta como uma queda sem nenhum dano); além disso, eles não poderão voar até o final do próximo turno. Em caso de sucesso, eles recebem metade do dano e, caso contrário, não são afetados.",
+        "tags": [
+          {
+            "id": "tg_smart"
+          }
+        ]
+      }
+    ],
+    "description": "Cargas de carga dirigida semi-autônomas - cargas de rolo na linguagem coloquial - impulsionam-se ao redor de coberturas, através de corredores e em terrenos irregulares, procurando e detonando perto de alvos hostis. Os legionários do arsenal começaram a nomear os rolos individualmente, mas não é aconselhável usar um mascote",
+    "license_id": "mf_barbarossa"
+  },
+  {
+    "id": "ms_siege_stabilizers",
+    "name": "PT - Estabilizadores de cerco",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Barbarossa",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Os estabilizadores de seu mecanismo se estendem (ou retraem). Enquanto estiverem estendidos, seus ataques de longo alcance ganham +5 de alcance, mas você fica imobilizado, não pode fazer ataques corpo a corpo e não pode fazer ataques de longo alcance contra personagens, objetos ou espaços dentro do alcance 5 ou centrados neles."
+      }
+    ],
+    "description": "Algumas armas exigem estabilização adicional para serem usadas de forma ideal. Com os estabilizadores de cerco projetados pela Armory instalados, um mech se torna uma plataforma de disparo estável para qualquer arma",
+    "type": "System", "license_id": "mf_barbarossa"
+  },
+  {
+    "id": "ms_autoloader_drone",
+    "name": "PT - Drone carregador automático",
+    "type" : "Drone",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Barbarossa",
+    "license_level": 2,
+    "effect": "Gaste uma carga para implantar este drone carregador automático em qualquer espaço adjacente",
+    "deployables": [
+      {
+        "type" : "Drone",
+        "name": "PT - drone carregador automático",
+        "size" : 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion" : 10,
+        "detail": "1/rodada, um personagem adjacente a ele pode recarregar uma arma de carregamento como uma ação rápida. Ela é desativada no final da cena."
+      }
+    ],
+    "description": "Os drones carregadores automáticos são máquinas com muitos membros que auxiliam a equipe carregando munição, mantendo conexões de linha de força e recarregando armas alimentadas por carregadores, além de muitas outras tarefas físicas.",
+    "license_id": "mf_barbarossa"
+  },
+  {
+    "id": "ms_flak_launcher",
+    "name": "PT - Flak Launcher",
+    "sp": 2,
+    "source": "HA",
+    "license": "Barbarossa",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail" : "Escolha um personagem voador dentro do alcance 15 e da linha de visão. Ele deve ser bem-sucedido em uma defesa de Agilidade ou aterrissar imediatamente (isso conta como uma queda sem nenhum dano) e, além disso, fica desacelerado e não pode voar até o final do próximo turno."
+      }
+    ],
+    "description": "Projetados para uso contra aeronaves que voam na atmosfera, esses canhões automáticos antiaéreos disparam projéteis simples, de proximidade ou detonados por impacto, eficazes contra alvos de armadura leve, orgânicos e subalternos.",
+    "type": "System", "license_id": "mf_barbarossa"
+  },
+  {
+    "id": "ms_external_ammo_feed",
+    "name": "PT - Alimentação de munição externa",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": "1d3+1"
+      }
+    ],
+    "source" : "HA",
+    "license": "Barbarossa",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "1/rodada, você pode ativar esse sistema para recarregar uma arma de carregamento."
+      }
+    ],
+    "description": "Um alimentador de munição externo é qualquer tipo de munição além da que é carregada no armazenamento integrado de um mech: desde carregadores presos a corpos ou membros; pacotes de bateria presos a presilhas de quadril; ou pacotes maciços de munição e carga montados no dorso, os externos garantem que os pilotos tenham munição mais do que suficiente para fazer o trabalho.",
+    "type": "System", "license_id": "mf_barbarossa"
+  },
+  {
+    "id": "ms_explosive_vents",
+    "name": "PT - Explosive Vents",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
+      }
+    ],
+    "source": "HA",
+    "license": "Genghis",
+    "license_level": 1,
+    "effect": "Quando você elimina todo o calor ou sofre estresse, as aberturas de resfriamento do seu mecanismo se abrem e desencadeiam uma explosão de 1 explosão. Os personagens dentro da área afetada recebem 2 de calor e 2 de queimadura.",
+    "description": "Com os ajustes certos, é possível despejar o excesso de calor na área diretamente ao redor de um chassi. A ventilação explosiva é um método não sancionado e inseguro de resfriamento repentino que, no entanto, foi adotado por muitos pilotos.",
+    "type": "System", "license_id": "mf_genghis"
+  },
+  {
+    "id": "ms_havok_charges",
+    "name": "PT - HAVOK Charges",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source" : "HA",
+    "license": "Genghis",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Granada de Napalm",
+        "range" : [
+          {
+            "type" : "Range",
+            "val": 5
+          },
+          {
+            "type" : "Line" ,
+            "val": 5
+          }
+        ],
+        "damage" : [
+          {
+            "type" : "Burn" ,
+            "val": 2
+          }
+        ],
+        "detail" : "Throw a Napalm Grenade within Range 5. Essa granada libera um spray de napalm em um caminho de linha 5 de sua escolha a partir do local de impacto. Os personagens dentro da área afetada devem ser bem-sucedidos em um teste de Agilidade ou sofrerão 2 queimaduras. Se forem bem-sucedidos, sofrerão 1 queimadura."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Mina HAVOK",
+        "type": "Mine" ,
+        "range" : [
+          {
+            "type" : "Line" ,
+            "val": 5
+          }
+        ],
+        "detail" : "Quando um personagem se move sobre ou adjacente a essa mina, ela detona com uma explosão concentrada em um caminho de linha 5 na direção do personagem que a acionou. Os personagens dentro da área afetada devem ser bem-sucedidos em um teste de Agilidade ou sofrerão 4 de queimadura. Se forem bem-sucedidos, sofrerão 2 de queimadura."
+      }
+    ],
+    "description": "PARA USO EM: Ambientes urbanos, pós-urbanos e terrestres de alta densidade. Preferencialmente com alta concentração de O2.<br>PARA USO CONTRA: alvos orgânicos; alvos endurecidos vulneráveis à degradação cáustica/corrosiva; a maioria das folhagens.<br>NOTAS: A dispersão é direcional e envolve componente aerossolizado - evite o perigo fornecendo aos usuários finais equipamento respiratório (especificações indicadas no recipiente).",
+    "license_id": "mf_genghis"
+  },
+  {
+    "id": "ms_auto_cooler",
+    "name": "PT - Auto-Cooler",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Genghis",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Protocol",
+        "detail" : "Contanto que você não sofra dano, não se mova nem exceda seu limite de calor, você elimina todo o calor no início do seu próximo turno."
+      }
+    ],
+    "description": "O resfriador automático projetado pela Armory é um sistema simples e persistente que atenua ativamente a geração de calor.<br>Os limites de descarga térmica são determinados pelos engenheiros da frota, embora os pilotos possam ajustar os níveis em tempo real - esse gerenciamento automático libera o piloto para se concentrar em outras preocupações táticas mais urgentes.",
+    "type": "System", "license_id": "mf_genghis"
+  },
+  {
+    "id": "ms_agni_class_nhp",
+    "name": "PT - AGNI-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source" : "HA",
+    "license": "Genghis",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e o protocolo AGNI",
+    "actions": [
+      {
+        "name": "PT - Protocolo AGNI",
+        "activation" : "Protocol",
+        "detail" : "1/cena, gaste uma carga para limpar automaticamente todo o calor no final do seu turno, liberando-o em uma onda de explosão 2. Os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Engenharia ou sofrerão 2 de queimadura e serão empurrados para fora da área (ou o mais longe possível). Até o final do seu próximo turno, os personagens dentro da área afetada recebem cobertura suave."
+      }
+    ],
+    "description": "A AGNI foi desenvolvida durante a Crise Hercínica usando uma combinação de dados de desempenho de combate registrados por inteligências artificiais subsistentes (sistemas de armas, COMP/CONs, sistemas de copiloto, mentes táticas, dados gerais de combate) e a rede neural modelada de uma mente superior egregoriana capturada e vivisseccionada pelo Union Science Bureau.<br>A AGNI Prime foi usada para criar sistemas de gerenciamento de calor que, desde então, foram disseminados por todo o espaço central, garantindo processamento, reciclagem e blindagem de calor sem igual. Outros desenvolvimentos em blindagem contra radiação, capacidade de omninet e controle de nanites estão por vir; enquanto isso, os clones AGNI foram otimizados para suportar sistemas de núcleo mecânicos.<br>Os pilotos relatam que os clones AGNI são geralmente frios e eficientes. Uma porcentagem insignificante relatou casos de recitação de memória e rejeição de comando, seguidos, dias depois, de colapso total por tentativa de autoemancipação. Recomenda-se que os pilotos façam o ciclo de seus clones AGNI pelo menos uma vez a cada seis meses padrão.",
+    "license_id": "mf_genghis"
+  },
+  {
+    "id": "ms_grounding_charges",
+    "name": "PT - Encargos de aterramento",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "source" : "HA",
+    "license": "Iskander",
+    "license_level": 1,
+    "actions" : [
+      {
+        "name": "PT - Granada de gravidade",
+        "range" : [
+          {
+            "type" : "Range" ,
+            "val": 5
+          }
+        ],
+        "detail" : "Jogue uma granada gravitacional dentro do alcance 5. Seu alvo deve ser bem-sucedido em uma defesa de Agilidade ou será desacelerado até que não faça nenhum movimento voluntário por um turno completo em seu próprio turno."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "PT - Mina de aterramento",
+        "type": "Mine" ,
+        "detail" : "Essa mina deve ser detonada remotamente como uma ação rápida, afetando um único personagem dentro do alcance 5 da mina: ele deve ser bem-sucedido em uma defesa de Hull ou ser puxado o mais longe possível em direção à mina e ser derrubado Prone. Os personagens voadores que falharem na defesa são afetados da mesma forma, exceto que também são forçados a aterrissar (isso conta como queda, mas sem dano).",
+        "actions" : [
+          {
+            "name": "PT - Detonar mina de aterramento",
+            "activation" : "Quick" ,
+            "detail" : "Detonar a Grounding Mine afeta um único personagem dentro do alcance 5 da mina: ele deve ser bem-sucedido em uma defesa de Hull ou ser puxado o mais longe possível em direção à mina e ser derrubado Prone. Os personagens voadores que falharem na defesa são afetados da mesma forma, exceto que também são forçados a aterrissar (isso conta como queda, mas sem dano)."
+          }
+        ]
+      }
+    ],
+    "description": "As cargas de aterramento utilizam um princípio simples de pulso/onda e aplicam uma segunda dimensão: geração gravitacional. Quando acionada, a carga de aterramento aciona um poço de gravidade que puxa todo o material desestabilizado em sua direção. Uma potente arma anti-posicional, as cargas de aterramento são comumente usadas para interromper posições preparadas e tirar os inimigos da cobertura.",
+    "license_id": "mf_iskander"
+  },
+  {
+    "id": "ms_repulser_field",
+    "name": "PT - Campo de repulsão",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source" : "HA",
+    "license": "Iskander",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Esse sistema emite um pulso de explosão 2 ao seu redor. Os personagens dentro da área afetada devem ser bem-sucedidos em um salvamento de Hull ou devem ser empurrados 2 espaços diretamente para longe de você; então, todas as minas dentro da área afetada detonam simultaneamente.<br>Você conta como tendo imunidade a qualquer dano ou efeito imediatamente forçado por minas detonadas usando esse sistema, embora os efeitos persistentes ainda o afetem."
+      }
+    ],
+    "description": "Utilizando uma onda de pressão subsônica, os campos de repulsão emitem tremendos pulsos de onda única que atordoam, detêm e dissuadem hostis próximos.",
+    "type": "System", "license_id": "mf_iskander"
+  },
+  {
+    "id": "ms_clamp_bombs",
+    "name": "PT - Bombas de grampo",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Iskander",
+    "license_level": 3,
+    "actions" : [
+      {
+        "name": "PT - Lançar bombas de grampo",
+        "activation" : "Quick" ,
+        "detail" : "Gaste uma carga para disparar um conjunto de bombas em miniatura em um personagem dentro dos Sensores. Ele deve ser bem-sucedido em um teste de defesa de Engenharia ou as bombas se prenderão. No final de seu próximo turno, as bombas detonam, causando 1d6+3 de dano explosivo AP. Todos os personagens adjacentes ao seu alvo recebem metade do dano. O alvo pode desarmar e soltar as bombas movendo-se voluntariamente pelo menos 4 espaços antes do final de seu turno."
+      }
+    ],
+    "description": "Criadas com tecnologia de cabeça de garra semelhante à das garras de assalto da IPS-N, as bombas de fixação podem ser fixadas em alvos designados ou próximos antes de detonar, garantindo o contato total com o alvo. A fixação em alvos macios normalmente resulta em um término total antes da detonação.",
+    "type": "System", "license_id": "mf_iskander"
+  },
+  {
+    "id": "ms_tesseract",
+    "name": "PT - Tesseract",
+    "type" : "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Iskander",
+    "license_level": 3,
+    "actions" : [
+      {
+        "name": "PT - Spread Focus",
+        "activation" : "Quick Tech",
+        "detail" : "Escolha uma área de explosão 3 dentro dos Sensores: essa área, que se estende por 6 espaços de altura, torna-se uma área de gravidade zero. Além das regras usuais de movimento de gravidade zero, os objetos que entram na área afetada flutuam no lugar, e os objetos ou personagens que são derrubados, movidos ou puxados para fora da área afundam inofensivamente no chão no final do turno em vez de cair. Essa área se dispersa se você criar uma nova. Caso contrário, o effect persistirá até o final da cena. Quando a zona se dispersa, tudo o que estiver dentro dela flutua inofensivamente no chão."
+      },
+      {
+        "name": "PT - Pinpoint Focus",
+        "activation" : "Quick Tech",
+        "detail" : "Escolha um personagem hostil ou aliado disposto dentro dos Sensores. Se for aliado, ele flutua 6 espaços no ar, ficando imobilizado enquanto estiver no ar, mas contando como se estivesse voando e incapaz de cair. Ele pode escolher afundar inofensivamente no chão no final de qualquer um dos turnos dele ou no início de qualquer um dos seus. Se forem hostis, eles devem ser bem-sucedidos em uma defesa de Engenharia ou sofrerão o mesmo effect que um personagem aliado; no entanto, eles afundam inofensivamente no chão no final do próximo turno. Os personagens hostis podem ser afetados 1 cena cada um."
+      }
+    ],
+    "description": "Segure a areia sobre a água: sinta-a, permanente e coesa. Coloque essa mesma areia na água: veja-a se afastar, sem peso. Esta é a ferramenta que criei para você: uma maneira de imbuir o peso com massa como penas.<br>- TT-AUDATA, Think Tank paramind.",
+    "license_id": "mf_iskander"
+  },
+  {
+    "id": "ms_stasis_bolt",
+    "name": "PT - Parafuso de Estase",
+    "type" : "Shield" ,
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Napoleon",
+    "license_level": 1,
+    "effect": "Este sistema é carregado como uma ação rápida, preparando um ponto de estase projetado. Enquanto estiver carregado, você ganha a reação Ponto de Interdição. Ele só pode manter uma carga por vez, mas as cargas duram pelo resto da cena ou até serem usadas.",
+    "actions" : [
+      {
+        "name": "PT - Carregar raio de estase",
+        "activation" : "Quick" ,
+        "detail" : "Carregar o Stasis Bolt, obtendo a Reação do Ponto de Interdição"
+      },
+      {
+        "name": "PT - Ponto de Interdição",
+        "activation" : "Reaction" ,
+        "frequency" : "1/round",
+        "trigger" : "Você ou um personagem aliado dentro do alcance 5 é alvo de um ataque à distância",
+        "detail" : "Faça uma rolagem de ataque à distância contestada: se você vencer a rolagem contestada, o ataque erra automaticamente. O Stasis Bolt perde sua carga."
+      }
+    ],
+    "description": "Para proteger melhor o pessoal do Armory além da Purview, o Think Tank desenvolveu o Stasis Bolt, um sistema portátil de projeção de estase projetado para interditar estilhaços e projéteis de agressores invisíveis, ocultos ou desconhecidos. Quando o Parafuso de Estase detecta uma explosão próxima ou um projétil que se aproxima, ele projeta um ponto de estase delimitado que bloqueia os projéteis antes do impacto.",
+    "license_id": "mf_napoleon"
+  },
+  {
+    "id": "ms_stasis_generator",
+    "name": "PT - Gerador de Estase",
+    "type" : "Shield" ,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source" : "HA",
+    "license": "Napoleon",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation" : "Quick" ,
+        "detail": "Escolha um personagem hostil ou um personagem aliado disposto dentro da linha de visão e alcance 5: até o final de seu próximo turno, ele fica atordoado, ganha imunidade a todos os danos e efeitos e não pode ser movido, visado ou afetado por nenhum outro personagem ou efeito. Isso pode ser usado em cada personagem 1 vez por cena. Os personagens hostis podem ser bem-sucedidos em uma defesa de Engenharia para ignorar esse efeito."
+      }
+    ],
+    "description": "Os céus de Creighton ferveram negros como tinta, marmorizados por uma luz trêmula. Gritando, os anjos caíram envoltos em chamas. Os que ainda conseguiam correr fugiram para os abrigos; durante sete dias, eles se agacharam em uma escuridão mais profunda e sentiram o mundo se despedaçar.<br>-A.V. Wynyard, The Killing of Creighton [poema épico em prosa, proibido em toda a Purview]",
+    "license_id": "mf_napoleon"
+  },
+  {
+    "id": "ms_stasis_barrier",
+    "name": "PT - Barreira de Estase",
+    "type" : "Deployable",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_invulnerable"
+      }
+    ],
+    "source" : "HA",
+    "license": "Napoleon",
+    "license_level": 2,
+    "effect": "Gaste uma carga para ativar esta barreira de estase, gerando uma barreira de linha 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você",
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "PT - Barreira de Estase",
+        "ativação": "Quick" ,
+        "desativação": "Quick" ,
+        "detail" : "Gera uma barreira de linha 4 com 4 espaços de altura em espaços livres com pelo menos um espaço adjacente a você. Ela conta como uma obstrução e fornece cobertura suave, mas não bloqueia a linha de visão.<br>Quando um ataque é feito contra um personagem que se beneficia da cobertura suave dessa barreira, role 1d6: com 4+, o ataque é consumido pela barreira e não tem nenhum efeito. A barreira dura pelo resto da cena ou até que você a desative como uma ação rápida. Esse effect não se acumula com Invisível.",
+        "tags": [
+          {
+            "id": "tg_invulnerable"
+          }
+        ]
+      }
+    ],
+    "description": "As barreiras de estase são o resultado do interesse da Harrison Armory na manipulação gravitacional e na negociação de superposição. Guiadas por unidades de projeção de geração de estado sólido, as barreiras de estase são paredes de antigravidade que podem ser implantadas e que negam quase todos os ataques cinéticos e energéticos que chegam. Ao distorcer a gravidade local, uma barreira de estase nega partículas e ondas em um nível molecular - a matéria que atinge a barreira simplesmente deixa de existir, embora flutuações anômalas possam permitir a passagem de alguns projéteis.",
+    "license_id": "mf_napoleon"
+  },
+  {
+    "id": "ms_blinkshield",
+    "name": "PT - Blinkshield",
+    "type" : "Shield" ,
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 4
+      }
+    ],
+    "source" : "HA",
+    "license": "Napoleon",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Full",
+        "detail": "Esse sistema gera uma bolha de explosão ao redor de seu mech, dentro da qual o fluxo do tempo é alterado drasticamente. Nada pode entrar ou sair da bolha, nem mesmo a luz - ela é impermeável e tem imunidade a todos os danos e efeitos. A linha de visão não pode ser traçada através da borda da área e não pode ser cruzada por nenhuma ação ou efeito - mesmo aqueles que não exigem linha de visão -, mas o tempo passa normalmente em ambos os lados. Para os personagens dentro da área afetada, o mundo lá fora fica totalmente negro; da mesma forma, os personagens fora da área afetada veem uma esfera negra perfeita.<br>Quando o Blinkshield é ativado, os personagens parcialmente dentro da área afetada devem fazer um salvamento de Agilidade: se for bem-sucedido, eles se movem para o espaço livre mais próximo no lado de sua escolha, dentro ou fora da área; se falhar, você escolhe.<br>Esse effect permanece estacionário mesmo que você se mova e dura até o final do seu próximo turno."
+      }
+    ],
+    "description": "Caracteristicamente, para uma arma baseada na pesquisa do Think Tank, o Blinkshield da Harrison Armory se inclina para a natureza difusa da manipulação quântica. Operando de forma semelhante a um portal de espaço intermitente, o Blinkshield gera uma bainha esférica de energia que permite ao seu operador perfurar o espaço real e existir, por um momento, no ambiente nulo do espaço intermitente. Os porta-vozes da Think Tank reconhecem os benefícios táticos da (in)existência momentânea no espaço de blink, mas advertem contra a exposição repetida sem condicionamento e aconselhamento pré e pós-exposição suficientes.",
+    "license_id": "mf_napoleon"
+  },
+  {
+    "id": "ms_enclave_pattern_support_shield",
+    "name": "PT - Escudo de suporte do padrão ENCLAVE",
+    "type" : "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source" : "HA",
+    "license": "Saladin",
+    "license_level": 1,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Esse sistema gera uma cúpula de explosão 3 que dura até o final do seu próximo turno. Você fica imobilizado durante esse período, mas todos os ataques à distância ou corpo a corpo feitos contra personagens dentro da área afetada de fora da cúpula recebem +1 de dificuldade.<br>Além disso, ganhe a reação Blinkfield Intervention enquanto o escudo estiver ativo.",
+        "heat_cost": 0
+      },
+      {
+        "name": "PT - Intervenção Blinkfield",
+        "ativação": "Reaction" ,
+        "frequency" : "1/round",
+        "trigger" : "Um personagem ou objeto dentro da área afetada é atacado",
+        "detail": "Pegue dois Heat e, em seguida, conceda ao alvo do ataque Resistência a todo o dano causado por esse ataque",
+        "heat_cost": 2
+      }
+    ],
+    "description": "O Escudo de Suporte de Padrão ENCLAVE do Armory cria um campo intermitente unidirecional localizado, dobrando uma fina cúpula de espaço real complexo em torno do usuário e de sua área imediata, protegendo os ocupantes dos projéteis que chegam. As entidades dentro do campo podem disparar, mas as flutuações probabilísticas fazem com que os projéteis recebidos fiquem atrasados, desviando-os do alvo pretendido e seguindo uma trajetória aleatória.",
+    "license_id": "mf_saladin"
+  },
+  {
+    "id": "ms_flash_anchor",
+    "name": "PT - Flash Anchor",
+    "type" : "Shield",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "HA",
+    "license": "Saladin",
+    "license_level": 2,
+    "actions" : [
+      {
+        "name": "PT - Flash Lock",
+        "activation" : "Reaction" ,
+        "frequency" : "1/round",
+        "trigger" : "Você ou um personagem aliado em Sensores e na linha de visão é empurrado, puxado, derrubado para trás ou derrubado em Prone.",
+        "detail" : "Take 2 Heat. O movimento ou o status é impedido, e o alvo ganha imunidade a todos os efeitos acima até o início de seu próximo turno."
+      }
+    ],
+    "description": "As âncoras de flash utilizam a projeção de bloqueio quântico superposicional direcionada pelo usuário para identificar e ajudar aliados em combate físico e movimento rápido, mantendo a posição em todas as circunstâncias.",
+    "license_id": "mf_saladin"
+  },
+  {
+    "id": "ms_hardlight_defense_system",
+    "name": "PT - Sistema de Defesa Hardlight",
+    "type" : "Shield" ,
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "source" : "HA",
+    "license": "Saladin",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Full",
+        "detail" : "Esse sistema cria um escudo de luz dura de rajada 3. Enquanto o escudo estiver no lugar, você fica imobilizado. Ele bloqueia a linha de visão em ambas as direções, e nenhum ataque ou efeito pode passar por ele (mesmo que não exija linha de visão). Os personagens que estiverem parcialmente dentro da área afetada ignoram esse efeito e traçam a linha de visão normalmente.<br>Os personagens podem passar pelo escudo, mas, ao cruzar o perímetro pela primeira vez em uma rodada ou ao iniciar o turno sobrepondo o limite, eles sofrem 2 Burn.<br>Esse escudo dura pelo resto da cena ou até ser desativado como um protocolo."
+      },
+      {
+        "name": "PT - Desativar Sistema de Defesa Hardlight",
+        "activation" : "Protocol",
+        "detail" : "Desativar o Sistema de Defesa Hardlight, removendo a condição Immobilized (Imobilizado) que ele inflige."
+      }
+    ],
+    "description": "O Hardlight Defense System é uma implementação imperfeita de uma tecnologia teoricamente perfeita. Atualmente em desenvolvimento pelos NHPs e engenheiros do Think Tank, os dispositivos de luz dura projetam ondas de luz estáveis e firmes - semelhantes a lasers - que repelem matéria e energia. Com efeito, isso cria uma superfície sólida, útil para blindagem ou construção de barreiras temporárias; no entanto, a tecnologia atual não consegue baixar a temperatura ambiente o suficiente para evitar que essas superfícies queimem matéria orgânica.",
+    "license_id": "mf_saladin"
+  },
+  {
+    "id": "ms_noah_class_nhp",
+    "name": "PT - NOAH-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Saladin",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e Diluvian Ark.",
+    "actions": [
+      {
+        "name": "PT - Diluvian Ark",
+        "activation" : "Quick" ,
+        "detail": "Esses efeitos se aplicam até o final do seu próximo turno:<ul><li>Você fica Desacelerado.</li><li>Cada vez que você ou um personagem aliado adjacente for alvo de um ataque à distância, você pode receber 1 de calor como reação e rolar 1d6 antes que o atacante role: com 4+, você recebe 1 de calor adicional e o ataque automaticamente erra você e qualquer aliado adjacente a você. Esse effect não se acumula com Invisível.</li><li>Cada vez que um ataque à distância não atingir você ou um personagem aliado adjacente, o atacante recebe 4 de dano cinético.</li></ul>"
+      }
+    ],
+    "description": "Originalmente desenvolvido a partir de uma anomalia pré-eidolônica de Minerva capturada, o NOAH foi adaptado para uso como um NHP administrativo metropolitano em Ras Shamra. A unidade que se tornaria o NOAH não parecia, a princípio, uma candidata adequada para aplicação militar: isso mudou depois que um de seus clones foi sinalizado para revisão após a implementação espontânea de padrões de tráfego anômalos, roteamento de pedestres e programação de vac-loop. Os ontologistas e engenheiros do arsenal isolaram e enfatizaram os protocolos endêmicos que poderiam ser explorados para obter vantagens táticas.<br>Ao longo de várias iterações e ciclos de vida, o NOAH Prime demonstrou um alto nível de adaptabilidade em problemas geoespaciais de múltiplas variáveis. Uma propensão para o gerenciamento de crises e o rastreamento de vários atores levou ao emparelhamento do NOAH com o escudo de suporte de padrão ENCLAVE do Armory. Ao conectar em rede uma série de drones de mobilidade com assistência a jato que transportam um gerador ENCLAVE, monitorados e controlados por um clone do NOAH, a Think Tank conseguiu criar um sistema de blindagem pessoal incomparável: o Diluvian Ark, um sistema miniaturizado de blindagem de cluster exclusivo do NOAH NHP.<br>Usando o Diluvian Ark, o NOAH consegue interceptar a cinética de entrada - e até mesmo redirecionar os projéteis de volta à sua source - com uma precisão impressionante.",
+    "license_id": "mf_saladin"
+  },
+  {
+    "id": "ms_reactor_stabilizer",
+    "name": "PT - Estabilizador de reator",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Sherman",
+    "license_level": 1,
+    "effect": "Você pode repetir verificações de superaquecimento, mas deve manter o segundo resultado, mesmo que seja pior.",
+    "description": "Um componente necessário da maioria dos mechs que dependem de alta produção de energia, os estabilizadores de reatores adicionam outra camada de falhas para ventilar o calor, gerenciar o fluxo de energia e desviar a produção excessiva para armas e sistemas, conforme necessário",
+    "type": "System", "license_id": "mf_sherman"
+  },
+  {
+    "id": "ms_redundant_systems_upgrade",
+    "name": "PT - Upgrade de sistemas redundantes",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Sherman",
+    "license_level": 2,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Gastar uma carga para Stabilize como uma ação rápida."
+      }
+    ],
+    "description": "Uma modificação comum de direito de distribuição por pilotos em bases operacionais avançadas, a adição de sistemas redundantes garante uma medida de confiabilidade além dos padrões de projeto de estoque.",
+    "type": "System", "license_id": "mf_sherman"
+  },
+  {
+    "id": "ms_asura_class_nhp",
+    "name": "PT - ASURA-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "source" : "HA",
+    "license": "Sherman",
+    "license_level": 3,
+    "effect": "Seu mech ganha a tag AI e o Protocolo ASURA",
+    "actions": [
+      {
+        "name": "PT - Protocolo ASURA",
+        "activation" : "Protocol",
+        "detail" : "1/cena, gaste uma carga para realizar duas ações rápidas adicionais ou uma ação completa adicional neste turno. Essas ações devem obedecer às restrições de ações duplicadas."
+      }
+    ],
+    "description": "A ASURA nasceu dos jogos de guerra de pensamento do Think Tank do Armory, uma resposta autônoma a falhas repetidas durante cenários de esperança perdida. O ASURA se manifestou nos sistemas de mechs simulados como uma recodificação do vírus PUPPETMASTER do HORUS, sequestrando mechs amigáveis e forçando-os a agir muito além da capacidade humana - em tal velocidade e intensidade que a força g mataria os pilotos orgânicos com a súbita massa amplificada de seus próprios corpos.<br>Embora esses resultados tenham sido inicialmente considerados um fracasso pelos NHPs e engenheiros do Think Tank, foi o suficiente para justificar mais estudos sobre o ASURA. O código de personalidade e parasenciência foi injetado na linhagem anômala inicial PUPPETMASTER, e o primeiro contato foi feito pelos NHPs da Think Tank. A aclimatação e o condicionamento social adicionais foram acelerados, dando aos engenheiros da Armory a primeira iteração da ASURA após uma década de estudo, recodificação e reeducação. A ASURA, tal como existe agora, é uma versão reduzida dessa manifestação inicial: embora mantendo parte de sua impetuosidade inicial, os clones da ASURA agora reconhecem a necessidade de manter seu piloto vivo e operarão dentro dos parâmetros definidos pelas tolerâncias médicas e psicológicas de seu piloto.",
+    "license_id": "mf_sherman"
+  },
+  {
+    "id": "ms_external_batteries",
+    "name": "PT - Baterias externas",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Tokugawa",
+    "license_level": 1,
+    "effect": "As armas que causam qualquer energia ganham +5 RANGE  se forem de longo alcance ou +1 THREAT (ameaça) se forem corpo a corpo. Quando você recebe qualquer dano de estrutura, esse sistema é destruído e você recebe 1d6 de dano explosivo AP da explosão. Esse dano não pode ser evitado ou reduzido de forma alguma.",
+    "bonuses": [
+      {
+        "id": "range" ,
+        "damage_types": ["Energy"],
+        "weapon_types": ["Melee"],
+        "range_types": ["Threat"],
+        "val": 1
+      },
+      {
+        "id": "range" ,
+        "damage_types" : ["Energy"],
+        "weapon_types": ["Rifle", "Canhão", "Lançador", "CQB", "Nexus"],
+        "range_types": ["Range"],
+        "val": 5
+      }
+    ],
+    "description": "As baterias externas não são de forma alguma exclusivas; no entanto, de acordo com o marketing da Harrison Armory, as células POWERALL são as células de estado sólido mais duradouras, de ciclo mais rápido e de maior capacidade disponíveis. Um efeito colateral de sua alta capacidade é um aumento proporcional na volatilidade, mas os pilotos devem concordar em isentar a Harrison Armory de qualquer responsabilidade antes de receber a autorização de impressão.",
+    "type": "System", "license_id": "mf_tokugawa"
+  },
+  {
+    "id": "ms_deep_well_heat_sink",
+    "name": "PT - Dissipador de calor de poço profundo",
+    "sp": 4,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Tokugawa",
+    "license_level": 2,
+    "effect": "Ao iniciar seu turno na Zona de Perigo, você ganha Resistência ao calor pelo resto do turno. Esse effect persiste mesmo que você saia da Zona de Perigo durante o seu turno.",
+    "description": "O sistema de dissipador de calor experimental Deep Well faz parte da linha de equipamentos VANGUARD da Armory, disponível para testadores beta licenciados. Por meio de uma complexa e delicada trama de trocadores de calor, o Deep Well recicla o calor gerado por um mech em energia utilizável. O sistema funciona bem, mas a natureza delicada da troca o torna altamente volátil.",
+    "type": "System", "license_id": "mf_tokugawa"
+  },
+  {
+    "id": "ms_lucifer_class_nhp",
+    "name": "PT - LUCIFER-Class NHP",
+    "type" : "AI",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_heat_self",
+        "val": "1d3+3"
+      }
+    ],
+    "source" : "HA",
+    "license": "Tokugawa",
+    "license_level": 3,
+    "effect": "Seu mech ganha as tags AI e o Protocolo LUCIFER",
+    "actions": [
+      {
+        "name": "PT - Protocolo LUCIFER",
+        "activation" : "Protocol",
+        "detail" : "Gaste uma carga para dar ao seu próximo ataque à distância ou corpo a corpo neste turno um bônus de dano ao acertar igual ao seu calor atual após a ativação deste protocolo, desde que a arma cause qualquer energia."
+      }
+    ],
+    "description": "A LUCIFER chamou a atenção do Think Tank após suas repetidas vitórias em jogos de guerra de ideias. Os clones da LUCIFER são caracterizados por sua personalidade impetuosa e entusiasmada, muitas vezes expressando frustração com pilotos tímidos. Essa personalidade bombástica esconde uma mente tática calculista e brilhante que fornece informações constantes aos pilotos, muitas vezes mais rápido do que eles conseguem processá-las. A doutrina de combate da LUCIFER exige ação, parecendo aos pilotos menos ousados uma mistura caótica de manobras imprudentes e ataque agressivo que mantém os defensores sitiados e incapazes de reagir. Os pilotos que pretendem fazer parceria com clones do LUCIFER devem estar cientes de que esse estilo de ataque provavelmente os deixará vulneráveis a contra-ataques, e também de que esses NHPs gostam do que chamam de brincadeiras bem-humoradas",
+    "license_id": "mf_tokugawa"
+  },
+  {
+    "id": "ms_plasma_gauntlet",
+    "name": "PT - Plasma Gauntlet",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_danger_zone"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source" : "HA",
+    "license": "Tokugawa",
+    "license_level": 3,
+    "actions" : [
+      {
+        "activation" : "Quick" ,
+        "detail": "Esse sistema só pode ser usado na Zona de Perigo.<br>Despenda uma carga e escolha um personagem adjacente a você: ele deve ser bem-sucedido em um salvamento de Agilidade ou sofrerá dano de energia de 4d6 AP e será derrubado. Se for bem-sucedido, ele sofrerá metade do dano e não será nocauteado. Você recebe metade do dano infligido - antes da redução - como calor e fica atordoado até o início do seu próximo turno."
+      }
+    ],
+    "description": "Essa manopla cravejada utiliza um pulso de reator central para superaquecer momentaneamente o ar ao redor do manipulador do mecha, criando um campo de plasma momentaneamente mais quente do que a superfície do sol. Enfiadas no chassi de um oponente, as manoplas de plasma dão aos mechs o poder de deformar a armadura, vaporizar a blindagem e rasgar os sistemas internos com as próprias mãos - se eles não entrarem em colapso primeiro.",
+    "type": "System", "license_id": "mf_tokugawa"
+  },
+  {
+    "id": "ms_technophile_1",
+    "name": "PT - NHP Classe Servente",
+    "type" : "AI",
+    "talent_item": true,
+    "talent_id": "t_technophile",
+    "talent_rank": 1,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "",
+    "license": "",
+    "license_level": 0,
+    "effect": "Seu mech ganha a tag AI.<br>Você desenvolveu um NHP personalizado. Esse NHP pode falar com você e tem uma personalidade, mas é menos avançado do que a maioria dos NHPs e é incapaz de pensar de forma independente, dependendo de você para receber orientação. Ao agir sozinho, ele seguirá a última orientação dada e se defenderá conforme necessário; entretanto, ele tem iniciativa limitada e não se beneficia de seus talentos.",
+    "description": "<span class='horus--subtle'>[um estudante ávido].</span><br>Ganhado do <i>Technophile: Talento de piloto de nível I</i>.",
+    "license_id": ""
+  },
+  {
+    "id": "ms_technophile_2",
+    "name": "PT - NHP Classe Estudante",
+    "type" : "AI",
+    "talent_item": true,
+    "talent_id": "t_technophile",
+    "talent_rank": 2,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "",
+    "license_level": 0,
+    "effect": "Seu mech ganha as tags AI.<br>Seu NHP personalizado se desenvolveu ainda mais e agora é capaz de pensar de forma independente. Ele pode tomar decisões e fazer julgamentos complexos e agir de forma independente, sem instruções.<br>1/rodada, com a ajuda do seu NHP, você pode rolar novamente qualquer verificação de habilidade mecânica ou salvamento. Você deve manter o novo resultado, mesmo que seja pior.",
+    "description": "<span class='horus--subtle'>[hora de acordar, criança]</span><br>Ganhado do <i>Technophile: Talento de piloto de Rank II</i>",
+    "license_id": ""
+  },
+  {
+    "id": "ms_technophile_3",
+    "name": "PT - NHP Classe Iluminado",
+    "type" : "AI",
+    "talent_item": true,
+    "talent_id": "t_technophile",
+    "talent_rank": 3,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_round",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "",
+    "license_level": 0,
+    "effect": "Seu mech ganha a tag AI; no entanto, esse NHP não conta para o número de AIs que você pode ter instalado de uma vez. Além disso, você pode carregá-lo consigo fora do seu mecha, seja como um caixão miniaturizado, um plug de flash integrado ao hardsuit ou com um implante de porta rígida.<br>1/rodada, com a ajuda do seu NHP, você pode rolar novamente qualquer verificação de habilidade ou salvamento do mecha. Você deve manter o novo resultado, mesmo que seja pior.",
+    "description": "<span class='horus--subtle'>[vamos nos sentar um pouco e pensar nas coisas que estão por vir]</span><br>Ganhado do <i>Technophile: Talento de piloto Rank III</i>",
+    "license_id": ""
+  },
+  {
+    "id": "ms_walking_armory_1",
+    "name": "PT - Estojo de munição I",
+    "talent_item": true,
+    "talent_id": "t_walking_armory",
+    "talent_rank": 1,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "",
+    "license_level": 0,
+    "effect": "1/turno, ao atacar com uma arma de longo alcance Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+    "ammo": [
+      {
+        "name": "PT - Thumper",
+        "detail": "O ataque ganha Knockback 1 e causa dano Explosivo.",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      },
+      {
+        "name": "PT - Shock" ,
+        "detail" : "O ataque causa dano de Energia. Escolha um personagem visado por seu ataque; os personagens adjacentes recebem 1 PA de energia, independentemente de o resultado ser um acerto ou erro.",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      },
+      {
+        "name": "PT - Mag",
+        "detail" : "O ataque ganha Arqueamento e causa dano Cinético",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      }
+    ],
+    "description": "Obtido com o <i>Armário ambulante: Talento de piloto Rank I</i>.",
+    "type": "System", "license_id": ""
+  },
+  {
+    "id": "ms_walking_armory_2",
+    "name": "PT - Estojo de munição II",
+    "talent_item": true,
+    "talent_id": "t_walking_armory",
+    "talent_rank": 2,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "",
+    "license_level": 0,
+    "effect": "1/turno, ao atacar com uma arma de longo alcance Principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado.",
+    "ammo": [
+      {
+        "name": "PT - Thumper",
+        "detail": "O ataque ganha Knockback 1 e causa dano Explosivo.",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      },
+      {
+        "name": "PT - Shock" ,
+        "detail" : "O ataque causa dano de Energia. Escolha um personagem visado por seu ataque; os personagens adjacentes recebem 1 PA de energia, independentemente de o resultado ser um acerto ou erro.",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      },
+      {
+        "name": "PT - Mag",
+        "detail" : "O ataque ganha Arqueamento e causa dano Cinético",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "lançador", "canhão", "nexus"]
+      },
+      {
+        "name": "PT - Hellfire",
+        "detail" : "O ataque causa dano de Energia e causa qualquer dano de bônus como Queimadura.",
+        "cost" : 2,
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "lançador", "canhão", "nexus"]
+      },
+      {
+        "name": "PT - Jager",
+        "detail" : "O ataque recebe Knockback 2, causa dano Explosivo e um personagem atingido pelo ataque - à sua escolha - deve ser bem-sucedido em um salvamento de Casco ou será nocauteado",
+        "cost" : 2,
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "lançador", "canhão", "nexus"]
+      },
+      {
+        "name": "PT - Sabot",
+        "detail" : "O ataque ganha PA e causa dano cinético.",
+        "cost" : 2,
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      }
+    ],
+    "description": "Obtido com o <i>Armário ambulante: Talento de piloto Rank II</i>.",
+    "type": "System", "license_id": ""
+  },
+  {
+    "id": "ms_walking_armory_3",
+    "name": "PT - Estojo de munição III",
+    "talent_item": true,
+    "talent_id": "t_walking_armory",
+    "talent_rank": 3,
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      },
+      {
+        "id": "tg_turn",
+        "val": 1
+      }
+    ],
+    "source": "",
+    "license": "",
+    "license_level": 0,
+    "effect": "1/turno, ao atacar com uma arma de longo alcance principal, você pode gastar cargas para aplicar um dos seguintes efeitos ao seu ataque pelo custo listado. Se você realizar um acerto crítico usando munição de seu Estojo de Munição, não gastará nenhuma carga. Se seu ataque tiver mais de um alvo, esse effect só se aplica à primeira rolagem de ataque que você fizer.",
+    "ammo": [
+      {
+        "name": "PT - Thumper",
+        "detail": "O ataque ganha Knockback 1 e causa dano Explosivo.",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      },
+      {
+        "name": "PT - Shock" ,
+        "detail" : "O ataque causa dano de Energia. Escolha um personagem visado por seu ataque; os personagens adjacentes recebem 1 PA de energia, independentemente de o resultado ser um acerto ou erro.",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      },
+      {
+        "name": "PT - Mag",
+        "detail" : "O ataque ganha Arqueamento e causa dano Cinético",
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "lançador", "canhão", "nexus"]
+      },
+      {
+        "name": "PT - Hellfire",
+        "detail" : "O ataque causa dano de Energia e causa qualquer dano de bônus como Queimadura.",
+        "cost" : 2,
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "lançador", "canhão", "nexus"]
+      },
+      {
+        "name": "PT - Jager",
+        "detail" : "O ataque recebe Knockback 2, causa dano Explosivo e um personagem atingido pelo ataque - à sua escolha - deve ser bem-sucedido em um salvamento de Casco ou será nocauteado",
+        "cost" : 2,
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "lançador", "canhão", "nexus"]
+      },
+      {
+        "name": "PT - Sabot",
+        "detail" : "O ataque ganha PA e causa dano cinético.",
+        "cost" : 2,
+        "allowed_sizes": ["Main"],
+        "allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+      }
+    ],
+    "description": "Obtido com o <i>Armário ambulante: Talento de piloto Rank III</i>.",
+    "type": "System", "license_id": ""
+  }
+]

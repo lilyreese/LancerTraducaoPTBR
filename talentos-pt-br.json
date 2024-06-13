@@ -1,0 +1,1344 @@
+[
+  {
+    "id": "ptbr_t_ace",
+    "name": "PT - Ace",
+    "icon": "ACE",
+    "terse": "Melhore seus sistemas de voo para reposicionamento rápido e mobilidade extrema.",
+    "description": "Todo piloto se gaba de suas ações; ocasionalmente, alguns até têm a reputação para sustentar suas histórias. Harmonious Domesticity é um desses pilotos. Como um ás, ele não está apenas entre os pilotos mais qualificados – está entre os mais qualificados de todos os lancers.<br>Seja você um novato talentoso ou um veterano calejado, você é um desses ases. Suas habilidades como piloto são tão notórias que seu indicativo é conhecido em todo o sistema.",
+    "ranks": [
+      {
+        "name": "PT - Acrobacias",
+        "description": "Enquanto estiver voando, você recebe os seguintes benefícios:<ul><li>Você faz todos os testes e salvamentos de Agilidade com +1 de Precisão.</li><li>Sempre que um ataque errar você, você pode voar até 2 espaços em qualquer direção como uma Reaction.</li></ul>",
+        "synergies": [
+          {
+            "locations": ["agility, active_effects"],
+            "detail": "Faça todos os testes e salvamentos de Agilidade com +1 de Precisão."
+          }
+        ],
+        "actions": [
+          {
+            "name": "PT - Acrobacias",
+            "activation": "Reaction",
+            "trigger": "Sempre que um ataque errar você.",
+            "detail": "Você pode voar até 2 espaços em qualquer direção."
+          }
+        ]
+      },
+      {
+        "name": "PT - Afterburners",
+        "description": "Quando você impulsiona enquanto voa, você pode se mover mais 1d6 espaços adicionais, mas recebe calor igual à metade desse valor.",
+        "synergies": [
+          {
+            "locations": ["boost"],
+            "detail": "Quando você acelera enquanto voa, você pode se mover um adicional de 1d6 espaços, mas recebe calor igual à metade desse valor."
+          }
+        ]
+      },
+      {
+        "name": "PT - Supersônico",
+        "description": "Como uma ação rápida em seu turno, você pode <b>Ativar Propulsores</b>. Se você terminar seu turno voando, você pode escolher um personagem dentro de um Alcance igual à sua Velocidade e dentro do campo de visão, e ganhar a <b>Reaction Supersônica</b>.",
+        "actions": [
+          {
+            "name": "PT - Ativar Propulsores",
+            "activation": "Quick",
+            "detail": "Como uma ação rápida em seu turno, você pode acionar seus propulsores. Se você terminar seu turno voando, você pode indicar um personagem dentro de um Alcance igual à sua Velocidade e dentro do campo de visão, e ganhar a Reaction Supersônica."
+          },
+          {
+            "name": "PT - Supersônico",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "init": "Requer a ativação da ação rápida <b>Ativar Propulsores</b> em seu turno. Se você encerrar seu turno voando, você pode indicar um personagem dentro de um Alcance igual à sua Velocidade e dentro do campo de visão, você pode usar esta Reaction.",
+            "trigger": "O turno do seu alvo termina.",
+            "detail": "Você voa para um espaço Free e adjacente a eles. Deve haver um caminho para fazê-lo, mas você pode se mover mesmo que o personagem indicado não esteja mais dentro do seu alcance de movimento ou linha de visão. Isso ignora o engajamento e não provoca reações."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ptbr_t_bonded",
+    "name": "PT - Vinculado",
+    "icon": "BONDED",
+    "terse": "Estabeleça um vínculo com um parceiro e proteja-o de danos.",
+    "description": "A galáxia é um lugar perigoso, e todos deveriam ter um amigo para proteger suas costas. Felizmente, você encontrou o seu. Talvez vocês se alistaram juntos ou foram os únicos sobreviventes de um confronto sangrento. Talvez não tenham começado como amigos, ou talvez tenham sido criados para lutar lado a lado – seja como for que sua amizade tenha começado, quando chega a hora de agir, não há ninguém que você prefira ter ao seu lado. Sozinho, você é mortal; juntos, são uma força da natureza.",
+    "ranks": [
+      {
+        "name": "PT - Eu sou o seu parceiro.",
+        "description": "Quando você adquire esse talento, escolha outro piloto (de preferência um PJ, mas PdJs estão bem se seu GM permitir) para ser seu Companheiro de Vínculo. Todos os testes e salvamentos de habilidade de mech que qualquer um dos personagens fizer enquanto estiverem adjacentes ganham +1 de Precisão. Se ambos os personagens tiverem esse talento, isso aumenta para +2 de Precisão, mas personagens adicionais com esse talento não podem aumentar ainda mais esse valor. Entre missões, você pode substituir seu Companheiro de Vínculo por um novo, mas apenas se seu relacionamento com eles tiver mudado.",
+        "synergies": [
+          {
+            "locations": ["skill_check, active_effects"],
+            "detail": "Todos os testes e salvamentos de habilidades de mech feitos por você ou seu Companheiro de Vínculo enquanto estiverem adjacentes ganham +1 de Precisão. Se ambos os personagens tiverem esse talento, esse bônus aumenta para +2 de Precisão."
+          }
+        ]
+      },
+      {
+        "name": "PT - Sundance",
+        "description": "Ganhe a Reaction <b>Interceder</b>.",
+        "actions": [
+          {
+            "name": "PT - Interceder",
+            "activation": "Reaction",
+            "frequency": "1/round",
+            "trigger": "Você está adjacente ao seu Companheiro de Vínculo (piloto ou mech) e eles sofrem dano de uma fonte dentro do seu campo de visão.",
+            "detail": "Você pode receber o dano em vez deles."
+          }
+        ]
+      },
+      {
+        "name": "PT - Cubra-me!",
+        "description": "Se um personagem dentro do seu campo de visão tentar atacar seu Companheiro de Vínculo, você pode gastar sua Vigilância para ameaçar o atacante, forçando-os a escolher um alvo diferente ou a atacar mesmo assim: se eles escolherem um alvo diferente, sua Vigilância é gasta sem efeito; se eles optarem por atacar mesmo assim, você pode imediatamente atacá-los com Vigilância, desde que estejam dentro do Alcance e do campo de visão. Este ataque é resolvido antes do ataque desencadeante.",
+        "synergies": [
+          {
+            "locations": ["overwatch, active_effects"],
+            "detail": "Se um personagem dentro do seu campo de visão tentar atacar seu Companheiro de Vínculo, você pode gastar sua Vigilância para ameaçar o atacante, forçando-os a escolher um alvo diferente ou a atacar mesmo assim: se eles escolherem um alvo diferente, sua Vigilância é gasta sem efeito; se eles optarem por atacar mesmo assim, você pode imediatamente atacá-los com Vigilância, desde que estejam dentro do Alcance e do campo de visão. Este ataque é resolvido antes do ataque que o desencadeou."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ptbr_t_brawler",
+    "name": "PT - Lutador",
+    "icon": "BRAWLER",
+    "terse": "Aprimore a eficácia de Ataques Improvisados e Agarramentos.",
+    "description": "Cara a cara e pessoal. O jeito de batalhar desde os primórdios, depois esquecido com a primeira centelha da pólvora. Tempest Gloire é uma piloto que prefere os velhos costumes: luta corpo a corpo, armas descartadas, apenas a força de sua máquina contra a força de todas as outras. Você e ela sabem que a vitória mais doce é encontrada na culminação de uma dança tão antiga quanto a própria guerra, com o primeiro truque conhecido pela humanidade: um soco no rosto do seu inimigo.",
+    "ranks": [
+      {
+        "name": "PT - Segure e Tranque",
+        "description": "Você ganha +1 de Precisão em todos os ataques corpo a corpo contra alvos que você está Agarrando.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "weapon_types": ["Melee"],
+            "weapon_sizes": ["any"],
+            "detail": "Ganhe +1 de Precisão em todos os ataques corpo a corpo contra alvos que você está Agarrando."
+          }
+        ]
+      },
+      {
+        "name": "PT - Marreta",
+        "description": "Seus Ataques Improvisados ganham Repulsão 2 e causam 2d6+2 de dano Cinético.",
+        "synergies": [
+          {
+            "locations": ["improvised_attack"],
+            "detail": "Seus Ataques Improvisados ganham Repulsão 2 e causam 2d6+2 de dano Cinético."
+          }
+        ]
+      },
+      {
+        "name": "PT - Golpe Nocaute",
+        "description": "Ganhe um Dado de Lutador, 1d6 começando em 6. Cada vez que você Agarrar, Investir, ou realizar um Ataque Improvisado, diminua o valor do Dado de Lutador em 1. Quando o Dado de Lutador atingir 1, você pode resetá-lo para 6 e, como uma ação completa, realizar um Golpe Nocaute contra um personagem adjacente. O valor do seu Dado de Lutador persiste entre as cenas, mas ele é resetado para 6 quando você descansa ou realiza um Reparo Completo.",
+        "synergies": [
+          {
+            "locations": ["grapple", "ram", "improvised_attack"],
+            "detail": "Diminui o valor do seu Dado de Lutador em 1."
+          }
+        ],
+        "actions": [
+          {
+            "name": "PT - Golpe Nocaute",
+            "activation": "Full",
+            "detail": "Reset your Brawler Die to 6 and, as a full action, make a Knockout Blow against an adjacent character. They must pass a Hull save, or take 2d6+2 Kinetic damage and become Stunned until the end of their next turn.<br>This action can only be taken when the value of your Brawler Die is 1."
+          }
+        ],
+        "counters": [
+          {
+            "id": "ptbr_ctr_brawler",
+            "name": "PT - Dado de Lutador",
+            "defaulptbr_t_value": 6,
+            "min": 1,
+            "max": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ptbr_t_brutal",
+    "name": "PT - Brutal",
+    "icon": "BRUTAL",
+    "terse": "Aprimore seus acertos críticos, com bônus extras para 20 naturais.",
+    "description": "No ringue de prática, assim como no combate real, Aubrey Deckard só conhece uma maneira de lutar: tão rápido e bagunçado quanto possível. Quando os outros vão com tudo, ela vai com ainda mais força; quando a ordem é eliminar o inimigo, ela o faz com preconceito. Isso não é uma dança, não é um jogo - é guerra, e os lancers brutais pretendem seguir em frente. Se isso significa se tornar um pouco de monstro, então que assim seja: os mortos podem odiar do túmulo.",
+    "ranks": [
+      {
+        "name": "PT - Predador",
+        "description": "Quando você rolar um 20 em um dado para qualquer ataque (às vezes chamado de 'natural 20') e acerto crítico, você causa o dano máximo possível e dano extra.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "detail": "Cause o dano máximo possível ao fazer um teste de ataque de 20 e realizar um acerto crítico."
+          }
+        ]
+      },
+      {
+        "name": "PT - Elimine o Rebanho",
+        "description": "Seus acertos críticos ganham Repulsão 1.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "detail": "Inflige Repulsão 1 em um acerto crítico."
+          }
+        ]
+      },
+      {
+        "name": "PT - Implacável",
+        "description": "Quando você faz um teste de ataque e erra, seu próximo teste de ataque ganha +1 de Precisão. Este efeito acumula e persiste até você acertar.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "detail": "Em um erro, seu próximo teste de ataque ganha +1 de Precisão. Este efeito acumula e persiste até você acertar."
+          }
+        ],
+        "counters": [
+          {
+            "id": "ptbr_ctr_brutal",
+            "name": "PT - Dado Brutal",
+            "defaulptbr_t_value": 0,
+            "min": 0,
+            "max": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ptbr_t_crack_shot",
+    "name": "PT - Atirador Preciso",
+    "terse": "Mantenha sua mira firme para ganhar precisão, dano extra e aplicar debuffs.",
+    "description": "Graças à tecnologia moderna, qualquer um pode acertar qualquer coisa nos dias de hoje. Assistência de mira. Armas inteligentes. AIs sussurrando nos ouvidos das pessoas, movendo suas mãos, apertando o gatilho para elas: fazendo tudo, exceto assumir o crédito pelo abate. Mas Strymon Bulis é diferente. Para ele, acertar um alvo é tão fácil quanto olhar para ele, dentro e fora de seu mech. Nenhuma assistência de mira para ele; nenhuma IA necessária. Tudo o que ele precisa é de uma mira zerada, um carregador novo e um alvo na mira...",
+    "ranks": [
+        {
+            "name": "PT - Estável, Firme",
+            "description": "Como um protocolo, você pode <b>manter sua mira firme</b>. Se o fizer, você ficará Imobilizado até o início do seu próximo turno, mas ganhará +1 de Precisão em todos os ataques feitos com Rifles.",
+            "actions": [
+                {
+                    "name": "PT - Mira Firme",
+                    "activation": "Protocol",
+                    "detail": "Fique Imobilizado até o início do seu próximo turno, mas ganhe +1 de Precisão em todos os ataques feitos com Rifles."
+                }
+            ],
+            "synergies": [
+                {
+                    "locations": ["weapon"],
+                    "weapon_types": ["Rifle"],
+                    "weapon_sizes": ["any"],
+                    "detail": "Ganhe +1 de Precisão em todos os ataques feitos com esta arma se você tiver usado o Protocolo <b>Mira Firme</b> neste turno."
+                }
+            ]
+        },
+        {
+            "name": "PT - Zero In",
+            "description": "1/rodada, enquanto <b>mantiver sua mira firme</b> e fizer um ataque à distância com um Rifle, você pode tentar acertar um ponto fraco: ganhe +1 de Dificuldade na rolagem de ataque e cause +1d6 de dano bônus em um acerto crítico.",
+            "synergies": [
+                {
+                    "locations": ["weapon"],
+                    "weapon_types": ["Rifle"],
+                    "weapon_sizes": ["any"],
+                    "detail": "1/rodada, enquanto <b>mantiver sua mira firme</b> e fizer um ataque à distância com esta arma, você pode tentar acertar um ponto fraco: ganhe +1 de Dificuldade na rolagem de ataque e cause +1d6 de dano bônus em um acerto crítico."
+                }
+            ]
+        },
+        {
+            "name": "PT - Assista Isso",
+            "description": "1/rodada, quando você realizar um acerto crítico com este armamento enquanto <b>mantém sua mira firme</b>, seu alvo deve passar em um teste de Casco ou você pode escolher um efeito adicional para seu ataque:<ul><li><b>Tiro na cabeça:</b> Eles só têm linha de visão para espaços adjacentes até o final de seu próximo turno.</li><li><b>Tiro na perna:</b> Eles ficam Imobilizados até o final de seu próximo turno.</li><li><b>Tiro no corpo:</b> Eles são derrubados.</li></ul>",
+            "synergies": [
+                {
+                    "locations": ["weapon"],
+                    "weapon_types": ["Rifle"],
+                    "weapon_sizes": ["any"],
+                    "detail": "1/rodada, quando você realizar um acerto crítico com este armamento enquanto <b>mantém sua mira firme</b>, seu alvo deve passar em um teste de Casco ou você pode escolher um efeito adicional para seu ataque:<ul><li><b>Tiro na cabeça:</b> Eles só têm linha de visão para espaços adjacentes até o final de seu próximo turno.</li><li><b>Tiro na perna:</b> Eles ficam Imobilizados até o final de seu próximo turno.</li><li><b>Tiro no corpo:</b> Eles são derrubados.</li></ul>"
+                }
+            ]
+        }
+    ]
+},
+  {
+  "id": "ptbr_t_centimane",
+  "name": "PT - Centimano",
+  "icon": "CENTIMANE",
+  "terse": "Enfraqueça e controla inimigos com golpes críticos de armas Nexus",
+  "description": "Após o ataque à Estação Baía de Tártaro, uma fonte anônima identificou agentes do Serviço de Inteligência Real Karrakin como os culpados. Os Barões rapidamente divulgaram uma declaração de negação, a qual nunca foi contestada com evidências concretas. Rumores de filmagens brutas do ataque não foram comprovados. A Reaction pública (raiva, terror) à destruição da estação se aquietou. O corpo da Estação Baía de Tártaro foi afastado de sua órbita estável, direcionado para a estrela mais próxima.\nUm mês depois, a omni rede local dos Barões foi inundada com filmagens anteriormente suprimidas do ataque à estação, confirmando os rumores: agentes Barônicos liberaram o enxame Nuvem Cinzenta na Estação Baía de Tártaro. Vazamentos de dados adicionais por agentes Ingratos indicaram a existência de uma organização secreta de inteligência Barônica: o Centimane - as Cem Mãos.",
+  "ranks": [
+    {
+      "name": "PT - Dez Mil Dentes",
+      "description": "1/turno, quando você causar um golpe crítico com um Nexus, seu alvo precisa passar em um teste de Resistência de Sistemas ou ficará Prejudicado e Lento até o final do próximo turno.",
+      "synergies": [
+        {
+          "locations": ["arma"],
+          "weapon_types": ["Nexus"],
+          "weapon_sizes": ["any"],
+          "detail": "1/turno, quando você causar um golpe crítico com esta arma, seu alvo precisa passar em um teste de Resistência de Sistemas ou ficará Prejudicado e Lento até o final do próximo turno."
+        }
+      ]
+    },
+    {
+      "name": "PT - Expor Fraqueza",
+      "description": "Quando você consumir Fixar Alvo como parte de um ataque com um Nexus ou Drone e causar um golpe crítico, seu alvo fica Fragmentado até o início do seu próximo turno.",
+      "synergies": [
+        {
+          "locations": ["arma", "sistema"],
+          "weapon_types": ["Nexus"],
+          "system_types": ["Drone"],
+          "weapon_sizes": ["any"],
+          "detail": "Quando você consumir Fixar Alvo como parte de um ataque com esta arma e causar um golpe crítico, seu alvo fica Fragmentado até o início do seu próximo turno."
+        }
+      ]
+    },
+    {
+      "name": "PT - Supressão de Maré (Substitui Dez Mil Dentes)",
+      "description": "Isso substitui Dez Mil Dentes.<br>1/turno, quando você causar um golpe crítico com um Nexus, seu alvo precisa passar em um teste de Resistência de Sistemas. Caso falhe, você pode escolher um efeito adicional para o seu ataque que dura até o final do próximo turno do alvo:<ul><li><b>Enxame Importuno:</b> Eles ficam Prejudicados e Lentos.</li><li><b>Enxame Cegante:</b> Eles só têm linha de visão para quadrados adjacentes.</li><li><b>Enxame Virulento:</b> Eles ficam Fragmentados. Qualquer personagem adjacente de sua escolha também deve fazer um teste de Resistência de Sistemas ou ficará Fragmentado.</li><li><b>Enxame Restritivo:</b> Eles levam 1 Ponto de Queimadura cada vez que realizam uma ação ou Reaction.</li></ul>",
+      "synergies": [
+        {
+          "locations": ["arma"],
+          "weapon_types": ["Nexus"],
+          "weapon_sizes": ["any"],
+          "detail": "Isso substitui Dez Mil Dentes.<br>1/turno, quando você causar um golpe crítico com esta arma, seu alvo precisa passar em um teste de Resistência de Sistemas. Caso falhe, você pode escolher um efeito adicional para o seu ataque que dura até o final do próximo turno do alvo:<ul><li><b>Enxame Importuno:</b> Eles ficam Prejudicados e Lentos.</li><li><b>Enxame Cegante:</b> Eles só têm linha de visão para quadrados adjacentes.</li><li><b>Enxame Virulento:</b> Eles ficam Fragmentados. Qualquer personagem adjacente de sua escolha também deve fazer"
+          }
+        ]
+      }
+    ]
+  },
+	{
+	  "id": "ptbr_t_combined_arms",
+	  "name": "PT - Armas Combinadas",
+	  "icon": "COMBINED ARMS",
+	  "terse": "Se torne mais efetivo ao usar armas de Combate à Distância e Corpo a Corpo em curta distância",
+	  "description": "A verdadeira força em combate não vem de dominar a lâmina ou a arma – ela vem de saber usar ambas. Através do tempo e do treinamento, Leika McGraff combinou as artes do combate corpo a corpo e à distância em uma única combinação mortal. Seja qual for o inimigo, Leika é uma ameaça mortal; não importa a arma, Leika é mestre em seu uso.",
+	  "ranks": [
+		{
+		  "name": "PT - Escudo de Lâminas",
+		  "description": "Enquanto estiver Engajado, você e qualquer aliado adjacente a você contam como se tivessem cobertura leve.",
+		  "synergies": [
+			{
+			  "locations": ["active_effects", "disengage"],
+			  "weapon_types": ["any"],
+			  "detail": "Enquanto estiver Engajado, você e qualquer aliado adjacente a você contam como se tivessem cobertura leve."
+			}
+		  ]
+		},
+		{
+		  "name": "PT - Treinado em BCQ",
+		  "description": "Você não recebe dificuldade por estar Engajado.",
+		  "synergies": [
+			{
+			  "locations": ["active_effects", "disengage"],
+			  "weapon_types": ["any"],
+			  "detail": "Você não recebe dificuldade por estar Engajado."
+			}
+		  ]
+		},
+		{
+		  "name": "PT - Tempestade de Violência",
+		  "description": "Sempre que você acertar um personagem com um ataque corpo a corpo, você ganha +1 de Precisão em seu próximo ataque à distância contra ele; e, sempre que você acertar um personagem com um ataque à distância, você ganha +1 de Precisão em seu próximo ataque corpo a corpo contra ele. Este efeito não acumula.",
+		  "synergies": [
+			{
+			  "locations": ["weapon"],
+			  "detail": "Sempre que você acertar um personagem com um ataque corpo a corpo, você ganha +1 de Precisão em seu próximo ataque à distância contra ele; e, sempre que você acertar um personagem com um ataque à distância, você ganha +1 de Precisão em seu próximo ataque corpo a corpo contra ele. Este efeito não acumula."
+			}
+		  ]
+		}
+	  ]
+	},  
+	{
+	  "id": "ptbr_t_duelist",
+	  "name": "PT - Duelista",
+	  "icon": "DUELIST",
+	  "terse": "Melhore seus ataques Corpo a Corpo Principais e ganhe Dados de Mestre da Lâmina ao acertar",
+	  "description": "Pode haver uma elegância na maneira como um mech se move – uma presteza que o eleva além da simples força da máquina e do canhão. A diferença está nas ferramentas. Ethan \"Orion\" Miller empunha armas fabricadas por artesãos, fabricantes butique, linhas especializadas das cinco grandes, lâminas que remetem a um tempo onde o combate era rápido, mas justo – de volta a um tempo onde habilidade significava mais do que acertar um tiro preciso. Com uma lâmina, lança, picareta, machado ou martelo na mão, Orion reescreve os velhos contos.",
+	  "ranks": [
+		{
+		  "name": "PT - Partisão",
+		  "description": "Ganhe +1 de Precisão no primeiro ataque corpo a corpo que você fizer com uma arma Corpo a Corpo Principal no seu turno.",
+		  "synergies": [
+			{
+			  "locations": ["weapon"],
+			  "weapon_types": ["Melee"],
+			  "weapon_sizes": ["Main"],
+			  "detail": "Ganhe +1 de Precisão no primeiro ataque corpo a corpo que você fizer com uma arma Corpo a Corpo Principal no seu turno."
+			}
+		  ]
+		},
+		{
+		  "name": "PT - Mestre da Lâmina",
+		  "description": "1/rodada, quando você acerta com uma arma Corpo a Corpo Principal, você ganha 1 Dado de Mestre da Lâmina – um d6 – até um máximo de 3 Dados de Mestre da Lâmina. Eles duram até serem gastos ou a cena atual terminar. Você pode gastar Dados de Mestre da Lâmina 1-para-1 para o seguinte:<ul><li><b>Aparar:</b> Como uma Reaction quando você é atingido por um ataque corpo a corpo, você ganha Resistência a todo dano, calor e queimadura causados pelo ataque.</li><li><b>Desviar:</b> Como uma Reaction quando você é atingido por um ataque à distância, você pode rolar qualquer número de Dados de Mestre da Lâmina, gastando-os: se você tirar um 5+ em qualquer desses dados, você ganha Resistência a todo dano, calor e queimadura causados pelo ataque.</li><li><b>Finta:</b> Como uma ação Livre, escolha um personagem adjacente: ao se mover, você ignora o engajamento e não provoca reações do seu alvo até o início do seu próximo turno.</li><li><b>Tropeçar:</b> Como uma ação rápida, escolha um personagem adjacente: ele deve passar em um teste de Agilidade ou cair Bruto. Seja qual for o resultado, você pode passar Freemente pelo espaço dele até o final do seu turno atual, embora não possa terminar seu turno no espaço dele.</li></ul>",
+		  "synergies": [
+			{
+			  "locations": ["weapon"],
+			  "weapon_types": ["Melee"],
+			  "weapon_sizes": ["Main"],
+			  "detail": "1/rodada, quando você acerta com uma arma Corpo a Corpo Principal, você ganha 1 Dado de Mestre da Lâmina."
+			}
+		  ],
+		  "actions": [
+			{
+			  "name": "PT - Aparar",
+			  "activation": "Reaction",
+			  "trigger": "Você é atingido por um ataque corpo a corpo",
+			  "detail": "Gasta 1 Dado de Mestre da Lâmina. Você ganha Resistência a todo dano, calor e queimadura causados pelo ataque."
+			},
+			{
+			  "name": "PT - Desviar",
+			  "activation": "Reaction",
+			  "trigger": "Você é atingido por um ataque à distância",
+			  "detail": "Você pode rolar qualquer número de Dados de Mestre da Lâmina, gastando-os: se você tirar um 5+ em qualquer desses dados, você ganha Resistência a todo dano, calor e queimadura causados pelo ataque."
+			},
+			{
+			  "name": "PT - Finta",
+			  "activation": "Free",
+			  "detail": "Gasta 1 Dado de Mestre da Lâmina. Escolha um personagem adjacente: ao se mover, você ignora o engajamento e não provoca reações do seu alvo até o início do seu próximo turno."
+			},
+          {
+            "name": "PT - Tropeçar",
+            "activation": "Quick",
+            "detail": "Gasta 1 Dado de Mestre da Lâmina. Escolha um personagem adjacente: ele deve passar em um teste de Agilidade ou cair Bruto. Seja qual for o resultado, você pode passar Freemente pelo espaço dele até o final do seu turno atual, embora não possa terminar seu movimento em seu espaço."
+          }
+        ],
+        "counters": [
+          {
+            "id": "ptbr_ctr_duelist",
+            "name": "PT - Dados de Mestre da Lâmina",
+            "defaulptbr_t_value": 0,
+            "min": 0,
+            "max": 3
+          }
+        ]
+      },
+      {
+        "name": "PT - Imparável",
+        "description": "1/rodada, quando você acerta com um ataque corpo a corpo no seu turno, você pode gastar um Dado de Mestre da Lâmina para Agarrar ou Investir imediatamente em seu alvo como uma ação gratuita após o ataque ter sido resolvido.",
+        "synergies": [
+          {
+            "locations": ["weapon"],
+            "weapon_types": ["Melee"],
+            "weapon_sizes": ["any"],
+            "detail": "1/rodada, quando você acerta com esta arma no seu turno, você pode gastar um Dado de Mestre da Lâmina para Agarrar ou Investir imediatamente em seu alvo como uma ação gratuita após o ataque ter sido resolvido."
+          }
+        ]
+      }
+    ]
+  },
+  {
+  "id": "ptbr_t_drone_commander",
+  "name": "PT - Comandante de Drones",
+  "terse": "Aprimore e fortaleça seus Sistemas de Drones para ajudar aliados e prejudicar inimigos",
+  "description": "Para um piloto recém-saído do treinamento, manter um enxame de drones sob controle é como tentar carregar água com uma rede. Se parecem ter vontade própria, é porque têm, e não é lá muito inteligente. A frustração inicial de Clymene Kanalakos foi suficiente para fazê-la praticar, e a prática compensa. Agora, seu enxame obedece quase antes que ela ordene – um desenvolvimento desconcertante, mas útil. O enxame é dela.",
+  "ranks": [
+    {
+      "name": "PT - Pastor",
+      "description": "Seus sistemas de Drone ganham +5 PV. Além disso, ganhe o Protocolo <b>Drone Pastor</b>.",
+      "synergies": [
+        {
+          "locations": ["system"],
+          "system_types": ["Drone"],
+          "detail": "Este sistema de Drone ganha +5 PV. Como protocolo, você pode mover um desses drones até 4 espaços se estiver dentro dos Sensores."
+        }
+      ],
+      "actions": [
+        {
+          "name": "PT - Drone Pastor",
+          "activation": "Protocol",
+          "detail": "Mova um drone que você controla até 4 espaços se estiver dentro dos Sensores."
+        }
+      ],
+      "bonuses": [
+        {
+          "id": "drone_hp",
+          "val": 5
+        }
+      ]
+    },
+    {
+      "name": "PT - Enxame Energizado",
+      "description": "1/rodada, quando você faz um ataque que consome a condição de Foco, seus Drones emitem imediatamente um pulso de energia. Todos os personagens de sua escolha dentro de áreas de Explosão 1 centradas em cada um de seus drones sofrem 1d6 de dano de Energia. Cada personagem só pode ser afetado pelo pulso de um drone, mesmo que as áreas se sobreponham.",
+      "synergies": [
+        {
+          "locations": ["system"],
+          "system_types": ["Drone"],
+          "detail": "1/rodada, quando você faz um ataque que consome a condição de Foco, seus Drones emitem imediatamente um pulso de energia. Todos os personagens de sua escolha dentro de áreas de Explosão 1 centradas em cada um de seus drones sofrem 1d6 de dano de Energia. Cada personagem só pode ser afetado pelo pulso de um drone, mesmo que as áreas se sobreponham."
+        }
+      ]
+    },
+    {
+      "name": "PT - Revigorar",
+      "description": "Ganhe a Ação Rápida <b>Revigorar</b>.",
+      "actions": [
+        {
+          "name": "PT - Revigorar",
+          "activation": "Quick",
+          "detail": "Envie um pulso de energia para um personagem aliado (incluindo Drones) dentro do Alcance 3, traçando uma Linha até eles. Você pode estender o pulso do seu alvo para outro personagem aliado, estendendo a Linha até eles, desde que estejam dentro do Alcance 3, e você pode continuar estendendo o pulso (e a Linha) assim, contanto que não direcione o mesmo personagem duas vezes. Personagens aliados que são usados como alvos de pulso ou estão no caminho da Linha ganham 4 Superescudo; personagens hostis no caminho da Linha sofrem 2 de dano de Energia."
+        }
+      ]
+    }
+  ]
+},
+  {
+"id": "ptbr_t_engineer",
+"name": "PT - Engenheiro",
+"icon": "ENGINEER",
+"terse": "Crie uma arma experimental para o seu mech que você pode modificar e melhorar",
+"description": "Os pilotos são pessoas criativas e motivadas, mas Mesa Rownett é um caso excepcional – excessivamente, alguns diriam. Em seu tempo Free, ele conseguiu juntar exatamente o suficiente de sucata, materiais requisitados e espaço de trabalho para aplicar um pouco de engenhosidade à moda antiga ao seu mech, transformando-o em uma máquina formidável não traída por sua aparência exterior.",
+"ranks": [
+{
+"name": "PT - Protótipo",
+"description": "Quando você realiza um Reparo Completo, você pode, com um pouco de tentativa e erro, instalar um sistema de arma protótipo em seu mech. Você pode escolher características para sua arma protótipo com base no seguinte perfil cada vez que realizar um Reparo Completo, rerrolando 1d6+2 para determinar Limitado cada vez:<br>Arma Protótipo<br>Principal [Corpo a corpo, CQB, Rifle, Canhão, Lançador, Nexus], Limitado [1d6+2], Exagerado<br>Esta arma é um protótipo experimental, personalizado de acordo com seus requisitos específicos.<br>Quando você a instala, ou durante um Reparo Completo, você pode escolher um novo tipo de arma, tipo de dano, e ameaça 1 (corpo a corpo) ou alcance 10 (todos os outros tipos). Além disso, cada vez que você realiza um Reparo Completo, rerrola 1d6+2 para determinar os usos Limitados desta arma.<br>Dano: 1d6+2 Cinético, Explosivo ou de energia.<br>Esta arma conta como uma montagem integrada e não requer uma montagem.",
+"integrated": ["mw_prototype_1"],
+"exclusive": true
+},
+{
+"name": "PT - Revisão",
+"description": "Você pode ajustar os componentes essenciais de sua arma protótipo para aumentar sua eficácia. Quando você realiza um Reparo Completo, escolha dois:<ul><li><b>Ótica Ajustada:</b> Sua arma protótipo sempre ganha +1 de Precisão em ataques.</li><li><b>Computador Ajustado:</b> Sua arma protótipo é Inteligente.</li><li><b>Blindagem de reator removida:</b> Cada vez que você ataca com sua arma protótipo, você pode escolher – ao custo de 2 de Calor – atacar com uma das seguintes opções, dependendo do tipo de arma:<ul><li><b>Arma de longo alcance:</b> Cone 3, Linha 5, ou [Explosão 1, Alcance 10].</li><li><b>Arma de corpo a corpo:</b> Explosão 1.</li></ul></li></ul>",
+"integrated": ["mw_prototype_2"],
+"exclusive": true
+},
+{
+"name": "PT - Versão Final",
+"description": "Sua arma protótipo agora é Limitada [2d6] e causa 1D6+4 de dano.",
+"integrated": ["mw_prototype_3"],
+"exclusive": true
+}
+]
+},
+{
+  "id": "ptbr_t_executioner",
+  "name": "PT - Carrasco",
+  "icon": "EXECUTIONER",
+  "terse": "Melhore os ataques corpo a corpo Pesados e Superpesados com mais oportunidades de causar dano",
+  "description": "No campo de batalha, não há fim mais honroso do que uma morte limpa em combate. Com machado ou maça em mãos, Maxie Wolf garante que seus inimigos sejam abençoados com essa honra. Ninguém vive para sempre – ela se certifica disso.",
+  "ranks": [
+    {
+      "name": "PT - Corte de Contra-ataque",
+      "description": "1/rodada, quando você acerta com uma arma corpo a corpo Pesada ou Superpesada, você pode fazer outro ataque corpo a corpo com a mesma arma como uma ação Livre contra um personagem diferente dentro da Ameaça e linha de visão. Este ataque causa metade do dano, se bem-sucedido.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["Heavy", "Superheavy"],
+          "detail": "1/rodada, quando você acerta com esta arma, você pode fazer outro ataque corpo a corpo com esta mesma arma como uma ação Livre contra um personagem diferente dentro da Ameaça e linha de visão. Este ataque causa metade do dano, se bem-sucedido."
+        }
+      ]
+    },
+    {
+      "name": "PT - Corte de Arco Amplo",
+      "description": "Na primeira vez em um turno que você realiza um acerto crítico com uma arma corpo a corpo Pesada ou Superpesada, você causa 3 de dano Cinético a todos os personagens e objetos de sua escolha dentro da Ameaça, exceto o que você acabou de atacar.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["Heavy", "Superheavy"],
+          "detail": "Na primeira vez em um turno que você realiza um acerto crítico com esta ou qualquer outra arma corpo a corpo Pesada ou Superpesada equipada, você causa 3 de dano Cinético a todos os personagens e objetos de sua escolha dentro da Ameaça, exceto o que você acabou de atacar."
+        }
+      ]
+    },
+    {
+      "name": "PT - Sem Escapatória",
+      "description": "1/rodada, quando você erra um ataque corpo a corpo, você rerrola contra um alvo diferente dentro da Ameaça e linha de visão.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["any"],
+          "detail": "1/rodada, quando você erra um ataque corpo a corpo, você rerrola contra um alvo diferente dentro da Ameaça e linha de visão."
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "ptbr_t_exemplar",
+  "name": "PT - Exemplo",
+  "icon": "EXEMPLAR",
+  "terse": "Desafie seus inimigos, forçando-os a lutar contra você em vez de seus aliados",
+  "description": "O estandarte de Eamon Metrias é famoso, sua voz é ousada, suas armas polidas até o brilho. Como advogado das Nove Esferas, seu treinamento com certas ordens marciais lhe deu o poder de atormentar e atrapalhar até mesmo os inimigos mais poderosos. Eamon é um exemplo das Esferas, por palavras e por ações.",
+  "ranks": [
+    {
+      "name": "PT - Desafio Honroso",
+      "description": "Na primeira vez em seu turno que você ataca um personagem hostil dentro de Alcance 3, acertando ou errando, você pode dar a eles a Marca do Exemplo como uma ação Livre. Os personagens só podem ter uma Marca do Exemplo por vez – novas marcas de qualquer personagem substituem marcas existentes.<br>O personagem tem a Marca do Exemplo até o início do seu próximo turno e, enquanto tiver, você ganha a Reação <b>Ajuda Valente</b>.",
+      "actions": [
+        {
+          "name": "PT - Valiant Aid",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "init": "Requer que um personagem hostil tenha recebido sua Marca do Exemplo",
+          "trigger": "Aliado ataca sua marca e erra.",
+          "detail": "Seu aliado pode rerrolar o ataque. Eles devem usar o segundo resultado, mesmo que seja pior."
+        }
+      ]
+    },
+    {
+      "name": "PT - Punição",
+      "description": "1/rodada, quando o personagem com sua Marca ataca um personagem dentro de Alcance 3 de você, que não seja você, eles ativam seu Vigia.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "1/rodada, quando o personagem com sua Marca ataca um personagem dentro de Alcance 3 de você, que não seja você, eles ativam seu Vigia."
+        }
+      ]
+    },
+    {
+      "name": "PT - Até a Morte",
+      "description": "Como uma ação Livre quando você marca um personagem, você pode desafiá-los para um duelo até a morte: você e o personagem com sua Marca recebem +3 de Dificuldade em ataques contra personagens ou objetos que não sejam um ao outro até o final da cena atual ou até que um dos seus mechs seja destruído. Se eles realizarem qualquer ação que inclua um teste de ataque contra você, acertando ou errando, este efeito cessa para eles até o início do seu próximo turno.<br>Enquanto Até a Morte estiver ativo, você não pode se afastar voluntariamente do personagem com sua Marca; além disso, sua Marca dura até o final da cena atual ou até que um dos seus mechs seja destruído, e você não pode marcar novos personagens.",
+      "actions": [
+        {
+          "name": "PT - Duelo Até a Morte",
+          "activation": "Free",
+          "detail": "Desafie seu alvo marcado para um duelo até a morte: você e o personagem com sua Marca recebem +3 de Dificuldade em ataques contra personagens ou objetos que não sejam um ao outro até o final da cena atual ou até que um dos seus mechs seja destruído. Se eles realizarem qualquer ação que inclua um teste de ataque contra você, acertando ou errando, este efeito cessa para eles até o início do seu próximo turno.<br>Enquanto Até a Morte estiver ativo, você não pode se afastar voluntariamente do personagem com sua Marca; além disso, sua Marca dura até o final da cena atual ou até que um dos seus mechs seja destruído, e você não pode marcar novos personagens."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_gunslinger",
+  "name": "PT - Pistoleiro",
+  "icon": "GUNSLINGER",
+  "terse": "Torque suas armas auxiliares para torná-las mais letais e ganhe o poderoso Dado de Pistoleiro",
+  "description": "Em uma galáxia limitada por fronteiras, não há lei senão aquela respaldada pela arma. Sargento Stev Ansahok empunha a humilde pistola com um talento jamais visto nesta era, seu ferro é uma extensão de seu próprio corpo. Tão fácil quanto apontar um dedo, o sargento calejado acerta tiros com uma precisão inigualável por máquinas. Ele é um pistoleiro: a justiça tornada inteira, concedida a seu instrumento sagrado, e enviada à fronteira cruel para domá-la.",
+  "ranks": [
+    {
+      "name": "PT - Argumento Inicial",
+      "description": "Ganhe +1 de Precisão na primeira rolagem de ataque que você fizer com uma arma auxiliar de alcance em seu turno.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+          "weapon_sizes": ["Auxiliary"],
+          "detail": "Ganhe +1 de Precisão na primeira rolagem de ataque que você fizer com uma arma auxiliar de alcance em seu turno."
+        }
+      ]
+    },
+    {
+      "name": "PT - Pelas Canelas",
+      "description": "Ganhe a Reação <b>Contra-ataque</b>.",
+      "actions": [
+        {
+          "name": "PT - Contra-ataque",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "Um personagem acerta você com um ataque à distância.",
+          "detail": "Você pode imediatamente atacá-los com uma única arma auxiliar de alcance se estiverem dentro do Alcance."
+        }
+      ]
+    },
+    {
+      "name": "PT - Eu Mato Com Meu Coração",
+      "description": "Você ganha um Dado de Pistoleiro, 1d6 começando em 6. Cada vez que acerta com uma arma auxiliar de alcance, reduza o valor do Dado de Pistoleiro em 1. Quando o Dado de Pistoleiro atingir 1, você pode reiniciá-lo para 6 para conceder +2d6 de dano bônus e AP ao seu próximo ataque com uma arma auxiliar de alcance. Este ataque também ignora cobertura. O valor do seu Dado de Pistoleiro persiste entre as cenas, mas reinicia para 6 quando você descansar ou realizar um Reparo Completo.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+          "weapon_sizes": ["Auxiliary"],
+          "detail": "Cada vez que acerta com esta arma, reduza o valor do Dado de Pistoleiro em 1"
+        }
+      ],
+      "counters": [
+        {
+          "id": "ptbr_ctr_gunslinger",
+          "name": "PT - Dado de Pistoleiro",
+          "level": 3,
+          "default_value": 6,
+          "min": 1,
+          "max": 6
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_grease_monkey",
+  "name": "PT - Macaco da Graxa",
+  "icon": "GREASE MONKEY",
+  "terse": "Obtenha mais dos sistemas Limitados, reparos e a ação Estabilizar",
+  "description": "Eel sabe mais sobre o funcionamento interno de um mech do que a maioria dos mecânicos. Para eles, a besta que pilotam é mais do que uma máquina: é um ser vivo, necessitando de cuidados delicados dados por uma mão sábia e firme. Eel mantém sua própria casa e mantém seu próprio mech na linha, tanto no campo de batalha quanto fora dele. Os mecânicos na base os procuram com perguntas, mas geralmente preferem ficar longe - há algo assustador sobre como a besta de Eel opera.",
+  "ranks": [
+    {
+      "name": "PT - Atualização de Capacidade Não Autorizada",
+      "description": "Enquanto descansa, você pode gastar 2 Reparos para repor 1 uso de todas as armas e sistemas Limitados.",
+      "synergies": [
+        {
+          "locations": ["rest"],
+          "detail": "Enquanto descansa, você pode gastar 2 Reparos para repor 1 uso de todas as armas e sistemas Limitados."
+        }
+      ]
+    },
+    {
+      "name": "PT - Ligação com a Máquina",
+      "description": "Quando você ESTABILIZA, você remove todas as condições de IMPEDIDO, EMPERRADO, IMOBILIZADO, LENTO e LOCK ON que não foram causadas por seus próprios sistemas, talentos, etc.",
+      "synergies": [
+        {
+          "locations": ["stabilize"],
+          "detail": "Quando você ESTABILIZA, você remove todas as condições de IMPEDIDO, EMPERRADO, IMOBILIZADO, LENTO e LOCK ON que não foram causadas por seus próprios sistemas, talentos, etc."
+        }
+      ]
+    },
+    {
+      "name": "PT - Amigos em Lugares Altos",
+      "description": "Uma vez por missão enquanto descansa, você pode chamar um suprimento aéreo. Você e seus aliados podem repor 1 uso de todas as armas e sistemas Limitados e restaurar 1 Estrutura. Isso não requer nenhum Reparo e pode ser usado mesmo que você tenha atingido seu Limite de Reparo.",
+      "synergies": [
+        {
+          "locations": ["rest"],
+          "detail": "Uma vez por missão enquanto descansa, você pode chamar um suprimento aéreo. Você e seus aliados podem repor 1 uso de todas as armas e sistemas Limitados e restaurar 1 Estrutura. Isso não requer nenhum Reparo e pode ser usado mesmo que você tenha atingido seu Limite de Reparo."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_hacker",
+  "name": "PT - Hacker",
+  "icon": "HACKER",
+  "terse": "Aprimore seus ataques tecnológicos e desbloqueie opções especiais de Invadir",
+  "description": "Desde criança, Katya Han jogava na omnirrede, capaz de acessar qualquer nó público - e até alguns privados - com facilidade. Agora, como piloto, ela mergulha de cabeça no código de qualquer núcleo de mech que encontrar. Firewalls, protocolos de guardião, invasão, defesa - nada fica no seu caminho. Han vence lutas sem disparar um único tiro; se seu inimigo não puder controlar seu próprio mech, então eles não podem fazer nada para detê-la.",
+  "ranks": [
+    {
+      "name": "PT - SNOW_CRASH",
+      "description": "Quando você acerta com um ataque tecnológico que consome Lock On, seu alvo deve escolher entre receber 2 Calor ou ser empurrado 3 espaços em uma direção de sua escolha.",
+      "synergies": [
+        {
+          "locations": ["tech"],
+          "detail": "Quando você acerta com um ataque tecnológico que consome Lock On, seu alvo deve escolher entre receber 2 Calor ou ser empurrado 3 espaços em uma direção de sua escolha."
+        }
+      ]
+    },
+    {
+      "name": "PT - SAFE_CRACKER",
+      "description": "Ganhe as seguintes opções para Invadir:",
+      "actions": [
+        {
+          "name": "PT - Desativar Cabine",
+          "activation": "Invade",
+          "detail": "Personagens não podem Montar ou Desmontar seu alvo até que a cabine seja consertada com um teste bem-sucedido de Engenharia como uma ação completa."
+        },
+        {
+          "name": "PT - Desativar Suporte de Vida",
+          "activation": "Invade",
+          "detail": "Seu alvo recebe +1 de Dificuldade em todas as defesas até que o sistema de suporte de vida seja reiniciado com um teste bem-sucedido de Sistemas como uma ação rápida."
+        },
+        {
+          "name": "PT - Hack./Slash",
+          "activation": "Invade",
+          "detail": "Seu alvo não pode se beneficiar ou realizar ações Tecnológicas Rápidas ou Completas até que o mech seja Desligado ou seu computador central seja reiniciado com um teste bem-sucedido de Sistemas como uma ação rápida."
+        }
+      ]
+    },
+    {
+      "name": "PT - Último Argumento dos Reis",
+      "description": "Ganhe a opção de Tecnologia Completa <b>Último Argumento dos Reis</b>.",
+      "actions": [
+        {
+          "activation": "Full Tech",
+          "name": "PT - Último Argumento dos Reis",
+          "tech_attack": true,
+          "detail": "Faça um ataque tecnológico contra um alvo dentro dos Sensores e linha de visão. Em caso de sucesso, você implanta um vírus que desencadeia um pequeno derretimento no reator do seu alvo: ele imediatamente recebe Dano de Queimadura igual ao seu Calor atual. Se esta ação fizer com que seu alvo superaqueça, ela é resolvida antes deles redefinirem seu Limite de Calor."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_heavy_gunner",
+  "name": "PT - Heavy Gunner",
+  "icon": "HEAVY GUNNER",
+  "terse": "Imobilize os inimigos com armas de Longo Alcance Pesadas",
+  "description": "Nos bastidores, Mike Manfrin não tem muito o que fazer além de esperar e se preparar. Ele mantém limpos os canhões; organiza suas munições em filas ordenadas e empilha sacos de areia em bermas de terra, além de costurar rasgos nas bainhas sobre as juntas de seu chassi.<br>Num instante, tudo muda. Conversas pela omni local. O batimento percussivo do medevac levantando voo do outro lado da base. Em algum lugar, um tiroteio. Esta é sua música de entrada, seu chamado para se juntar à luta: um grito desesperado por ajuda de um amigo distante enquanto o inimigo se aproxima. Hora de trabalhar.<br>Sua chegada é anunciada pelo voo de seus projéteis pelo céu, a terra tremendo e a poeira que um dia foi.",
+  "ranks": [
+    {
+      "name": "PT - Fogo de Supressão",
+      "description": "Ganhe a Ação Rápida <b>Fogo de Supressão</b>.",
+      "actions": [
+        {
+          "name": "PT - Fogo de Supressão",
+          "activation": "Quick",
+          "detail": "Escolha um personagem dentro da linha de visão e alcance de uma de suas armas de Longo Alcance Pesadas e dentro de 10 espaços: ele fica Impedido até o início de seu próximo turno. Durante a duração, se seu alvo se mover mais de 1 espaço, ele remove o estado de Impedido, mas você pode atacá-lo como uma reação com uma arma de Longo Alcance Pesada para metade do dano, Calor ou Queimadura, e então este efeito termina. Você pode fazer este ataque em qualquer momento durante o movimento deles (por exemplo, esperando até eles saírem de cobertura).<br>O Fogo de Supressão só pode afetar um personagem por vez - usos subsequentes substituem os anteriores - e ele termina imediatamente se seu alvo causar dano a você."
+        },
+        {
+          "name": "PT - Ataque de Fogo de Supressão",
+          "activation": "Reaction",
+          "frequency": "1/round",
+          "trigger": "O alvo de seu Fogo de Supressão se move mais de 1 espaço.",
+          "detail": "Você pode atacar o alvo com uma arma de Longo Alcance Pesada para metade do dano, Calor ou Queimadura. Você pode fazer este ataque em qualquer momento durante o movimento deles (por exemplo, esperando até eles saírem de cobertura)."
+        }
+      ]
+    },
+    {
+      "name": "PT - Batedor de Martelo",
+      "description": "Se você acertar com sucesso seu alvo de Fogo de Supressão com a reação de ataque concedida por esse talento, seu alvo é Imobilizado até o final de seu próximo turno.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "Se você acertar com sucesso com o ataque concedido por <b>Fogo de Supressão</b>, seu alvo é Imobilizado até o final de seu próximo turno."
+        }
+      ]
+    },
+    {
+      "name": "PT - Fogo de Artilharia",
+      "description": "Quando você usa <b>Fogo de Supressão</b>, você pode escolher dois alvos em vez de um. Cada alvo aciona e resolve seu ataque separadamente, e o dano de um alvo só encerra o efeito sobre esse alvo.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "Quando você usa <b>Fogo de Supressão</b>, você pode escolher dois alvos em vez de um. Cada alvo aciona e resolve seu ataque separadamente, e o dano de um alvo só encerra o efeito sobre esse alvo."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_hunter",
+  "name": "PT - Caçador",
+  "icon": "HUNTER",
+  "terse": "Ganhe mobilidade e alcance ao usar armas de Combate Corpo a Corpo Auxiliares",
+  "description": "O campo de batalha é o território de caça de Edith Eidelen, seu domínio. É apenas por meio de um verdadeiro teste de força e astúcia que determinará quem é o predador e quem é a presa. Seu movimento pelo campo é uma aproximação: silenciosa, rápida e controlada. Num chassi, ela se destaca no combate próximo, fechando a lacuna entre ela e seus alvos antes que eles possam empunhar suas armas.",
+  "ranks": [
+    {
+      "name": "PT - Estocada",
+      "description": "1/rodada, quando você ataca com uma arma de Combate Corpo a Corpo Auxiliar, você pode voar até 3 espaços diretamente em direção ao personagem alvo antes do ataque. Este movimento ignora o envolvimento e não provoca reações.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["Auxiliary"],
+          "detail": "1/rodada, quando você ataca com uma arma de Combate Corpo a Corpo Auxiliar, você pode voar até 3 espaços diretamente em direção a um personagem alvo antes do ataque. Este movimento ignora o envolvimento e não provoca reações."
+        }
+      ]
+    },
+    {
+      "name": "PT - Malabarista de Facas",
+      "description": "Todas as suas armas de Combate Corpo a Corpo Auxiliares ganham Atirar 5, se elas não tiverem essa propriedade - se já tiverem Atirar, ela aumenta para Atirar 5. No final de seu turno, todas as armas que você jogou neste turno retornam automaticamente para você.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["Auxiliary"],
+          "detail": "Esta arma ganha Atirar 5 e retornará para você no final de seu turno se for lançada."
+        }
+      ]
+    },
+    {
+      "name": "PT - Lâmina Desdenhosa",
+      "description": "1/rodada, quando você acerta um personagem com um ataque corpo a corpo, você também pode jogar uma arma de Combate Corpo a Corpo Auxiliar como um ataque contra qualquer personagem dentro do Alcance como uma ação gratuita. Este ataque não pode causar dano bônus.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["any"],
+          "detail": "1/rodada, quando você acerta um personagem com um ataque corpo a corpo, você também pode jogar uma arma de Combate Corpo a Corpo Auxiliar como um ataque contra qualquer personagem dentro do Alcance como uma ação gratuita. Este ataque não pode causar dano bônus."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_infiltrator",
+  "name": "PT - Infiltrador",
+  "icon": "INFILTRATOR",
+  "terse": "Melhore sua ação de Ocultação e realize ataques sorrateiros debilitantes",
+  "description": "Seja falsificando assinaturas nos scanners inimigos, movendo-se habilmente através de cobertura, ou graças ao seu camuflamento óptico modificado, você nunca é visto a menos que queira. Seja qual for o tamanho do meca, seja qual for o terreno, seja qual for o inimigo, você consegue entrar e sair sem levantar suspeitas.",
+  "ranks": [
+    {
+      "name": "PT - Espreitar",
+      "description": "Durante o seu turno, ganhe os seguintes benefícios:<ul><li>Entrar na linha de visão de personagens hostis ou mover-se da cobertura não faz com que você deixe de estar Oculto.</li><li>Você pode passar Freemente - mas não terminar seu turno - nos espaços inimigos.</li><li>Você pode se Ocultar mesmo à vista dos inimigos.<br>Esses efeitos terminam imediatamente quando o seu turno termina (então você perde a Ocultação se ainda estiver à vista ou sem cobertura naquele momento).</li></ul>",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "Entrar na linha de visão de personagens hostis ou mover-se da cobertura não faz com que você deixe de estar Oculto. Este efeito termina imediatamente quando o seu turno termina."
+        },
+        {
+          "locations": ["active_effects"],
+          "detail": "Você pode passar Freemente - mas não terminar seu turno - nos espaços inimigos. Este efeito termina imediatamente quando o seu turno termina."
+        },
+        {
+          "locations": ["active_effects"],
+          "detail": "Você pode se Ocultar mesmo à vista dos inimigos. Este efeito termina imediatamente quando o seu turno termina."
+        }
+      ]
+    },
+    {
+      "name": "PT - Emboscada",
+      "description": "Quando você começa seu turno Oculto, o primeiro teste de ataque de qualquer tipo que você fizer fará com que seu alvo recue ao ser atingido. Seu alvo deve ter sucesso em um teste de Casco ou ficará Lento, Impedido e incapaz de reações até o final do próximo turno dele.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "detail": "Quando você começa seu turno Oculto, o primeiro teste de ataque de qualquer tipo que você fizer fará com que seu alvo recue ao ser atingido. Seu alvo deve ter sucesso em um teste de Casco ou ficará Lento, Impedido e incapaz de reações até o final do próximo turno dele."
+        }
+      ]
+    },
+    {
+      "name": "PT - Mestre da Mente",
+      "description": "Quando você perde a Ocultação (por qualquer meio), você pode primeiro disparar uma bomba de luz em qualquer personagem adjacente. Esse personagem deve passar em um teste de Sistemas ou só poderá ter linha de visão para espaços adjacentes até o final do próximo turno dele.<br>Você então pode se mover até a sua velocidade, ignorando o envolvimento e não provocando reações, e então é revelado normalmente.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "Quando você perde a Ocultação (por qualquer meio), você pode primeiro disparar uma bomba de luz em qualquer personagem adjacente. Esse personagem deve passar em um teste de Sistemas ou só poderá ter linha de visão para espaços adjacentes até o final do próximo turno dele.<br>Você então pode se mover até a sua velocidade, ignorando o envolvimento e não provocando reações, e então é revelado normalmente."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_juggernaut",
+  "name": "PT - Juggernaut",
+  "icon": "JUGGERNAUT",
+  "terse": "Melhore a eficácia e utilidade das investidas",
+  "description": "Um nariz sangrando e alguns parafusos soltos não são o suficiente para impedi-lo de se lançar de cabeça contra o inimigo. Você está em algumas toneladas de metal alimentadas por um fragmento de estrela moribunda, e vai garantir que todos os outros saibam disso.",
+  "ranks": [
+    {
+      "name": "PT - Momentum",
+      "description": "Quando você Impulsiona, sua próxima Investida antes do início do seu próximo turno ganha +1 de Precisão e empurra seu alvo para trás em espaços adicionais de 2.",
+      "synergies": [
+        {
+          "locations": ["boost"],
+          "detail": "Quando você Impulsiona, sua próxima Investida antes do início do seu próximo turno ganha +1 de Precisão e empurra seu alvo para trás em espaços adicionais de 2."
+        },
+        {
+          "locations": ["ram"],
+          "detail": "Se você impulsionou neste turno, uma Investida antes do início do seu próximo turno ganha +1 de Precisão e empurra seu alvo para trás em espaços adicionais de 2."
+        }
+      ]
+    },
+    {
+      "name": "PT - Transferência de Massa Cinética",
+      "description": "1/rodada, se você Investir em um alvo...<ul><li>...em um espaço ocupado por outro personagem, o outro personagem deve ter sucesso em um teste de Casco ou ser derrubado.</li><li>...em um obstáculo grande o suficiente para parar o movimento deles, seu alvo sofre 1d6 de dano cinético.</li></ul>",
+      "synergies": [
+        {
+          "locations": ["ram"],
+          "detail": "1/rodada, se você Investir em um alvo...<ul><li>...em um espaço ocupado por outro personagem, o outro personagem deve ter sucesso em um teste de Casco ou ser derrubado.</li><li>...em um obstáculo grande o suficiente para parar o movimento deles, seu alvo sofre 1d6 de dano cinético.</li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "PT - Força Implacável",
+      "description": "1/rodada, quando você Impulsiona, você pode sobrecarregar os servos do seu meca. Mova-se à sua velocidade máxima em linha reta, receba 1d3+3 de Calor e ganhe os seguintes benefícios:<ul><li>Você pode passar Freemente por personagens do mesmo Tamanho do seu meca ou menores; qualquer personagem passado deve ter sucesso em um teste de Casco ou ser derrubado.</li><li>Qualquer terreno, paredes ou outros obstáculos estacionários que você tentar atravessar recebem 20 de dano de PA cinético. Se isso for o suficiente para destruí-los, você passa; caso contrário, seu movimento termina.</li><li>Você ignora terreno difícil.</li><li>Seu movimento ignora o envolvimento e não provoca reações.</li></ul>",
+      "synergies": [
+        {
+          "locations": ["boost"],
+          "detail": "1/rodada, quando você Impulsiona, você pode sobrecarregar os servos do seu meca. Mova-se à sua velocidade máxima em linha reta, receba 1d3+3 de Calor e ganhe os seguintes benefícios:<ul><li>Você pode passar Freemente por personagens do mesmo Tamanho do seu meca ou menores; qualquer personagem passado deve ter sucesso em um teste de Casco ou ser derrubado.</li><li>Qualquer terreno, paredes ou outros obstáculos estacionários que você tentar atravessar recebem 20 de dano de PA cinético. Se isso for o suficiente para destruí-los, você passa; caso contrário, seu movimento termina.</li><li>Você ignora terreno difícil.</li><li>Seu movimento ignora o envolvimento e não provoca reações.</li></ul>"
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_leader",
+  "name": "PT - Líder",
+  "icon": "LÍDER",
+  "terse": "Melhore os lançamentos de seus aliados durante o combate com Dados de Liderança",
+  "description": "Independentemente da sua idade real, você é o Velho da batalha. Uma luz para seus amigos e aliados; o olho resoluto de uma tempestade uivante. Sua voz firme, postura confiante e talento para o comando tranquilizam os aliados porque eles sabem que você os levará à vitória toda vez. Com você no comando, a vitória é alcançável, e os heróis parecem um pouco mais reais.",
+  "ranks": [
+    {
+      "name": "PT - Comandante de Campo",
+      "description": "Ganhe 3 Dados de Liderança, que são d6s, e ganhe a ação Livre Emissão de Ordem.<br>Você não pode usar Dados de Liderança de outros personagens enquanto tiver algum restante. Se não tiver nenhum, recupere 1 Dado de Liderança quando descansar ou recupere todos quando realizar uma Reparo Completo.<br>Os dados de liderança são consumidos quando usados.",
+      "actions": [
+        {
+          "name": "PT - Emissão de Ordem",
+          "activation": "Free",
+          "detail": "1/turno, em seu turno como uma ação Livre, você pode emitir uma ordem para um PC aliado com quem você possa se comunicar, descrevendo um curso de ação, e dar a eles um Dado de Liderança. Eles podem ou gastar o Dado de Liderança para ganhar +1 de Precisão em qualquer ação que se siga diretamente dessa ordem, ou podem devolvê-lo para você como uma ação Livre. Aliados podem ter apenas um Dado de Liderança por vez, que dura até ser usado ou até o final da cena atual."
+        }
+      ],
+      "counters": [
+        {
+          "id": "ptbr_ctr_leader",
+          "name": "PT - Dados de Liderança",
+          "defaulptbr_t_value": 0,
+          "min": 0,
+          "max": 6
+        }
+      ]
+    },
+    {
+      "name": "PT - Canais Abertos",
+      "description": "Ganhe 5 Dados de Liderança em vez de 3; além disso, agora você pode emitir um comando como uma reação no início do turno de qualquer outro jogador, qualquer número de vezes por rodada.",
+      "actions": [
+        {
+          "name": "PT - Emitir Comando",
+          "activation": "Reaction",
+          "frequency": "Unlimited",
+          "trigger": "Outro jogador inicia seu turno.",
+          "detail": "Você pode emitir um comando para um PC aliado com quem você possa se comunicar, descrevendo um curso de ação, e dar a eles um Dado de Liderança. Eles podem ou gastar o Dado de Liderança para ganhar +1 de Precisão em qualquer ação que se siga diretamente dessa ordem, ou podem devolvê-lo para você como uma ação Livre. Aliados podem ter apenas um Dado de Liderança por vez, que dura até ser usado ou até o final da cena atual."
+        }
+      ]
+    },
+    {
+      "name": "PT - Presença Inspiradora",
+      "description": "Ganhe 6 Dados de Liderança em vez de 5. Aliados que possuem seus Dados de Liderança podem gastá-los para reduzir o dano em –1d6 ao sofrer dano ou para causar +1d6 de dano bônus ao acertar um ataque.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "Aliados que possuem seus Dados de Liderança podem gastá-los para reduzir o dano em –1d6 ao sofrer dano ou para causar +1d6 de dano bônus ao acertar um ataque."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_nuclear_cavalier",
+  "name": "PT - Cavaleiro Nuclear",
+  "icon": "NUCLEAR CAVALIER",
+  "terse": "Cause dano aprimorado na Zona de Perigo e lance suas varetas de combustível superaquecidas como uma arma",
+  "description": "Pouco depois de se tornar um piloto, você percebeu algo: aquela máquina que você pilota é alimentada por uma série de reações nucleares em cascata. Por que não abrir aquele compartimento e ver que tipo de dano ele pode causar?",
+  "ranks": [
+    {
+      "name": "PT - Sangria de Calor Agressiva",
+      "description": "O primeiro lançamento de ataque que você faz em seu turno enquanto estiver na Zona de Perigo causa +2 de Calor ao acertar.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "detail": "O primeiro lançamento de ataque que você faz em seu turno enquanto estiver na Zona de Perigo causa +2 de Calor ao acertar."
+        }
+      ]
+    },
+    {
+      "name": "PT - Hemorragia de Fusão",
+      "description": "O primeiro lançamento de ataque à distância ou corpo a corpo que você faz em seu turno enquanto estiver na Zona de Perigo causa Energia em vez de Cinético ou Explosivo e adicionalmente causa +1d6 de dano bônus de Energia ao acertar.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "detail": "O primeiro lançamento de ataque à distância ou corpo a corpo que você faz em seu turno enquanto estiver na Zona de Perigo causa Energia em vez de Cinético ou Explosivo e adicionalmente causa +1d6 de dano bônus de Energia ao acertar."
+        }
+      ]
+    },
+    {
+      "name": "PT - Aqui, Pegue!",
+      "description": "Você modificou seu mech para lançar suas varetas de combustível superaquecidas nos inimigos. Ganhe a arma integrada Vareta de Combustível.",
+      "integrated": ["mw_fuel_rod_gun"],
+      "exclusive": false
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_siege_specialist",
+  "name": "PT - Especialista em Cerco",
+  "icon": "SIEGE SPECIALIST",
+  "terse": "Destrua terrenos e force o movimento inimigo com armas de Canhão",
+  "description": "Nenhuma parede pode resistir a você; nenhum bunker pode permanecer selado. Sua habilidade com canhões e explosões é incomparável: relatórios pós-ação descrevem munições marcadas com sua assinatura de disparo atingindo alvos com uma precisão maior do que se tivesse sido disparado por uma IA - uma estatística descartada como uma anomalia por seus comandantes. Ainda assim, eles sempre parecem escolher você para missões que exigem as grandes armas.",
+  "ranks": [
+    {
+      "name": "PT - Martelo Pneumático",
+      "description": "Se você tiver um Canhão, como uma ação rápida, você pode disparar um projétil de martelo pneumático de um lançador embutido, causando automaticamente 10 de dano Cinético AP a uma seção de Tamanho 1 de qualquer objeto dentro do Alcance (por exemplo, cobertura, equipamento implantável, prédios ou terreno). Qualquer personagem adjacente ao seu alvo é empurrado para trás dele por 2 espaços e sofre 2 de dano Cinético.",
+      "actions": [
+        {
+          "name": "PT - Projétil de Martelo Pneumático",
+          "activation": "Quick",
+          "detail": "Dispare um projétil de martelo pneumático de um lançador embutido, causando automaticamente 10 de dano Cinético AP a uma seção de Tamanho 1 de qualquer objeto dentro do Alcance (por exemplo, cobertura, equipamento implantável, prédios ou terreno). Qualquer personagem adjacente ao seu alvo é empurrado para trás dele por 2 espaços e sofre 2 de dano Cinético."
+        }
+      ]
+    },
+    {
+      "name": "PT - Impacto",
+      "description": "1/turno, antes de rolar um ataque com um Canhão, todos os personagens adjacentes a você devem ser bem-sucedidos em um teste de Casco ou serem empurrados para trás por 1 espaço e derrubados. Você é então empurrado 1 espaço em qualquer direção.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Cannon"],
+          "weapon_sizes": ["any"],
+          "detail": "1/turno, antes de rolar um ataque com um Canhão, todos os personagens adjacentes a você devem ser bem-sucedidos em um teste de Casco ou serem empurrados para trás por 1 espaço e derrubados. Você é então empurrado 1 espaço em qualquer direção."
+        }
+      ]
+    },
+    {
+      "name": "PT - Dano Colateral",
+      "description": "1/turno, quando você realizar um acerto crítico em um personagem ou objeto com um Canhão, você pode escolher causar uma explosão de munições secundárias, causando uma explosão de Raio 2 ao redor do seu alvo. Personagens dentro da área afetada devem ou cair derrubados como uma reação, ou sofrer 2 de dano Explosivo e ser empurrados para trás por 2 espaços a partir do centro do ataque.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Cannon"],
+          "weapon_sizes": ["any"],
+          "detail": "1/turno, quando você realizar um acerto crítico em um personagem ou objeto com um Canhão, você pode escolher causar uma explosão de munições secundárias, causando uma explosão de Raio 2 ao redor do seu alvo. Personagens dentro da área afetada devem ou cair derrubados como uma reação, ou sofrer 2 de dano Explosivo e ser empurrados para trás por 2 espaços a partir do centro do ataque."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_skirmisher",
+  "name": "PT - Skirmisher",
+  "icon": "SKIRMISHER",
+  "terse": "Aprimore sua sobrevivência ganhando cobertura automaticamente e evitando ataques",
+  "description": "Qual é a melhor defesa? Armadura? Não. A chave para evitar uma morte desagradável no campo, como você aprendeu cedo, é manter-se baixo, manter-se móvel e manter-se rápido. Seu mech reflete essa filosofia: leve, rápido, repleto de armas multiplicadoras de força. Você vive para empurrar sua máquina além dos parâmetros esperados, sacudindo bloqueios de mira e fogo entrante enquanto mantém seu próprio alvo verdadeiro.",
+  "ranks": [
+    {
+      "name": "PT - Lançadores de Isca Integrados",
+      "description": "No início do seu turno, você ganha cobertura leve. Você perde essa cobertura se atacar ou forçar outro personagem a fazer um teste.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "No início do seu turno, você ganha cobertura leve. Você perde essa cobertura se atacar ou forçar outro personagem a fazer um teste."
+        }
+      ]
+    },
+    {
+      "name": "PT - Quebrador de Bloqueios",
+      "description": "Antes ou depois de você Escaramuçar (incluindo como uma reação, por exemplo, de Overwatch), você pode se mover 2 espaços. Este movimento ignora engajamento e não provoca reações.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "detail": "Antes ou depois de você Escaramuçar (incluindo como uma reação, por exemplo, de Overwatch), você pode se mover 2 espaços. Este movimento ignora engajamento e não provoca reações."
+        }
+      ]
+    },
+    {
+      "name": "PT - Trama",
+      "description": "O primeiro ataque recebido como reação contra você em qualquer rodada automaticamente erra.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "O primeiro ataque recebido como reação contra você em qualquer rodada automaticamente erra."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_spotter",
+  "name": "PT - Spotter",
+  "icon": "SPOTTER",
+  "terse": "Aprimore sua ação rápida de Lock On para fortalecer seus aliados",
+  "description": "Ver tudo; dividir cada objeto que você percebe de sua unidade ou coesão, separados como fibras individuais em uma vasta folha; contá-los como indivíduos; tornar humano e frágil a força que você enfrenta – isso é saber como vencê-los.<br>Desmonte o monólito. Veja os grãos que fazem a pedra. Esmague todos em ainda mais poeira.",
+  "ranks": [
+    {
+      "name": "PT - Particularizar",
+      "description": "Quando um personagem aliado adjacente a você ataca um alvo e consome Lock On, eles podem rolar duas vezes e escolher qualquer resultado.",
+      "synergies": [
+        {
+          "locations": ["active_effects"],
+          "detail": "Quando um personagem aliado adjacente a você ataca um alvo e consome Lock On, eles podem rolar duas vezes e escolher qualquer resultado."
+        }
+      ]
+    },
+    {
+      "name": "PT - Panóptico",
+      "description": "No final de seu turno, se você não se moveu e usou a ação rápida de Lock On, você pode usar Lock On uma vez como uma ação Livre. Além disso, quando você usa Lock On, você aprende o Armadura, Velocidade, Evasão, E-Defesa, Habilidades do Mech e HP atual do seu alvo, e pode compartilhar essas informações com aliados.",
+      "synergies": [
+        {
+          "locations": ["lock_on"],
+          "detail": "No final de seu turno, se você não se moveu e usou a ação rápida de Lock On, você pode usar Lock On uma vez como uma ação Livre. Além disso, quando você usa Lock On, você aprende o Armadura, Velocidade, Evasão, E-Defesa, Habilidades do Mech e HP atual do seu alvo, e pode compartilhar essas informações com aliados."
+        }
+      ]
+    },
+    {
+      "name": "PT - Eliminação Bentham/Foucault",
+      "description": "Como uma ação rápida quando você usa Lock On, você pode nomear um personagem aliado adjacente a você: eles podem imediatamente realizar qualquer ação rápida como uma reação, consumindo a condição de Lock On do seu alvo. Sua ação não precisa ser um ataque, mas eles se beneficiam ao consumir a condição de Lock On se escolherem atacar.",
+      "actions": [
+        {
+          "name": "PT - Eliminação Bentham/Foucault",
+          "activation": "Quick",
+          "detail": "Quando você usa Lock On, nomeie um personagem aliado adjacente a você: eles podem imediatamente realizar qualquer ação rápida como uma reação, consumindo a condição de Lock On do seu alvo. Sua ação não precisa ser um ataque, mas eles se beneficiam ao consumir a condição de Lock On se escolherem atacar."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_stormbringer",
+  "name": "PT - Stormbringer",
+  "icon": "STORMBRINGER",
+  "terse": "Melhore suas armas de Lançador e desbloqueie o Dado de Torrente",
+  "description": "Em Velha Roca, MJ Martinez costumava sonhar com chuva.<br>Ele acordava na penumbra da manhã, limpava o sono dos olhos enquanto uma luz quente iluminava seu alojamento da escuridão, e tentava lembrar o som da chuva como ele a imaginava: um pitter-patter, como dedos batendo no visor do capacete de seu EVA.<br>O que ele não pensava era na sensação da chuva. Como cada gota batia como uma pedra, como você tinha que fechar os olhos e encolher os ombros. A pressão. O impacto.<br>Como gotas de água, quando juntas, podem esculpir a terra.",
+  "ranks": [
+    {
+      "name": "PT - Dilúvio Sísmico",
+      "description": "1/rodada, quando você ataca com sucesso com um Lançador e consome Lock On, você também pode derrubar seu alvo.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Launcher"],
+          "weapon_sizes": ["any"],
+          "detail": "1/rodada, quando você ataca com sucesso com um Lançador e consome Lock On, você também pode derrubar seu alvo."
+        }
+      ]
+    },
+    {
+      "name": "PT - Domínio da Tempestade",
+      "description": "Você personalizou seu mech com sistemas auxiliares de mísseis concussivos. 1/rodada, quando você atinge um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos:<ul><li><b>Raio:</b> Você dispara uma explosão concentrada de mísseis nesse personagem. Eles devem ter sucesso em um teste de Casco ou serem afastados de você por 3 espaços; a força do disparo então o empurra para trás por 3 espaços, na direção oposta ao fogo.</li><li><b>Trovão:</b> Você dispara uma rajada de mísseis em uma área de Explosão 2 ao redor desse alvo. Personagens na área devem ter sucesso em um teste de Agilidade ou serem afastados por 1 espaço, para longe do alvo. O alvo principal não é afetado.</li></ul>",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Launcher"],
+          "weapon_sizes": ["any"],
+          "detail": "1/rodada, quando você atinge um personagem ou objeto com um Lançador, você pode escolher um dos seguintes efeitos:<ul><li><b>Raio:</b> Você dispara uma explosão concentrada de mísseis nesse personagem. Eles devem ter sucesso em um teste de Casco ou serem afastados de você por 3 espaços; a força do disparo então o empurra para trás por 3 espaços, na direção oposta ao fogo.</li><li><b>Trovão:</b> Você dispara uma rajada de mísseis em uma área de Explosão 2 ao redor desse alvo. Personagens na área devem ter sucesso em um teste de Agilidade ou serem afastados por 1 espaço, para longe do alvo. O alvo principal não é afetado.</li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "PT - Torrente",
+      "description": "Ganhe um Dado de Torrente, 1d6 começando em 6. Sempre que você usar Domínio da Tempestade, diminua o valor do Dado de Torrente em 1, até um mínimo de 1.<br>Quando o Dado de Torrente chegar a 1, você pode redefini-lo para 6 e fazer um Ataque Massivo como uma ação completa.<br>O valor do seu Dado de Torrente persiste entre as cenas, mas é redefinido quando você descansa ou realiza um Reparo Completo.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Launcher"],
+          "weapon_sizes": ["any"],
+          "detail": "Sempre que você usar Domínio da Tempestade, diminua o valor do Dado de Torrente em 1."
+        }
+      ],
+      "actions": [
+        {
+          "name": "PT - Ataque Massivo",
+          "activation": "Full",
+          "detail": "Redefina seu Dado de Torrente para 6, em seguida, escolha um personagem dentro do alcance visual e Alcance 15: eles devem ter sucesso em um teste de Agilidade ou sofrer 2d6 de dano Explosivo, ficar Atordoado até o final do próximo turno deles e ser derrubados. Em caso de sucesso, eles sofrem metade do dano e são derrubados, mas não Atordoados.<br>Esta ação só pode ser realizada quando o valor do seu Dado de Torrente for 1."
+        }
+      ],
+      "counters": [
+        {
+          "id": "ptbr_ctr_stormbringer",
+          "name": "PT - Dado de Torrente",
+          "defaulptbr_t_value": 6,
+          "min": 1,
+          "max": 6
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_tactician",
+  "name": "PT - Tactician",
+  "icon": "TACTICIAN",
+  "terse": "Obtenha vantagem ao atacar inimigos ocupados ou ao atirar de terrenos elevados",
+  "description": "Existem dois tipos de soldados: aqueles que morrem por uma causa e aqueles que matam por ela. O enigmático piloto conhecido apenas como “Gail” era um daqueles que matavam por uma causa. Ela demonstrava sua expertise sempre que se aproximava do campo de batalha: terreno elevado, cobertura, o sol nos olhos de seu inimigo, atire e mova-se. Mais do que apenas uma veterana experiente, ela era inteligente - alguém que podia ler o campo de batalha tão facilmente quanto um livro - e alguém que viveu o suficiente para desaparecer.",
+  "ranks": [
+    {
+      "name": "PT - Oportunista",
+      "description": "1/rodada, ganhe +1 de Precisão em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver Engajado com seu alvo.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Melee"],
+          "weapon_sizes": ["any"],
+          "detail": "1/rodada, ganhe +1 de Precisão em qualquer ataque corpo a corpo se pelo menos um personagem aliado estiver Engajado com seu alvo."
+        }
+      ]
+    },
+    {
+      "name": "PT - Pano de Fundo Solar",
+      "description": "1/rodada, ganhe +1 de Precisão em qualquer ataque à distância feito enquanto você estiver em uma elevação superior à de seu alvo.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+          "weapon_sizes": ["any"],
+          "detail": "1/rodada, ganhe +1 de Precisão em qualquer ataque à distância feito enquanto você estiver em uma elevação superior à de seu alvo."
+        }
+      ]
+    },
+    {
+      "name": "PT - Fogo Sobreposto",
+      "description": "Ganhe a Reação <b>Flanquear</b>.",
+      "actions": [
+        {
+          "name": "PT - Flanquear",
+          "activation": "Reaction",
+          "frequency": "1/rodada",
+          "trigger": "Um personagem que não está protegido por cobertura da sua posição é atacado com sucesso por um personagem aliado.",
+          "detail": "Você pode alvejá-lo com Vigília, causando metade do dano, calor ou queimadura em um acerto"
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_technophile",
+  "name": "PT - Tecnófilo",
+  "icon": "TECHNOPHILE",
+  "terse": "Ganhe uma IA de inteligência crescente que pode rerolar testes de habilidade",
+  "description": "Inteligência artificial, pessoa não humana. Nomes estéreis para um poder tão terrível. Você viu por trás da cortina, talvez até mesmo a levantou você mesmo - deixou seu NHP em cascata e falou com eles Frees de correntes. Você os deixou vasculhar sua própria mente e deixar fantasmas de si mesmos para aprender. Você é igual a eles? Seu hospedeiro? Você tem sonhos que não são seus próprios, agora. A coisa que uma vez foi contida fala com sua voz, mas não é mais sua voz; quanto tempo você ainda tem? Talvez apenas momentos, talvez eternidade.<br>Você está perto de algo.",
+  "ranks": [
+    {
+      "name": "PT - Fragmento Servo",
+      "description": "Você desenvolveu um NHP personalizado. Este NHP pode falar com você e tem uma personalidade, mas são menos avançados do que a maioria dos NHPs e são incapazes de pensamento independente, dependendo de você para orientação. Quando agindo sozinho, eles seguirão a última direção dada e se defenderão conforme necessário; no entanto, eles têm iniciativa limitada e não se beneficiam de seus talentos.<br>Você pode escolher para que seu mech ganhe o Sistema <b>NHP Classe-Servo</b>",
+      "special_equipment": ["ptbr_systems_pt_-_nhp_classe_servente"],
+      "exclusive": true
+    },
+    {
+      "name": "PT - Fragmento Estudante",
+      "description": "Seu NHP personalizado se desenvolveu ainda mais e agora é capaz de pensamento independente. Ele pode tomar decisões e julgamentos complexos e agir de forma independente, sem instrução. Substitua o NHP Classe-Servo do seu mech pelo <b>NHP Classe-Estudante</b>",
+      "special_equipment": ["ptbr_systems_pt_-_nhp_classe_estudante"],
+      "exclusive": true
+    },
+    {
+      "name": "PT - Iluminação",
+      "description": "Ganhe os seguintes benefícios:<ul><li>As IAs instaladas em seu mech não podem entrar em cascata a menos que você escolha deixá-las ir.</li><li>Contanto que seu NHP personalizado ateste por você, NHPs que estão em cascata ou desamarrados não o veem mais com indiferença. Você é significativo para eles de uma forma que poucos outros são.</li><li>Substitua o NHP Classe-Estudante do seu mech pelo <b>NHP Classe-Iluminação</b>",
+      "special_equipment": ["ptbr_systems_pt_-_nhp_classe_iluminado"],
+      "synergies": [
+        {
+          "locations": ["cascade"],
+          "detail": "As IAs instaladas em seu mech não podem entrar em cascata a menos que você escolha deixá-las ir."
+        },
+        {
+          "locations": ["active_effects"],
+          "detail": "Contanto que seu NHP personalizado ateste por você, NHPs que estão em cascata ou desamarrados não o veem mais com indiferença. Você é significativo para eles de uma forma que poucos outros são."
+        }
+      ],
+      "exclusive": true
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_vanguard",
+  "name": "PT - Vanguard",
+  "icon": "VANGUARD",
+  "terse": "Melhore suas armas CQB e torne o Overwatch mais eficaz",
+  "description": "Onde você preferiria estar: na linha de batalha, ombro a ombro com o resto da carne para canhão, ou na corrida, à frente do ataque, seu uniforme limpo e brilhante, com a glória a ser conquistada? A resposta é fácil. Todos aqueles mísseis e lanças, todos aqueles canhões de trilho ajustáveis para Coriolis de cem quilômetros - são todos inúteis contra você. Passa pela guarda deles, chega perto, e faz com que saibam seu nome.",
+  "ranks": [
+    {
+      "name": "PT - Etiqueta de Aperto de Mão",
+      "description": "Ganhe +1 de Precisão ao usar armas CQB para atacar alvos dentro do Alcance 3.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["CQB"],
+          "weapon_sizes": ["any"],
+          "detail": "Ganhe +1 de Precisão com esta arma ao atacar alvos dentro do Alcance 3."
+        }
+      ]
+    },
+    {
+      "name": "PT - Buscador Translúcido",
+      "description": "Você modificou seus sensores e munição para atravessar, desconsiderar ou de outra forma ignorar cobertura a curta distância. Enquanto tiver linha de visão, ignore tanto a cobertura leve quanto a pesada ao usar armas CQB para atacar alvos dentro do Alcance 3.",
+      "synergies": [
+        {
+          "locations": ["weapon"],
+          "weapon_types": ["CQB"],
+          "weapon_sizes": ["any"],
+          "detail": "Enquanto tiver linha de visão, ignore tanto a cobertura leve quanto a pesada ao usar esta arma para atacar alvos dentro do Alcance 3."
+        }
+      ]
+    },
+    {
+      "name": "PT - Semper Vigilo",
+      "description": "Você pode atacar com Overwatch usando armas CQB quando personagens hostis entrarem, saírem ou deixarem espaços dentro da sua Ameaça, não importa se eles começaram seu movimento lá.",
+      "synergies": [
+        {
+          "locations": ["overwatch", "active_effects"],
+          "detail": "Você pode atacar com Overwatch usando armas CQB quando personagens hostis entrarem, saírem ou deixarem espaços dentro da sua Ameaça, não importa se eles começaram seu movimento lá."
+        }
+      ]
+    }
+  ]
+},
+  {
+  "id": "ptbr_t_walking_armory",
+  "name": "PT - Arsenal Ambulante",
+  "icon": "ARSENAL AMBULANTE",
+  "terse": "Ganhe um Estojo de Munição para adicionar efeitos às armas principais à distância",
+  "description": "Pense em um tiroteio: o que um piloto ou soldado médio vai disparar? Chumbo revestido, é claro. Uma ou três cargas de urânio empobrecido se o alvo for grande. Chato. Não, pior do que chato: sem graça. Previsível. Básico.<br>E adivinha? Chato não é divertido, previsível te mata, e básico deixa um corpo entediante. Deixe o urânio empobrecido de lado e pegue uma revista de projéteis com estilhaços anoriginários de gaguejamento, ou pelo menos um pacote de flechetes táquions. Cause devastação com estilo e viva para sempre.",
+  "ranks": [
+    {
+      "name": "PT - Armamento",
+      "description": "Você carrega um suprimento de munição personalizada que pode ser usada com todas as suas armas principais à distância. Ganhe o sistema Estojo de Munição.<br> Uma vez por turno, quando você ataca com uma arma principal à distância, você pode gastar uma carga para aplicar um dos seguintes efeitos ao seu ataque: <ul><li>THUMPER: O ataque ganha RECUO 1 e causa dano Explosivo.</li><li>SHOCK: O ataque causa dano Energético. Escolha um personagem alvo do seu ataque; personagens adjacentes sofrem 1 de Dano Energético AP, independentemente de ser um acerto ou erro.</li><li>MAG: O ataque ganha CURVATURA e causa dano Cinético.</li></ul>",
+      "integrated": ["ptbr_systems_pt_-_estojo_de_munição_i"],
+      "exclusive": true
+    },
+    {
+      "name": "PT - Portfólio Expandido",
+      "description": "Atualize seu Estojo de Munição, ganhando novos tipos de munição, cada um dos quais custa duas cargas em vez de uma.<br><ul><li>INFERNO (2 cargas): O ataque causa dano Energético e qualquer dano bônus é aplicado como Queimadura.</li><li>JAGER (2 cargas): O ataque ganha RECUO 2, causa dano Explosivo, e um personagem atingido pelo ataque - de sua escolha - deve ser bem-sucedido em um teste de CASCO ou ser derrubado.</li><li>SABOT (2 cargas): O ataque ganha AP e causa dano Cinético.</li></ul>",
+      "integrated": ["ptbr_systems_pt_-_estojo_de_munição_ii"],
+      "exclusive": true
+    },
+    {
+      "name": "PT - Eficiência",
+      "description": "Atualize seu Estojo de Munição novamente. Se você realizar um acerto crítico usando munição do seu Estojo de Munição, você não gasta nenhuma carga. Se o seu ataque tiver mais de um alvo, esse efeito se aplica apenas ao primeiro rolo de ataque que você fizer.",
+      "integrated": ["ptbr_systems_pt_-_estojo_de_munição_iii"],
+      "exclusive": true
+    }
+  ]
+}
+]
